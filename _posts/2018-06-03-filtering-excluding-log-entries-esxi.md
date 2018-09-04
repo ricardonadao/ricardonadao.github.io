@@ -1,0 +1,103 @@
+---
+ID: 264
+post_title: >
+  Filtering/Excluding log entries in
+  VMware vSphere ESXi
+author: Ricardo Adao
+post_excerpt: ""
+layout: posts
+permalink: >
+  https://vrandombites.co.uk/2018/06/vsphere/esxi/filtering-excluding-log-entries-esxi/
+published: true
+post_date: 2018-06-03 10:42:02
+---
+<blockquote><strong>Caution:</strong> Reducing/suppressing/filtering log entries on an ESXi could introduce some "blind spots" or even hide issues when troubleshooting</blockquote>
+In our Homelabs, or even in production environments, we always have some harmless log entries that we would be happy to stop them from filling up our logs.
+
+In ESXi 6.x, VMware introduced the ability to filter or exclude log entries from the system logs using <em>regular expressions</em>.<em> (original KB: <a class="uiOutputURL" dir="ltr" title="" href="https://kb.vmware.com/kb/2118562" target="_blank" rel="noopener" data-aura-rendered-by="11:135;a" data-aura-class="uiOutputURL" data-interactive-lib-uid="6">Filtering logs in VMware vSphere ESXi</a>)</em>
+<h3>To enable the log filtering we need first to enable it.</h3>
+<ol>
+ 	<li style="list-style-type: none;">
+<ol>
+ 	<li style="list-style-type: none;">
+<ol>
+ 	<li>Log in to the ESXi via SSH or console, using a user with <em>root</em> privileges</li>
+ 	<li>We will change <em>/etc/vmsyslog.conf</em> so lets back it up
+<pre lang="bash">cp /etc/vmsyslog.conf /etc/vmsyslog.orig</pre>
+<a href="https://vrandombites.co.uk/wp-content/uploads/2018/06/filtering-excluding-backup-vmsyslog.png"><img class="size-full wp-image-307 alignnone" src="https://vrandombites.co.uk/wp-content/uploads/2018/06/filtering-excluding-backup-vmsyslog.png" alt="" width="512" height="172" /></a></li>
+ 	<li>Now we can to edit the file, since we back it up:
+<pre lang="bash">vi /etc/vmsyslog.conf
+
+Add the config:
+   enable_logfilters = true</pre>
+<a href="https://vrandombites.co.uk/wp-content/uploads/2018/06/filtering-excluding-backup-vmsyslog.edited.png"><img class="size-full wp-image-311 alignnone" src="https://vrandombites.co.uk/wp-content/uploads/2018/06/filtering-excluding-backup-vmsyslog.edited.png" alt="" width="269" height="219" /></a></li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<h3>And now we need to configure the <em>filters</em></h3>
+<ol>
+ 	<li style="list-style-type: none;">
+<ol>
+ 	<li>The <em>filters</em> are setup in <em>/etc/vmware/logfilters</em> file and there is a specific format:
+<pre lang="bash">numLogs | ident | logRegexp</pre>
+<ul>
+ 	<li><strong>Parameters:</strong>
+<ul>
+ 	<li><em>numLogs</em> - how many times the log entry can appear before being filtered</li>
+ 	<li><em>Note: setting up the value to 0 it will filter all the lines matching the logRegexp expression. Any value higher than 0, it will filter the line after X close repetitions.</em></li>
+ 	<li><em>ident</em> - used to identity the source of the log entry. The available sources will be found under <em>/etc/vmsyslog.conf.d/*.conf</em>.
+<ul>
+ 	<li>As an example:
+<a href="https://vrandombites.co.uk/wp-content/uploads/2018/06/filtering-excluding-vmsyslog-vmkernelconf.png"><img class="size-full wp-image-323 alignnone" src="https://vrandombites.co.uk/wp-content/uploads/2018/06/filtering-excluding-vmsyslog-vmkernelconf.png" alt="" width="435" height="306" /></a></li>
+</ul>
+</li>
+ 	<li><em>logRegexp </em>- it will be the regular expression (<em>Python regexp syntax</em>) that will match the log entries to filter</li>
+</ul>
+</li>
+</ul>
+</li>
+ 	<li>Configuring some filters in <em>/etc/vmware/logfilters</em> as an example:
+<ul>
+ 	<li>
+<pre lang="bash">vi /etc/vmware/logfilters</pre>
+</li>
+ 	<li>Filtering some <em>harmless SCSI log entries </em>result of local storage rescanning:
+<pre lang="python">0 | vmkernel | 0x1a.* H:0x0 D:0x2 P:0x0 Valid sense data: 0x5 0x2[04] 0x0
+0 | vmkernel | 0x85.* H:0x0 D:0x2 P:0x0 Valid sense data: 0x5 0x20 0x0
+0 | vmkernel | 0x12.* H:0x0 D:0x2 P:0x0 Valid sense data: 0x5 0x24 0x0
+0 | vmkernel | 0x9e.* H:0x0 D:0x2 P:0x0 Valid sense data: 0x5 0x20 0x0
+0 | vmkernel | bad CDB .* scsi_op=0x9e
+0 | vmkernel | 0x4d.* H:0x0 D:0x2 P:0x0 Valid sense data: 0x5 0x20 0x0</pre>
+<ul>
+ 	<li><em>To check SCSI Codes: <a href="https://kb.vmware.com/kb/1010244">Understanding SCSI Check Conditions in VMkernel logs during rescan operations (1010244)</a> and <a href="https://kb.vmware.com/kb/289902">Interpreting SCSI sense codes in VMware ESXi and ESX (289902)</a></em></li>
+</ul>
+</li>
+ 	<li>Filters configured
+<a href="https://vrandombites.co.uk/wp-content/uploads/2018/06/filtering-excluding-vmsyslog-logfilters-example.png"><img class="size-full wp-image-344 alignnone" src="https://vrandombites.co.uk/wp-content/uploads/2018/06/filtering-excluding-vmsyslog-logfilters-example.png" alt="" width="558" height="457" /></a></li>
+</ul>
+</li>
+</ol>
+</li>
+</ol>
+<h3>Reloading <em>syslog service</em> configuration to activate our filters</h3>
+<ol>
+ 	<li>
+<pre lang="bash">esxcli system syslog reload</pre>
+</li>
+</ol>
+<h3>And lets check the result</h3>
+<ol>
+ 	<li>Before we can see a consistent log entry every ~10/15 minutes
+<a href="https://vrandombites.co.uk/wp-content/uploads/2018/06/filtering-excluding-before.png"><img class="alignnone size-full wp-image-360" src="https://vrandombites.co.uk/wp-content/uploads/2018/06/filtering-excluding-before.png" alt="" width="1641" height="184" /></a></li>
+ 	<li>Reloading syslog config and a timestamp to use as a reference
+<a href="https://vrandombites.co.uk/wp-content/uploads/2018/06/filtering-excluding-test-reload.png"><img class="alignnone size-full wp-image-362" src="https://vrandombites.co.uk/wp-content/uploads/2018/06/filtering-excluding-test-reload.png" alt="" width="370" height="49" /></a></li>
+ 	<li>After ~30 minutes, we would have some log entries, let see if they got filtered:
+<a href="https://vrandombites.co.uk/wp-content/uploads/2018/06/filtering-excluding-after-corrected.png"><img class="alignnone size-full wp-image-369" src="https://vrandombites.co.uk/wp-content/uploads/2018/06/filtering-excluding-after-corrected.png" alt="" width="1639" height="195" /></a></li>
+ 	<li><span style="color: #008000;"><strong>OK </strong></span> so no log entries, but did anything else got logged during that period, lets grep for that period removing the entry logs that we want to filter and count the <em>newlines:</em>
+<a href="https://vrandombites.co.uk/wp-content/uploads/2018/06/filtering-excluding-after-logcount-notfiltered-corrected.png"><img class="alignnone wp-image-372 size-full" src="https://vrandombites.co.uk/wp-content/uploads/2018/06/filtering-excluding-after-logcount-notfiltered-corrected.png" alt="" width="1052" height="77" /></a></li>
+ 	<li><strong>Syslog logged 129 new log lines after we activated the filtering
+</strong></li>
+</ol>
+<blockquote><strong>Caution:</strong> Reducing/suppressing/filtering log entries on an ESXi could introduce some "blind spots" or even hide issues when troubleshooting</blockquote>
