@@ -1,5 +1,8 @@
 <head>
     {% if site.google_analytics and jekyll.environment == 'production' %}
-    {% include analytics.html %}
+        {% include analytics.html %}
+    {% endif %}
+    {% if site.tags != "" %}
+        {% include collecttags.html %}
     {% endif %}
 </head>
