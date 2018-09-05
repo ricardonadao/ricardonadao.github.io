@@ -24,15 +24,15 @@ My journey through IT covers Software Development, Security, Network and for the
   * VCP3/4/5/6, VCAP6-DCV Deployment
   * VCP-NV ,VCIX-NV, VCIX6-NV
 
- ![VCP-DCV6](/assets/vmware_Cert_P_DCV6.png){:width="150px" height="150px"}
- ![VCP-NV6](/assets/vmware_Cert_P_NV6.png){:width="150px" height="150px"}
- ![2xVCP-Milestone](/assets/vmware_Milestone_2xVCP_DCVNV.png){:width="150px" height="150px"}
- ![VCAP-DCV6](/assets/vmware_Cert_AP_DCV6.png){:width="150px" height="150px"}
- ![VCIX-NV6](/assets/vmware_Milestone_IE_NV6.png){:width="150px" height="150px"}
+ ![VCP-DCV6](/assets/cert_badges/vmware_Cert_P_DCV6-150x150.png)
+ ![VCP-NV6](/assets/cert_badges/vmware_Cert_P_NV6-150x150.png)
+ ![2xVCP-Milestone](/assets/cert_badges/vmware_Milestone_2xVCP_DCVNV-150x150.png)
+ ![VCAP-DCV6](/assets/cert_badges/vmware_Cert_AP_DCV6-150x150.png)
+ ![VCIX-NV6](/assets/cert_badges/vmware_Milestone_IE_NV6-150x150.png)
 
   * vExpert
 
- ![vExpert2018](/assets/vExpert.2018.png){:width="150px" height="150px"}
+ ![vExpert2018](/assets/cert_badges/vExpert.2018.png){:width="150px" height="150px"}
 
 ## Cisco ##
   * CCNA, CCNP
