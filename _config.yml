@@ -18,13 +18,14 @@ email: ricardo.adao@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   This is my blog and my opinions.
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://vrandombites.co.uk" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: ricardonadao
 github_username:  ricardonadao
 
 # Build settings
 markdown: kramdown
 theme: minima
+highliter: true
 plugins:
   - jekyll-feed
   - jekyll-sitemap
