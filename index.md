@@ -7,4 +7,4 @@ layout: default
 
  **We are moving to gihub pages so still a bit under maintenance.**
 
- ![Under Construction](assets/under.construction.png)
+ ![Under Construction](assets/under.construction.png){:width="600px" height="400px"}
