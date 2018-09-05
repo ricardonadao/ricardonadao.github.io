@@ -12,7 +12,7 @@ tags: []
 
  **We are moving to gihub pages so still a bit under maintenance.**
 
- ![Under Construction](assets/under.construction.png){:width="600px" height="400px"}
+ ![Under Construction](assets/images/under.construction.png){:width="600px" height="400px"}
 
 <ul class="posts">
 	  {% for post in site.posts %}
