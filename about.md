@@ -18,10 +18,9 @@ I have been working in the IT industry for more years than I feel comfortable to
 
 My journey through IT covers Software Development, Security, Network and for the last couple of years Virtualization and VMware was the main area of focus.I currently work as a VMware Product Engineer @<a href="https://www.rackspace.com/">Rackspace</a>. My posts in this blog represent my random technical notes and thoughts. The thoughts expressed here do not reflect my current employer in any way.
 
-### Some of my certs and accomplishements over the last couple of years: ###
+## Some of my certs and accomplishements over the last couple of years: ##
 
-### VMware ###
-
+## VMware ##
   * VCP3/4/5/6, VCAP6-DCV Deployment
   * VCP-NV ,VCIX-NV, VCIX6-NV
 
@@ -35,10 +34,8 @@ My journey through IT covers Software Development, Security, Network and for the
 
  ![vExpert2018](/assets/vExpert.2018.png){:width="150px" height="150px"}
 
-### Cisco ###
-
+## Cisco ##
   * CCNA, CCNP
 
-### Juniper ###
-
+## Juniper ##
   * JNCIA

@@ -1,0 +1,58 @@
+---
+layout: post
+title: PowerCLI - Check MTU size configured in all hosts physical nics of a cluster
+date: 2018-05-13 10:16:54.000000000 +01:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories:
+- PowerCLI
+tags:
+- coding
+- esxi
+- hypervisor
+- nsx
+- oneliner
+- powercli
+- powershell
+- VMware
+- vsan
+meta:
+  _edit_last: '5'
+  _adinserter_block_exceptions: ''
+  _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1536027109;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:194;}i:1;a:1:{s:2:"id";i:414;}i:2;a:1:{s:2:"id";i:473;}}}}
+  _wpas_done_all: '1'
+  _thumbnail_id: '184'
+  _like_ip: a:0:{}
+  _like_count: '0'
+  _yoast_wpseo_primary_category: ''
+  _yoast_wpseo_focuskw_text_input: PowerCLI
+  _yoast_wpseo_focuskw: PowerCLI
+  _yoast_wpseo_linkdex: '51'
+  _yoast_wpseo_content_score: '30'
+  _wp_old_slug: vmware-powercli-check-mtu-size-configured-all-hosts-physical-nics-cluster
+  np_single_post_sidebar: default_sidebar
+  post_meta_identity: np-metabox-info
+  _wpghs_github_path: _posts/2018-05-13-powercli-check-mtu-size-configured-all-hosts-physical-nics-cluster.md
+  _sha: be7f5b3f9de98f86a17a4ff6696ada5ff828d57b
+author:
+  login: ricardo.adao
+  email: ricardo.adao@gmail.com
+  display_name: Ricardo Adao
+  first_name: Ricardo
+  last_name: Adao
+---
+<p>Nowadays with the quick vSAN and NSX adoption, pushing the MTU configuration out of the 1500 bytes standard is becoming more and more common.</p>
+<p>So consistency is important for the MTU configuration across all the hosts physical nics (engaged on vSAN and NSX) on a VMware Cluster is becoming also more relevant.</p>
+<p>In the reach of two/three "google clicks" there are multiple options to get this information using PowerCLI, shellscript, python, API calls, and multiple other options.</p>
+<p>However, sometimes we just prefer to push us a bit to get that oneliner to get the info that we need, just for bragging rights or just to exercise our skills.</p>
+<p>And this post is nothing more than one of those cases, when I decided to check how complicated would be to get this info using a oneliner.</p>
+<p>And surprisingly was easier than expected.</p>
+<pre lang="powershell">Get-Cluster –Name “{Custer Name}” | Get-VMHost | `
+  %{Write-Host $_.Name ; (Get-EsxCli -VMHost $_ -V2).network.nic.list.Invoke() | `
+  %{Write-Host "NIC:"$_.Name "MTU:"$_.MTU}}</pre>
+<p>[caption id="attachment_178" align="alignleft" width="640"]<a href="http://vrandombites.co.uk/wp-content/uploads/2018/05/powercli.pnic_.mtu_.oneliner.example-e1526202644300.png"><img class="wp-image-178 size-large" src="{{ site.baseurl }}/assets/powercli.pnic_.mtu_.oneliner.example-1024x281.png" alt="Example running using an home lab" width="640" height="176" /></a> Example running using an home lab[/caption]</p>
+<p>Of course to get into this we need to do the normal vCenter connection with:</p>
+<pre lang="powershell"> Connect-VIServer -Name</pre>
