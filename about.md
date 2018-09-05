@@ -12,7 +12,7 @@ tags: []
 
 ## Welcome to vRandomBites blog ##
 
-My name is Ricardo Adão and decided to start blogging my random pieces of "wisdom", this time a bit
+My name is Ricardo Adão and decided to start blogging my random pieces of "wisdom".
 
 I have been working in the IT industry for more years than I feel comfortable to admit.
 
