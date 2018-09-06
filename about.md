@@ -21,6 +21,7 @@ My journey through IT covers Software Development, Security, Network and for the
 ## Some of my certs and accomplishements over the last couple of years: ##
 
 ## VMware ##
+
   * VCP3/4/5/6, VCAP6-DCV Deployment
   * VCP-NV ,VCIX-NV, VCIX6-NV
 
@@ -35,7 +36,9 @@ My journey through IT covers Software Development, Security, Network and for the
  ![vExpert2018](/assets/images/cert_badges/vExpert.2018.png){:width="150px" height="150px"}
 
 ## Cisco ##
+
   * CCNA, CCNP
 
 ## Juniper ##
+
   * JNCIA
