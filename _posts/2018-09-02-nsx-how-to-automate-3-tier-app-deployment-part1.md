@@ -47,25 +47,25 @@ Let us kick this off with a simple network diagram of our _vPOD_ that we will a
 * Each tier will have their own network segment
 * Each segment will have their own subnet
 * Inter and Intra segment traffic need to be fully secured
-* Tiers:
-  *  _WebApp_ - Webservers/FrontEnd Servers
-     * will be the only tier exposed to the public
-     * tier provides HTTP services
-     * front-end services will be load balanced across multiple servers
-  *  _App_ - Application/MidTier servers
-     * tier to host all the app servers
-     * app servers will be load balanced across multiple servers
-  *  _DB_- Database tier
-     * tier hosting all the databases servers with the data used by the app servers
+* Tiers
+  * _WebApp_ - Webservers/FrontEnd Servers
+    * will be the only tier exposed to the public
+    * tier provides HTTP services
+    * front-end services will be load balanced across multiple servers
+  * _App_ - Application/MidTier servers
+    * tier to host all the app servers
+    * app servers will be load balanced across multiple servers
+  * _DB_- Database tier
+    * tier hosting all the databases servers with the data used by the app servers
 
 ### Instead of long post lets divide these in multiple parts ###
 
 * Create Logical Switches
 * Create NSX Edge Service Gateway
 * Create NSX Distributed Logic Router
-* Configure NSX Edge Service Gateway
-  * Configure SNATs &amp; DNATs
-  * Configure Firewall Rules
 * Configure Distributed Firewall
+* Configure NSX Edge Service Gateway
+  * Configure SNATs & DNATs
+  * Configure Firewall Rules
 
 The division of the entire process in smaller posts will give some room to detail each step and create a more modular process, where each scripted step can be used individually and re-used.
