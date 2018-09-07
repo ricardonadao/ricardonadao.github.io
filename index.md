@@ -1,7 +1,4 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 layout: default
 author: Ricardo Adao
 published: true
@@ -10,16 +7,19 @@ categories: []
 tags: []
 ---
 
- **We are moving to gihub pages so still a bit under maintenance.**
+**We are moving to gihub pages so still a bit under maintenance.**
 
- ![Under Construction](assets/images/under.construction.png){:width="600px" height="400px"}
+![Under Construction](assets/images/under.construction.png){:width="600px" height="400px"}
 
-<ul class="posts">
-	  {% for post in site.posts %}
-	    <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }} </a></li>
-	  {% endfor %}
-</ul>
+# Posts #
+
+{:.posts}
+{% for post in site.posts %}
+
+* {{ post.date | date_to_string }} » [{{ post.title }}]({{ post.url }})
+
+{% endfor %}
 
 <ul class="archive">
-	{% include archive.html %}
+{% include archive.html %}
 </ul>

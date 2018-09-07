@@ -1,18 +1,11 @@
 ---
 layout: post
-title: Run Nested ESXi on top of a vSAN datastore
-date: 2018-07-19 18:20:14.000000000 +01:00
-type: post
-parent_id: '0'
+author: Ricardo Adao
 published: true
-status: publish
-categories: vsan
-tags: coding hypervisor esxi powercli powershell vcenter vmware vsan nested oneliner scsi
-author:
-  email: ricardo.adao@gmail.com
-  display_name: Ricardo Adao
-  first_name: Ricardo
-  last_name: Adao
+post_date: 2018-07-19 18:20:14
+title: Run Nested ESXi on top of a vSAN datastore
+categories: [ vsan ]
+tags: [ coding, hypervisor, esxi, powercli, powershell, vcenter, vmware, vsan, nested, oneliner, scsi ]
 ---
 Nested ESXi's are part of the gear that we all have around for labs/study purposes.
 
@@ -31,23 +24,25 @@ Installing some ESXi 6.5 Nested Hypervisors that are running on top of a vSAN da
 In summary, vSAN do not support _SCSI-2 Reservations_ and since _VMware_ internal development teams use heavily _Nested Virtualization_ the _vSAN_ team added a "workaround" to allow vSAN to _fake SCSI Reservations_.
 This workaround is enabled by setting up an advanced property in each ESXi part of the vSAN cluster:
 
-```shellscript
+```bash
 esxcli system settings advanced set -o /VSAN/FakeSCSIReservations -i 1
 ```
 
 Now that we have the answer and we have a couple of ESXi to setup this up, lets powershell it to make it quicker.
 
 To check the current status:
+
 ```powershell
 get-cluster -Name "{cluster name}" | Get-VMHost | `
   Sort-Object Name | `
   Select-Object Name, `
     @{N="FakeSCSIResevations"; `
       E={$_ | Get-AdvancedSetting -Name "VSAN.FakeSCSIReservations"}} | `
-  Format-Table -AutoSize</pre>
+  Format-Table -AutoSize
 ```
 
 To set it up:
+
 ```powershell
 get-cluster -Name "{cluster name}" | Get-VMHost | `
   Get-AdvancedSetting -Name "VSAN.FakeSCSIReservations" | `

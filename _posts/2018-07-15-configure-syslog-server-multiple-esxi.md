@@ -1,18 +1,11 @@
 ---
 layout: post
-title: PowerCLI - Configure syslog server in multiple ESXi
-date: 2018-07-15 13:20:17.000000000 +01:00
-type: post
-parent_id: '0'
+author: Ricardo Adao
 published: true
-status: publish
-categories: powercli
-tags: coding esxi powercli powershell vcenter vmware syslog
-author:
-  email: ricardo.adao@gmail.com
-  display_name: Ricardo Adao
-  first_name: Ricardo
-  last_name: Adao
+post_date: 2018-07-15 13:20:17
+title: PowerCLI - Configure syslog server in multiple ESXi
+categories: [ powercli ]
+tags: [ coding, esxi, powercli, powershell, vcenter, vmware, syslog ]
 ---
 <p>This is a quick powershell script to setup the <em>remote syslog</em> in all the hosts of a cluster or vCenter.</p>
 <h4>The script has 4 mandatory parameters and 1 optional parameter:</h4>
