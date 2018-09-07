@@ -11,7 +11,7 @@ Nowadays with the quick vSAN and NSX adoption, pushing the MTU configuration out
 
 So consistency is important for the MTU configuration across all the hosts physical nics (engaged on vSAN and NSX) on a VMware Cluster is becoming also more relevant.
 
-In the reach of two/three "google clicks" there are multiple options to get this information using PowerCLI, shellscript, python, API calls, and multiple other options.
+With a couple of _google searchs_ there are multiple options to get this information, using _PowerCLI_, _shellscript_, _python_, _API calls_ and others, definitely one of the cases where you just need to pick your poison.
 
 However, sometimes we just prefer to push us a bit to get that oneliner to get the info that we need, just for bragging rights or just to exercise our skills.
 
