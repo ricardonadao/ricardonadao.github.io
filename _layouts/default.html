@@ -39,7 +39,19 @@
           <ul>
             <li><h2><a href="/">Home</a></h2></li>
             <li><h2><a href="/about">About</a></h2></li>
-          </ul>      
+          </ul>
+          <h1>Tag Cloud</h1>
+          {% assign tags = site.tags | sort %}
+          <p>{% for tag in tags %}
+             <span class="site-tag">
+               <a href="/tag/{{ tag | first | slugify }}/"
+               style="font-size: {{ tag | last | size  |  times: 4 | plus: 80  }}%">
+               {{ tag[0] | replace:'-', ' ' }} ({{ tag | last | size }})
+               </a>
+             </span>
+             {% endfor %}
+          </p>
+
           {% if site.show_downloads %}
             <a href="{{ site.github.zip_url }}" class="button">
               <small>Download</small>
@@ -59,16 +71,5 @@
         </aside>
       </div>
     </div>
-
-    <!--{% if site.google_analytics %}
-      <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-        ga('create', '{{ site.google_analytics }}', 'auto');
-        ga('send', 'pageview');
-      </script>
-    {% endif %}-->
   </body>
 </html>

@@ -41,3 +41,8 @@ ul.posts {
 ul.posts li {
     list-style: none;
 }
+
+.site-tag a {
+    display: inline-block;
+    margin-right: 12px;
+}

@@ -33,6 +33,22 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
 
+# Includes an icon in the footer for each username you enter
+footer-links:
+  dribbble:
+  email: ricardo.adao@gmail.com
+  facebook:
+  flickr:
+  github: ricardonadao
+  instagram:
+  linkedin: ricardonadao
+  pinterest:
+  rss: running # just type anything here for a working RSS icon
+  twitter: ricardonadao
+  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
+  youtube: # channel/<your_long_string> or user/<user-name>
+  googleplus: +RicardoAdao # anything in your profile username that comes after plus.google.com/
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.

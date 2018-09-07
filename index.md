@@ -19,7 +19,3 @@ tags: []
 * {{ post.date | date_to_string }} » [{{ post.title }}]({{ post.url }})
 
 {% endfor %}
-
-<ul class="archive">
-{% include archive.html %}
-</ul>
