@@ -40,6 +40,19 @@
             <li><h2><a href="/">Home</a></h2></li>
             <li><h2><a href="/about">About</a></h2></li>
           </ul>
+
+          <!-- Recent and Popular Posts -->
+          <div class="row">
+            <div class="large-6 small-12 columns">
+              <h1>Recent Posts</h1>
+              <ul class="posts">
+                {% for post in site.posts limit:5 %}
+                <li><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
+                {% endfor %}  
+              </ul>
+            </div>
+          </div>
+
           <h1>Tag Cloud</h1>
           {% assign tags = site.tags | sort %}
           <p>{% for tag in tags %}
