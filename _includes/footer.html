@@ -1,4 +1,12 @@
 <ul>
     <li><a href="mailto:{{site.email}}">email</a></li>
     <li><a href="https://github.com/{{site.github_username}}">github.com/{{site.github_username}}</a></li>
+
+    {% if site.twitter_username %}
+    <li>
+        <a href="https://twitter.com/{{ site.twitter_username }}">
+        <i class="fa fa-twitter"></i> Twitter
+        </a>
+    </li>
+{% endif %}
 </ul>

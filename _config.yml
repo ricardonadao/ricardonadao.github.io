@@ -4,8 +4,12 @@ description: >-
   "It is not enough to have a good mind; the main thing is to use it well."
 baseurl: "/"
 url: "https://vrandombites.co.uk"
+
+# Social
 twitter_username: ricardonadao
 github_username:  ricardonadao
+linkedin_username: ricardonadao
+googleplus_username: +RicardoAdao
 
 # SEO info
 twitter:
@@ -18,6 +22,7 @@ social:
     - https://www.linkedin.com/in/ricardonadao/
     - https://github.com/ricardonadao
     - https://plus.google.com/+RicardoAdao
+
 google_site_verification: ZbHQ1ErXGLxJ68-pSIGslwc1Dq3afLqgeFIGvKl2K9o
 
 # Google Analytics
@@ -32,22 +37,6 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
-
-# Includes an icon in the footer for each username you enter
-footer-links:
-  dribbble:
-  email: ricardo.adao@gmail.com
-  facebook:
-  flickr:
-  github: ricardonadao
-  instagram:
-  linkedin: ricardonadao
-  pinterest:
-  rss: running # just type anything here for a working RSS icon
-  twitter: ricardonadao
-  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
-  youtube: # channel/<your_long_string> or user/<user-name>
-  googleplus: +RicardoAdao # anything in your profile username that comes after plus.google.com/
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
