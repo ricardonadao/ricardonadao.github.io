@@ -1,10 +1,4 @@
 <p>
-    {% if site.email %}
-    <li>
-        <a href="mailto://{{ site.email }}">
-        <i class="fas fa-at"></i> Email</a>
-    </li>
-    {% endif %}
     {% if site.twitter_username %}
     <li>
         <a href="https://twitter.com/{{ site.twitter_username }}">
@@ -25,8 +19,14 @@
     {% endif %}
     {% if site.googleplus_username %}
     <li>
-        <a href="https://google.com/{{ site.googleplus_username }}">
+        <a href="https://plus.google.com/{{ site.googleplus_username }}">
         <i class="fab fa-google-plus"></i> Google+</a>
+    </li>
+    {% endif %}
+    {% if site.rssfeed %}
+    <li>
+        <a href="{{ site.url }}/feed.xml">
+        <i class="fas fa-rss"></i> RSS</a>
     </li>
     {% endif %}
 </p>
