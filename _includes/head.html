@@ -1,6 +1,7 @@
 {% if site.google_analytics and jekyll.environment == 'production' %}
     {% include analytics.html %}
 {% endif %}
+{% include bingmeta.html %}
 {% if site.tags != "" %}
     {% include collecttags.html %}
 {% endif %}
