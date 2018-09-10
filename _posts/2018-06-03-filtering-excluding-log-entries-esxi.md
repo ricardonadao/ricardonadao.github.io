@@ -7,74 +7,55 @@ title: Filtering/Excluding log entries in VMware vSphere ESXi
 categories: [ esxi ]
 tags: [ esxi, hypervisor, vmware, vsphere ]
 ---
-<blockquote><strong>Caution:</strong> Reducing/suppressing/filtering log entries on an ESXi could introduce some "blind spots" or even hide issues when troubleshooting</blockquote>
-
 In our Homelabs, or even in production environments, we always have some harmless log entries that we would be happy to stop them from filling up our logs.
+
+>**Caution:** Reducing/suppressing/filtering log entries on an ESXi could introduce some "blind spots" or even hide issues when troubleshooting.
 
 In ESXi 6.x, VMware introduced the ability to filter or exclude log entries from the system logs using _regular expressions_ ([Original KB 2118562](https://kb.vmware.com/kb/2118562)).
 
-<h3>To enable the log filtering we need first to enable it.</h3>
+# To use log filtering we need to enable it first #
 
-<ol>
-<li style="list-style-type: none;">
-<ol>
-<li style="list-style-type: none;">
-<ol>
-<li>Log in to the ESXi via SSH or console, using a user with <em>root</em> privileges</li>
-<li>We will change <em>/etc/vmsyslog.conf</em> so lets back it up
+* Log in to the ESXi via SSH or console, using a user with _root_ privileges.
+
+* We will change _/etc/vmsyslog.conf_ so lets back it up
 
 ```shell
 cp /etc/vmsyslog.conf /etc/vmsyslog.orig
 ```
 
-<p><a href="https://vrandombites.co.uk/wp-content/uploads/2018/06/filtering-excluding-backup-vmsyslog.png"><img class="size-full wp-image-307 alignnone" src="{{ site.baseurl }}/assets/filtering-excluding-backup-vmsyslog.png" alt="" width="512" height="172" /></a></li>
-<li>Now we can to edit the file, since we back it up:
-<pre lang="bash">vi /etc/vmsyslog.conf
+* Now we can edit the file, since we back it up
+
+```shell
+vi /etc/vmsyslog.conf
+
 Add the config:
-   enable_logfilters = true</pre>
-<p><a href="https://vrandombites.co.uk/wp-content/uploads/2018/06/filtering-excluding-backup-vmsyslog.edited.png"><img class="size-full wp-image-311 alignnone" src="{{ site.baseurl }}/assets/filtering-excluding-backup-vmsyslog.edited.png" alt="" width="269" height="219" /></a></li>
-</ol>
-</li>
-</ol>
-</li>
-</ol>
+   enable_logfilters = true
+```
 
-<h3>And now we need to configure the <em>filters</em></h3>
+![Backup vmsyslog.conf](/assets/images/posts/2018/06/filtering-excluding-backup-vmsyslog.edited.png)
 
-<ol>
-<li style="list-style-type: none;">
-<ol>
-<li>The <em>filters</em> are setup in <em>/etc/vmware/logfilters</em> file and there is a specific format:
+# And now we need to configure the _filters_ #
+
+* The _filters_ are setup in _/etc/vmware/logfilters_ and there is a specific syntax
 
 ```shell
 numLogs | ident | logRegexp
 ```
 
-<ul>
-<li><strong>Parameters:</strong>
-<ul>
-<li><em>numLogs</em> - how many times the log entry can appear before being filtered</li>
-<li><em>Note: setting up the value to 0 it will filter all the lines matching the logRegexp expression. Any value higher than 0, it will filter the line after X close repetitions.</em></li>
-<li><em>ident</em> - used to identity the source of the log entry. The available sources will be found under <em>/etc/vmsyslog.conf.d/*.conf</em>.
-<ul>
-<li>As an example:<br />
-<a href="https://vrandombites.co.uk/wp-content/uploads/2018/06/filtering-excluding-vmsyslog-vmkernelconf.png"><img class="size-full wp-image-323 alignnone" src="{{ site.baseurl }}/assets/filtering-excluding-vmsyslog-vmkernelconf.png" alt="" width="435" height="306" /></a></li>
-</ul>
-</li>
-<li><em>logRegexp </em>- it will be the regular expression (<em>Python regexp syntax</em>) that will match the log entries to filter</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Configuring some filters in <em>/etc/vmware/logfilters</em> as an example:
-<ul>
-<li>
+* _**Parameters**_
+  * _numLogs_ - how many times the log entry can appear before being filtered (_setting 0 will filter all_)
+  * _ident_ - used to identity the source of the log entry. The available sources will be found under _/etc/vmsyslog.conf.d/*.conf_
+  * _logRegexp_ - it will be the regular expression (_Python regexp syntax_) that will match the log entries to filter
+
+* Configuring some filters in _/etc/vmware/logfilters_ as an example:
 
 ```shell
 vi /etc/vmware/logfilters
 ```
 
-</li>
+![vmsyslog.conf example](/assets/images/posts/2018/06/filtering-excluding-vmsyslog-logfilters-example.png)
+
+
 <li>Filtering some <em>harmless SCSI log entries </em>result of local storage rescanning:
 <pre lang="python">0 | vmkernel | 0x1a.* H:0x0 D:0x2 P:0x0 Valid sense data: 0x5 0x2[04] 0x0
 0 | vmkernel | 0x85.* H:0x0 D:0x2 P:0x0 Valid sense data: 0x5 0x20 0x0
