@@ -2,7 +2,7 @@
 layout: default
 ---
 <div class="post">
-<h1>Category: {{ page.category }}</h1>
+<h1><img src="/assets/images/featured/{{ page.category }}-50x50.png" /> Category: {{ page.category }}</h1>
 <ul>
 {% for post in site.categories[page.category] %}
   <li><a href="{{ site.url}}/{{ post.url }}">{{ post.title }}</a> ({{ post.date | date_to_string }})<br>
@@ -12,3 +12,6 @@ layout: default
 </ul>
 </div>
 <hr>
+
+<a href="https://vrandombites.co.uk/wp-content/uploads/2018/06/esxi-upgrade-enterMaintenanceMode.png"><img class="alignnone size-full wp-image-391" 
+  src="{{ site.baseurl }}/assets/esxi-upgrade-enterMaintenanceMode.png" alt="" width="442" height="78" /></a>

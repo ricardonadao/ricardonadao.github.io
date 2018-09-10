@@ -19,7 +19,7 @@ Back to the problem and solution.
 
 Installing some ESXi 6.5 Nested Hypervisors that are running on top of a vSAN datastore, the installation process was bombing out complaining that it was unable to format the disks.
 
-![Nested Hypervisor VSAN problem](/assets/images/posts/2018/07/nested-hyp-vsan-problem.png)
+[![Nested Hypervisor VSAN problem](/assets/images/posts/2018/07/nested-hyp-vsan-problem.png)](/assets/images/posts/2018/07/nested-hyp-vsan-problem.png)
 
 In summary, vSAN do not support _SCSI-2 Reservations_ and since _VMware_ internal development teams use heavily _Nested Virtualization_ the _vSAN_ team added a "workaround" to allow vSAN to _fake SCSI Reservations_.
 This workaround is enabled by setting up an advanced property in each ESXi part of the vSAN cluster:
