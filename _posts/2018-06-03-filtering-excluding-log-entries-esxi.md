@@ -7,10 +7,14 @@ title: Filtering/Excluding log entries in VMware vSphere ESXi
 categories: [ esxi ]
 tags: [ esxi, hypervisor, vmware, vsphere ]
 ---
-<blockquote><strong>Caution:</strong> Reducing/suppressing/filtering log entries on an ESXi could introduce some "blind spots" or even hide issues when troubleshooting</p></blockquote>
-<p>In our Homelabs, or even in production environments, we always have some harmless log entries that we would be happy to stop them from filling up our logs.</p>
-<p>In ESXi 6.x, VMware introduced the ability to filter or exclude log entries from the system logs using <em>regular expressions</em>.<em> (original KB: <a class="uiOutputURL" dir="ltr" title="" href="https://kb.vmware.com/kb/2118562" target="_blank" rel="noopener" data-aura-rendered-by="11:135;a" data-aura-class="uiOutputURL" data-interactive-lib-uid="6">Filtering logs in VMware vSphere ESXi</a>)</em></p>
+<blockquote><strong>Caution:</strong> Reducing/suppressing/filtering log entries on an ESXi could introduce some "blind spots" or even hide issues when troubleshooting</blockquote>
+
+In our Homelabs, or even in production environments, we always have some harmless log entries that we would be happy to stop them from filling up our logs.
+
+In ESXi 6.x, VMware introduced the ability to filter or exclude log entries from the system logs using _regular expressions_ ([Original KB 2118562](https://kb.vmware.com/kb/2118562)).
+
 <h3>To enable the log filtering we need first to enable it.</h3>
+
 <ol>
 <li style="list-style-type: none;">
 <ol>
@@ -18,11 +22,14 @@ tags: [ esxi, hypervisor, vmware, vsphere ]
 <ol>
 <li>Log in to the ESXi via SSH or console, using a user with <em>root</em> privileges</li>
 <li>We will change <em>/etc/vmsyslog.conf</em> so lets back it up
-<pre lang="bash">cp /etc/vmsyslog.conf /etc/vmsyslog.orig</pre>
+
+```shell
+cp /etc/vmsyslog.conf /etc/vmsyslog.orig
+```
+
 <p><a href="https://vrandombites.co.uk/wp-content/uploads/2018/06/filtering-excluding-backup-vmsyslog.png"><img class="size-full wp-image-307 alignnone" src="{{ site.baseurl }}/assets/filtering-excluding-backup-vmsyslog.png" alt="" width="512" height="172" /></a></li>
 <li>Now we can to edit the file, since we back it up:
 <pre lang="bash">vi /etc/vmsyslog.conf
-
 Add the config:
    enable_logfilters = true</pre>
 <p><a href="https://vrandombites.co.uk/wp-content/uploads/2018/06/filtering-excluding-backup-vmsyslog.edited.png"><img class="size-full wp-image-311 alignnone" src="{{ site.baseurl }}/assets/filtering-excluding-backup-vmsyslog.edited.png" alt="" width="269" height="219" /></a></li>
@@ -31,12 +38,18 @@ Add the config:
 </ol>
 </li>
 </ol>
+
 <h3>And now we need to configure the <em>filters</em></h3>
+
 <ol>
 <li style="list-style-type: none;">
 <ol>
 <li>The <em>filters</em> are setup in <em>/etc/vmware/logfilters</em> file and there is a specific format:
-<pre lang="bash">numLogs | ident | logRegexp</pre>
+
+```shell
+numLogs | ident | logRegexp
+```
+
 <ul>
 <li><strong>Parameters:</strong>
 <ul>
@@ -56,7 +69,11 @@ Add the config:
 <li>Configuring some filters in <em>/etc/vmware/logfilters</em> as an example:
 <ul>
 <li>
-<pre lang="bash">vi /etc/vmware/logfilters</pre>
+
+```shell
+vi /etc/vmware/logfilters
+```
+
 </li>
 <li>Filtering some <em>harmless SCSI log entries </em>result of local storage rescanning:
 <pre lang="python">0 | vmkernel | 0x1a.* H:0x0 D:0x2 P:0x0 Valid sense data: 0x5 0x2[04] 0x0
@@ -76,12 +93,19 @@ Add the config:
 </ol>
 </li>
 </ol>
+
 <h3>Reloading <em>syslog service</em> configuration to activate our filters</h3>
+
 <ol>
 <li>
-<pre lang="bash">esxcli system syslog reload</pre>
+
+```shell
+esxcli system syslog reload
+```
+
 </li>
 </ol>
+
 <h3>And lets check the result</h3>
 <ol>
 <li>Before we can see a consistent log entry every ~10/15 minutes<br />
