@@ -39,6 +39,9 @@
           <h1><a href="/">Home</a></h1>
           <h1><a href="/about">About</a></h1>
 
+          <h2>Social links</h2>
+          {% include socialprofile.html %}
+
           <!-- Recent and Popular Posts -->
           <div class="row">
             <div class="large-6 small-12 columns">
@@ -56,10 +59,6 @@
 
           <h1>Tag Cloud</h1>
           {% include tagcloud.html %}
-
-          <h2>Social links</h2>
-          {% include socialprofile.html %}
-
 
           {% if site.show_downloads %}
             <a href="{{ site.github.zip_url }}" class="button">
