@@ -1,0 +1,23 @@
+comments:
+  allowedFields: ["name", "email", "path", "body"]
+  branch: "master"
+  commitMessage: "You have a new comment on your website."
+  extension: "md"
+  filename: "{@timestamp}-{@id}"
+  format: "frontmatter"
+  generatedFields:
+    date:
+      type: date
+      options:
+        format: "iso8601"
+  moderation: false
+  name: "vRandomBites"
+  notifications:
+    enabled: true
+    apiKey: aM0EkpP4lmUOw6Dnx7+2pnMg7rDIlXFUtjwAsThIQd8XcdkxIGUfPxoR6rGSCJDftDK6OIFe4dBl0XL25AwSE8YculEOUtDKpgj4AUKRVA81Yergsb3bgk53opc1DleVYxdSj7Iut46G9mPgItw3Y3C991qfsXNI0CtoYlKGiVI=
+    domain: vrandombites.co.uk
+  path: "_data/comments"
+  requiredFields: ["name", "email", "path", "body"]
+  transforms:
+    body: "frontmatterContent"
+    email: md5

@@ -32,7 +32,7 @@ Add the config:
    enable_logfilters = true
 ```
 
-[![Backup vmsyslog.conf](/assets/images/posts/2018/06/filtering-excluding-backup-vmsyslog.edited.png)](/assets/images/posts/2018/06/filtering-excluding-backup-vmsyslog.edited.png)
+[![Backup vmsyslog.conf](/assets/images/posts/2018/06/filtering-excluding-backup-vmsyslog.edited.png){:class="img-responsive"}](/assets/images/posts/2018/06/filtering-excluding-backup-vmsyslog.edited.png)
 
 # Get the _filters_ configured #
 
@@ -69,7 +69,7 @@ vi /etc/vmware/logfilters
   * [_Interpreting SCSI sense codes in VMware ESXi and ESX (289902)_](https://kb.vmware.com/kb/289902)
 
 * Filters configured
-  [![vmsyslog.conf example](/assets/images/posts/2018/06/filtering-excluding-vmsyslog-logfilters-example.png)](/assets/images/posts/2018/06/filtering-excluding-vmsyslog-logfilters-example.png)
+  [![vmsyslog.conf example](/assets/images/posts/2018/06/filtering-excluding-vmsyslog-logfilters-example.png){:class="img-responsive"}](/assets/images/posts/2018/06/filtering-excluding-vmsyslog-logfilters-example.png)
 
 # Reloading _syslog_ to activate our filters #
 
@@ -81,19 +81,19 @@ esxcli system syslog reload
 
 * Before we can see a consistent log entry every ~10/15 minutes
 
-[![Before Setting up the filters](/assets/images/posts/2018/06/filtering-excluding-before.png)](/assets/images/posts/2018/06/filtering-excluding-before.png)
+[![Before Setting up the filters](/assets/images/posts/2018/06/filtering-excluding-before.png){:class="img-responsive"}](/assets/images/posts/2018/06/filtering-excluding-before.png)
 
 * Reloading syslog config and a timestamp to use as a reference
 
-[![Syslog Service reload](/assets/images/posts/2018/06/filtering-excluding-test-reload.png)](/assets/images/posts/2018/06/filtering-excluding-test-reload.png)
+[![Syslog Service reload](/assets/images/posts/2018/06/filtering-excluding-test-reload.png){:class="img-responsive"}](/assets/images/posts/2018/06/filtering-excluding-test-reload.png)
 
 * After ~30 minutes, we would have some log entries, let see if they got filtered
 
-[![After setting up filters](/assets/images/posts/2018/06/filtering-excluding-after.png)](/assets/images/posts/2018/06/filtering-excluding-after.png)
+[![After setting up filters](/assets/images/posts/2018/06/filtering-excluding-after.png){:class="img-responsive"}](/assets/images/posts/2018/06/filtering-excluding-after.png)
 
 * <span style="color: #008000;">**OK no log entries**</span>, but did anything else got logged during that period, lets grep for that period removing the entry logs that we want to filter and count the _newlines
 
-[![Count log entries logged during testing period](/assets/images/posts/2018/06/filtering-excluding-after-logcount-notfiltered.png)](/assets/images/posts/2018/06/filtering-excluding-after-logcount-notfiltered.png)
+[![Count log entries logged during testing period](/assets/images/posts/2018/06/filtering-excluding-after-logcount-notfiltered.png){:class="img-responsive"}](/assets/images/posts/2018/06/filtering-excluding-after-logcount-notfiltered.png)
 
 ## **Syslog** logged 129 new log lines after we activated the filtering ##  
 

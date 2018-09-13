@@ -21,7 +21,7 @@ My journey through IT covers Software Development, Security, Network and for the
 
 ## Social links ##
 
-{% include socialprofile.html %}
+{% include social_profile.html %}
 
 
 ## Some certs and accomplishements ##
@@ -31,15 +31,15 @@ My journey through IT covers Software Development, Security, Network and for the
 * VCP3/4/5/6, VCAP6-DCV Deployment
 * VCP-NV ,VCIX-NV, VCIX6-NV
 
-![VCP-DCV6](/assets/images/cert_badges/vmware_Cert_P_DCV6-150x150.png)
-![VCP-NV6](/assets/images/cert_badges/vmware_Cert_P_NV6-150x150.png)
-![2xVCP-Milestone](/assets/images/cert_badges/vmware_Milestone_2xVCP_DCVNV-150x150.png)
-![VCAP-DCV6](/assets/images/cert_badges/vmware_Cert_AP_DCV6-150x150.png)
-![VCIX-NV6](/assets/images/cert_badges/vmware_Milestone_IE_NV6-150x150.png)
+![VCP-DCV6](/assets/images/cert_badges/vmware_Cert_P_DCV6-150x150.png){:class="img-responsive"}
+![VCP-NV6](/assets/images/cert_badges/vmware_Cert_P_NV6-150x150.png){:class="img-responsive"}
+![2xVCP-Milestone](/assets/images/cert_badges/vmware_Milestone_2xVCP_DCVNV-150x150.png){:class="img-responsive"}
+![VCAP-DCV6](/assets/images/cert_badges/vmware_Cert_AP_DCV6-150x150.png){:class="img-responsive"}
+![VCIX-NV6](/assets/images/cert_badges/vmware_Milestone_IE_NV6-150x150.png){:class="img-responsive"}
 
 * vExpert
 
-![vExpert2018](/assets/images/cert_badges/vExpert.2018.png){:width="150px" height="150px"}
+![vExpert2018](/assets/images/cert_badges/vExpert.2018.png){:width="150px" height="150px"}{:class="img-responsive"}
 
 ### Cisco ###
 

@@ -29,7 +29,9 @@ google_site_verification: ZbHQ1ErXGLxJ68-pSIGslwc1Dq3afLqgeFIGvKl2K9o
 # Google Analytics
 google_analytics: UA—117546593-1
 
-
+disqus:
+  shortname: vrandombites
+    
 # Build settings
 markdown: kramdown
 theme: jekyll-theme-architect

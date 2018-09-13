@@ -1,5 +1,5 @@
 ---
-layout: tagpage
+layout: tag_page
 title: "Tag: syslog"
 tag: syslog
 ---

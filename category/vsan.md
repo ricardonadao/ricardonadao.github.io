@@ -1,5 +1,5 @@
 ---
-layout: categorypage
+layout: category_page
 title: "Category: vsan"
 category: vsan
 ---
