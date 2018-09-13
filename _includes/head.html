@@ -1,12 +1,13 @@
+{% if site.google_analytics and jekyll.environment == 'production' %}
+    {% include analytics.html %}
+{% endif %}
+
+
 {% if site.tags != "" %}
     {% include collect_tags.html %}
 {% endif %}
 {% if site.categories != "" %}
     {% include collect_categories.html %}
-{% endif %}
-
-{% if site.google_analytics and jekyll.environment == 'production' %}
-    {% include analytics.html %}
 {% endif %}
 
 {% include bing_meta.html %}
