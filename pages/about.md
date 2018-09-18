@@ -23,7 +23,6 @@ My journey through IT covers Software Development, Security, Network and for the
 
 {% include social_profile.html %}
 
-
 ## Some certs and accomplishements ##
 
 ### VMware ###
