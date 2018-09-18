@@ -6,6 +6,7 @@ post_date: 2018-05-15 08:11:14
 title: PowerCLI - Using Get-EsxCli to get settings or change settings in multiple ESXi hosts at a time
 categories: [ powercli ]
 tags: [ coding, esxi, hypervisor, oneliner, powercli, powershell, vmware ]
+comments: true
 ---
 
 Following the earlier post [_PowerCLI - Check MTU size configured in all hosts physical nics of a cluster_]({% post_url 2018-05-13-powercli-check-mtu-size-configured-all-hosts-physical-nics-cluster %}) lets see what more can we do with _Get-EsxCli_ cmdlet.

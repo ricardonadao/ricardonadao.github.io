@@ -6,6 +6,7 @@ post_date: 2018-07-19 18:20:14
 title: Run Nested ESXi on top of a vSAN datastore
 categories: [ vsan ]
 tags: [ coding, hypervisor, esxi, powercli, powershell, vcenter, vmware, vsan, nested, oneliner, scsi ]
+comments: true
 ---
 Nested ESXi's are part of the gear that we all have around for labs/study purposes.
 
