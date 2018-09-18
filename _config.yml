@@ -4,6 +4,7 @@ description: >-
   "It is not enough to have a good mind; the main thing is to use it well."
 baseurl: "/"
 url: "https://vrandombites.co.uk"
+repository: "ricardonadao/ricardonadao.github.io"
 
 # Social
 twitter_username: ricardonadao
@@ -24,7 +25,8 @@ social:
     - https://github.com/ricardonadao
     - https://plus.google.com/+RicardoAdao
 
-google_site_verification: ZbHQ1ErXGLxJ68-pSIGslwc1Dq3afLqgeFIGvKl2K9o
+google_site_verification: "ZbHQ1ErXGLxJ68-pSIGslwc1Dq3afLqgeFIGvKl2K9o"
+bing_site_verification: "066D47264798DF0304F169C02A7882D8"
 
 # Google Analytics
 google_analytics: UA—117546593-1
@@ -47,6 +49,10 @@ compress_html:
   blanklines: false
   profile: false
   startings: all
+
+# Staticman comments (full configuration in staticman.yml)
+staticman:
+  branch : "master"
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
