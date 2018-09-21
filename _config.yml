@@ -32,7 +32,7 @@ bing_site_verification: "066D47264798DF0304F169C02A7882D8"
 google_analytics: UA—117546593-1
 
 # Google Tag Manager
-google_tag_manager: true
+google_tag_manager:
   
 # Build settings
 markdown: kramdown
