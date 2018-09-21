@@ -19,9 +19,6 @@ layout: compress
   </head>
 
   <body>
-    {% if site.google_tag_manager and jekyll.environment == 'production' %}
-      {% include tag_manager_no_script.html %}
-    {% endif %}
     <header>
       <div class="inner">
         <a href="{{ '/' | absolute_url }}">
