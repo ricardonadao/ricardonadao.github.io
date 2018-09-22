@@ -5,6 +5,7 @@
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
+  gtag('config', '{{ site.google_analytics }}');
   gtag('config', '{{ site.google_analytics }}', {
     'custom_map': {'dimension<Index>': 'dimension_name'}
     });
