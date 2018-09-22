@@ -1,6 +1,7 @@
 ---
 layout: default
 author: Ricardo Adao
+title: vRandomBites Homepage
 published: true
 post_date: 2018-09-05 14:07:00
 categories: []
