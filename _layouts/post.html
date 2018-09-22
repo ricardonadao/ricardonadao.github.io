@@ -13,4 +13,15 @@ layout: default
 
 <div class="post">
   {{ content }}
+
+  <!-- {% if page.comments == true %}
+    {% include post_comments.html %}
+  {% endif %} -->
+
+  <script src="https://utteranc.es/client.js"
+    repo="{{ site.repository }}"
+    issue-term="pathname"
+    crossorigin="anonymous"
+    async>
+  </script>
 </div>
