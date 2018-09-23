@@ -52,7 +52,7 @@ layout: compress
             <div class="large-6 small-12 columns">
               <h1>Recent Posts</h1>
               <ul class="posts">
-                {% for post in site.posts limit:5 %}
+                {% for post in site.posts limit: site.sidebar_recent_posts %}
                 <li><a href="{{ post.url }}">{{ post.title }}</a></li>
                 {% endfor %}  
               </ul>

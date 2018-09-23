@@ -39,6 +39,11 @@ disqus:
 paginate: 5
 paginate_path: "page:num"
 
+# limits
+post_per_page: "5"
+sidebar_recent_posts: "5"
+feed_limit: "50"
+
 # Compress HTML
 compress_html:
   clippings: all
