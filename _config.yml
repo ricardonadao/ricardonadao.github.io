@@ -35,16 +35,11 @@ google_analytics: "UA-117546593-1"
 disqus:
   shortname: vrandombites
 
-# Build settings
-markdown: kramdown
-theme: jekyll-theme-architect
-highlighter: rouge
-plugins:
-  - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-seo-tag
-  - jekyll-paginate
+# Pagination
+paginate: 5
+paginate_path: "page:num"
 
+# Compress HTML
 compress_html:
   clippings: all
   comments: all
@@ -58,6 +53,16 @@ compress_html:
 # Staticman comments (full configuration in staticman.yml)
 staticman:
   branch : "master"
+
+# Build settings
+markdown: kramdown
+theme: jekyll-theme-architect
+highlighter: rouge
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-paginate
 
 include:
   - _pages

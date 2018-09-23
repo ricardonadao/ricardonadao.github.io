@@ -1,0 +1,57 @@
+---
+layout: default
+author: Ricardo Adao
+title: vRandomBites Homepage
+published: true
+post_date: 2018-09-05 14:07:00
+categories: []
+tags: []
+---
+
+<div class="posts">
+{% for post in paginator.posts limit:5 %}
+    <h2>
+        <img src="/assets/images/featured/{{ post.categories }}-50x50.png" alt="Featured Category">
+        <em><b>{{ post.date | date_to_string }}</b></em> >> <a href="{{ post.url }}">{{ post.title }}</a>
+    </h2>
+    {{ post.content | strip_html | truncatewords:50 }}
+    <br>
+    <a href="{{ post.url }}"><em>>> continue  reading</em></a>
+{% endfor %}
+</div>
+
+<br>
+
+{% if paginator.total_pages != 1 %}  
+    <div class="row text-center text-caps">
+        <div class="col-md-8 col-md-offset-2">
+            <nav class="pagination" role="pagination">
+                <span class="page-number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
+                {% if site.paginate_path != 'page:num'%}
+                    {% assign paginate_url = site.paginate_path | remove:'/page:num' %}
+                    {% if paginator.previous_page %}
+                    {% if paginator.previous_page == 1 %}
+                    <a class="newer-posts" href="{{ site.url }}/{{ paginate_url }}/" class="btn" title="Newer Posts">&larr; Newer Posts</a>
+                    {% else %}
+                    <a class="newer-posts" href="{{ site.url }}/{{ paginate_url }}/page{{ paginator.previous_page }}/" class="btn" title="Newer Posts">&larr; Newer Posts</a>
+                    {% endif %}
+                    {% endif %}
+                    {% if paginator.next_page %} 
+                    <a class="older-posts" href="{{ site.url }}/{{ paginate_url }}/page{{ paginator.next_page }}/" class="btn" title="Older Posts">Older Posts &rarr;</a>
+                    {% endif %} 
+                    {% else %}
+                    {% if paginator.previous_page %}
+                    {% if paginator.previous_page == 1 %}
+                    <a class="newer-posts" href="{{ site.url }}/" class="btn" title="Newer Posts">&larr; Newer Posts</a>
+                    {% else %}
+                    <a class="newer-posts" href="{{ site.url }}/page{{ paginator.previous_page }}/" class="btn" title="Newer Posts">&larr; Newer Posts</a>
+                    {% endif %}
+                    {% endif %}
+                    {% if paginator.next_page %} 
+                    <a class="older-posts" href="{{ site.url }}/page{{ paginator.next_page }}/" class="btn" title="Older Posts">Older Posts &rarr;</a>
+            </nav>
+        </div>
+    </div>
+    {% endif %}
+    {% endif %}
+{% endif %}
