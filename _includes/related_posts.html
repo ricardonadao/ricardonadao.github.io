@@ -20,7 +20,7 @@
 
         {% if sameTagCount >= site.minCommonTags %}
 
-            <a href="{{ site.url }}/{{ post.url }}">
+            <a href="{{ site.url }}{{ post.url }}">
                 <div class="related">
                     {{ post.title }}
                     <img src="{{ site.url }}/assets/images/featured/{{ post.categories }}-150x150.png">
