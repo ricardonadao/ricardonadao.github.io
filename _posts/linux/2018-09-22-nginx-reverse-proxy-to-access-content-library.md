@@ -8,8 +8,6 @@ categories: [ linux ]
 tags: [ linux, vcenter, nginx ]
 comments: true
 ---
-# Scenario #
-
 We want to setup a _Content Library_ in our _central vCenter_ and then allow the other _vCenters_ in our _Nested Labs_ to subscribe it without adding a lot of complexity to the configuration.
 
 [![NGINX Nested Lab Scenario](/assets/images/posts/2018/09/nginx-reverse-proxy-to-access-content-library-01-visio.png){:class="img-responsive"}](/assets/images/posts/2018/09/nginx-reverse-proxy-to-access-content-library-01-visio.png)

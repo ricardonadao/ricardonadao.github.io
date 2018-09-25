@@ -9,7 +9,7 @@ tags: [ coding, esxi, hypervisor, oneliner, powercli, powershell, vmware ]
 comments: true
 ---
 
-Following the earlier post [_PowerCLI - Check MTU size configured in all hosts physical nics of a cluster_]({% post_url 2018-05-13-powercli-check-mtu-size-configured-all-hosts-physical-nics-cluster %}) lets see what more can we do with _Get-EsxCli_ cmdlet.
+Following the earlier post [_PowerCLI - Check MTU size configured in all hosts physical nics of a cluster_]({% post_url powercli/2018-05-13-powercli-check-mtu-size-configured-all-hosts-physical-nics-cluster %}) lets see what more can we do with _Get-EsxCli_ cmdlet.
 
 _Get-EsxCli_ is a cmdlet to run the _esxcli_ command present in any ESXi shell, but from a _Powershell_ shell.  
     _Reference_: [_Get-EsxCli_](https://code.vmware.com/docs/6702/cmdlet-reference#/doc/Get-EsxCli.html)
