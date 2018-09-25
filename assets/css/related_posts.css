@@ -12,8 +12,14 @@
     opacity: 0.8;
     font-size: 1em;
     color: #303030;
+    text-align: left;
 }
 
 .related hover {
      opacity: 1;    
+}
+
+.related img {
+    display: block;
+    margin: 0 auto;
 }
