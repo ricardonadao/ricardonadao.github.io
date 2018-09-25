@@ -6,11 +6,11 @@
     {% include collect_categories.html %}
 {% endif %}
 
-{% if site.bing_site_verification and jekyll.environment == 'production' %}
+{% if site.bingSiteVerification and jekyll.environment == 'production' %}
     {% include bing_meta.html %}
 {% endif %}
 
-{% if site.google_analytics and jekyll.environment == 'production' %}
+{% if site.goggleAnalytics and jekyll.environment == 'production' %}
     {% include analytics.html %}
 {% endif %}
 

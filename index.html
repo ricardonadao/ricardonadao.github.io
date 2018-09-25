@@ -9,7 +9,7 @@ tags: []
 ---
 
 <div class="posts">
-{% for post in paginator.posts limit: site.post_per_page %}
+{% for post in paginator.posts limit: site.postPerPage %}
     <h2>
         <img src="/assets/images/featured/{{ post.categories }}-50x50.png" alt="Featured Category">
         <em><b>{{ post.date | date_to_string }}</b></em> >> <a href="{{ post.url }}">{{ post.title }}</a>

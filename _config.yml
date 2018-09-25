@@ -25,11 +25,11 @@ social:
     - https://github.com/ricardonadao
     - https://plus.google.com/+RicardoAdao
 
-google_site_verification: "ZbHQ1ErXGLxJ68-pSIGslwc1Dq3afLqgeFIGvKl2K9o"
-bing_site_verification: "066D47264798DF0304F169C02A7882D8"
+googleSiteVerification: "ZbHQ1ErXGLxJ68-pSIGslwc1Dq3afLqgeFIGvKl2K9o"
+bingSiteVerification: "066D47264798DF0304F169C02A7882D8"
 
 # Google Analytics
-google_analytics: "UA-117546593-1"
+goggleAnalytics: "UA-117546593-1"
 
 # disqus
 disqus:
@@ -40,9 +40,11 @@ paginate: 5
 paginate_path: "/page-:num"
 
 # limits
-post_per_page: "5"
-sidebar_recent_posts: "5"
-feed_limit: "50"
+postPerPage: "5"
+sidebarRecentPosts: "5"
+feedLimit: "50"
+maxRelatedPosts: "5"
+minCommonTags: "3"
 
 # Compress HTML
 compress_html:
