@@ -5,8 +5,8 @@ permalink: /about/
 author: Ricardo Adao
 published: true
 post_date: 2018-09-05 14:07:00
-categories: [ profile ]
-tags: [ about, profile, certs ]
+categories: [ blog ]
+tags: [ blog, about, profile, certifications, social ]
 ---
 
 # vRandomBites #

@@ -5,7 +5,7 @@ published: true
 post_date: 2018-09-02 08:00:00
 title: NSX - How to automate a 3 Tier App deployment - Part 1
 categories: [ nsx ]
-tags: [ coding, automation, nsx, powercli, powernsx, powershell, sddc, vmware ]
+tags: [ coding, automation, nsx, powercli, powernsx, powershell, sddc, vmware, networking ]
 comments: true
 ---
 One of the big advantages of the NSX is to a Software Defined Network (SDN) solution given us the ability to code once and execute as many times.

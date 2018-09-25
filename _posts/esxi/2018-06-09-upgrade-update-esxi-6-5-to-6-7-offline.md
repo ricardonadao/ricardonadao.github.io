@@ -5,7 +5,7 @@ published: true
 post_date: 2018-06-09 11:59:58
 title: Upgrade/Update ESXi 6.5 to 6.7 Offline
 categories: [ esxi ]
-tags: [ esxi, hypervisor, vmware, upgrade, vsphere ]
+tags: [ esxi, hypervisor, vmware, vsphere, update, upgrade ]
 comments: true
 ---
 In our _Homelabs_, we normally make some "architecture compromises" that add some extra complexity when we need to upgrade it.

@@ -5,7 +5,7 @@ published: true
 post_date: 2018-07-02 09:23:49
 title: PowerCLI - Configure multiple ESXi Power Policy
 categories: [ powercli ]
-tags: [ coding, powercli, powershell, vcenter, vmware, powersaving ]
+tags: [ coding, powercli, esxi, powershell, vcenter, vmware, powersaving ]
 comments: true
 ---
 

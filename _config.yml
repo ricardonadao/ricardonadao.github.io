@@ -43,8 +43,8 @@ paginate_path: "/page-:num"
 postPerPage: "5"
 sidebarRecentPosts: "5"
 feedLimit: "50"
-maxRelatedPosts: "5"
-minCommonTags: "3"
+maxRelatedPosts: 6
+minCommonTags: 3
 
 # Compress HTML
 compress_html:
