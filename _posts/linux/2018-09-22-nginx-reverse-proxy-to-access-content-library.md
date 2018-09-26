@@ -82,7 +82,8 @@ http {
 # Settings for a TLS enabled server.
 #
     server {
-        listen       443 ssl http2 default_server;
+        # Listening only in the internal interface
+        listen       172.16.52.250:443 ssl http2 default_server;
         server_name  ngnix-vm.local;
 
         ssl on;
@@ -109,7 +110,8 @@ http {
 
                 proxy_redirect      https://vcenter00.local https://$host ;
 
-                proxy_buffering on ;
+                proxy_max_temp_file_size 0;
+                proxy_buffering off;
         }
 
         # Any URL that do not match the previous rule, will receive a HTTP 404
