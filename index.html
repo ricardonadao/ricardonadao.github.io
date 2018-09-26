@@ -11,7 +11,7 @@ tags: []
 <div class="posts">
 {% for post in paginator.posts limit: site.postPerPage %}
     <h2>
-        <img src="/assets/images/featured/{{ post.categories }}-50x50.png" alt="Featured Category">
+        <img src="/assets/images/featured/{{ post.categories }}-50x50.png" alt="Featured Category {{ post.categories }}">
         <em><b>{{ post.date | date_to_string }}</b></em> >> <a href="{{ post.url }}">{{ post.title }}</a>
     </h2>
     {{ post.content | strip_html | truncatewords:50 }}
