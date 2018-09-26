@@ -15,11 +15,12 @@
     text-align: left;
 }
 
-.related hover {
-     opacity: 1;    
-}
-
 .related img {
     display: block;
     margin: 0 auto;
+    width: 200px;
+}
+
+.related hover {
+    opacity: 1;    
 }
