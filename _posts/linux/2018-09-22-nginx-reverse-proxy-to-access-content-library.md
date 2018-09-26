@@ -12,14 +12,14 @@ We want to setup a _Content Library_ in our _central vCenter_ and then allow the
 
 [![NGINX Nested Lab Scenario](/assets/images/posts/2018/09/nginx-reverse-proxy-to-access-content-library-01-visio.png){:class="img-responsive"}](/assets/images/posts/2018/09/nginx-reverse-proxy-to-access-content-library-01-visio.png)
 
-### Requirements ###
+## Requirements ##
 
 * Allow only access to the _Content Library_ URL
 * Configuration need be able to support multiple _nested vCenters_ subscribing the _Content Library_
 * All _Nested Environments_ use the same private address space
 * Only _NGINX vm_ (nginx-vm.local) should have an interface in both segments: "Transit" and "Physical Management"
 
-### Solution ###
+## Solution ##
 
 1. First step will be setting up a **DNAT** and a **FW Rule** in each _Nested Lab Edge_ to allow the _nested vCenters_ to subscribe the _Content Library_ using  _192.168.0.1 (Nested Edge Internal Interface)_ instead of connecting directly to the _central vCenter_.
 
