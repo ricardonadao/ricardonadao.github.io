@@ -1,11 +1,11 @@
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.goggleAnalytics }}"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.googleAnalytics }}"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', '{{ site.goggleAnalytics }}' ,{
+  gtag('config', '{{ site.googleAnalytics }}' ,{
     'page_title': '{{ page.title }}',
     'page_location': '{{ site.url }}/{{ page.url }}',
     'page_path': '{{ page.path }}'

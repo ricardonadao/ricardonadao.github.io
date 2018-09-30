@@ -29,18 +29,23 @@ googleSiteVerification: "ZbHQ1ErXGLxJ68-pSIGslwc1Dq3afLqgeFIGvKl2K9o"
 bingSiteVerification: "066D47264798DF0304F169C02A7882D8"
 
 # Google Analytics
-goggleAnalytics: "UA-117546593-1"
+googleAnalytics: "UA-117546593-1"
+
+# Google Adsense
+googleAdSense: "ca-pub-7122794554902389" 
+googleAdSense_SidebarSlotId: "9168502414"
 
 # disqus
 disqus:
   shortname: vrandombites
 
 # Pagination
-paginate: 5
+paginate: 7
 paginate_path: "/page-:num"
 
 # limits
-postPerPage: "5"
+# Same size as site.paginate to keep consistent
+#Deprecated by paginate -> postPerPage: "7"
 sidebarRecentPosts: "5"
 feedLimit: "50"
 maxRelatedPosts: 4
