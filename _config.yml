@@ -50,6 +50,7 @@ sidebarRecentPosts: "5"
 feedLimit: "50"
 maxRelatedPosts: 4
 minCommonTags: 3
+postTruncateSize: 50
 
 # Compress HTML
 compress_html:

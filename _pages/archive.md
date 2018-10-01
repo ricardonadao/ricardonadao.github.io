@@ -12,11 +12,11 @@ tags: [ blog ]
 # Post Archive #
 
 {:.posts}
-{% for post in site.posts offset:5 %}
+{% for post in site.posts offset: site.paginate %}
 
 ## [![Featured Category](/assets/images/featured/{{ post.categories }}-50x50.png){:display inline;}](/assets/images/featured/{{ post.category }}-150x150.png) _**{{ post.date | date_to_string }}**_ >> [{{ post.title }}]({{ post.url }}) ##
 
-{{ post.content | strip_html | truncatewords:50 }}
+{{ post.content | strip_html | truncatewords: site.postTruncateSize }}
 
 [_>> continue  reading_]({{ post.url }})
 
