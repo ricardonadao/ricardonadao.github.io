@@ -1,5 +1,5 @@
 ---
 layout: category_page
-title: "Category: powershell
+title: "Category: powershell"
 category: powershell
 ---
