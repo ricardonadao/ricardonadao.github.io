@@ -17,7 +17,11 @@ My name is Ricardo Adão and decided to start blogging my random pieces of "wisd
 
 I have been working in the IT industry for more years than I feel comfortable to admit.
 
-My journey through IT covers Software Development, Security, Network and for the last couple of years Virtualization and VMware was the main area of focus.I currently work as a VMware Product Engineer _@[Rackspace](https://www.rackspace.com/)_. My posts in this blog represent my random technical notes and thoughts. The thoughts expressed here do not reflect my current employer in any way.
+My journey through IT covers Software Development, Security, Network and for the last couple of years Virtualization and VMware was the main area of focus.I currently work as a VMware Product Engineer _@[Rackspace](https://www.rackspace.com/)_.
+
+My posts in this blog represent my random technical notes and thoughts.
+
+The thoughts expressed here do not reflect my current employer in any way.
 
 ## Social links ##
 
