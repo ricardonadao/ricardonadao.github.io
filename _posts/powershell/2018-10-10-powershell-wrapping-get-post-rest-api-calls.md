@@ -14,9 +14,9 @@ This post is not an _Eureka_ moment, so do not expect any _breakthrough_ or _lig
 
 However, sometimes we forgot one of the basic rules of code development that we learned or read in the past.
 
-Typically, if we re-utilize a bit code more than 3 to 5 times, it could worth to check if that could transformed in a separate function/method to consolidate that bit of code in a single place, making it easier to update or correct if necessary, since it would be a single place to change instead of all the places where that bit was re-utilized.
+Typically, if we re-utilize a bit code more than 3 to 5 times, it could to _promote it_ to a separate function/method to consolidate it in a single place, making it easier to update or correct if necessary, since it would be a single place to change instead of all the places where we re-utilized it.
 
-Adding to that easy to understand advantage it will also be a _code refactoring_ exercise since once that function/method is created, we will be able to optimize or re-code completely that bit of code keeping if we keep the _exterior_ exactly the same.
+Adding to that easy to understand advantage it will also be a _code refactoring_ exercise, since once that function/method is created, we will be able to optimize or re-code it completely without affecting the expected functionality.
 
 ## Using GET and POST REST API Methods as an example
 
