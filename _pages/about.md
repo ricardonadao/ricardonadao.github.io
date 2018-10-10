@@ -13,7 +13,7 @@ tags: [ blog, about, profile, certifications, social ]
 
 ## Welcome to vRandomBites blog ##
 
-[![LinkedIn Picture](/assets/images/social/linkedin_avatar-150x150.png){:class="img-responsive"}](/assets/images/social/linkedin_avatar.png)
+![LinkedIn Picture](/assets/images/social/linkedin_avatar-150x150.png){:class="img-responsive"}
 
 My name is Ricardo Adão and decided to start blogging my random pieces of "wisdom".
 
