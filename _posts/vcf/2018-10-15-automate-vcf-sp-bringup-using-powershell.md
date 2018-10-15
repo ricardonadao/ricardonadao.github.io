@@ -18,7 +18,7 @@ All the code snippets have the objective to help creating your own _bringup auto
 
 # Initial Challenge
 
-When planning the process there is a first challenge that we need to address will be how to to reach the _API_, knowing that the _API service_ is only listening in the _127.0.0.1 (localhost)_ port _9080_.
+When planning the process there is a first challenge that we need to address will be how to to reach the _API_, since the _API service_ is only listening in the _127.0.0.1 (localhost)_ port _9080_.
 
 After some research found a nice _Powershell_ module that would help with _SSH_ connectivity - [Posh-SSH](https://www.powershellgallery.com/packages/Posh-SSH/2.0.2)
 
