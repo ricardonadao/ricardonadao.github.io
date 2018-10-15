@@ -26,7 +26,7 @@ Get-Cluster –Name “{Custer Name}” | Get-VMHost | `
   %{Write-Host "NIC:"$_.Name "MTU:"$_.MTU}}
 ```
 
-[![HomeLab example](/assets/images/posts/2018/05/powercli-pnic.mtu.oneliner.example-1024x281.png){:class="img-responsive"}](/assets/images/posts/2018/05/powercli-pnic.mtu.oneliner.example-1024x281.png)
+[![HomeLab example]({{ site.url }}/assets/images/posts/2018/05/powercli-pnic.mtu.oneliner.example-1024x281.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2018/05/powercli-pnic.mtu.oneliner.example-1024x281.png)
 
 Of course to get into this we need to do the normal vCenter connection:
 
