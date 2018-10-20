@@ -1,4 +1,4 @@
-<form method="POST" action="{{ site.api_staticman }}/v2/entry/{{ site.repository }}/master/comments">
+<form method="POST" action="{{ site.api_staticman }}/v2/entry/{{ site.repository }}/{{ site.staticman.branch }}/comments">
   <input name="options[redirect]" type="hidden" value="{{ site.url }}{{ page.url }}">
   <input name="options[slug]" type="hidden" value="{{ page.slug }}">
   <label><input name="fields[name]" type="text">Name</label>
