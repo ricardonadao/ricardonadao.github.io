@@ -17,6 +17,8 @@ layout: default
 
   {% if page.comments and jekyll.environment == 'production' %}
     <!-- {% include disqus_comments.html %} -->
+    {% include comments_new.html %}
+    {% include comments.html %}
   {% endif %}
 
   {% include related_posts.html %}

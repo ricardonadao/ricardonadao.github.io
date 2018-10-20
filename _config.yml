@@ -64,8 +64,9 @@ compress_html:
   startings: all
 
 # Staticman comments (full configuration in staticman.yml)
-staticman:
-  branch : "master"
+#staticman:
+#  branch : "master"
+api_staticman: "https://vrandombites-staticman.herokuapp.com/"
 
 # Build settings
 markdown: kramdown
