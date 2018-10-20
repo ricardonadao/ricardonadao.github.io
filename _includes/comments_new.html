@@ -1,7 +1,8 @@
-<form method="POST" action="{{ site.api_staticman }}/v2/entry/{{ site.repository }}/{{ site.staticman.branch }}">
-    <input name="options[slug]" type="hidden" value="{{ page.slug }}">
-    <label><input name="fields[name]" type="text">Name</label>
-    <label><input name="fields[email]" type="email">E-mail</label>
-    <label><textarea name="fields[message]"></textarea>Message</label>  
-    <button type="submit">Go!</button>
+<form method="POST" action="{{ site.api_staticman }}/v2/entry/{{ site.repository }}/master/comments">
+  <input name="options[redirect]" type="hidden" value="{{ site.url }}{{ page.url }}">
+  <input name="options[slug]" type="hidden" value="{{ page.slug }}">
+  <label><input name="fields[name]" type="text">Name</label>
+  <label><input name="fields[email]" type="email">E-mail</label>
+  <label><textarea name="fields[message]"></textarea>Message</label>  
+  <button type="submit">Go!</button>
   </form>

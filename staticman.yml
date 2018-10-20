@@ -1,32 +1,32 @@
-comments:
-  allowedFields: ["name", "email", "url", "message" ]
-  branch: "master"
-  commitMessage: "Added comment to {options.slug}"
-  extension: "md"
-  filename: "{comment-{@timestamp}}"
-  format: yaml
-  generatedFields:
-    date:
-      type: date
-      options:
-        format: "iso8601"
-    slug:
-      type: slugify
-      options:
-        field: title
-      tags: ["user-generated"]
-  moderation: false
-  name: "vRandomBites"
-#  notifications:
-#    enabled: true
-#    apiKey: "aM0EkpP4lmUOw6Dnx7+2pnMg7rDIlXFUtjwAsThIQd8XcdkxIGUfPxoR6rGSCJDftDK6OIFe4dBl0XL25AwSE8YculEOUtDKpgj4AUKRVA81Yergsb3bgk53opc1DleVYxdSj7Iut46G9mPgItw3Y3C991qfsXNI0CtoYlKGiVI="
-#    domain: "MnMU1PB/njhyF2xx3n7WwAHbqfwBq3mEQ+kIhB3jtHntTWHWe5KYP1M18Jd8GA97hqoyglt6XCdWFdo4zcK5sWs9UnRc0JcJmtaQsy/ZJ92+0jcuqrRpEIG4M58wxqjckmADg4XE3RzcL/uuQUgOOm9pDEJm6zr/KH3MZ3KBnMM="
-  path: "_data/comments/{options.slug}"
-  requiredFields: ["name", "email", "message"]
-  transforms:
-    body: "frontmatterContent"
-    email: md5
-#  reCaptcha:
-#    enabled: true
-#    siteKey: "FzUs0rCFIirxzn74KKvvFA/o/+dtYTbbCH3PLAo55SshD1HnoNyQNH2byi+XPkONgujDhEQc656b9FB13f07UaFV7kLhm8s3Hb/VbAcBgCloWLNVlsIfwH7qCoquJs/UHio3b6nEdzDZOmG/dy9sW4SkH7A4aPuDY/aL4kt3Roo="
-#    secret: "jhop3n9PvOzTgcu1pC+kxieIAzojxzKzdFZdHWpmA9d6/9Y1Jq/4KmHx766adKyNoEg0uUlPOBeKvZH4aLvDcIcD/6VxKaDYje8s1Fm3WxSnBdP0wN0wlXWY2iG5wOyaK0R03t5vfBkJBKJkbnzqascpQUIvXT2IIHRm0+dVqrA="
+#comments:
+allowedFields: ["name", "email", "url", "message" ]
+branch: "master"
+commitMessage: "Added comment to {options.slug}"
+extension: "md"
+filename: "comment-{@timestamp}"
+format: yaml
+generatedFields:
+  date:
+    type: date
+    options:
+      format: "iso8601"
+  slug:
+    type: slugify
+    options:
+      field: title
+    tags: ["user-generated"]
+moderation: false
+name: "vRandomBites"
+# notifications:
+#   enabled: true
+#   apiKey: "aM0EkpP4lmUOw6Dnx7+2pnMg7rDIlXFUtjwAsThIQd8XcdkxIGUfPxoR6rGSCJDftDK6OIFe4dBl0XL25AwSE8YculEOUtDKpgj4AUKRVA81Yergsb3bgk53opc1DleVYxdSj7Iut46G9mPgItw3Y3C991qfsXNI0CtoYlKGiVI="
+#   domain: "MnMU1PB/njhyF2xx3n7WwAHbqfwBq3mEQ+kIhB3jtHntTWHWe5KYP1M18Jd8GA97hqoyglt6XCdWFdo4zcK5sWs9UnRc0JcJmtaQsy/ZJ92+0jcuqrRpEIG4M58wxqjckmADg4XE3RzcL/uuQUgOOm9pDEJm6zr/KH3MZ3KBnMM="
+path: "_data/comments/{options.slug}"
+requiredFields: ["name", "email", "message"]
+transforms:
+  body: "frontmatterContent"
+  email: md5
+# reCaptcha:
+#   enabled: true
+#   siteKey: "FzUs0rCFIirxzn74KKvvFA/o/+dtYTbbCH3PLAo55SshD1HnoNyQNH2byi+XPkONgujDhEQc656b9FB13f07UaFV7kLhm8s3Hb/VbAcBgCloWLNVlsIfwH7qCoquJs/UHio3b6nEdzDZOmG/dy9sW4SkH7A4aPuDY/aL4kt3Roo="
+#   secret: "jhop3n9PvOzTgcu1pC+kxieIAzojxzKzdFZdHWpmA9d6/9Y1Jq/4KmHx766adKyNoEg0uUlPOBeKvZH4aLvDcIcD/6VxKaDYje8s1Fm3WxSnBdP0wN0wlXWY2iG5wOyaK0R03t5vfBkJBKJkbnzqascpQUIvXT2IIHRm0+dVqrA="
