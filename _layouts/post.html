@@ -15,7 +15,7 @@ layout: default
 
   {{ content }}
 
-    {% if page.comments %}
+  {% if page.comments and jekyll.environment == 'production' %}
     {% include comments_new.html %}
     {% include comments.html %}
   {% endif %}
