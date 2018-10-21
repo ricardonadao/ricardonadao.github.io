@@ -49,36 +49,10 @@ comments:
   # Whether entries need to be approved before they are published to the main
   # branch. If set to `true`, a pull request will be created for your approval.
   # Otherwise, entries will be published to the main branch automatically.
-  moderation: true
-
-  # Akismet spam detection.
-  # akismet:
-  #   enabled: true
-  #   author: "name"
-  #   authorEmail: "email"
-  #   authorUrl: "url"
-  #   content: "message"
-  #   type: "comment"
+  moderation: false
 
   # Name of the site. Used in notification emails.
   name: "vRandomBites"
-
-  # Notification settings. When enabled, users can choose to receive notifications
-  # via email when someone adds a reply or a new comment. This requires an account
-  # with Mailgun, which you can get for free at http://mailgun.com.
-  notifications:
-    # Enable notifications
-    enabled: true
-
-    # (!) ENCRYPTED
-    #
-    # Mailgun API key
-    apiKey: "T/jWcQZ4u6GSiPA8KOGufTJroTkNlrZaS7Lltlsh2Qv9GOO2e7m48q/ZhekBHr/1ygOPhnEdoTNENRW1clMYHr7Vx28ibJaAFbl49E1pjNImTKbY3ebqkNAXI05wRsjSNUAOgNNaz81qtfzy08tl7RfAuw+6CV5iFz75UtIelrtVIShsjrqTA2h7t89qO+9TK5ojkDYK3Bj9v34AHjPpWFoBRMFDSBt7czgC1xlNmbgrWYNZXDhpdpGqXLsX+cIj50cmjTDhqMbwSLgyo46wYy+nPNFY3ssEwQX8htwk9NgzJ9A0Jc9Gi49picZGKuwVClp0MGJLs3HzGcMbaOMe5Q=="
-
-    # (!) ENCRYPTED
-    #
-    # Mailgun domain (encrypted)
-    domain: "wXPHHdXivs9QNPQt5mla98LGP3AR/gqdH4sIGI1OT0jUX3wy6ATWBdHdW++VZoiG0G4nl4Xx7vpdwDTju7etpFq3ireIqeAqqyfYlMGrC60sMPNawPXx5c6e7DLWjCRgbkUvDH71o0Lx3bDyYOsNSi4x87kVFfG+fhpwpGh68PmeQsPNMj75QjvPAwEPq1HI0YtMc0Sz56xZnuq953oMd9XC6Ja9CBON/BcgePbxrsGwOlGJaNapzBROYy3wZZiUtCaZ/fglnrwUqr1++U39QsNVlMxma/3QSDMbN7LY+zCT3sQ8yn1nfkmQ3xtKGR7GnEZxsunxd9ytBcYBHTNOig=="
 
   # (*) REQUIRED
   #
@@ -93,4 +67,3 @@ comments:
   # the name of the field and values are possible transformation types.
   transforms:
     email: md5
-    
