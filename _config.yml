@@ -69,6 +69,12 @@ api_staticman: "https://vrandombites-staticman.herokuapp.com"
 staticman:
   branch: "master"
 
+reCaptcha:
+  enabled: true
+  siteKey: "6LfuEFEUAAAAAFCypiCqgPYr1dd-sPsFYziI1op4"
+  secret: "utfoecIsd0fXwl5VsGDo/uOXIufBmk4wuMU4rWJOuRrrkPLywcaySpZ3Y4WrrMX5I/oL4V/h4d1z8PBSF2h9vDbQfxGPBmBbe5vvM1KM3TxaNyos7FJNKhQHWupzfsEVRq2vE0YscweqLmjFPrS7tH3WNSJAVIbt3ACsh3Urz6aS4fMjygvqBiq5nX9Pq6bFV1YvvFbMXUKJMhCutvKQ1+qCWtpU7Wp3gdxRPitNfeuyjP/o0CfFCzafZ9CreHSAUZ+MDR5If3uQ9J+7UV1DHoPnKJss4ulkJ7naKNb/+Tr/F35F8qZbYchKEECLe0Rj1+7phtTosUFx9OhcB571wQ=="
+
+
 # Build settings
 markdown: kramdown
 theme: jekyll-theme-architect

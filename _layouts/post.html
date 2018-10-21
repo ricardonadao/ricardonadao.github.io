@@ -12,9 +12,11 @@ layout: default
 ]</span></p>
 
 <div class="post">
-
   {{ content }}
 
-  {% include related_posts.html %}
+  {% if page.comments == true %}
+    {% include comments.html %}
+  {% endif %}
 
+  {% include related_posts.html %}
 </div>
