@@ -66,6 +66,9 @@ compress_html:
 # Staticman comments (full configuration in staticman.yml)
 api_staticman: "https://vrandombites-staticman.herokuapp.com"
 
+staticman:
+  branch                 : "master"
+
 # Build settings
 markdown: kramdown
 theme: jekyll-theme-architect

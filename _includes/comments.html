@@ -1,10 +1,8 @@
-{% assign comments = site.data.comments | sort %}
-
-{% for comment in comments reversed %}
-  {% assign commentData = comment[1] %}
-    <div>
-      {{ commentData.message }}</br>
-      From: {{ commentData.name }}</br>
-      {{ commentData.date | date_to_long_string }}
-    </div>
-{% endfor %}
+{% assign entries = site.data.comments | sort %}
+{% for entry in entries %}
+  <tr>
+    <td>{{ entry[1].name }}</td>
+    <td>{{ entry[1].email }}</td>
+    <td>{{ entry[1].message }}</td>
+  </tr>
+{% endfor %}  

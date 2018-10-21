@@ -15,6 +15,11 @@ layout: default
 
   {{ content }}
 
+  {% if page.comments == true %}
+    {% include comments_form.html %}
+    {% include comments.html %}
+  {% endif %}
+
   {% include related_posts.html %}
 
 </div>
