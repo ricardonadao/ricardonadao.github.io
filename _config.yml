@@ -80,6 +80,7 @@ plugins:
   - jekyll-paginate
 
 include:
+  - .htaccess
   - _pages
 
 # Exclude from processing.
