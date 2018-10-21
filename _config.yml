@@ -67,7 +67,7 @@ compress_html:
 api_staticman: "https://vrandombites-staticman.herokuapp.com"
 
 staticman:
-  branch                 : "master"
+  branch: "master"
 
 # Build settings
 markdown: kramdown
