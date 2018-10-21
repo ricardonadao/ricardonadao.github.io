@@ -93,7 +93,7 @@ include:
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
 exclude:
-  - assets/js/_main.js
+#   - assets/js/_main.js
 #   - Gemfile
 #   - Gemfile.lock
 #   - node_modules
