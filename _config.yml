@@ -25,6 +25,17 @@ social:
     - https://github.com/ricardonadao
     - https://plus.google.com/+RicardoAdao
 
+# Site owner
+author:
+  name                   : "Ricardo Adao"
+  uri                    : &uri "https://vrandombites.co.uk/about/"
+  url                    : *uri
+  bio                    : ""
+  picture                : "/assets/images/social/linkeding_avatar-50x50.png"
+  twitter                : "https://twitter.com/ricardonadao"
+  github                 : "https://github.com/ricardonadao"
+  google_plus            : "https://plus.google.com/+RicardoAdao"
+
 googleSiteVerification: "ZbHQ1ErXGLxJ68-pSIGslwc1Dq3afLqgeFIGvKl2K9o"
 bingSiteVerification: "066D47264798DF0304F169C02A7882D8"
 
