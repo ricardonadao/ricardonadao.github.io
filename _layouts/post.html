@@ -15,8 +15,20 @@ layout: default
   {{ content }}
 
   {% if page.comments == true %}
-    {% include comments.html %}
+    <div>
+      <section class="constrain">
+        <h3>Write a review</h3>
+        {% include reviews-new.html %}
+      </section>
+      
+      <section class="constrain">
+        <h3>All reviews</h3>
+
+        {% include reviews.html %}
+      </section>
+    </div>
   {% endif %}
 
   {% include related_posts.html %}
+  {% include modal.html %}
 </div>
