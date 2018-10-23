@@ -6,6 +6,8 @@ baseurl: "/"
 url: "https://vrandombites.co.uk"
 repository: "ricardonadao/ricardonadao.github.io"
 
+localdev: true
+
 # Social
 twitter_username: ricardonadao
 github_username:  ricardonadao
@@ -65,6 +67,7 @@ compress_html:
 
 # Staticman comments (full configuration in staticman.yml)
 api_staticman: "https://vrandombites-staticman.herokuapp.com"
+
 staticman:
   branch: "master"
 
