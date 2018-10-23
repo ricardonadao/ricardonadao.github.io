@@ -12,12 +12,12 @@
       data: $(this).serialize(),
       contentType: 'application/x-www-form-urlencoded',
       success: function (data) {
-        showModal('Review submitted', 'Thanks for your review! It will show on the site once it has been approved. You can see the pull request <a href="https://github.com/eduardoboucas/popcorn/pulls">here</a>.');
+        showModal('Comment submitted', 'Thanks for your comment.');
         $(form).removeClass('form--loading');
       },
       error: function (err) {
         console.log(err);
-        showModal('Error', 'Sorry, there was an error with the submission!');
+        showModal('Error', 'Ooops somethign gone wrong with your comment, please feel free <a href="/about">contact<a> me');
         $(form).removeClass('form--loading');
       }
     });
