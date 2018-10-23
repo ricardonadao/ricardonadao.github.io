@@ -23,8 +23,11 @@
     </fieldset>
 
     <input type="hidden" id="comment-post-id" name="options[slug]" value="{{ page.slug }}">
- 
+    <input type="hidden" name="options[reCaptcha][siteKey]" value="{{ site.reCaptcha.siteKey }}">
+    <input type="hidden" name="options[reCaptcha][secret]" value="{{ site.reCaptcha.secret }}">
+
     <div class="form-group">
+      <div class="g-recaptcha" data-sitekey="{{ site.reCaptcha.siteKey }}"></div>
       <fieldset class="field-group">
         <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
           Submit
@@ -32,6 +35,7 @@
       </fieldset>
     </div>
   </form>
- {% else %}
+  <script async src="https://www.google.com/recaptcha/api.js"></script>
+ % else %}
   <p><em>Comments are closed for this post. Any queries please feel free to <a href="/about/">contact me</a>.</em></p>
 {% endunless %}
