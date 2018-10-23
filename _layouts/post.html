@@ -15,20 +15,8 @@ layout: default
   {{ content }}
 
   {% if page.comments == true %}
-    <div>
-      <section class="constrain">
-        <h3>Add comment</h3>
-        {% include reviews-new.html %}
-      </section>
-      
-      <section class="constrain">
-        <h3>Comments</h3>
-
-        {% include reviews.html %}
-      </section>
-    </div>
+    {% include comments.html %}
   {% endif %}
 
   {% include related_posts.html %}
-  {% include modal.html %}
 </div>

@@ -1,8 +1,9 @@
-_id: 563269a0-d6b1-11e8-a1e4-894633bb434e
-_parent: /blog/2018/09/18/blog-vexpert-2018.html
-name: Ricardo
-email: 01bc05b204144e8bff7148624e740ec0
-url: ''
-message: Teste
-replying_to: ''
-date: '2018-10-23T10:49:38.124Z'
+---
+id: comment-1023430741
+date: 2013-08-30T16:29:02Z
+updated: 2013-08-30T16:29:02Z
+post_id: "/blog-vexpert-2018"
+name: Naufal Mir
+url: http://abijango.com/
+message: '"I’m working on theme, really I am." them :)'
+avatar: https://disqus.com/api/users/avatars/abijango.jpg
