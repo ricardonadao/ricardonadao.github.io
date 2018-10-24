@@ -7,6 +7,7 @@ url: "https://vrandombites.co.uk"
 repository: "ricardonadao/ricardonadao.github.io"
 
 localdev: true
+timezone: Europe/London
 
 # Social
 twitter_username: ricardonadao
