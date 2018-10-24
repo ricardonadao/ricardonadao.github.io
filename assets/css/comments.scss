@@ -1,0 +1,411 @@
+---
+---
+/* Variables */
+
+/* ==========================================================================
+   Variables
+   ========================================================================== */
+
+/* Breakpoint widths */
+$small: 320px;
+$medium: 768px;
+$large: 1024px;
+$xlarge: 1280px;
+
+/* Fluid type */
+$base-font-size: 16px;
+$min-vw: $small;
+$max-vw: $xlarge;
+$min-font-size: 16px;
+$max-font-size: 20px;
+
+/* Calculate Modular Scale */
+$modular-scale-1: 1.067; /* small */
+$modular-scale-2: 1.296; /* large */
+/* Heading 1 */
+$h1-min: $modular-scale-1 * $modular-scale-1 * $modular-scale-1 *
+  $modular-scale-1 * $base-font-size;
+$h1-max: $modular-scale-2 * $modular-scale-2 * $modular-scale-2 *
+  $modular-scale-2 * $base-font-size;
+/* Heading 2 */
+$h2-min: $modular-scale-1 * $modular-scale-1 * $modular-scale-1 *
+  $base-font-size;
+$h2-max: $modular-scale-2 * $modular-scale-2 * $modular-scale-2 *
+  $base-font-size;
+/* Heading 3 */
+$h3-min: $modular-scale-1 * $modular-scale-1 * $base-font-size;
+$h3-max: $modular-scale-2 * $modular-scale-2 * $base-font-size;
+/* Heading 4 */
+$h4-min: $modular-scale-1 * $base-font-size;
+$h4-max: $modular-scale-2 * $base-font-size;
+/* Heading 5 */
+$h5-min: $base-font-size;
+$h5-max: $base-font-size;
+/* Heading 6 */
+$h6-min: ($base-font-size / $modular-scale-1);
+$h6-max: ($base-font-size / $modular-scale-2);
+
+/* Base font family */
+$base-font-family: "Roboto", sans-serif;
+/* Other font families */
+$headline-font-family: "Fira Sans", sans-serif;
+$monospace-font-family: Menlo, Consolas, Monaco, "Courier New", Courier,
+  monospace;
+
+/* Colors */
+$base-color: #393e46;
+$text-color: #222831;
+$accent-color: #00638a;
+$background-color: #fff;
+$code-background-color: tint($base-color, 95%);
+$border-color: $base-color;
+$overlay-color: $base-color;
+$section-bg-color: mix($base-color, #fff, 10%);
+$section-dark-bg-color: mix(#000, $base-color, 50%);
+$section-about-bg-color: mix(#000, #2a201b, 50%);
+$section-work-bg-color: mix(#000, #6e2364, 50%);
+
+$primary-color: #00638a;
+$success-color: #40c057;
+$warning-color: #fcc419;
+$danger-color: #f03e3e;
+$info-color: #1c7cd6;
+
+/* Syntax highlighting (base16) colors */
+$base00: #fafafa;
+$base01: #073642;
+$base02: #586e75;
+$base03: #657b83;
+$base04: #839496;
+$base05: #586e75;
+$base06: #eee8d5;
+$base07: #fdf6e3;
+$base08: #dc322f;
+$base09: #cb4b16;
+$base0a: #b58900;
+$base0b: #859900;
+$base0c: #2aa198;
+$base0d: #268bd2;
+$base0e: #6c71c4;
+$base0f: #d33682;
+
+$facebook-color: #3b5998;
+$flickr-color: #0063dc;
+$github-color: #181717;
+$google-plus-color: #dc4e41;
+$instagram-color: #e4405f;
+$rss-color: #ffa500;
+$twitter-color: #1da1f2;
+$youtube-color: #cd201f;
+
+/* Max-width of the main content */
+$main-max-width: $xlarge;
+
+/* Width of the sidebar */
+$sidebar-width: $small;
+
+/* Background color of the sidebar */
+$sidebar-background-color: $base-color;
+
+/* Border radius */
+$border-radius: 0.25em;
+
+/* Forms */
+$form-background: mix(#fff, $border-color, 50%);
+$form-border-color: $border-color;
+$form-border-color-hover: mix(#000, $border-color, 10%);
+$form-border-color-focus: $base-color;
+$form-border-radius: $border-radius;
+$form-box-shadow: inset 0 1px 3px hsla(0, 0%, 0%, 0.06);
+$form-box-shadow-focus: $form-box-shadow,
+  0 0 5px rgba(mix(#000, $form-border-color-focus, 10%), 0.7);
+$form-font-family: $base-font-family;
+$form-font-size: $base-font-size;
+
+/* Global transition */
+$global-transition: all 0.4s ease;
+
+/* Navicon */
+$navicon-width: 1.75em;
+$navicon-height: 0.25em;
+$navicon-duration: 0.5s;
+$navicon-toggled-size: 1;
+$navicon-nav-bg-close: #fff;
+$navicon-nav-bg-open: #fff;
+$navicon-content-bg: $text-color;
+$navicon-focus-color: rgba($text-color, 0.25);
+
+/* Site image */
+$site-image-width: 25px;
+$site-image-height: 25px;
+
+/* Susy grid settings */
+$susy: (columns: 16, gutters: 0, math: fluid, output: float);
+
+
+/* ==========================================================================
+   Comments
+   ========================================================================== */
+
+
+.comment {
+  font-size: 0.8em;
+  margin-bottom: 4em;
+  padding-left: 4.5em;
+  position: relative;
+
+  // comment replies
+  &.child {
+    margin-left: 4.5em;
+  }
+}
+
+.comment-timestamp {
+  font-size: 0.8em;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+.comment-content {
+  margin-top: 1em;
+
+  > p,
+  > ul,
+  > ol,
+  > figure,
+  > table {
+    margin-bottom: 1.5em;
+  }
+
+  ul {
+    list-style-type: square;
+  }
+
+  li {
+    margin-bottom: 0.5em;
+  }
+
+  li > ul,
+  li > ol {
+    margin-top: 0.5em;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  .highlighter-rouge {
+    .highlight {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    .highlight code {
+      font-size: 0.8em;
+    }
+  }
+}
+
+.comment-avatar {
+  height: 3.25em;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 3.25em;
+
+  &::after {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='stripe-svg' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 10'%3E%3Cpath d='M-1,1 l2,-2 M0,10 l10,-10 M9,11 l2,-2' stroke='%23333' stroke-width='1' /%3E%3C/svg%3E");
+    background-size: 5px 5px;
+    bottom: 0.5em;
+    content: "";
+    height: 3.25em;
+    position: absolute;
+    right: 0.5em;
+    width: 3.25em;
+    z-index: -1;
+  }
+}
+
+.comment-author-name {
+  display: inline-block;
+  font-size: 1.25em;
+  line-height: 1;
+  margin: 0 0 0.25em;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+.comment-reply {
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.comment-reply-notifications {
+  margin: 1rem 0;
+}
+
+#cancel-comment-reply-link {
+  margin-left: 1em;
+}
+
+#comment-form {
+  margin-bottom: 3em;
+}
+
+/* Site author specific */
+.admin {
+  .comment-author-name {
+    box-shadow: inset 0 -0.25em 0 rgba($warning-color, 0.5);
+  }
+}
+
+/* ==========================================================================
+   Buttons
+   ========================================================================== */
+   .btn {
+    background-color: $accent-color;
+    border-radius: $border-radius;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: $monospace-font-family;
+    font-weight: bold;
+    line-height: 1.5;
+    padding: 0.5em 1em;
+    text-align: center;
+    text-decoration: none;
+  
+    &:hover {
+      background-color: tint($accent-color, 20%);
+      color: #fff;
+    }
+  
+    &:visited {
+      color: #fff;
+    }
+  
+    &:active {
+      transform: scale(0.95);
+    }
+  
+    &:focus {
+      background-color: shade($accent-color, 20%);
+    }
+  
+    .icon {
+      margin-right: 0.5em;
+    }
+  
+    &--group {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 2rem;
+    
+      .btn {
+        margin-bottom: 0.25em;
+      }
+  
+      .btn + .btn {
+          margin-left: 0.25em;
+      }
+    }
+  
+    /* block button fills width of parent container */
+    &--block {
+      display: block;
+      width: 100%;
+  
+      + .btn--block {
+        margin-top: 1rem;
+      }
+    }
+  
+    /* for dark backgrounds */
+    &--inverse {
+      background-color: #fff;
+      color: #000 !important;
+      outline: 0.125em solid #000;
+  
+      &:hover {
+        background-color: mix(#000, #fff, 10%);
+        outline: 0.125em solid #000;
+      }
+    }
+  
+    /* light outline */
+    &--light-outline {
+      background-color: transparent;
+      border: 1px solid #fff !important; // override
+    }
+  
+    /* information */
+    &--info {
+      background-color: $info-color;
+  
+      &:hover {
+        background-color: mix(#000, $info-color, 20%);
+      }
+    }
+  
+    /* warning */
+    &--warning {
+      background-color: $warning-color;
+  
+      &:hover {
+        background-color: mix(#000, $warning-color, 20%);
+      }
+    }
+  
+    /* success */
+    &--success {
+      background-color: $success-color;
+  
+      &:hover {
+        background-color: mix(#000, $success-color, 20%);
+      }
+    }
+  
+    /* danger */
+    &--danger {
+      background-color: $danger-color;
+  
+      &:hover {
+        background-color: mix(#000, $danger-color, 20%);
+      }
+    }
+  
+    /* disabled */
+    &--disabled {
+      box-shadow: none;
+      cursor: not-allowed;
+      opacity: 0.65;
+      pointer-events: none;
+    }
+  
+    /* social buttons */
+    $social: (facebook, $facebook-color),  (twitter, $twitter-color);
+  
+    @each $socialnetwork, $color in $social {
+      &--#{$socialnetwork} {
+        background-color: $color;
+  
+        &:hover {
+          background-color: mix(#000, $color, 20%);
+        }
+      }
+    }
+  }
+  
