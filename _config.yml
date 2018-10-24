@@ -6,7 +6,7 @@ baseurl: "/"
 url: "https://vrandombites.co.uk"
 repository: "ricardonadao/ricardonadao.github.io"
 
-localdev: true
+localdev:
 timezone: Europe/London
 
 # Social
