@@ -14,5 +14,9 @@ layout: default
 <div class="post">
   {{ content }}
 
+  {% if page.comments %}
+    {% include comments.html %}
+  {% endif %}
+
   {% include related_posts.html %}
 </div>

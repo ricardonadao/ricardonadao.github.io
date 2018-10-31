@@ -1,0 +1,33 @@
+<h2>Add new entry</h2>
+  <form method="post" action="{{ site.api_staticman }}/v2/entry/{{ site.repository }}/{{ site.staticman.branch }}/comments">
+    <label for="name">Name</label>
+    <input id="name" type="text" name="fields[name]" placeholder="John Doe">
+
+    <label for="email">Favourite programming language</label>
+    <select name="fields[language]">
+      <option value="Ruby">Ruby</option>
+      <option value="JavaScript">JavaScript</option>
+      <option value="Python">Python</option>
+      <option value="PHP">PHP</option>
+      <option value="Java">Java</option>
+      <option value="Go">Go</option>
+      <option value="Rust">Rust</option>
+      <option value="C">C</option>
+    </select>
+    
+    <label for="message">Comment</label>
+    <textarea id="message" name="fields[message]" placeholder="Here's the thing..."></textarea>
+
+    <input type="hidden" name="options[redirect]" value="https://recaptcha-demo.staticman.net/thankyou">
+    <input type="hidden" name="options[redirectError]" value="https://recaptcha-demo.staticman.net/error">
+
+    <input type="hidden" name="options[reCaptcha][siteKey]" value="{{ site.reCaptcha.siteKey }}">
+    <input type="hidden" name="options[reCaptcha][secret]" value="{{ site.recaptcha.secret }}">
+
+    <div class="g-recaptcha" data-sitekey="{{ site.recaptcha.siteKey }}"></div>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <script src='https://www.google.com/recaptcha/api.js'></script>
+</div>
