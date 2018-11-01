@@ -23,9 +23,11 @@ layout: compress
     <div class="initial-content">
       {{ content }}
 
-      {% if site.google_adsense %}
-        {% include ads-footer.html %}
-      {% endif %}
+      <div class="adsbygoogle">
+        {% if site.google_adsense %}
+          {% include ads-footer.html %}
+        {% endif %}
+      </div>
     </div>
 
     {% if site.search == true %}
