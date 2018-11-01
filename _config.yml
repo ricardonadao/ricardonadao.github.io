@@ -12,7 +12,7 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 remote_theme             : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "dirt" #"default" "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "air" #"default" "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-GB"
@@ -25,7 +25,7 @@ baseurl                  : "/"
 repository               : "ricardonadao/ricardonadao.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
-words_per_minute         : 200
+words_per_minute         : 150
 comments:
   provider               : "staticman_v2" # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2" "custom"
   disqus:
@@ -54,7 +54,6 @@ staticman:
       options:
         format           : # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
   endpoint               : "https://vrandombites-staticman.herokuapp.com/v2/entry/" # URL of your own deployment with trailing slash, will fallback to the public instance
-# reCaptcha
 reCaptcha:
   enabled: true
   siteKey: "6LfuEFEUAAAAAFCypiCqgPYr1dd-sPsFYziI1op4"
@@ -85,7 +84,7 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 : # Open Graph/Twitter default site image
+og_image                 : /assets/images/featured/blog-150x150.png # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
@@ -103,7 +102,6 @@ analytics:
   google:
     tracking_id          : "UA-117546593-1"
     anonymize_ip         : # true, false (default)
-
 
 # Site Author
 author:
@@ -131,6 +129,12 @@ author:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
+    - label: "Google Plus"
+      icon: "fab fa-fw fa-google-plus-square"
+      url: "https://plus.google.com/+RicardoAdao"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/ricardonadao/"
 
 # Site Footer
 footer:
@@ -153,7 +157,11 @@ footer:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url:
-
+      icon: "fab fa-fw fa-google-plus-square"
+      url: "https://plus.google.com/+RicardoAdao"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/ricardonadao/"
 
 # Reading Files
 include:
@@ -299,5 +307,5 @@ defaults:
       author_profile: true
       read_time: true
       comments: true
-      share: false
+      share: true
       related: true
