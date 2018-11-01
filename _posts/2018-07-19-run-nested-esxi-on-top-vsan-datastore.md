@@ -3,6 +3,8 @@
 author: Ricardo Adao
 published: true
 post_date: 2018-07-19 18:20:14
+header:
+  teaser: /assets/images/featured/vsan-150x150.png
 title: Run Nested ESXi on top of a vSAN datastore
 categories: [ vsan ]
 tags: [ coding, hypervisor, esxi, powercli, powershell, vcenter, vmware, vsan, nested, oneliner, scsi ]
