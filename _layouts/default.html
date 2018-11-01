@@ -24,6 +24,10 @@ layout: compress
       {{ content }}
     </div>
 
+    <div class="adsbygoogle">
+        {% include ads-footer.html %}
+    </div>
+
     {% if site.search == true %}
       <div class="search-content">
         {% include_cached search/search_form.html %}
