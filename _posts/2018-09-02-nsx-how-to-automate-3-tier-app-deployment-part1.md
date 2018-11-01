@@ -3,6 +3,8 @@
 author: Ricardo Adao
 published: true
 post_date: 2018-09-02 08:00:00
+header:
+  teaser: /assets/images/featured/nsx-150x150.png
 title: NSX - How to automate a 3 Tier App deployment - Part 1
 categories: [ nsx ]
 tags: [ coding, automation, nsx, powercli, powernsx, powershell, sddc, vmware, networking ]
