@@ -1,23 +1,4 @@
 ---
-layout: default
-author: Ricardo Adao
-title: vRandomBites Homepage
-published: true
-post_date: 2018-09-05 14:07:00
-categories: []
-tags: []
+layout: home
+author_profile: true
 ---
-
-<div class="posts">
-{% for post in paginator.posts %}
-    <h2>
-        <a href="/assets/images/featured/{{ post.categories }}-150x150.png"><img src="/assets/images/featured/{{ post.categories }}-50x50.png" alt="Featured Category {{ post.categories }}"></a>
-        <em><b>{{ post.date | date_to_string }}</b></em> >> <a href="{{ post.url }}">{{ post.title }}</a>
-    </h2>
-    {{ post.content | strip_html | truncatewords: site.postTruncateSize }}
-    <br>
-    <a href="{{ post.url }}"><em>>> continue  reading</em></a>
-{% endfor %}
-</div>
-<br>
-{% include pagination.html %}

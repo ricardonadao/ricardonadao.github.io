@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: single
 title: About
 permalink: /about/
 author: Ricardo Adao
@@ -8,8 +8,6 @@ post_date: 2018-09-05 14:07:00
 categories: [ blog ]
 tags: [ blog, about, profile, certifications, social ]
 ---
-
-# vRandomBites #
 
 ## Welcome to vRandomBites blog ##
 
@@ -24,10 +22,6 @@ My journey through IT covers Software Development, Security, Network and for the
 My posts in this blog represent my random technical notes and thoughts.
 
 The thoughts expressed here do not reflect my current employer in any way.
-
-## Social links ##
-
-{% include social_profile.html %}
 
 ## Some certs and accomplishements ##
 
