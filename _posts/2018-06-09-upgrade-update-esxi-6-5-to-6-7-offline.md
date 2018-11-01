@@ -1,8 +1,8 @@
 ---
-
 author: Ricardo Adao
 published: true
 post_date: 2018-06-09 11:59:58
+last_modified_at:
 header:
   teaser: /assets/images/featured/esxi-150x150.png
 title: Upgrade/Update ESXi 6.5 to 6.7 Offline

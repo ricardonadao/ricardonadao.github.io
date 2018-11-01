@@ -2,6 +2,7 @@
 author: Ricardo Adao
 published: true
 post_date: 2018-06-03 10:42:02
+last_modified_at:
 header:
   teaser: /assets/images/featured/esxi-150x150.png
 title: Filtering/Excluding log entries in VMware vSphere ESXi

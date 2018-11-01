@@ -1,8 +1,8 @@
 ---
-
 author: Ricardo Adao
 published: true
 post_date: 2018-07-15 13:20:17
+last_modified_at:
 header:
   teaser: /assets/images/featured/powercli-150x150.png
 title: PowerCLI - Configure syslog server in multiple ESXi

@@ -1,8 +1,8 @@
 ---
-
 author: Ricardo Adao
 published: true
 post_date: 2018-10-15 08:00:00
+last_modified_at:
 header:
   teaser: /assets/images/featured/vcf-150x150.png
 title: VCF - Automate VMware Cloud Foundation - Service Provider - bringup process using PowerShell

@@ -1,8 +1,8 @@
 ---
-
 author: Ricardo Adao
 published: true
 post_date: 2018-05-15 08:11:14
+last_modified_at:
 header:
   teaser: /assets/images/featured/powercli-150x150.png
 title: PowerCLI - Using Get-EsxCli to get settings or change settings in multiple ESXi hosts at a time

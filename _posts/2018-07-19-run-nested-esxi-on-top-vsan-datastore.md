@@ -1,8 +1,8 @@
 ---
-
 author: Ricardo Adao
 published: true
 post_date: 2018-07-19 18:20:14
+last_modified_at:
 header:
   teaser: /assets/images/featured/vsan-150x150.png
 title: Run Nested ESXi on top of a vSAN datastore
