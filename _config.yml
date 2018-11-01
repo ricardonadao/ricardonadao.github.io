@@ -1,117 +1,303 @@
-title: vRandomBites
-email: ricardo.adao@gmail.com
-description: >-
-  "It is not enough to have a good mind; the main thing is to use it well."
-baseurl: "/"
-url: "https://vrandombites.co.uk"
-repository: "ricardonadao/ricardonadao.github.io"
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your entire site, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# `jekyll serve`. If you change this file, please restart the server process.
 
-localdev: true
-timezone: Europe/London
+# Theme Settings
+#
+# Review documentation to determine if you should use `theme` or `remote_theme`
+# https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
-# Social
-twitter_username: ricardonadao
-github_username:  ricardonadao
-linkedin_username: ricardonadao
-googleplus_username: +RicardoAdao
-rssfeed: working # Anything besides empty
+# theme                  : "minimal-mistakes-jekyll"
+remote_theme             : "mmistakes/minimal-mistakes"
+minimal_mistakes_skin    : "dirt" #"default" "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
-# SEO info
+# Site Settings
+locale                   : "en-GB"
+title                    : "vRandomBites"
+title_separator          : "-"
+name                     : "Ricardo Adao"
+description              : "It is not enough to have a good mind; the main thing is to use it well."
+url                      : "https://vrandombites.co.uk" 
+baseurl                  : "/"
+repository               : "ricardonadao/ricardonadao.github.io"
+teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+# breadcrumbs            : false # true, false (default)
+words_per_minute         : 200
+comments:
+  provider               : "staticman_v2" # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2" "custom"
+  disqus:
+    shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+  discourse:
+    server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
+  facebook:
+    # https://developers.facebook.com/docs/plugins/comments
+    appid                :
+    num_posts            : # 5 (default)
+    colorscheme          : # "light" (default), "dark"
+staticman:
+  allowedFields          : # ['name', 'email', 'url', 'message']
+  branch                 : "master"
+  commitMessage          : # "New comment by {fields.name}"
+  filename               : # comment-{@timestamp}
+  format                 : # "yml"
+  moderation             : # true
+  path                   : # "/_data/comments/{options.slug}" (default)
+  requiredFields         : # ['name', 'email', 'message']
+  transforms:
+    email                : # "md5"
+  generatedFields:
+    date:
+      type               : # "date"
+      options:
+        format           : # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
+  endpoint               : "https://vrandombites-staticman.herokuapp.com/" # URL of your own deployment with trailing slash, will fallback to the public instance
+# reCaptcha
+reCaptcha:
+  enabled: true
+  siteKey: "6LfuEFEUAAAAAFCypiCqgPYr1dd-sPsFYziI1op4"
+  secret: "utfoecIsd0fXwl5VsGDo/uOXIufBmk4wuMU4rWJOuRrrkPLywcaySpZ3Y4WrrMX5I/oL4V/h4d1z8PBSF2h9vDbQfxGPBmBbe5vvM1KM3TxaNyos7FJNKhQHWupzfsEVRq2vE0YscweqLmjFPrS7tH3WNSJAVIbt3ACsh3Urz6aS4fMjygvqBiq5nX9Pq6bFV1YvvFbMXUKJMhCutvKQ1+qCWtpU7Wp3gdxRPitNfeuyjP/o0CfFCzafZ9CreHSAUZ+MDR5If3uQ9J+7UV1DHoPnKJss4ulkJ7naKNb/+Tr/F35F8qZbYchKEECLe0Rj1+7phtTosUFx9OhcB571wQ=="
+atom_feed:
+  path                   : # blank (default) uses feed.xml
+search                   : true # true, false (default)
+search_full_content      : # true, false (default)
+search_provider          : lunr # lunr (default), algolia, google
+algolia:
+  application_id         : # YOUR_APPLICATION_ID
+  index_name             : # YOUR_INDEX_NAME
+  search_only_api_key    : # YOUR_SEARCH_ONLY_API_KEY
+  powered_by             : # true (default), false
+google:
+  search_engine_id       : # YOUR_SEARCH_ENGINE_ID
+  instant_search         : # false (default), true
+# SEO Related
+google_site_verification : "ZbHQ1ErXGLxJ68-pSIGslwc1Dq3afLqgeFIGvKl2K9o"
+bing_site_verification   : "066D47264798DF0304F169C02A7882D8"
+yandex_site_verification :
+naver_site_verification  :
+
+# Social Sharing
 twitter:
-  username: ricardonadao
-  card: summary
+  username               : "ricardonadao"
+facebook:
+  username               :
+  app_id                 :
+  publisher              :
+og_image                 : # Open Graph/Twitter default site image
+# For specifying social profiles
+# - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  name: Ricardo Adao
-  links:
+  type                   : "Person" # Person or Organization (defaults to Person)
+  name                   : "ricardonadao" # If the user or organization name differs from the site's name
+  links: # An array of links to social media profiles
     - https://twitter.com/ricardonadao
     - https://www.linkedin.com/in/ricardonadao/
     - https://github.com/ricardonadao
     - https://plus.google.com/+RicardoAdao
 
-googleSiteVerification: "ZbHQ1ErXGLxJ68-pSIGslwc1Dq3afLqgeFIGvKl2K9o"
-bingSiteVerification: "066D47264798DF0304F169C02A7882D8"
+# Analytics
+analytics:
+  provider               : "google-gtag" # false (default), "google", "google-universal", "custom"
+  google:
+    tracking_id          : "UA-117546593-1"
+    anonymize_ip         : # true, false (default)
 
-# Google Analytics
-googleAnalytics: "UA-117546593-1"
 
-# Google Adsense
-googleAdSense: "ca-pub-7122794554902389" 
-googleAdSense_SidebarSlotId: "9941408474"
+# Site Author
+author:
+  name             : "Ricardo Ad&atilde;o"
+  avatar           : "/assets/images/social/linkedin_avatar-50x50.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "Just me."
+  location         : "Somewhere"
+  email            :
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      # url: mailto:your.name@email.com
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://vrandombites.co.uk"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/ricardonadao"
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
+      # url: "https://facebook.com/"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/ricardonadao"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      # url: "https://instagram.com/"
 
-# disqus
-disqus:
-  shortname: vrandombites
+# Site Footer
+footer:
+  links:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/ricardonadao"
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
+      # url:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/ricardonadao"
+    - label: "GitLab"
+      icon: "fab fa-fw fa-gitlab"
+      # url:
+    - label: "Bitbucket"
+      icon: "fab fa-fw fa-bitbucket"
+      # url:
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      # url:
 
-# Pagination
-paginate: 7
-paginate_path: "/page-:num"
 
-# limits
-# Same size as site.paginate to keep consistent
-#Deprecated by paginate -> postPerPage: "7"
-sidebarRecentPosts: "5"
-feedLimit: "50"
-maxRelatedPosts: 4
-minCommonTags: 3
-postTruncateSize: 50
+# Reading Files
+include:
+  - .htaccess
+  - _pages
+exclude:
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - vendor
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - assets/js/plugins
+  - assets/js/_main.js
+  - assets/js/vendor
+  - Capfile
+  - CHANGELOG
+  - config
+  - Gemfile
+  - Gruntfile.js
+  - gulpfile.js
+  - LICENSE
+  - log
+  - node_modules
+  - package.json
+  - Rakefile
+  - README
+  - tmp
+  - /docs # ignore Minimal Mistakes /docs
+  - /test # ignore Minimal Mistakes /test
+keep_files:
+  - .git
+  - .svn
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
-# Compress HTML
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+
+
+# Outputting
+permalink: /:categories/:title/
+paginate: 7 # amount of posts to show
+paginate_path: /page:num/
+timezone: "Europe/London" # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+
+# Plugins (previously gems:)
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-include-cache
+  - jekyll-seo-tag
+  
+# mimic GitHub Pages with --safe
+whitelist:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-include-cache
+  - jekyll-seo-tag
+
+
+
+# Archives
+#  Type
+#  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
+#  - Jekyll Archives plugin archive pages ~> type: jekyll-archives
+#  Path (examples)
+#  - Archive page should exist at path when using Liquid method or you can
+#    expect broken links (especially with breadcrumbs enabled)
+#  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
+#  - <base_path/categories/my-awesome-category/index.html ~> path: /categories/
+#  - <base_path/my-awesome-category/index.html ~> path: /
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
+# https://github.com/jekyll/jekyll-archives
+# jekyll-archives:
+#   enabled:
+#     - categories
+#     - tags
+#   layouts:
+#     category: archive-taxonomy
+#     tag: archive-taxonomy
+#   permalinks:
+#     category: /categories/:name/
+#     tag: /tags/:name/
+
+
+# HTML Compression
+# - http://jch.penibelst.de/
 compress_html:
   clippings: all
   comments: all
   endings: all
   ignore:
-    envs: []
+    envs: development
   blanklines: false
   profile: false
   startings: all
 
-# Staticman comments (full configuration in staticman.yml)
-api_staticman: "https://vrandombites-staticman.herokuapp.com"
-
-staticman:
-  branch: "master"
-
-reCaptcha:
-  enabled: true
-  siteKey: "6LfuEFEUAAAAAFCypiCqgPYr1dd-sPsFYziI1op4"
-  secret: "utfoecIsd0fXwl5VsGDo/uOXIufBmk4wuMU4rWJOuRrrkPLywcaySpZ3Y4WrrMX5I/oL4V/h4d1z8PBSF2h9vDbQfxGPBmBbe5vvM1KM3TxaNyos7FJNKhQHWupzfsEVRq2vE0YscweqLmjFPrS7tH3WNSJAVIbt3ACsh3Urz6aS4fMjygvqBiq5nX9Pq6bFV1YvvFbMXUKJMhCutvKQ1+qCWtpU7Wp3gdxRPitNfeuyjP/o0CfFCzafZ9CreHSAUZ+MDR5If3uQ9J+7UV1DHoPnKJss4ulkJ7naKNb/+Tr/F35F8qZbYchKEECLe0Rj1+7phtTosUFx9OhcB571wQ=="
-
-
-# Build settings
-markdown: kramdown
-kramdown:
-  toc_levels             : 1..3
-  input                  : GFM
-  hard_wrap              : false
-  auto_ids               : true
-  entity_output          : as_char
-  smart_quotes           : lsquo,rsquo,ldquo,rdquo
-  enable_coderay         : false
-
-highlighter: rouge
-
-theme: jekyll-theme-architect
-
-plugins:
-  - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-seo-tag
-  - jekyll-paginate
-
-include:
-  - .htaccess
-  - _pages
-
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-#exclude:
-#   - assets/js/_main.js
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+# Defaults
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: false
+      related: true
