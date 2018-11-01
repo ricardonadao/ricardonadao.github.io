@@ -103,6 +103,9 @@ analytics:
     tracking_id          : "UA-117546593-1"
     anonymize_ip         : # true, false (default)
 
+# Google Adsense
+google_adsense: "ca-pub-7122794554902389"
+
 # Site Author
 author:
   name             : "Ricardo Ad&atilde;o"
