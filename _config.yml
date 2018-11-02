@@ -23,7 +23,7 @@ description              : "It is not enough to have a good mind; the main thing
 url                      : "https://vrandombites.co.uk" 
 baseurl                  : "/"
 repository               : "ricardonadao/ricardonadao.github.io"
-teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+teaser                   : "/assets/images/featured/blog-150x150.png" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 breadcrumbs              : true # true, false (default)
 words_per_minute         : 150
 comments:
