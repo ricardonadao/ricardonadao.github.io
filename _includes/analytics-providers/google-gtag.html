@@ -5,5 +5,13 @@
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', '{{ site.analytics.google.tracking_id }}', { 'anonymize_ip': {{ site.analytics.google.anonymize_ip | default: false }}});
+  gtag('config',
+    '{{ site.analytics.google.tracking_id }}',
+    {'anonymize_ip': {{ site.analytics.google.anonymize_ip | default: false }}},
+    {
+      'page_title': '{{ page.title }}',
+      'page_location': '{{ site.url }}/{{ page.url }}',
+      'page_path': '{{ page.path }}'
+    }
+    );
 </script>

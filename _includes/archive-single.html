@@ -39,7 +39,7 @@
         <i class="far fa-clock" aria-hidden="true"></i> {% include read-time.html %}
       {% endif %}
       {% if post.comments == true and site.data.comments[post.slug].size > 0 %}
-        &nbsp;<i class="far fa-comments" aria-hidden="true"></i> <a href="#comments">{{ site.data.comments[post.slug] | size }}&nbsp;Comment{% if site.data.comments[post.slug].size > 1 %}s{% endif %}</a>
+        &nbsp;<i class="far fa-comments" aria-hidden="true"></i> <a href="{{ post.url | relative_url }}#comments">{{ site.data.comments[post.slug] | size }}&nbsp;Comment{% if site.data.comments[post.slug].size > 1 %}s{% endif %}</a>
       {% endif %}
     </p>
     {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html | truncate: 160 }}</p>{% endif %}
