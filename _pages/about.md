@@ -5,23 +5,23 @@ permalink: /about/
 author: Ricardo Adao
 published: true
 post_date: 2018-09-05 14:07:00
+last_modified_at: 2018-11-04 18:00:00
 categories: [ blog ]
 tags: [ blog, about, profile, certifications, social ]
 ---
-
-## Welcome to vRandomBites blog ##
+# Welcome to vRandomBites blog #
 
 ![LinkedIn Picture]({{ site.url }}/assets/images/social/linkedin_avatar-150x150.png){:class="img-responsive"}
 
-My name is Ricardo Adão and decided to start blogging my random pieces of "wisdom".
+My name is Ricardo Adão and this blog is my way of contributing to the tech community by sharing some pieces of knowledge and rare _light bulb_ moments.
 
-I have been working in the IT industry for more years than I feel comfortable to admit.
+I have been working in the IT industry for more years than care to admit.
 
-My journey through IT covers Software Development, Security, Network and for the last couple of years Virtualization and VMware was the main area of focus.I currently work as a VMware Product Engineer _@[Rackspace](https://www.rackspace.com/)_.
+My journey through IT covers Software Development, Security, Network and for the last couple of years Virtualization, mainly VMware was focused.
 
-My posts in this blog represent my random technical notes and thoughts.
+I currently work as a VMware Product Engineer _@[Rackspace](https://www.rackspace.com/)_.
 
-The thoughts expressed here do not reflect my current employer in any way.
+> The thoughts expressed here do not reflect my current employer in any way.
 
 ## Some certs and accomplishements ##
 
