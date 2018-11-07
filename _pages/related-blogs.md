@@ -1,7 +1,7 @@
 ---
 layout: single
-title: "Related Blogs"
-permalink: /related-blogs/
+title: "Friends"
+permalink: /friends/
 author: Ricardo Adao
 published: true
 post_date: 2018-11-07 10:10:00
@@ -18,6 +18,6 @@ author_profile: true
 
 * [![Ather Beg](https://pbs.twimg.com/profile_images/785468932/DSC04295-4_400x400.jpg){: width="50px" height="50px"}](http://atherbeg.com/) Ather Beg - [_http://atherbeg.com/_](http://atherbeg.com/)
 
-* [![Luke @ThepHuck](https://pbs.twimg.com/profile_images/1034589426985230337/u0zGf9UL_400x400.jpg){: width="50px" height="50px"}](http://thephuck.com/author/luke/) Luke @ThepHuck - [_http://thephuck.com/_](http://thephuck.com/)
+* [![Luke @ThepHuck](https://pbs.twimg.com/profile_images/1034589426985230337/u0zGf9UL_400x400.jpg){: width="50px" height="50px"}](http://thephuck.com/about/) Luke @ThepHuck - [_http://thephuck.com/_](http://thephuck.com/)
 
 * [![Per Thorn](https://pbs.twimg.com/profile_images/468112862381367296/uYOBYMIo_400x400.jpeg){: width="50px" height="50px"}](https://www.perthorn.com/about/) Per Thorn - [_http://www.perthorn.com/_](http://www.perthorn.com/)
