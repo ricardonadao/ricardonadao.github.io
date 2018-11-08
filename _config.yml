@@ -21,7 +21,7 @@ title_separator          : "-"
 name                     : "Ricardo Adao"
 description              : "It is not enough to have a good mind; the main thing is to use it well."
 url                      : "https://vrandombites.co.uk" 
-baseurl                  : "/"
+baseurl                  : ""
 repository               : "ricardonadao/ricardonadao.github.io"
 teaser                   : "/assets/images/featured/blog-150x150.png" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 breadcrumbs              : true # true, false (default)
@@ -171,7 +171,6 @@ include:
   - .htaccess
   - _pages
 exclude:
-  - _drafts
   - "*.sublime-project"
   - "*.sublime-workspace"
   - vendor
