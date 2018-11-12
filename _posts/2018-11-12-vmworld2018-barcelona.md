@@ -30,19 +30,15 @@ However, this year was a bit different since me and some team mates had addition
 
 * [Ricardo Adao](https://twitter.com/ricardonadao), Product Engineer, Rackspace
 
-## NSX Roving Reporter with [Ather Beg](https://twitter.com/AtherBeg)
+# NSX Roving Reporter with [Ather Beg](https://twitter.com/AtherBeg)
 
-### [Alex Galbraith](https://twitter.com/alexgalbraith)
+## [Alex Galbraith](https://twitter.com/alexgalbraith)
 
-{% raw %}
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/WSeagfVuFBE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"> </iframe>
-{% endraw %}
+{% include video id="WSeagfVuFBE" provider="youtube" %}
 
-### [Ricardo Adao](https://twitter.com/ricardonadao)
+## [Ricardo Adao](https://twitter.com/ricardonadao)
 
-{% raw %}
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/bDXZxVQ0C0A" frameborder="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"> </iframe>
-{% endraw %}
+{% include video id="bDXZxVQ0C0A" provider="youtube" %}
 
 # Stage presentations
 
