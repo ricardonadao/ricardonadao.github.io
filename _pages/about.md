@@ -19,7 +19,7 @@ I have been working in the IT industry for more years than care to admit.
 
 My journey through IT covers Software Development, Security, Network and for the last couple of years Virtualization, mainly VMware was focused.
 
-I currently work as a VMware Product Engineer _@[Rackspace](https://www.rackspace.com/)_.
+I currently work as a VMware Product Engineer [_@Rackspace_](https://www.rackspace.com/).
 
 > The thoughts expressed here do not reflect my current employer in any way.
 
