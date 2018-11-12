@@ -10,7 +10,7 @@ categories: [ nsx ]
 tags: [ nsx, vmware, networking, nested, vsan, sddc ]
 toc: true
 ---
-The title seems weird and at first glance we will thing... **NO WAY**
+The title seems weird and at first glance we will think... **NO WAY**
 
 However lets dig a bit more in what is the idea behind it?
 
