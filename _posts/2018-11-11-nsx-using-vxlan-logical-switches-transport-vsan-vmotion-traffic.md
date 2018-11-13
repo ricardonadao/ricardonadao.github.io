@@ -7,7 +7,7 @@ header:
   teaser: /assets/images/featured/nsx-150x150.png
 title: NSX - Using VXLAN logical switches to transport vSAN and vMotion traffic
 categories: [ nsx ]
-tags: [ nsx, vmware, networking, nested, vsan, sddc ]
+tags: [ nsx, networking, vmware, nested, vsan, sddc ]
 toc: true
 ---
 The title seems weird and at first glance we will think... **NO WAY**
