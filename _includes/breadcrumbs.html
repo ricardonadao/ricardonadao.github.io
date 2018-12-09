@@ -13,20 +13,20 @@
 {% endif %}
 
 <nav class="breadcrumbs">
-  <ol itemscope itemtype="http://schema.org/BreadcrumbList">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
     {% assign crumbs = page.url | split: '/' %}
     <span class="sep"><i class="fas fa-long-arrow-alt-left" aria-hidden="true"></i></span>
     {% assign num_crumbs = crumbs | size %}
     {% if num_crumbs > 2 %}
       {% assign i = num_crumbs | minus: 2 %}
       {% assign crumb = crumbs[i] %}
-      <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
         <a href="{{ crumb | downcase | replace: '%20', '-' | prepend: path_type | prepend: crumb_path | relative_url }}" itemprop="item"><span itemprop="name"><em><strong>{{ crumb | replace: '-', ' ' | replace: '%20', ' ' }}</strong></em></span></a>
         <meta itemprop="position" content="{{ i }}" />
       </li>
     {% else %}
       {% assign i = 1 %}
-      <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
         <a href="{{ site.url }}{{ site.baseurl }}/" itemprop="item"><span itemprop="name"><em><strong>{{ site.data.ui-text[site.locale].breadcrumb_home_label | default: "Home" }}</strong></em></span></a>
         <meta itemprop="position" content="{{ i }}" />
       </li>
