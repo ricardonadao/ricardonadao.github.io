@@ -1,9 +1,0 @@
-/*
-  X-XSS-Protection: 1; mode=block
-  X-Frame-Option: SAMEORIGIN
-
-/assets/images/*
-  Cache-Control: public, max-age=31536000
-
-/favicon.ico
-  Cache-Control: public, max-age=31536000
