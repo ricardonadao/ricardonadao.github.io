@@ -2,7 +2,7 @@
 author: Ricardo Adao
 published: true
 post_date: 2018-12-18 10:00:00
-last_modified_at:
+last_modified_at: 2018-12-18 19:00:00
 header:
   teaser: /assets/images/featured/homelab-150x150.png
 title: Homelab - Setting up a _Nested Internet_ for our Homelab - Part 1
