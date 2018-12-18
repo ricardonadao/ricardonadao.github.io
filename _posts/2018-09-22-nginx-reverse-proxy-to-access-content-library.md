@@ -43,7 +43,9 @@ openssl req -x509 -nodes -days 3650 -newkey rsa:2048 \
 {:start="3"}
 
 1. Now we can setup the _NGINX_ service, we will focus in the basic configuration to filter the URL to limit the access only to the _Content Library_ vCenter service
-> **Note:** we assume that _NGINX_ is installed in the vm already, since there are multiple ways and flavours to install it, depending on the engineer prefered distribution or prefered package management system.
+
+**Note:** we assume that _NGINX_ is installed in the vm already, since there are multiple ways and flavours to install it, depending on the engineer prefered distribution or prefered package management system.
+{: .notice--info}
 
 ```nginx
 user nginx;

@@ -26,7 +26,8 @@ What we will be doing instead, is running _Nested Hypervisor clusters_ on top of
 
 The main objective here was to leverage _VMware NSX (NSX)_ software defined solution to reduce the number of changes in the _physical underlay_ and speed up the _Nested Hypervisors cluster_ process.
 
-> _Disclaimer_: **Remember this is a _Lab environment_**, definitely not recommend to use this in a _Production Environment_. Some of the configurations and tweaks neeed touch or cross the line of _unsupported production solutions_.
+_**Remember this is a _Lab environment_**, definitely not recommend to use this in a _Production Environment_. Some of the configurations and tweaks neeed touch or cross the line of _unsupported production solutions_.
+{: .notice--warning}
 
 # Analysis
 

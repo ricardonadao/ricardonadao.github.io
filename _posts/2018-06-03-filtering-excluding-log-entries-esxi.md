@@ -12,7 +12,8 @@ toc: true
 ---
 In our Homelabs, or even in production environments, we always have some harmless log entries that we would be happy to stop them from filling up our logs.
 
->**Caution:** Reducing/suppressing/filtering log entries on an ESXi could introduce some "blind spots" or even hide issues when troubleshooting
+**Caution:** Reducing/suppressing/filtering log entries on an ESXi could introduce some "blind spots" or even hide issues when troubleshooting
+{: .notice--warning}
 
 In ESXi 6.x, VMware introduced the ability to filter or exclude log entries from the system logs using _regular expressions_ ([_Filtering logs in VMware vSphere ESXi (2118562)_](https://kb.vmware.com/kb/2118562)).
 
@@ -100,4 +101,5 @@ esxcli system syslog reload
 
 ## **Syslog** logged 129 new log lines after we activated the filtering ##  
 
->**Caution:** Reducing/suppressing/filtering log entries on an ESXi could introduce some "blind spots" or even hide issues when troubleshooting
+**Caution:** Reducing/suppressing/filtering log entries on an ESXi could introduce some "blind spots" or even hide issues when troubleshooting
+{: .notice--warning}

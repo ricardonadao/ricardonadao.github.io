@@ -82,7 +82,8 @@ if (($request = Get-RestAPICall -url $url -headers $headers).name -notmatch "BRI
 }
 ```
 
-> _**Get-RestAPICall**_ is one of the wrapping functions already exemplified in an earlier post [Powershell - Wrapping GET and POST Rest API calls]({{ site.url }}{% link _posts/2018-10-10-powershell-wrapping-get-post-rest-api-calls.md %})
+_**Get-RestAPICall**_ is one of the wrapping functions already exemplified in an earlier post [Powershell - Wrapping GET and POST Rest API calls]({{ site.url }}{% link _posts/2018-10-10-powershell-wrapping-get-post-rest-api-calls.md %})
+{: .notice--info}
 
 ## Step 3 - Start bringup process
 
@@ -103,9 +104,11 @@ $request = Post-RestAPICall -url $url -headers $headers -payload $vcfJSON
 $bringupId = $request.id
 ```
 
-> _**$vcfJSON**_ - will have the JSON payload that we will send in the _POST_ command to the _API_, there will be multiple ways of creating this payload either by using a template and replace the fields with string replacemente or even building the full JSON payload from scratch using _Powershell_, didn't detail any of the options, since it would be a familiar process to someone working with _VCF SP_
+_**$vcfJSON**_ - will have the JSON payload that we will send in the _POST_ command to the _API_, there will be multiple ways of creating this payload either by using a template and replace the fields with string replacemente or even building the full JSON payload from scratch using _Powershell_, didn't detail any of the options, since it would be a familiar process to someone working with _VCF SP_
+{: .notice--info}
 
-> _**Post-RestAPICall**_ is one of the wrapping functions already exemplified in an earlier post [Powershell - Wrapping GET and POST Rest API calls]({{ site.url }}{% link _posts/2018-10-10-powershell-wrapping-get-post-rest-api-calls.md %})
+_**Post-RestAPICall**_ is one of the wrapping functions already exemplified in an earlier post [Powershell - Wrapping GET and POST Rest API calls]({{ site.url }}{% link _posts/2018-10-10-powershell-wrapping-get-post-rest-api-calls.md %})
+{: .notice--info}
 
 ## Step 4 - Waiting till _VCF_ finishes the deployment
 

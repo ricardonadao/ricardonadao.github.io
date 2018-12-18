@@ -18,7 +18,8 @@ Running everything from a single host creates some challenges when is time for B
 
 # Let's go through the process to upgrade an ESXi hypervisor offline #
 
-> remember your mileage may vary in some of the parts, but the process should work for more than _ESXi 6.5_ to _ESXi 6.7_ upgrade
+Remember your mileage may vary in some of the parts, but the process should work for more than _ESXi 6.5_ to _ESXi 6.7_ upgrade
+{: .notice}
 
 1. **Download the offline bundle and upload to a local datastore**
 
