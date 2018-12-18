@@ -7,7 +7,7 @@ header:
   teaser: /assets/images/featured/homelab-150x150.png
 title: Homelab - Setting up a _Nested Internet_ for our Homelab - Part 1
 categories: [ homelab ]
-tags: [ homelab, nested, linux, networking, bgp, cumulus, frr, pfsense ]
+tags: [ homelab, nested, linux, networking, cumulus, frr, pfsense ]
 toc: true
 ---
 Title seems a bit strange and even a bit overly optimistic.
