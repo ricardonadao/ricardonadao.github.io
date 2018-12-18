@@ -24,7 +24,7 @@
       </div>
     {% endif %}
     <h2 class="archive__item-title" itemprop="headline">
-      {% if teaser %}
+      {% if include.type != "grid" and teaser %}
         <img src=
           {% if teaser contains "://" %}
             "{{ teaser }}"
