@@ -21,7 +21,8 @@ My journey through IT covers Software Development, Security, Network and for the
 
 I currently work as a VMware Product Engineer [_@Rackspace_](https://www.rackspace.com/).
 
-> The thoughts expressed here do not reflect my current employer in any way.
+The thoughts expressed here do not reflect my current employer in any way.
+{: .notice--success}
 
 ## Some certs and accomplishements ##
 
