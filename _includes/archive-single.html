@@ -27,9 +27,9 @@
       {% if include.type != "grid" and teaser %}
         <img src=
           {% if teaser contains "://" %}
-            "{{ teaser }}"
+            "{{ teaser | replace: "150", "50" }}"
           {% else %}
-            "{{ teaser | relative_url }}"
+            "{{ teaser | relative_url | replace: "150", "50" }}"
           {% endif %}
           alt="" style="max-width: 50px">
       {% endif %}
