@@ -14,12 +14,14 @@ author_profile: true
 
  When you work with really smart people you end up with a rich repository of references that you regurlaly keep in your bookmark list.
 
-* [![Alex Galbraith](https://pbs.twimg.com/profile_images/793442977289007104/wC7gIBvX_400x400.jpg){: width="50px" height="50px"}](http://tekhead.it/blog/about/) Alex Galbraith - [_http://tekhead.it/_](http://tekhead.it)
+* [![Alex Galbraith](https://pbs.twimg.com/profile_images/793442977289007104/wC7gIBvX_400x400.jpg){: width="50px" height="50px"}](https://tekhead.it/blog/about/) Alex Galbraith - [_https://tekhead.it_](https://tekhead.it)
 
-* [![Amine El Badaoui](https://pbs.twimg.com/profile_images/978727565270618113/dEmymoCb_400x400.jpg){: width="50px" height="50px"}](https://vsamurai.co.uk/about/) Amine El Badaoui - [_https://vsamurai.co.uk_](https://vsamurai.co.uk/)
+* [![Amine El Badaoui](https://pbs.twimg.com/profile_images/978727565270618113/dEmymoCb_400x400.jpg){: width="50px" height="50px"}](https://vsamurai.co.uk/about/) Amine El Badaoui - [_https://vsamurai.co.uk_](https://vsamurai.co.uk)
 
-* [![Ather Beg](https://pbs.twimg.com/profile_images/785468932/DSC04295-4_400x400.jpg){: width="50px" height="50px"}](http://atherbeg.com/) Ather Beg - [_http://atherbeg.com/_](http://atherbeg.com/)
+* [![Ather Beg](https://pbs.twimg.com/profile_images/785468932/DSC04295-4_400x400.jpg){: width="50px" height="50px"}](http://atherbeg.com/) Ather Beg - [_http://atherbeg.com/_](http://atherbeg.com)
 
-* [![Luke @ThepHuck](https://pbs.twimg.com/profile_images/1034589426985230337/u0zGf9UL_400x400.jpg){: width="50px" height="50px"}](http://thephuck.com/about/) Luke @ThepHuck - [_http://thephuck.com_](http://thephuck.com/)
+* [![Luke @ThepHuck](https://pbs.twimg.com/profile_images/1034589426985230337/u0zGf9UL_400x400.jpg){: width="50px" height="50px"}](http://thephuck.com/about/) Luke @ThepHuck - [_http://thephuck.com_](http://thephuck.com)
 
-* [![Per Thorn](https://pbs.twimg.com/profile_images/468112862381367296/uYOBYMIo_400x400.jpeg){: width="50px" height="50px"}](https://www.perthorn.com/about/) Per Thorn - [_http://www.perthorn.com_](http://www.perthorn.com/)
+* [![Per Thorn](https://pbs.twimg.com/profile_images/468112862381367296/uYOBYMIo_400x400.jpeg){: width="50px" height="50px"}](https://www.perthorn.com/about/) Per Thorn - [_http://www.perthorn.com_](http://www.perthorn.com)
+
+* [![Richard Harris](https://media.licdn.com/dms/image/C4E03AQHYhAyddQdUHQ/profile-displayphoto-shrink_800_800/0?e=1553126400&v=beta&t=bH6iXs98JMiAuMdvqwGVwGN-ktCowg9jVfVnrxX5ZzY){: width="50px" height="50px"}](http://www.nuthouse.us/about/) Richard Harris - [_http://www.nuthouse.us_](http://www.nuthouse.us)
