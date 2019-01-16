@@ -18,7 +18,9 @@ author_profile: true
 
 * [![Amine El Badaoui](https://pbs.twimg.com/profile_images/978727565270618113/dEmymoCb_400x400.jpg){: width="50px" height="50px"}](https://vsamurai.co.uk/about/) Amine El Badaoui - [_https://vsamurai.co.uk_](https://vsamurai.co.uk)
 
-* [![Ather Beg](https://pbs.twimg.com/profile_images/785468932/DSC04295-4_400x400.jpg){: width="50px" height="50px"}](http://atherbeg.com/) Ather Beg - [_http://atherbeg.com/_](http://atherbeg.com)
+* [![Ather Beg](https://pbs.twimg.com/profile_images/785468932/DSC04295-4_400x400.jpg){: width="50px" height="50px"}](http://atherbeg.com/) Ather Beg - [_http://atherbeg.com_](http://atherbeg.com)
+
+* [![Jonathan Somers](https://www.gravatar.com/avatar/ee6fab353cb93be6db58a66e6d89880d?s=64&d=mm){: width="50px" height="50px"}](https://vdudejon.github.io/about/) Jonathan Somers - [_https://vdudejon.github.io_](https://vdudejon.github.io)
 
 * [![Luke @ThepHuck](https://pbs.twimg.com/profile_images/1034589426985230337/u0zGf9UL_400x400.jpg){: width="50px" height="50px"}](http://thephuck.com/about/) Luke @ThepHuck - [_http://thephuck.com_](http://thephuck.com)
 
