@@ -24,10 +24,12 @@ url                      : "https://vrandombites.co.uk"
 baseurl                  : ""
 repository               : "ricardonadao/ricardonadao.github.io"
 teaser                   : "/assets/images/featured/blog-150x150.png" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              : true # true, false (default)
 words_per_minute         : 150
 comments:
-  provider               : "staticman_v2" # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2" "custom"
+  provider               : "staticman_v2" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2" "custom"
   disqus:
     shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
@@ -94,7 +96,6 @@ social:
     - https://twitter.com/ricardonadao
     - https://www.linkedin.com/in/ricardonadao/
     - https://github.com/ricardonadao
-    - https://plus.google.com/+RicardoAdao
 
 # Analytics
 analytics:
@@ -132,9 +133,6 @@ author:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
-    - label: "Google Plus"
-      icon: "fab fa-fw fa-google-plus-square"
-      url: "https://plus.google.com/+RicardoAdao"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/ricardonadao/"
@@ -160,8 +158,6 @@ footer:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url:
-      icon: "fab fa-fw fa-google-plus-square"
-      url: "https://plus.google.com/+RicardoAdao"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/ricardonadao/"
