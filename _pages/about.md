@@ -5,7 +5,7 @@ permalink: /about/
 author: Ricardo Adao
 published: true
 post_date: 2018-09-05 14:07:00
-last_modified_at: 2018-11-04 18:00:00
+last_modified_at: 2019-05-09 23:00:00
 categories: [ blog ]
 tags: [ blog, about, profile, certifications, social ]
 ---
@@ -17,9 +17,11 @@ My name is Ricardo Adão and this blog is my way of contributing to the tech com
 
 I have been working in the IT industry for more years than care to admit.
 
-My journey through IT covers Software Development, Security, Network and for the last couple of years Virtualization, mainly VMware was focused.
+My journey through IT covers a lot of skills and roles from Software Development, Security, Network and for the last couple of years Virtualization, mainly VMware technologies.
 
-I currently work as a VMware Product Engineer [_@Rackspace_](https://www.rackspace.com/).
+After a couple of years working [_@Rackspace_](https://www.rackspace.com/) in the _VMware_ side of the house, the opportunity of moving to [_@VMware_](https://www.vmware.com/) was an hard challenge to refuse.
+
+Which turns me a  _VMware_ employee since May 2019, I joined the _NEMEA PSO team_ as a _NSX Senior Consultant_.
 
 The thoughts expressed here do not reflect my current employer in any way.
 {: .notice--success}
