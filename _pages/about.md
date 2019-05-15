@@ -33,11 +33,11 @@ The thoughts expressed here do not reflect my current employer in any way.
 * VCP3/4/5/6, VCAP6-DCV Deployment
 * VCP-NV ,VCIX-NV, VCIX6-NV
 
-[![VCP-DCV6]({{ site.url }}/assets/images/cert_badges/vmware_Cert_P_DCV6-150x150.png){:class="img-responsive"}](https://www.youracclaim.com/badges/6f29970d-55a2-46a6-b521-653512f69da2/public_url)
-[![VCP-NV6]({{ site.url }}/assets/images/cert_badges/vmware_Cert_P_NV6-150x150.png){:class="img-responsive"}](https://www.youracclaim.com/badges/4cc8ec95-9797-42fb-b534-d0d67cca92c5/public_url)
-[![2xVCP-Milestone]({{ site.url }}/assets/images/cert_badges/vmware_Milestone_2xVCP_DCVNV-150x150.png){:class="img-responsive"}](https://www.youracclaim.com/badges/943874a7-70c4-40d9-aafd-c3ad85c23053/public_url)
-[![VCAP-DCV6]({{ site.url }}/assets/images/cert_badges/vmware_Cert_AP_DCV6-150x150.png){:class="img-responsive"}](https://www.youracclaim.com/badges/ddd251fa-f183-412e-8229-9cc63824abe8/public_url)
-[![VCIX-NV6]({{ site.url }}/assets/images/cert_badges/vmware_Milestone_IE_NV6-150x150.png){:class="img-responsive"}](https://www.youracclaim.com/badges/f434f2d7-af9b-463a-99ad-213b5a5814f3/public_url)
+[![VCP-DCV6]({{ site.url }}/assets/images/cert_badges/vmware_Cert_P_DCV6-150x150.png){:class="img-responsive"}](https://www.youracclaim.com/badges/7a6a816b-3e3d-42e2-9747-8f51a845c291/public_url)
+[![VCP-NV6]({{ site.url }}/assets/images/cert_badges/vmware_Cert_P_NV6-150x150.png){:class="img-responsive"}](https://www.youracclaim.com/badges/77ecc4af-28df-499e-b649-e626adba2274/public_url)
+[![2xVCP-Milestone]({{ site.url }}/assets/images/cert_badges/vmware_Milestone_2xVCP_DCVNV-150x150.png){:class="img-responsive"}](https://www.youracclaim.com/badges/c9a45462-1944-49c3-b87f-365317d004f1/public_url)
+[![VCAP-DCV6]({{ site.url }}/assets/images/cert_badges/vmware_Cert_AP_DCV6-150x150.png){:class="img-responsive"}](https://www.youracclaim.com/badges/bff5ee00-8f7f-48e3-85a6-c875b52236a7/public_url)
+[![VCIX-NV6]({{ site.url }}/assets/images/cert_badges/vmware_Milestone_IE_NV6-150x150.png){:class="img-responsive"}](https://www.youracclaim.com/badges/11c9ef80-de27-4caa-9279-ee7b8143a27d/public_url)
 
 * vExpert
 
