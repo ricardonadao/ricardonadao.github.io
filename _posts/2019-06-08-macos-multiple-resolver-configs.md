@@ -78,7 +78,7 @@ round-trip min/avg/max/stddev = 2.554/5.155/7.756/2.601 ms
 
 Seems that it works :)
 
-## Summary
+# Summary
 
 The solution is pretty simple as explained.
 
