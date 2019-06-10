@@ -24,6 +24,7 @@ Setting up a simple _DNS LB_ using _Powershell_ and _[PowerNSX](https://powernsx
 * Transparent
 
 We will not create a new _ESG_ in the post, hence we will use an existing one and add the _LB_ configuration to it.
+{: .notice--info}
 
 [![ESG Example]({{ site.url }}/assets/images/posts/2019/06/nsx-powershell-powernsx-esg-lb.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2019/06/nsx-powershell-powernsx-esg-lb.png)
 
