@@ -2,7 +2,7 @@
 author: Ricardo Adao
 published: true
 post_date: 2019-06-10 08:00:00
-last_modified_at:
+last_modified_at: 2019-06-10 08:20:00
 header:
   teaser: /assets/images/featured/nsx-150x150.png
 title: NSX - Configure a Load Balancer in an Edge Security Gateway using Powershell/PowerNSX
@@ -14,7 +14,7 @@ This is a quick snippet explaining how to use _Powershell_ and _[PowerNSX](https
 
 # Objective
 
-Setting a simple _DNS LB_ using _Powershell_ and _[PowerNSX](https://powernsx.github.io/)_ with the following specs:
+Setting up a simple _DNS LB_ using _Powershell_ and _[PowerNSX](https://powernsx.github.io/)_ with the following specs:
 
 * 1x VIP - _ESG - Internal interface_  
   * _10.0.0.1/29_ _(VXLAN X)_
