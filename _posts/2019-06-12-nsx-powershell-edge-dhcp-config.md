@@ -95,7 +95,8 @@ Setting up the call _URL_:
 
 Execute and call _Invoke-NSXWebRequest:
 ```powershell
-    $null = invoke-nsxwebrequest -method "put" -uri $uri -body $xmlPayload -connection $nsxConnection
+    $null = invoke-nsxwebrequest -method "put" `
+      -uri $uri -body $xmlPayload -connection $nsxConnection
 ```
 
 The _$nsxConnection_ is the object produced by the _Connect-NSXServer_ when connecting to the _NSX manager_ of the solution.
