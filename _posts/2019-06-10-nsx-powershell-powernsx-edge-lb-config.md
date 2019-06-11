@@ -5,7 +5,7 @@ post_date: 2019-06-10 08:00:00
 last_modified_at: 2019-06-10 08:20:00
 header:
   teaser: /assets/images/featured/nsx-150x150.png
-title: NSX - Configure a Load Balancer in an Edge Security Gateway using Powershell/PowerNSX
+title: NSX - Configure a _Load Balancer_ in an _Edge Security Gateway_ using _Powershell/PowerNSX_
 categories: [ nsx ]
 tags: [ nsx, nsx-v, networking, vmware, coding, automation, powercli, powershell, powernsx, sddc ]
 toc: true
