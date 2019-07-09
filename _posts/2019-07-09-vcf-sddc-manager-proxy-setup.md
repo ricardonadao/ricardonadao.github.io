@@ -2,7 +2,7 @@
 author: Ricardo Adao
 published: true
 post_date: 2019-07-09 08:00:00
-last_modified_at:
+last_modified_at: 2019-07-09 09:45:00
 header:
   teaser: /assets/images/featured/vcf-150x150.png
 title: VCF - SDDC Manager proxy configuration
@@ -17,6 +17,9 @@ _SDDC Manager_ keeps a repository of _VCF Bundles_ needed to update all the comp
 The easy way to populate the repository is to download the bundles directly from _VMware_.
 
 When _SDDC Manager_ has internet connectivity the setup is quiet straightforward, however when the access is done through an _http proxy_ the configuration require some configurations changes directly in the appliance.
+
+_SDDC Manager_ only supports proxy servers that do not require authentication
+{: .notice--warning}
 
 The official _VMware Documentation_ link is at [_Download Bundles With a Proxy Server_](https://docs.vmware.com/en/VMware-Cloud-Foundation/3.7/com.vmware.vcf.admin.doc_37/GUID-BB15EADE-DCD3-4D51-824E-124C9B364D20.html_)
 {: .notice--info}
