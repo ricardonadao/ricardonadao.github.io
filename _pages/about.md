@@ -5,7 +5,7 @@ permalink: /about/
 author: Ricardo Adao
 published: true
 post_date: 2018-09-05 14:07:00
-last_modified_at: 2019-05-09 23:00:00
+last_modified_at: 2019-07-20 08:00:00
 categories: [ blog ]
 tags: [ blog, about, profile, certifications, social ]
 ---
@@ -41,8 +41,10 @@ The thoughts expressed here do not reflect my current employer in any way.
 
 * vExpert
 
-[![vExpert2018]({{ site.url }}/assets/images/cert_badges/vExpert.2018-221x150.png){:class="img-responsive"}](https://vexpert.vmware.com/directory/2766)
-[![vExpert2019]({{ site.url }}/assets/images/cert_badges/vExpert.2019-221x150.png){:class="img-responsive"}](https://vexpert.vmware.com/directory/2766)
+[![vExpert 2018]({{ site.url }}/assets/images/cert_badges/vExpert.2018-221x150.png){:class="img-responsive"}](https://vexpert.vmware.com/directory/2766)
+[![vExpert 2019]({{ site.url }}/assets/images/cert_badges/vExpert.2019-221x150.png){:class="img-responsive"}](https://vexpert.vmware.com/directory/2766)
+
+[![vExpert NSX 2109]({{ site.url }}/assets/images/cert_badges/vExpert.nsx-221x150.png){:class="img-responsive"}](https://vexpert.vmware.com/directory/2766)
 
 [![vExpert Years]({{ site.url }}/assets/images/cert_badges/vExpert.2years-221x150.png){:class="img-responsive"}](https://vexpert.vmware.com/directory/2766)
 
