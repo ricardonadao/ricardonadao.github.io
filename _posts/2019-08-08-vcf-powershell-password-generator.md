@@ -107,7 +107,7 @@ function New-RandomPassword {
     foreach ($a in $seedArray){
         $asciiCharsList += , [char][byte]$a 
     }
-    #regExp allowing only special characters !$%^ as per VCF/VMware
+    #regExp allowing only special characters @!#$%?^ as per VCF/VMware
     $regExp = "^((?=.*[a-z])(?=.*[A-Z])(?=.*[^A-Za-z0-9]))([A-Za-z\d@!#$%?^]){8,20}$"
 
     do {
