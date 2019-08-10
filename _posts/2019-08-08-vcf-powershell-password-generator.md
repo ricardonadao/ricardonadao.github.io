@@ -5,9 +5,9 @@ post_date: 2019-08-08 21:00:00
 last_modified_at:
 header:
   teaser: /assets/images/featured/vcf-150x150.png
-title: VCF - Quick Powershell/PowerCLI snippet to generate random passwords for VMware Cloud Foundation
+title: VCF - Powershell password generator function for VMware Cloud Foundation
 categories: [ vcf ]
-tags: [ vcf, vmware, coding, automation, powercli, powershell, sddc ]
+tags: [ vcf, vmware, coding, automation, powershell, sddc ]
 toc: true
 ---
 Anyone that worked with _VMware Cloud Foundation (VCF)_ knows that passwords and _valid special characters_ can be a tricky business.
