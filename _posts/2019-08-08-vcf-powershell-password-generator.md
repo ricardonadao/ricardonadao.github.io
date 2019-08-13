@@ -27,6 +27,7 @@ Having a function that generates random passwords with the necessary complexity 
 
 ## Complexity Requirements
 {: #complexity_requirements }
+
 * Length - 8-20 characters
 * At least one Uppercase, lowercase, number & special character
 * Special characters allowed: _@ ! # $ % ? ^_
@@ -89,7 +90,7 @@ function New-RandomPassword {
         Length of the password to generate (defaults to 16)
 
     .EXAMPLE
-    
+
     .NOTES
         Original code from https://github.com/PaoloFrigo/scriptinglibrary/blob/master/Blog/PowerShell/New-RandomPassword.ps1
     #>
@@ -97,7 +98,7 @@ function New-RandomPassword {
         [ValidateRange(8, 32)]
         [int] $length = 16
     )  
-    
+
     # Add some extra randomization by creating the "seed array" randomly
     # Remove double quotes and slash and black slash
     $seedArray = (48..57) + (65..90) + (97..122) + @(33, 36, 37, 94)
@@ -117,7 +118,7 @@ function New-RandomPassword {
             $password += $asciiCharsList | Get-Random
         }
     } until ($password -match $regExp )
-    
-    return $password   
+
+    return $password  
 }
 ```
