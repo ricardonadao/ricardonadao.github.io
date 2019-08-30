@@ -2,7 +2,7 @@
 author: Ricardo Adao
 published: true
 post_date: 2019-08-21 08:00:00
-last_modified_at:
+last_modified_at: 2019-08-30
 header:
   teaser: /assets/images/featured/vsan-150x150.png
 title: vSAN - Update vSAN HCL DB Offline using manual process and PowerCLI
@@ -50,9 +50,9 @@ However, if it is a recurring task, or if we need to upload the _vSAN HCL DB fil
 
 Let's start building our script from the simple _use case_ of a single _vCenter_,  to a _use case_ where we have multiple _vCenters_ that share the same credentials.
 
-### The magic _cmdlet_ - _Update-VsanHclDatabase_
+### The magic _cmdlet_ - [_Update-VsanHclDatabase_](https://code.vmware.com/doc/preview?id=6330#/doc/Update-VsanHclDatabase.html)
 
-We can upload a _vSAN HCL DB file_ using _PowerCLI cmdlet_ - [_Update-VsanHclDatabase_](https://code.vmware.com/doc/preview?id=6330#/doc/Update-VsanHclDatabase.html)
+We can upload a _vSAN HCL DB file_ using a _PowerCLI cmdlet_.
 
 ```powershell
 PS > get-help Update-VsanHclDatabase
