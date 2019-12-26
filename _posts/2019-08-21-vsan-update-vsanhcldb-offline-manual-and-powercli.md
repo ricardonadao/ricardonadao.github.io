@@ -87,13 +87,17 @@ The download of the _vSAN HCL DB file_ could also be scripted, but is not covere
 ```powershell
 param(
     [Parameter(Position=1,
-        Mandatory = $true, ValueFromPipeline = $true)] [string]$vcenter,
+        Mandatory = $true, ValueFromPipeline = $true)] `
+        [string]$vcenter,
     [Parameter(Position=2,
-        Mandatory = $true, ValueFromPipeline = $true)] [string]$username,
+        Mandatory = $true, ValueFromPipeline = $true)] `
+        [string]$username,
     [Parameter(Position=3,
-        Mandatory = $true, ValueFromPipeline = $true)] [System.Security.SecureString]$password,
+        Mandatory = $true, ValueFromPipeline = $true)] `
+        [System.Security.SecureString]$password,
     [Parameter(Position=4,
-        Mandatory = $true, ValueFromPipeline = $true)] [string]$vsanHCLDBFile
+        Mandatory = $true, ValueFromPipeline = $true)] `
+        [string]$vsanHCLDBFile
 )
 
 Write-Host "-> Connect to vCenter $vcenter" -ForegroundColor Green
