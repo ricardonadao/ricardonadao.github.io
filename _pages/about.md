@@ -43,10 +43,11 @@ The thoughts expressed here do not reflect my current employer in any way.
 
 [![vExpert 2018]({{ site.url }}/assets/images/cert_badges/vExpert.2018-221x150.png){:class="img-responsive"}](https://vexpert.vmware.com/directory/2766)
 [![vExpert 2019]({{ site.url }}/assets/images/cert_badges/vExpert.2019-221x150.png){:class="img-responsive"}](https://vexpert.vmware.com/directory/2766)
+[![vExpert 2020]({{ site.url }}/assets/images/cert_badges/vExpert.2020-221x150.png){:class="img-responsive"}](https://vexpert.vmware.com/directory/2766)
 
 [![vExpert NSX 2109]({{ site.url }}/assets/images/cert_badges/vExpert.nsx-221x150.png){:class="img-responsive"}](https://vexpert.vmware.com/directory/2766)
 
-[![vExpert Years]({{ site.url }}/assets/images/cert_badges/vExpert.2years-221x150.png){:class="img-responsive"}](https://vexpert.vmware.com/directory/2766)
+[![vExpert Years]({{ site.url }}/assets/images/cert_badges/vExpert.3years-221x150.png){:class="img-responsive"}](https://vexpert.vmware.com/directory/2766)
 
 ### Cisco ###
 
