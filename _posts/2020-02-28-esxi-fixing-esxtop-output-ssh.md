@@ -10,9 +10,6 @@ categories: [ esxi ]
 tags: [ esxi, vsphere, hypervisor, homelab, macos, vmware ]
 toc: true
 ---
-
-# Problem
-
 When you use for ages a _SSH client_ that magically just works and it is pretty simple to setup as [_PuTTY_](https://www.chiark.greenend.org.uk/~sgtatham/putty/).
 
 You take for granted that you open an SSH session and all just works.
@@ -20,6 +17,8 @@ You take for granted that you open an SSH session and all just works.
 However, when when I moved to _macOS_ and start using [_iTerm2_](https://iterm2.com/) as my main terminal emulator, some of my SSH sessions start behaving funny.
 
 And some of the SSH sessions that were playing up were the ones for my Homelab _ESXis_, which made me chase the problem since it was pretty annoying not being able to use one of the tools that is quite useful for any troubleshoot - _**esxtop**_.
+
+# Problem
 
 Everytime I opened an SSH session to one of my Homelab _ESXis_ servers and run _**esxtop**_ the result was something similar to running it in _batch mode_ with output to the _stdout_ (screen).
 
