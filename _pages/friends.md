@@ -10,7 +10,7 @@ categories: [ blog ]
 tags: [ blog, social ]
 author_profile: true
 ---
-## Some _@[Rackspace](https://www.rackspace.com/)_ colleagues
+## A list of blogs from some friends
 
  When you work with really smart people you end up with a rich repository of references that you regurlaly keep in your bookmark list.
 
@@ -27,3 +27,5 @@ author_profile: true
 * [![Per Thorn](https://pbs.twimg.com/profile_images/468112862381367296/uYOBYMIo_400x400.jpeg){: width="50px" height="50px"}](https://www.perthorn.com/about/) Per Thorn - [_http://www.perthorn.com_](http://www.perthorn.com)
 
 * [![Richard Harris](https://media.licdn.com/dms/image/C4E03AQHYhAyddQdUHQ/profile-displayphoto-shrink_800_800/0?e=1553126400&v=beta&t=bH6iXs98JMiAuMdvqwGVwGN-ktCowg9jVfVnrxX5ZzY){: width="50px" height="50px"}](http://www.nuthouse.us/about/) Richard Harris - [_http://www.nuthouse.us_](http://www.nuthouse.us)
+
+* [![Shane Marsh](https://secureservercdn.net/160.153.138.53/h3i.fdb.myftpupload.com/wp-content/uploads/2019/11/portrait-300x300.jpg){: width="50px" height="50px"}](http://www.shanemarsh.co.uk/about) Shane Marsh - [_http://www.shanemarsh.co.uk/_](http://www.shanemarsh.co.uk/)
