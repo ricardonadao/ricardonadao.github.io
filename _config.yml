@@ -226,7 +226,7 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
+paginate: 6 # amount of posts to show
 paginate_path: /page:num/
 timezone: "Europe/London" # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
@@ -300,6 +300,6 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: false
+      comments: true
       share: true
       related: true
