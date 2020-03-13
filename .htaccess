@@ -430,6 +430,23 @@ AddDefaultCharset utf-8
 
 FileETag None
 
+# Cache-Control		
+# Cache Control One year for image files
+<filesMatch ".(jpg|jpeg|png|gif)$">
+Header set Cache-Control "max-age=31536000, public"
+</filesMatch>
+
+# Cache Control One month for css and js
+<filesMatch ".(css|js)$">
+Header set Cache-Control "max-age=2628000, public"
+</filesMatch>
+
+# Cache Control One week for favicon cant be renamed
+<filesMatch ".(ico)$">
+Header set Cache-Control "max-age=604800, public"
+</filesMatch>
+
+
 # ------------------------------------------------------------------------------
 # | Expires headers (for better cache control)                                 |
 # ------------------------------------------------------------------------------
@@ -481,10 +498,17 @@ FileETag None
     ExpiresByType application/rss+xml                   "access plus 1 hour"
 
   # Web fonts
-    ExpiresByType application/font-woff                 "access plus 1 month"
     ExpiresByType application/vnd.ms-fontobject         "access plus 1 month"
-    ExpiresByType application/x-font-ttf                "access plus 1 month"
+    ExpiresByType font/eot                              "access plus 1 month"
     ExpiresByType font/opentype                         "access plus 1 month"
+    ExpiresByType font/otf                              "access plus 1 month"
+    ExpiresByType application/x-font-ttf                "access plus 1 month"
+    ExpiresByType font/ttf                              "access plus 1 month"
+    ExpiresByType application/font-woff                 "access plus 1 month"
+    ExpiresByType application/x-font-woff               "access plus 1 month"
+    ExpiresByType font/woff                             "access plus 1 month"
+    ExpiresByType application/font-woff2                "access plus 1 month"
+    ExpiresByType font/woff2                            "access plus 1 month"
     ExpiresByType image/svg+xml                         "access plus 1 month"
 
 </IfModule>
