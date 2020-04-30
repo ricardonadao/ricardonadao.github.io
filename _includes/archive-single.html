@@ -14,12 +14,26 @@
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     {% if include.type == "grid" and teaser %}
       <div class="archive__item-teaser">
-        <img src="{{ teaser | relative_url }}" alt="" style="max-width: 150px">
-
+        <img src=
+        {% if teaser contains "://" %}
+          "{{ teaser }}"
+        {% else %}
+          "{{ teaser | relative_url }}"
+        {% endif %}
+        alt="" style="max-width: 150px">
       </div>
     {% endif %}
     <h2 class="archive__item-title" itemprop="headline">
-            {% if post.link %}
+      {% if include.type != "grid" and teaser %}
+      <img src=
+        {% if teaser contains "://" %}
+          "{{ teaser | replace: "150", "50" }}"
+        {% else %}
+          "{{ teaser | relative_url | replace: "150", "50" }}"
+        {% endif %}
+        alt="" style="max-width: 50px">
+      {% endif %}
+      {% if post.link %}
         <a href="{{ post.link }}">{{ title }}</a> <a href="{{ post.url | relative_url }}" rel="permalink"><i class="fas fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
       {% else %}
         <a href="{{ post.url | relative_url }}" rel="permalink">{{ title }}</a>
