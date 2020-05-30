@@ -36,13 +36,7 @@ Once the upgrade progress bar filled up completely and when I expected to be rea
 The error is pretty descriptive and potentially a bit overwhelming to some extent. However, when we start looking into it there are some hints giving some direction on the troubleshoot.
 
 ```text
-Failed to upgrade:
-
-Failed to read installed version: error: rpmdb: BDB0113 Thread/process 4858/139939578443968 failed: BDB1507 Thread died in Berkeley DB library error: db5 error(-30973) from dbenv->failchk: BDB0087
-
-DB_RUNRECOVERY: Fatal error, run database recovery error: cannot open Packages index using db5 - (-30973) error: cannot open Packages database in /var/lib/rpm error: rpmdb: BDB0113 Thread/process 4858/139939578443968 failed: BDB1507 Thread died in Berkeley DB library error: db5 error(-30973) from dbenv->failchk: BDB0087
-
-DB_RUNRECOVERY: Fatal error, run database recovery error: cannot open Packages index using db5 - (-30973) error: cannot open Packages database in /var/lib/rpm
+Failed to upgrade: Failed to read installed version: error: rpmdb: BDB0113 Thread/process 4858/139939578443968 failed: BDB1507 Thread died in Berkeley DB library error: db5 error(-30973) from dbenv->failchk: BDB0087 DB_RUNRECOVERY: Fatal error, run database recovery error: cannot open Packages index using db5 - (-30973) error: cannot open Packages database in /var/lib/rpm error: rpmdb: BDB0113 Thread/process 4858/139939578443968 failed: BDB1507 Thread died in Berkeley DB library error: db5 error(-30973) from dbenv->failchk: BDB0087 DB_RUNRECOVERY: Fatal error, run database recovery error: cannot open Packages index using db5 - (-30973) error: cannot open Packages database in /var/lib/rpm
 ```
 
 The error information seems to be pointing out to an issue/corruption with the _RPM database_ that it is stopping the upgrade to finish successfully.
