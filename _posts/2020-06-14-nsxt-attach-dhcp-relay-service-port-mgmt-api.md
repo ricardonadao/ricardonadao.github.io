@@ -1,8 +1,8 @@
 ---
 author: Ricardo Adao
 published: true
-post_date: 2020-06-15 08:00:00  
-last_modified_at:
+post_date: 2020-06-14 08:00:00  
+last_modified_at: 2020-06-14 12:40:00
 header:
   teaser: /assets/images/featured/nsx-150x150.png
 title: NSX-T Data Center - Attaching a DHCP Relay service to a Service Port using Management API
@@ -411,7 +411,43 @@ Some information from previous calls will be needed to be able to put together t
 
   Advanced Network&Security -> Routers -> Select targeted Router -> Configuration -> Router Ports
 
-  [![Router Port UI view]({{ site.url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-put-3.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-put-3.png)
+  [![Router Port UI view]({{ site.url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-put-3.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-put-3.png
+
+# The Result
+
+And the only part missing... Testing it...
+
+We have multiple points in the path between the _DHCP Client_ and _DHCP Server_ to monitor and capture our traffic, but we will just check the server side and if our client acquires a IP.
+
+## Virtual Machines configuration
+
+* Client and Server virtual machines
+
+  | [![DHCP Client]({{ site.url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-dhcp-client-vm.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-dhcp-client-vm.png) |[![DHCP Server]({{ site.url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-dhcp-server-vm.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-dhcp-server-vm.png) |
+
+## Check _DHCP Server_
+
+Lets do a packet capture in the listening interface and limit the ports to _port 67/UDP_ and _port 68/UDP_, since they are the ports involved in the DHCP flow from the server side.
+
+* Basic capture
+  [![DHCP Server Capture]({{ site.url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-dhcp-server-vm-capture-simple.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-dhcp-server-vm-capture-simple.png)
+
+  Seems that we have some communication between our _DHCP Client GW_ (_Service Port_ - 10.10.102.1) interface where the _DHCP Relay service_ is attached and our _DHCP Server_ (IP - 10.10.103.2).
+
+* Checking in more detail the capture to check if the [_DHCP Operation flow_](https://en.wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol) is complete
+
+  [![DHCP Server Capture - 1]({{ site.url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-dhcp-server-vm-capture-1.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-dhcp-server-vm-capture-1.png)
+  [![DHCP Server Capture - 2]({{ site.url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-dhcp-server-vm-capture-2.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-dhcp-server-vm-capture-2.png)
+
+  Yeap, we seem to see the all process - Discovery -> Offer -> Request -> ACK
+
+  [![DHCP Flow]({{ site.url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-dhcp-flow.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-dhcp-flow.png)
+
+## Check _DHCP Client_
+
+In the _DHCP Client_ side, lets just check if the virtual machine got the desired configuration after the DHCP exchange
+
+[![DHCP Client End State]({{ site.url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-dhcp-client-vm-ifconfig.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-dhcp-client-vm-ifconfig.png)
 
 # FAQ
 
