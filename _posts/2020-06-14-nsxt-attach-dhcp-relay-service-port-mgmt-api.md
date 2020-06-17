@@ -5,7 +5,7 @@ post_date: 2020-06-14 08:00:00
 last_modified_at: 2020-06-14 12:40:00
 header:
   teaser: /assets/images/featured/nsx-150x150.png
-title: NSX-T Data Center - Attaching a DHCP Relay service to a Service Port using Management API
+title: NSX-T Data Center - Attaching a DHCP Relay service to a NSX-T Service Interface or Centralized Service Port (CSP)
 categories: [ nsx ]
 tags: [ nsx-t, nsx, powercli, powershell, vmware ]
 toc: true
@@ -31,7 +31,7 @@ The _NSX-T_ documentation document the setup of both pretty well:
 
 The _NSX-T_ documentation well how to configure the _Edge_ builtin _DHCP Server_ functionality and how to configure a _DHCP Relay_ server for a _T0_ or _T1_ gateway.
 
-_**What if we want to add a DHCP Relay Service to a Service Port of a T-0 or T-1 router?**_
+_**What if we want to add a DHCP Relay Service to a Service Interface of a T-0 or T-1 router?**_
 
 Documentation do not cover this use case and you do not have a way of doing it through the _Simplified UI_, neither through _Advanced&Security UI_.
 
@@ -40,13 +40,13 @@ Which will leave us with the option to explore the _RestAPI_ option.
 # Use Case
 
 * _DHCP Clients_ are connected to _VLAN 59_
-* _VLAN 59_ is connected to a _T0 - Service Port_ interface
-* _T0 - Service Port_ is configured as _VLAN 59_ gateway
-* _DHCP Relay_ service will be setup in _T0 - Service Port_ to relay _DHCP Requests_ to _DHCP Server_
+* _VLAN 59_ is connected to a _T0 - Service Interface_
+* _T0 - Service Interface_ is configured as _VLAN 59_ gateway
+* _DHCP Relay_ service will be setup in _T0 - Service Interface_ to relay _DHCP Requests_ to _DHCP Server_
 * _T0s_ and _T1s_ are in different edge clusters (this is a design preference, we can use a single edge cluster/edge)
 * Route redistribution is enabled between _T0_ and _T1_ (static routing can be used)
 * _DHCP Server_ is a virtual machine running in an overlay segment connected to _T1 - Downlink_
-  * Note: our use case setup the _DHCP Relay_ in the _T0 - Service Port_, but we could use a _T1 - Service Port_ also
+  * Note: our use case setup the _DHCP Relay_ in the _T0 - Service Interface_, but we could use a _T1 - Service Interface_ also
 {: .notice}
 
   [![DHCP Relay Lab Topology]({{ site.url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-service-lab-topology.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-service-lab-topology.png)
@@ -57,21 +57,21 @@ The configuration can be done using _NSX-T RESTApis_, but we will be using the _
 
 ## Setting up the basics using the Simplified UI
 
-### Creating our _DHCP Client_ segment and _T0 - Service Port_
+### Creating our _DHCP Client_ segment and _T0 - Service Interface_
 
 #### Create our _DHCP Client_ segment (NVDS VLAN backed)
 
 * Networking -> Segments -> Add Segment
   [![Create DHCP Client Segment]({{ site.url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-create-vlan59-segment.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-create-vlan59-segment.png)
 
-#### Create the _T0 - Service Port_ interface
+#### Create the _T0 - Service Interface_ interface
 
 * Networking -> Tier-0 Gateway -> Edit the T0 Gateway -> Edit Interfaces (Click in the Interface count) -> Add Interface
   [![Edit T0 Gateway]({{ site.url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-create-vlan59-gw-1.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-create-vlan59-gw-1.png)
 
-  [![Add Service Port Interface]({{ site.url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-create-vlan59-gw-2.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-create-vlan59-gw-2.png)
+  [![Add Service Interface]({{ site.url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-create-vlan59-gw-2.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-create-vlan59-gw-2.png)
 
-  [![Service Port Interface Created]({{ site.url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-create-vlan59-gw-3.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-create-vlan59-gw-3.png)
+  [![Service Interface Created]({{ site.url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-create-vlan59-gw-3.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-create-vlan59-gw-3.png)
 
 ### Creating _DHCP Server_ segment and connecting it to our desired _T1 Gateway_
 
@@ -193,20 +193,20 @@ I will be using [_Postman_](https://www.postman.com) since it is easier do descr
   }
   ```
 
-## Attaching _DHCP Relay service_ to _Service Port_
+## Attaching _DHCP Relay service_ to _Service Interface_
 
-The configuration will be done by doing a _PUT_ _REST API_ call using the _Management API_ that will attach a new service to an existing service port.
+The configuration will be done by doing a _PUT_ _REST API_ call using the _Management API_ that will attach a new service to an existing Service Interface.
 
 Some information from previous calls will be needed to be able to put together the _JSON payload_ required to do our setup.
 
-* Retrieve _Service Port_ current configuration
+* Retrieve _Service Interface_ current configuration
 
   `GET https://<NSX-T Manager>/api/v1/logical-router-ports/<logical-router-port-id>/`
 
   NSX-T 2.5 API Documentation - [GET /api/v1/logical-router-ports/logical-router-port-id](https://vdc-download.vmware.com/vmwb-repository/dcr-public/6c24b5c0-396a-4152-9125-bd10a795836b/74043a09-7320-40ac-ac85-9416d0f9cd01/nsx_25_api.html#Methods.ReadLogicalRouterPort)
   {: .notice--info}
 
-  We will use the ID information that we retrieved before and get the _Service Port_ current configuration, since we will use it as the base of our _JSON payload_ for the configuration call.
+  We will use the ID information that we retrieved before and get the _Service Interface_ current configuration, since we will use it as the base of our _JSON payload_ for the configuration call.
 
   ```json
   <...>
@@ -253,7 +253,7 @@ Some information from previous calls will be needed to be able to put together t
     }
     ```
 
-* Build our _JSON payload_ to attach our _DHCP Relay service_ to the _Service Port_
+* Build our _JSON payload_ to attach our _DHCP Relay service_ to the _Service Interface_
 
   * Our configuration call will be
 
@@ -262,7 +262,7 @@ Some information from previous calls will be needed to be able to put together t
     NSX-T 2.5 API Documentation - [PUT /api/v1/logical-router-ports/logical-router-port-id/](https://vdc-download.vmware.com/vmwb-repository/dcr-public/6c24b5c0-396a-4152-9125-bd10a795836b/74043a09-7320-40ac-ac85-9416d0f9cd01/nsx_25_api.html#Methods.UpdateLogicalRouterPort)
     {: .notice--info}
 
-  * Our _JSON payload_ will be based in the _current Service Port configuration_ that we just retrieved, plus an additional property called _service\_bindings_ that will can be one or more [_Service Binding_](https://vdc-download.vmware.com/vmwb-repository/dcr-public/6c24b5c0-396a-4152-9125-bd10a795836b/74043a09-7320-40ac-ac85-9416d0f9cd01/nsx_25_api.html#Type.ServiceBinding)
+  * Our _JSON payload_ will be based in the _current Service Interface configuration_ that we just retrieved, plus an additional property called _service\_bindings_ that will can be one or more [_Service Binding_](https://vdc-download.vmware.com/vmwb-repository/dcr-public/6c24b5c0-396a-4152-9125-bd10a795836b/74043a09-7320-40ac-ac85-9416d0f9cd01/nsx_25_api.html#Type.ServiceBinding)
 
     ```json
     {
@@ -340,7 +340,7 @@ Some information from previous calls will be needed to be able to put together t
   
   * One last detail before we apply our new configuration
 
-    In the _Service Port_ configuration schema, there is a property named **_protection**. This property indicates the protection status of the resource.
+    In the _Service Interface_ configuration schema, there is a property named **_protection**. This property indicates the protection status of the resource.
     That property can have one of the following values
 
     * **PROTECTED** - the client who retrieved the entity is not allowed to modify it
@@ -363,7 +363,7 @@ Some information from previous calls will be needed to be able to put together t
     }
     ```
 
-* Now we are ready to attach our _DHCP Relay service_ to the _Service Port_
+* Now we are ready to attach our _DHCP Relay service_ to the _Service Interface_
 
   Our request will be
 
@@ -377,7 +377,7 @@ Some information from previous calls will be needed to be able to put together t
 
   [![PUT HTTP 200 Result]({{ site.url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-put-2.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-put-2.png)
 
-  And the new _Service Port_ configuration in the response body, with the service binding added
+  And the new _Service Interface_ configuration in the response body, with the service binding added
 
   ```json
   {
@@ -432,7 +432,7 @@ Lets do a packet capture in the listening interface and limit the ports to _port
 * Basic capture
   [![DHCP Server Capture]({{ site.url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-dhcp-server-vm-capture-simple.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-dhcp-server-vm-capture-simple.png)
 
-  Seems that we have some communication between our _DHCP Client GW_ (_Service Port_ - 10.10.102.1) interface where the _DHCP Relay service_ is attached and our _DHCP Server_ (IP - 10.10.103.2).
+  Seems that we have some communication between our _DHCP Client GW_ (_Service Interface_ - 10.10.102.1) interface where the _DHCP Relay service_ is attached and our _DHCP Server_ (IP - 10.10.103.2).
 
 * Checking in more detail the capture to check if the [_DHCP Operation flow_](https://en.wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol) is complete
 
@@ -470,7 +470,7 @@ The solution is to create a new _Segment Profile_ of the type _Segment Security 
 
 I spent some time figuring it out and troubleshooting this issue.
 
-In summary the _DHCP Client_ never receives the _DHCP Offer packet_, since the packet is blocked by the default security policies between the _Service Port_ and the _DHCP Client_.
+In summary the _DHCP Client_ never receives the _DHCP Offer packet_, since the packet is blocked by the default security policies between the _Service Interface_ and the _DHCP Client_.
 
 With the new _Security Segment Profile_ with the _DHCP Server Block_ disabled all works as expected.
 {% endcapture %}
@@ -487,4 +487,4 @@ Yes, it is a question of choosing your preferred programming language and you ca
 
 Since there is a part of the process that can be done easily using the _NSX-T UI_, I just script using Powershell (PShell 6 or above) the part where we need to leverage the _Management API_. It is not the prettiest powershell coding that you will ever see, but will do the job and show the process.
 
-* Download: [NSX-T Service Port Attach DHCP Relay script]({{ site.url }}/assets/downloads/scripts/powershell/nsx-t/nsxt-service-port-dhcp-relay.ps1)
+* Download: [NSX-T Service Interface Attach DHCP Relay script]({{ site.url }}/assets/downloads/scripts/powershell/nsx-t/nsxt-service-port-dhcp-relay.ps1)
