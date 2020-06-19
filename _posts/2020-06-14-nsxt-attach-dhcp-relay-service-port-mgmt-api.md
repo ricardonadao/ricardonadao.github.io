@@ -31,7 +31,7 @@ The _NSX-T_ documentation document the setup of both pretty well:
 
 The _NSX-T_ documentation well how to configure the _Edge_ builtin _DHCP Server_ functionality and how to configure a _DHCP Relay_ server for a _T0_ or _T1_ gateway.
 
-_**What if we want to add a DHCP Relay Service to a Service Interface of a T-0 or T-1 router?**_
+_**What if we want to add a DHCP Relay Service to a Service Interface of a T0 or T1 router?**_
 
 Documentation do not cover this use case and you do not have a way of doing it through the _Simplified UI_, neither through _Advanced&Security UI_.
 
