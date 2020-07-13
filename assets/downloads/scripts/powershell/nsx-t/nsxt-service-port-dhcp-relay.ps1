@@ -16,7 +16,6 @@ $dhcpRelayName = Read-Host -Prompt "-> DHCP Relay Name"
 $nsxtGetLogicalRouters = "https://$nsxtmanager/api/v1/logical-routers/"
 $nsxtGetLogicalRouterPorts = "https://$nsxtmanager/api/v1/logical-router-ports/"
 $nsxtGetDHCPRelay = "https://$nsxtmanager/api/v1/dhcp/relays/"
-
 $nsxtPutAttachDHCPRelay = "https://$nsxtmanager/api/v1/logical-router-ports/"
 
 # Get Logical Routers
