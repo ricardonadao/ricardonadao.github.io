@@ -10,49 +10,21 @@
   {% assign title = post.title %}
 {% endif %}
 
-<div class="{{ include.type | default: "list" }}__item">
+<div class="{{ include.type | default: 'list' }}__item">
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     {% if include.type == "grid" and teaser %}
       <div class="archive__item-teaser">
-        <img src=
-        {% if teaser contains "://" %}
-          "{{ teaser }}"
-        {% else %}
-          "{{ teaser | relative_url }}"
-        {% endif %}
-        alt="" style="max-width: 150px">
+        <img src="{{ teaser | relative_url }}" alt="">
       </div>
     {% endif %}
-    <h2 class="archive__item-title" itemprop="headline">
-      {% if include.type != "grid" and teaser %}
-      <img src=
-        {% if teaser contains "://" %}
-          "{{ teaser | replace: "150", "50" }}"
-        {% else %}
-          "{{ teaser | relative_url | replace: "150", "50" }}"
-        {% endif %}
-        alt="" style="max-width: 50px">
-      {% endif %}
+    <h2 class="archive__item-title no_toc" itemprop="headline">
       {% if post.link %}
         <a href="{{ post.link }}">{{ title }}</a> <a href="{{ post.url | relative_url }}" rel="permalink"><i class="fas fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
       {% else %}
         <a href="{{ post.url | relative_url }}" rel="permalink">{{ title }}</a>
       {% endif %}
     </h2>
-    <p class="page__meta">
-      {% if post.date %}
-        <i class="far fa-calendar" aria-hidden="true"></i> <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>
-        &nbsp;
-      {% endif %}
-      {% if post.read_time %}
-        <i class="far fa-clock" aria-hidden="true"></i> {% include read-time.html %}
-        &nbsp;
-      {% endif %}
-      {% if post.comments == true and site.data.comments[post.slug].size > 0 %}
-        &nbsp;
-        <i class="far fa-comments" aria-hidden="true"></i> <a href="{{ post.url | relative_url }}#comments">{{ site.data.comments[post.slug] | size }}&nbsp;Comment{% if site.data.comments[post.slug].size > 1 %}s{% endif %}</a>
-      {% endif %}
-    </p>
+    {% include post__meta.html type=include.type %}
     {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html | truncate: 160 }}</p>{% endif %}
   </article>
 </div>
