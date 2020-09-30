@@ -346,7 +346,7 @@ Some information from previous calls will be needed to be able to put together t
     * **PROTECTED** - the client who retrieved the entity is not allowed to modify it
     * **NOT_PROTECTED** - the client who retrieved the entity is allowed to modify it
     * **REQUIRE_OVERRIDE** - the client who retrieved the entity is a super user and can modify it, but only when providing the request header _X-Allow-Overwrite=true_
-    * **UNKNOW** - the _protection field could not be determined for this entity
+    * **UNKNOWN** - the _protection field could not be determined for this entity
 
     In our case we have a **REQUIRE_OVERRIDE** value, which means that we will need to provide the extra request header - _X-Allow-Overwrite=true_ - in our _PUT_ call to be able to modify the current configuration
 
