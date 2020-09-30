@@ -7,7 +7,7 @@ header:
   teaser: /assets/images/featured/nsx-150x150.png
 title: NSX-T Data Center - Using Powershell/PowerCLI to copy/migrate NSX-V IPSets to NSX-T Groups
 categories: [ nsx ]
-tags: [ nsx-t, nsx, powercli, powershell, powernsx, VtoT, vmware ]
+tags: [ nsx-t, nsx, powercli, powershell, powernsx, VtoT, vmware, migration]
 toc: true
 ---
 When moving from _NSX-V_ to _NSX-T_ there is the option of using the _NSX-T Migration Coordinator_, however sometimes our _NSX-V_ configuration cannot fit the ones supported by the migration coordinator.
