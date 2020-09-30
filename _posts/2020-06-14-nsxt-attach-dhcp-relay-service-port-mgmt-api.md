@@ -2,7 +2,7 @@
 author: Ricardo Adao
 published: true
 post_date: 2020-06-14 08:00:00  
-last_modified_at: 2020-06-14 12:40:00
+last_modified_at: 2020-09-30 23:00:00
 header:
   teaser: /assets/images/featured/nsx-150x150.png
 title: NSX-T Data Center - Attaching a DHCP Relay service to a NSX-T Logical Router Service Interface or Centralized Service Port (CSP)
