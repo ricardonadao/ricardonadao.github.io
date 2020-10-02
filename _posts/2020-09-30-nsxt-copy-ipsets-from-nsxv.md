@@ -2,7 +2,7 @@
 author: Ricardo Adao
 published: true
 post_date: 2020-09-30 23:30:00  
-last_modified_at:
+last_modified_at: 2020-10-02 08:00:00
 header:
   teaser: /assets/images/featured/nsx-150x150.png
 title: NSX-T Data Center - Using Powershell/PowerCLI to copy/migrate NSX-V IPSets to NSX-T Groups
