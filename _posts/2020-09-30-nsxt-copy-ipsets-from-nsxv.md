@@ -21,6 +21,9 @@ In my case, since I had a decent amount of objects to copy and 1st and 2nd optio
 
 This particular post will focus in copy/migrate all our _NSX-V IPSets_ objects, and more specific in the interaction with the _NSX-T API_ side, since for _NSX-V_ we will leverage [_PowerNSX Powershell module_](https://powernsx.github.io/).
 
+In this post we are assuming _Greenfield_ from _NSX-T_ point of view, hence there is no validation if we are overwriting any potential existing groups.
+{:.notice--danger}
+
 ## Retrieving _NSX-V_ IPSets
 
 We need to get the _NSX-V IPSets_ from our _NSX-V_ environment.
