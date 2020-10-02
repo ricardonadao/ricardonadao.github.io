@@ -337,7 +337,7 @@ foreach ($nsxvIPSetItem in $nsxvIPSets) {
     $groupIPs = $nsxvIPSetIPs
   }
   
-  $urlPatchGroup = "https://$nsxtManager/policy/api/v1/infra/domains/default/groups/$($nsxvIPSetItem.name)"
+  $urlPatchGroup = "https://$nsxtManager/policy/api/v1/infra/domains/default/groups/$(($nsxvIPSetItem.name).Replace(" ","_"))"
 
   $newGroup = @{
     "expression" = @(
