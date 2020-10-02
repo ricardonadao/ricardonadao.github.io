@@ -313,7 +313,7 @@ To create our _NSX-T Groups_ we will need the following properties from our _NSX
 Let us create a quick loop to go through our _NSX-V IPSets_ and create the equivalent _NSX-T Groups_
 
 ```powershell
-$nsxtManager = "nsxtm.adao"
+$nsxtManager = "nsxt manager fqdn"
 $nsxtManagerCredentials = Get-Credential
 
 $nsxvIPSets = Get-NSXIPSet
