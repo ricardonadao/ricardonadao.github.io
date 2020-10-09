@@ -112,7 +112,7 @@ $nsxtGroups.results.display_name
 
 ### How can we get a specific _NSX-T Group_ using the _Group Name_
 
-As we show before there is two (2) ids for the same object in _NSX-T_:
+As we show before there are two (2) ids for the same object in _NSX-T_:
 
 * _display name_ - Name that shows up in the _NSX-T Manager UI_, this ID do not need to be unique, hence you can have two (2) objects with the same name
 * _id_           - unique object ID, hence the preferred ID to use in _API calls_
