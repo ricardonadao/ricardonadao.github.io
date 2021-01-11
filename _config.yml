@@ -33,6 +33,9 @@ breadcrumbs              : true # true, false (default)
 words_per_minute         : 150
 comments:
   provider               : "staticman_v2" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2" "custom"
+  staticman:
+    branch                 : "master"
+    endpoint               : "https://vrandombites-staticman.herokuapp.com/v2/entry/" # URL of your own deployment with trailing slash, will fallback to the public instance
   disqus:
     shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
@@ -45,23 +48,6 @@ comments:
   utterances:
     theme                : # "github-light" (default), "github-dark"
     issue_term           : # "pathname" (default)
-staticman:
-  allowedFields          : # ['name', 'email', 'url', 'message']
-  branch                 : "master"
-  commitMessage          : # "New comment by {fields.name}"
-  filename               : # comment-{@timestamp}
-  format                 : # "yml"
-  moderation             : # true
-  path                   : # "/_data/comments/{options.slug}" (default)
-  requiredFields         : # ['name', 'email', 'message']
-  transforms:
-    email                : # "md5"
-  generatedFields:
-    date:
-      type               : # "date"
-      options:
-        format           : # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
-  endpoint               : "https://vrandombites-staticman.herokuapp.com/v2/entry/" # URL of your own deployment with trailing slash, will fallback to the public instance
 reCaptcha:
   enabled: true
   siteKey: "6LfuEFEUAAAAAFCypiCqgPYr1dd-sPsFYziI1op4"
