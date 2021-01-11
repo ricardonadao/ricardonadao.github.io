@@ -48,10 +48,10 @@ comments:
   utterances:
     theme                : # "github-light" (default), "github-dark"
     issue_term           : # "pathname" (default)
-#reCaptcha:
-#  enabled: true
-#  siteKey: "6LfuEFEUAAAAAFCypiCqgPYr1dd-sPsFYziI1op4"
-#  secret: "utfoecIsd0fXwl5VsGDo/uOXIufBmk4wuMU4rWJOuRrrkPLywcaySpZ3Y4WrrMX5I/oL4V/h4d1z8PBSF2h9vDbQfxGPBmBbe5vvM1KM3TxaNyos7FJNKhQHWupzfsEVRq2vE0YscweqLmjFPrS7tH3WNSJAVIbt3ACsh3Urz6aS4fMjygvqBiq5nX9Pq6bFV1YvvFbMXUKJMhCutvKQ1+qCWtpU7Wp3gdxRPitNfeuyjP/o0CfFCzafZ9CreHSAUZ+MDR5If3uQ9J+7UV1DHoPnKJss4ulkJ7naKNb/+Tr/F35F8qZbYchKEECLe0Rj1+7phtTosUFx9OhcB571wQ=="
+reCaptcha:
+  enabled: true
+  siteKey: "6LdskygaAAAAAMAvxfQBfYV1TuYD5HwL1AH7nhLU"
+  secret: "owHUppKAbe4yhAn2Bi2uiSXbdNukuaYKJI4Ui9pS+972Is8ehIUN+psZGDZLM05dum2Or7xhv/sLjtWdpSjKiGTAMBgmM44gj3GsEiqjW1AyLOGpV9kn/2i+JMAiYNEAneg281QKGxrS2+6O/j6HaHl55KIKyMG30KYObdPPfjCBGz6N/z9cxlpL6BKohMlhL8bzLSo49rj6grpdez7+CosBNvXpoWoA3e5TWMFtSaIxx3zBkXVdy2Z6lnJjYWC5HdtDKGWuRBKRQxpLB2uFtX3RYyn4xGcgniaSzlm6rwDvMPizXts6TzoWYd6A5fNAmc25V/JsM6GXyHpMAkNDwQ=="
 atom_feed:
   path                   : # blank (default) uses feed.xml
 search                   : true # true, false (default)
