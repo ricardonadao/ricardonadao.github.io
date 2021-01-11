@@ -35,7 +35,7 @@ comments:
   provider               : "staticman_v2" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2" "custom"
   staticman:
     branch                 : "master"
-    endpoint               : "https://vrandombites-staticman.herokuapp.com/v3/entry/" # URL of your own deployment with trailing slash, will fallback to the public instance
+    endpoint               : "https://vrandombites-staticman.herokuapp.com/v2/entry/" # URL of your own deployment with trailing slash, will fallback to the public instance
   disqus:
     shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
@@ -51,8 +51,7 @@ comments:
 reCaptcha:
   enabled: true
   siteKey: "6LdskygaAAAAAMAvxfQBfYV1TuYD5HwL1AH7nhLU"
-  #secret: "owHUppKAbe4yhAn2Bi2uiSXbdNukuaYKJI4Ui9pS+972Is8ehIUN+psZGDZLM05dum2Or7xhv/sLjtWdpSjKiGTAMBgmM44gj3GsEiqjW1AyLOGpV9kn/2i+JMAiYNEAneg281QKGxrS2+6O/j6HaHl55KIKyMG30KYObdPPfjCBGz6N/z9cxlpL6BKohMlhL8bzLSo49rj6grpdez7+CosBNvXpoWoA3e5TWMFtSaIxx3zBkXVdy2Z6lnJjYWC5HdtDKGWuRBKRQxpLB2uFtX3RYyn4xGcgniaSzlm6rwDvMPizXts6TzoWYd6A5fNAmc25V/JsM6GXyHpMAkNDwQ=="
-  secret: "hfKx7bmE7k8ZHKCFHIGvGSvoWTKcbZu7sWMaS5H+o9zv9h/5fnzvgnBnL0IYalC0TaFiabblmvWFXBMxvAO5KRrhcnOYPbY7umSV2SRtQJ/4ZiIFupNrGB9I/Cr4MmSaPxQ/LcfDRHN6W029yCT28Hi7M8F06U9phr4cCdntzuOjdoJIL3apZMubVALV0/OZFgsDVbuJs1k+30haA/s3rghZjXzJcqnPtHIM5yUeOpxXv0F+I4t1lTdU3+XqIgu8BuGZ7+/YCp+USDCR8v1sf4JkBRa2z7T6emdIKNrOonymRZfyLjzUyqlGpUIF0Ge1lCOdzX1l7yD7PmfIHu5o7g=="
+  secret: "owHUppKAbe4yhAn2Bi2uiSXbdNukuaYKJI4Ui9pS+972Is8ehIUN+psZGDZLM05dum2Or7xhv/sLjtWdpSjKiGTAMBgmM44gj3GsEiqjW1AyLOGpV9kn/2i+JMAiYNEAneg281QKGxrS2+6O/j6HaHl55KIKyMG30KYObdPPfjCBGz6N/z9cxlpL6BKohMlhL8bzLSo49rj6grpdez7+CosBNvXpoWoA3e5TWMFtSaIxx3zBkXVdy2Z6lnJjYWC5HdtDKGWuRBKRQxpLB2uFtX3RYyn4xGcgniaSzlm6rwDvMPizXts6TzoWYd6A5fNAmc25V/JsM6GXyHpMAkNDwQ=="
 atom_feed:
   path                   : # blank (default) uses feed.xml
 search                   : true # true, false (default)
