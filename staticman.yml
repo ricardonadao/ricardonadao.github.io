@@ -68,17 +68,17 @@ comments:
   # with Mailgun, which you can get for free at http://mailgun.com.
   notifications:
     # Enable notifications
-    enabled: true
+    enabled: false
 
     # (!) ENCRYPTED
     #
     # Mailgun API key
-    apiKey: "T/jWcQZ4u6GSiPA8KOGufTJroTkNlrZaS7Lltlsh2Qv9GOO2e7m48q/ZhekBHr/1ygOPhnEdoTNENRW1clMYHr7Vx28ibJaAFbl49E1pjNImTKbY3ebqkNAXI05wRsjSNUAOgNNaz81qtfzy08tl7RfAuw+6CV5iFz75UtIelrtVIShsjrqTA2h7t89qO+9TK5ojkDYK3Bj9v34AHjPpWFoBRMFDSBt7czgC1xlNmbgrWYNZXDhpdpGqXLsX+cIj50cmjTDhqMbwSLgyo46wYy+nPNFY3ssEwQX8htwk9NgzJ9A0Jc9Gi49picZGKuwVClp0MGJLs3HzGcMbaOMe5Q=="
+    apiKey: "jkjmy1JOEzJaQLxR0RT6QIVzLvKsdNQsn30wxqPJ+Qz5sCMzSTnvZ1+s3GQeMzuiF5X6jq47kWVmT+k6IOce61hdPxPWJDbsCHhmjRWg5bisObjd+E2E2KZStd25GCHWKDhoyeJh8veNbL9RHaA9foIA8OEuVjsMLWVc1CZU3wd1zluaetfmyqGXf+V2i7drfnNohtUxnPFJyDakiErz+aoup6D9JmvnWmNveL/lQotspfDBxnr4T/WBZVcWTGR/XsnNsVfHDOdq8NyMeRx6jkOncDt4UCkhMuRmVTduWFglwz5M+RlwJeFiyJs1LLSLpeMVIlcn7YPXj/YcSPVHZw=="
 
     # (!) ENCRYPTED
     #
     # Mailgun domain (encrypted)
-    domain: "wXPHHdXivs9QNPQt5mla98LGP3AR/gqdH4sIGI1OT0jUX3wy6ATWBdHdW++VZoiG0G4nl4Xx7vpdwDTju7etpFq3ireIqeAqqyfYlMGrC60sMPNawPXx5c6e7DLWjCRgbkUvDH71o0Lx3bDyYOsNSi4x87kVFfG+fhpwpGh68PmeQsPNMj75QjvPAwEPq1HI0YtMc0Sz56xZnuq953oMd9XC6Ja9CBON/BcgePbxrsGwOlGJaNapzBROYy3wZZiUtCaZ/fglnrwUqr1++U39QsNVlMxma/3QSDMbN7LY+zCT3sQ8yn1nfkmQ3xtKGR7GnEZxsunxd9ytBcYBHTNOig=="
+    domain: "pAXRB7t3/5lp65dvLFncvpMX3Efx7RZICcamkmWolwLavneCjDv7n6VsSfiddFM90BJGDl/Buvv1+bk6j2LeJ2NLBzlrlf8B7bWRro/+67dPTXxzlNfI6ppdvcGdHd2QNIrzD3YsDNhcZYu1Kjjpl3kkDWIj/fIeC/sK+hVAKqx2bvfk4ph6baivzTmrF6gol5lR+pGigrD8yEwLe2AWnBdV5AcWFs2lj2toTLEGboHYY3nc1sYzR7mQiCl5eEUfCVLhwO+7zfYiNK5jKtEMRxXlNonLDAkXFL9KlTBts3sdxWd3mZUo9qN4sI1rAF0zmjVhwQ5Ihb0f7F5WSTdauw=="
 
   # (*) REQUIRED
   #
@@ -97,5 +97,5 @@ comments:
 # reCaptcha
   reCaptcha:
     enabled: true
-    siteKey: "6LfuEFEUAAAAAFCypiCqgPYr1dd-sPsFYziI1op4"
-    secret: "utfoecIsd0fXwl5VsGDo/uOXIufBmk4wuMU4rWJOuRrrkPLywcaySpZ3Y4WrrMX5I/oL4V/h4d1z8PBSF2h9vDbQfxGPBmBbe5vvM1KM3TxaNyos7FJNKhQHWupzfsEVRq2vE0YscweqLmjFPrS7tH3WNSJAVIbt3ACsh3Urz6aS4fMjygvqBiq5nX9Pq6bFV1YvvFbMXUKJMhCutvKQ1+qCWtpU7Wp3gdxRPitNfeuyjP/o0CfFCzafZ9CreHSAUZ+MDR5If3uQ9J+7UV1DHoPnKJss4ulkJ7naKNb/+Tr/F35F8qZbYchKEECLe0Rj1+7phtTosUFx9OhcB571wQ=="
+    siteKey: "6LdskygaAAAAAMAvxfQBfYV1TuYD5HwL1AH7nhLU"
+    secret: "owHUppKAbe4yhAn2Bi2uiSXbdNukuaYKJI4Ui9pS+972Is8ehIUN+psZGDZLM05dum2Or7xhv/sLjtWdpSjKiGTAMBgmM44gj3GsEiqjW1AyLOGpV9kn/2i+JMAiYNEAneg281QKGxrS2+6O/j6HaHl55KIKyMG30KYObdPPfjCBGz6N/z9cxlpL6BKohMlhL8bzLSo49rj6grpdez7+CosBNvXpoWoA3e5TWMFtSaIxx3zBkXVdy2Z6lnJjYWC5HdtDKGWuRBKRQxpLB2uFtX3RYyn4xGcgniaSzlm6rwDvMPizXts6TzoWYd6A5fNAmc25V/JsM6GXyHpMAkNDwQ=="
