@@ -35,7 +35,7 @@ comments:
   provider               : "staticman_v2" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2" "custom"
   staticman:
     branch                 : "master"
-    endpoint               : "https://vrandombites-staticman.herokuapp.com/v3/entry/" # URL of your own deployment with trailing slash, will fallback to the public instance
+    endpoint               : "https://vrandombites-staticman.herokuapp.com/v2/entry/" # URL of your own deployment with trailing slash, will fallback to the public instance
   disqus:
     shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
