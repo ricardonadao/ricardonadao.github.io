@@ -31,9 +31,8 @@
               $("#respond .js-notice")
               .removeClass('notice--success')
               .addClass('notice--danger');
-              if (site.comments.moderated) {
-                  showAlert('{{ site.data.ui-text[site.locale].comment_error_msg | default: "Sorry, there was an error with your submission. Please make sure all required fields have been completed and try again." }}');
-              }
+              showAlert('{{ site.data.ui-text[site.locale].comment_error_msg | default: "Sorry, there was an error with your submission. Please make sure all required fields have been completed and try again." }}');
+              
               $(form).removeClass("disabled");
           }
         });
