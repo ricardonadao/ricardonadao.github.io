@@ -15,19 +15,35 @@
       <section id="static-comments">
         {% if site.repository and site.comments.staticman.branch %}
           <!-- Start static comments -->
-          <div class="js-comments">
-            {% if site.data.comments[page.slug] %}
-              <h4 class="page__comments-title">{{ site.data.ui-text[site.locale].comments_title | default: "Comments" }}</h4>
+          <div id="comments" class="page__comments js-comments">
+            {% if site.data.comments[page.slug].size > 0 %}
+              <h4 class="page__comments-title">
+                {% if site.data.comments[page.slug].size == 1 %}
+                  {{ site.data.comments[page.slug] | size | append: ' Comment' }}
+                {% elsif site.data.comments[page.slug].size > 1 %}
+                  {{ site.data.comments[page.slug] | size | append: ' ' | append: site.data.ui-text[site.locale].comments_title }}
+                {% endif %}
+              </h4>
+            {% endif %}
+            {% assign comments = site.data.comments[page.slug] | sort | where_exp: 'comment', 'comment[1]._parent == comment[1]._id' %}
+            {% for comment in comments %}
+              {% assign id          = comment[1]._id %}
+              {% assign parent      = comment[1]._parent %}
+              {% assign avatar      = comment[1].avatar %}
+              {% assign email       = comment[1].email %}
+              {% assign name        = comment[1].name %}
+              {% assign url         = comment[1].url %}
+              {% assign date        = comment[1].date %}
+              {% assign message     = comment[1].message %}
 
-              {% assign comments = site.data.comments[page.slug] | sort %}
-              {% for comment in comments %}
-                {% assign email = comment[1].email %}
-                {% assign name = comment[1].name %}
-                {% assign url = comment[1].url %}
-                {% assign date = comment[1].date %}
-                {% assign message = comment[1].message %}
-                {% include comment.html index=forloop.index email=email name=name url=url date=date message=message %}
-              {% endfor %}
+              {% capture i %}{{ id }}{% endcapture %}
+              {% assign replies = site.data.comments[page.slug] | sort | where_exp: 'comment', 'comment[1]._id != i' | where_exp: 'comment', 'comment[1]._parent == i' %}
+              {% if replies.size > 0 %}
+                {% assign is_last = false %}
+              {% endif %}
+
+              {% include comment.html id=id parent=parent avatar=avatar email=email name=name url=url date=date message=message is_last=is_last replies=replies %}
+            {% endfor %}
 
             
             {% endif %}
