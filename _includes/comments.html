@@ -22,7 +22,7 @@
                   {% if site.data.comments[page.slug].size == 1 %}
                     {{ site.data.comments[page.slug] | size | append: ' Comment' }}
                   {% elsif site.data.comments[page.slug].size > 1 %}
-                    {{ site.data.comments[page.slug] | size | append: site.data.ui-text[site.locale].comments_title }}
+                    {{ site.data.comments[page.slug] | size | append: ' ' | append: site.data.ui-text[site.locale].comments_title }}
                   {% endif %}
                 </h4>
               {% endif %}
