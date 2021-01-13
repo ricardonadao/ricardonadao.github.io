@@ -1,6 +1,6 @@
 {% if site.repository and site.comments.staticman.branch %}
   <script>
-    (function ($) {
+    $(function () {
     // Static comments
     $("#comment-form").submit(function() {
         var form = this;
@@ -19,7 +19,7 @@
               $("#comment-form-submit")
               .html('{{ site.data.ui-text[site.locale].comment_btn_submitted | default: "Submitted" }}')
               .addClass("btn--disabled");
-              $("#respond .page__comments-form .js-notice")
+              $("#respond .js-notice")
               .removeClass('notice--danger')
               .addClass('notice--success');
               $("#respond form").hide()[0].reset();
@@ -28,7 +28,7 @@
           error: function(err) {
               console.log(err);
               $("#comment-form-submit").html('{{ site.data.ui-text[site.locale].comment_btn_submit  | default: "Submit Comment" }}');
-              $("#respond .page__comments-form .js-notice")
+              $("#respond .js-notice")
               .removeClass('notice--success')
               .addClass('notice--danger');
               showAlert('{{ site.data.ui-text[site.locale].comment_error_msg | default: "Sorry, there was an error with your submission. Please make sure all required fields have been completed and try again." }}');
@@ -40,13 +40,13 @@
     });
 
     function showAlert(message) {
-      $('#respond .page__comments-form .js-notice').removeClass('hidden');
-      $('#respond .page__comments-form .js-notice-text').html(message);
+      $('#respond .js-notice').removeClass('hidden');
+      $('#respond .js-notice-text').html(message);
     }
 
     function hideAlert() {
-      $("#respond .page__comments-form .js-notice").addClass("hidden");
-      $("#respond .page__comments-form .js-notice-text").html("");
+      $("#respond .js-notice").addClass("hidden");
+      $("#respond .js-notice-text").html("");
     }
 
     function copyTextFromElement(e) {

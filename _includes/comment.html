@@ -1,5 +1,4 @@
 <article id="comment{% unless include.r %}{{ id | prepend: '-' }}{% else %}{{ include.id | prepend: '-' }}{% endunless %}" class="js-comment comment {% unless include.parent == include.id %}child{% endunless %}" itemscope itemtype="https://schema.org/Comment">
-
   <div class="comment__avatar-wrapper">
     {% if include.avatar %}
       <noscript><img src="{{ include.avatar }}" alt=""></noscript>
@@ -12,7 +11,6 @@
       <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-srcset="https://www.gravatar.com/avatar/{{ include.email }}?d=mm&s=60 1x, /assets/images/avatar-120.png 2x" alt="" class="lazyload blur-up">
     {% endif %}
   </div>
-
   <div class="comment__main">
     <div class="comment__meta">
       {% unless include.url == blank or include.url == "" %}
@@ -37,7 +35,6 @@
       </div>
     {% endunless %}
   </div>
-
 </article>
 
 {% for reply in include.replies %}
