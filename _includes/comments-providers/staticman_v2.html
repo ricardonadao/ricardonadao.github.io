@@ -1,6 +1,6 @@
 {% if site.repository and site.comments.staticman.branch %}
   <script>
-    $(function () {
+    (function ($) {
     // Static comments
     $("#comment-form").submit(function() {
         var form = this;
