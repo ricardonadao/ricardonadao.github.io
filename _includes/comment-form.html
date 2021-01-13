@@ -2,7 +2,8 @@
   <!-- Start comment form -->
   <div id="respond" class="comment__form">
     <h2 class="title"><span id="comment-heading-text">Leave a comment</span> <button class="btn" id="cancel-comment-reply-link" style="display:none;">Cancel reply</button></h2>
-    <form id="comment-form" class="js-form" method="post" action="https://comments.gabescode.com/v2/entry/gabeluci/gabeluci.github.io/master/comments">
+    <form id="comment-form" class="page__comments-form js-form form" method="post" action="{{ site.comments.staticman.endpoint | default: 'https://api.staticman.net/v2/entry/' }}{{ site.repository }}/{{ site.comments.staticman.branch }}/comments"></form>
+
       <div class="form__group">
         <label for="comment-form-name">Name
           <input type="text" id="comment-form-name" name="fields[name]" required spellcheck="false" placeholder="Your name">
@@ -14,6 +15,13 @@
           <input type="url" id="comment-form-url" name="fields[url]" placeholder="https://domain.com">
         </label>
       </div>
+
+      {% if site.comments.staticman.notifications %}
+      <div>
+        <p class="small"><input type="checkbox" name="options[subscribe]" value="email">Send me an email when someone comments on this post.</p>
+      </div>
+      {% endif %}
+
       <div class="notice" style="margin-bottom: 1em">
           Your email address is used to display your <a href="https://en.gravatar.com">Gravatar</a>, if applicable,
           and subscribe you to replies using the <a href="https://www.mailgun.com">Mailgun</a> web service,
@@ -34,11 +42,17 @@
       <input type="hidden" name="options[origin]" value="{{ page.url | absolute_url }}#comments">
       <input type="hidden" id="comment-replying-to" name="options[parent]" value>
       <input type="hidden" id="comment-post-id" name="options[slug]" value="{{ page.slug }}">
-      <input type="hidden" name="options[reCaptcha][siteKey]" value="{{ site.reCaptcha.siteKey }}">
-      <input type="hidden" name="options[reCaptcha][secret]" value="{{ site.reCaptcha.secret }}">
+      {% if site.reCaptcha.siteKey %}<input type="hidden" name="options[reCaptcha][siteKey]" value="{{ site.reCaptcha.siteKey }}">{% endif %}
+      {% if site.reCaptcha.secret %}<input type="hidden" name="options[reCaptcha][secret]" value="{{ site.reCaptcha.secret }}">{% endif %}
       <input type="hidden" name="options[subscribe]" value="email">
-      <div class="g-recaptcha form__group" data-sitekey="{{ site.reCaptcha.siteKey }}"></div>
-      <button type="submit" id="comment-form-submit">Submit comment</button>
+      {% if site.reCaptcha.siteKey %}
+      <div class="form-group">
+        <div class="g-recaptcha" data-sitekey="{{ site.reCaptcha.siteKey }}"></div>
+      </div>
+      {% endif %}
+      <div class="form-group">
+        <button type="submit" id="comment-form-submit" tabindex="5" class="btn btn--primary btn--large">{{ site.data.ui-text[site.locale].comment_btn_submit | default: "Submit Comment" }}</button>
+      </div>
     </form>
     <div class="hidden js-notice notice">
       <p class="js-notice-text"></p>
