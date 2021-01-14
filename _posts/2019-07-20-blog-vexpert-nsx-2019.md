@@ -8,7 +8,6 @@ header:
   teaser: /assets/images/featured/blog-150x150.png
 categories: [ blog ]
 tags: [ blog, social ]
-comments: true
 ---
 And we got in the _vExpert NSX_ sub-program.
 

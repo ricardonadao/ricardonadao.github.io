@@ -8,7 +8,6 @@ header:
   teaser: /assets/images/featured/blog-150x150.png
 categories: [ blog ]
 tags: [ blog, social ]
-comments: true
 ---
 This was already a couple of weeks ago, but I was able to keep the _vExpert NSX_ sub-program honour for one more year.
 
