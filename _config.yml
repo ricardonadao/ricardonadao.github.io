@@ -293,6 +293,6 @@ defaults:
       read_time: true
       show_date: true
       comments: true
-      comments_locked: true
+      comments_locked: false
       share: true
       related: true
