@@ -37,8 +37,8 @@ comments:
   staticman:
     branch               : "master"
     endpoint             : "https://vrandombites-staticman.herokuapp.com/v2/entry/" # URL of your own deployment with trailing slash, will fallback to the public instance
-    notifications        : true
-  disqus:
+    notifications        : false
+  disqus:ff
     shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
