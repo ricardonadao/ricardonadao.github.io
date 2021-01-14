@@ -15,29 +15,32 @@
         </label>
       </div>
 
-      {% if site.comments.staticman.notifications %}
-      <div>
-        <input type="checkbox" name="options[subscribe]" value="email">Send me an email when someone comments on this post.
-      </div>
-    {% endif %}
-
-      <div class="notice" style="margin-bottom: 1em">
-          Your email address is used to display your <a href="https://en.gravatar.com">Gravatar</a>, if applicable,
-          and subscribe you to replies using the <a href="https://www.mailgun.com">Mailgun</a> web service,
-          which you are free to unsubscribe from when you get any emails.
-          Your email address will not be displayed publicly or shared with anyone else.
-      </div>
-      {% if site.comments.moderated %}
-      <div class="notice" style="margin-bottom: 1em">
-          <strong>Comments are moderated.</strong> Your comment will be reviewed by a human before being posted to
-          this page. Any comment made for the purpose of advertising will not be approved.
-      </div>
-      {% endif %}
       <div class="form__group">
         <label for="comment-form-message">Comment
           <textarea type="text" rows="6" id="comment-form-message" name="fields[message]" required spellcheck="true" placeholder="Your message" style='font-size: 16px;'></textarea>
         </label>
       </div>
+
+      {% if site.comments.staticman.notifications %}
+        <div class="notice--info" style="font-size: 16px;margin-bottom: 1em">
+          <input type="checkbox" name="options[subscribe]" value="email">Send me an email when someone comments on this post.
+        </div>
+      {% endif %}
+
+      <div class="notice--info" style="margin-bottom: 1em">
+        Your email address is used to display your <a href="https://en.gravatar.com">Gravatar</a>, if applicable,
+        and subscribe you to replies using the <a href="https://www.mailgun.com">Mailgun</a> web service,
+        which you are free to unsubscribe from when you get any emails.
+        Your email address will not be displayed publicly or shared with anyone else.
+      </div>
+
+      {% if site.comments.moderated %}
+        <div class="notice--warning" style="margin-bottom: 1em">
+          <strong>Comments are moderated.</strong> Your comment will be reviewed by a human before being posted to
+          this page. Any comment made for the purpose of advertising will not be approved.
+        </div>
+      {% endif %}
+
       <input type="hidden" name="options[origin]" value="{{ page.url | absolute_url }}#comments">
       <input type="hidden" id="comment-replying-to" name="options[parent]" value>
       <input type="hidden" id="comment-post-id" name="options[slug]" value="{{ page.slug }}">
@@ -61,7 +64,7 @@
   {% if site.reCaptcha.siteKey %}<script async src="https://www.google.com/recaptcha/api.js"></script>{% endif %}
   
 {% else %}
-  <div class="notice">
+  <div class="notice--warning">
     <h4>Comments are closed</h4>
     <!--<p>If you have a question concerning the content of this page, please feel free to <a href="/contact/">contact me</a>.</p>-->
   </div>
