@@ -26,7 +26,6 @@
             url: $(this).attr("action"),
             data: $(this).serialize(),
             contentType: "application/x-www-form-urlencoded",
-            crossDomain : true,
             success: function(data) {
                 $("#comment-form-submit")
                 .html('{{ site.data.ui-text[site.locale].comment_btn_submitted | default: "Submitted" }}')

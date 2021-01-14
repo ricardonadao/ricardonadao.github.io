@@ -13,17 +13,19 @@
   </div>
   <div class="comment__main">
     <div class="comment__meta">
-      {% unless include.url == blank or include.url == "" %}
-        <a rel="external nofollow" href="{{ include.url }}"><strong class="h-card">{{ include.name | strip_html }}</strong></a>
-      {% else %}
+      <p class="small">
+        {% unless include.url == blank or include.url == "" %}
+          <a rel="external nofollow" href="{{ include.url }}"><strong class="h-card">{{ include.name | strip_html }}</strong></a>
+        {% else %}
         <strong class="h-card">{{ include.name | strip_html }}</strong>
-      {% endunless %}
-      {% if include.date %}
-        on
-        {% if include.id %}<a href="#comment{% if r %}{{ id | prepend: '-' }}{% else %}{{ include.id | prepend: '-' }}{% endif %}" title="Permalink to this comment">{% endif %}
+        {% endunless %}
+        {% if include.date %}
+          on
+          {% if include.id %}<a href="#comment{% if r %}{{ id | prepend: '-' }}{% else %}{{ include.id | prepend: '-' }}{% endif %}" title="Permalink to this comment">{% endif %}
           <time datetime="{{ include.date | date_to_xmlschema }}">{{ include.date | date: "%B %-d, %Y at %T %Z" }}</time>
-        {% if include.id %}</a>{% endif %}
-      {% endif %}
+          {% if include.id %}</a>{% endif %}
+        {% endif %}
+      </p>
     </div>
     <div class="comment__message">
       {{ include.message | markdownify }}
