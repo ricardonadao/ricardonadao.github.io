@@ -337,7 +337,7 @@ it: &DEFAULT_IT
   toc_label                  : "Indice della pagina"
   ext_link_label             : "Link"
   less_than                  : "meno di"
-  minute_read                : "minuto>i di lettura"
+  minute_read                : "minuto/i di lettura"
   share_on_label             : "Condividi"
   meta_label                 :
   tags_label                 : "Tags:"
@@ -479,7 +479,7 @@ zh-TW: &DEFAULT_ZH_HANT
 zh-HK:
   <<: *DEFAULT_ZH_HANT
 
-# German > Deutsch
+# German / Deutsch
 # ----------------
 de: &DEFAULT_DE
   skip_links                 :
@@ -491,7 +491,7 @@ de: &DEFAULT_DE
   pagination_next            : "Nächste"
   breadcrumb_home_label      : "Start"
   breadcrumb_separator       : ">"
-  menu_label                 : "Menü ein->ausschalten"
+  menu_label                 : "Menü ein-/ausschalten"
   search_label               :
   toc_label                  : "Auf dieser Seite"
   ext_link_label             : "Direkter Link"
@@ -644,7 +644,7 @@ ko: &DEFAULT_KO
 ko-KR:
   <<: *DEFAULT_KO
 
-# Russian > Русский
+# Russian / Русский
 # -----------------
 ru: &DEFAULT_RU
   skip_links                 :
@@ -696,7 +696,7 @@ ru: &DEFAULT_RU
 ru-RU:
   <<: *DEFAULT_RU
 
-# Lithuanian > Lietuviškai
+# Lithuanian / Lietuviškai
 # ------------------------
 lt: &DEFAULT_LT
   skip_links                 :
@@ -1026,7 +1026,7 @@ da: &DEFAULT_DA
   pagination_next            : "Næste"
   breadcrumb_home_label      : "Home"
   breadcrumb_separator       : ">"
-  menu_label                 : "Vis>skjul menu"
+  menu_label                 : "Vis/skjul menu"
   search_label               :
   toc_label                  : "På denne side"
   ext_link_label             : "Direkte link"
@@ -1234,7 +1234,7 @@ hu: &DEFAULT_HU
   pagination_next            : "Következő"
   breadcrumb_home_label      : "Kezdőlap"
   breadcrumb_separator       : ">"
-  menu_label                 : "Menü nyit>zár"
+  menu_label                 : "Menü nyit/zár"
   search_label               :
   toc_label                  : "Ezen az oldalon"
   ext_link_label             : "Közvetlen Link"
@@ -1376,7 +1376,7 @@ pa: &DEFAULT_PA
   search_label_text          : "ਖੋਜ"
   search_placeholder_text    : "ਆਪਣੀ ਖੋਜ ਦੇ ਸ਼ਬਦ ਨੂੰ ਦਰਜ ਕਰੋ..."
   search_algolia_no_results  :
-  results_found              : "ਨਤੀਜਾ ਮਿਲਿਆ>ਮਿਲੇ"
+  results_found              : "ਨਤੀਜਾ ਮਿਲਿਆ/ਮਿਲੇ"
   back_to_top                : "ਵਾਪਸ ਚੋਟੀ 'ਤੇ ਜਾਓ"
 pa-IN:
   <<: *DEFAULT_PA
@@ -1587,7 +1587,7 @@ hi: &DEFAULT_HI
   search_label_text          : "खोज"
   search_placeholder_text    : "अपना खोज शब्द दर्ज करें..."
   search_algolia_no_results  :
-  results_found              : "परिणाम मिला>मिले"
+  results_found              : "परिणाम मिला/मिले"
   back_to_top                : "शीर्ष पर वापस"
 hi-IN:
   <<: *DEFAULT_HI
@@ -1604,8 +1604,8 @@ ca: &DEFAULT_CA
   pagination_next            : "Següent"
   breadcrumb_home_label      : "Inici"
   breadcrumb_separator       : ">"
-  menu_label                 : "Mostra>amaga el menú"
-  search_label               : "Mostra>amaga la cerca"
+  menu_label                 : "Mostra/amaga el menú"
+  search_label               : "Mostra/amaga la cerca"
   toc_label                  : "En aquesta pàgina"
   ext_link_label             : "Enllaç directe"
   less_than                  : "es llegeix en menys de"
@@ -1693,7 +1693,7 @@ ga-IE:
   <<: *DEFAULT_GA
 
 
-# Finnish > Suomi
+# Finnish / Suomi
 # -----------------
 fi: &DEFAULT_FI
   skip_links                 : "Ohita linkit"
@@ -1809,8 +1809,8 @@ no: &DEFAULT_NO
   pagination_next            : "Neste"
   breadcrumb_home_label      : "Hjem"
   breadcrumb_separator       : ">"
-  menu_label                 : "Vis>skjul meny"
-  search_label               : "Vis>skjul søk"
+  menu_label                 : "Vis/skjul meny"
+  search_label               : "Vis/skjul søk"
   toc_label                  : "På denne siden"
   ext_link_label             : "Direkte lenke"
   less_than                  : "mindre enn"
@@ -1864,8 +1864,8 @@ he: &DEFAULT_HE
   pagination_next            : "הבא"
   breadcrumb_home_label      : "בית"
   breadcrumb_separator       : ">"
-  menu_label                 : "סגירה>פתיחה של תפריט"
-  search_label               : "סגירה>פתיחה של חיפוש"
+  menu_label                 : "סגירה/פתיחה של תפריט"
+  search_label               : "סגירה/פתיחה של חיפוש"
   toc_label                  : "בדף זה"
   ext_link_label             : "קישור ישיר"
   less_than                  : "פחות מ"
