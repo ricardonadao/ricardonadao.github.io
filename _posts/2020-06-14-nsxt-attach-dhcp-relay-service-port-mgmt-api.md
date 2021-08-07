@@ -49,7 +49,7 @@ Which will leave us with the option to explore the _RestAPI_ option.
   * Note: our use case setup the _DHCP Relay_ in the _T0 - Service Interface_, but we could use a _T1 - Service Interface_ also
 {: .notice}
 
-  [![DHCP Relay Lab Topology]({{ site.url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-service-lab-topology.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-service-lab-topology.png)
+  [![DHCP Relay Lab Topology]({{ relative_url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-service-lab-topology.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-service-lab-topology.png)
 
 # Solution
 
@@ -62,28 +62,28 @@ The configuration can be done using _NSX-T RESTApis_, but we will be using the _
 #### Create our _DHCP Client_ segment (NVDS VLAN backed)
 
 * Networking -> Segments -> Add Segment
-  [![Create DHCP Client Segment]({{ site.url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-create-vlan59-segment.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-create-vlan59-segment.png)
+  [![Create DHCP Client Segment]({{ relative_url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-create-vlan59-segment.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-create-vlan59-segment.png)
 
 #### Create the _T0 - Service Interface_ interface
 
 * Networking -> Tier-0 Gateway -> Edit the T0 Gateway -> Edit Interfaces (Click in the Interface count) -> Add Interface
-  [![Edit T0 Gateway]({{ site.url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-create-vlan59-gw-1.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-create-vlan59-gw-1.png)
+  [![Edit T0 Gateway]({{ relative_url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-create-vlan59-gw-1.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-create-vlan59-gw-1.png)
 
-  [![Add Service Interface]({{ site.url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-create-vlan59-gw-2.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-create-vlan59-gw-2.png)
+  [![Add Service Interface]({{ relative_url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-create-vlan59-gw-2.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-create-vlan59-gw-2.png)
 
-  [![Service Interface Created]({{ site.url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-create-vlan59-gw-3.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-create-vlan59-gw-3.png)
+  [![Service Interface Created]({{ relative_url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-create-vlan59-gw-3.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-create-vlan59-gw-3.png)
 
 ### Creating _DHCP Server_ segment and connecting it to our desired _T1 Gateway_
 
 #### Create our overlay segment for the _DHCP Server_
 
 * Networking -> Segments -> Add Segment
-  [![Create DHCP Server segment]({{ site.url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-create-dhcp-server-segment-1.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-create-dhcp-server-segment-1.png)
+  [![Create DHCP Server segment]({{ relative_url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-create-dhcp-server-segment-1.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-create-dhcp-server-segment-1.png)
 
   * Setting up segment subnet (-> Set Subnets)
-    [![Setup segment subnet]({{ site.url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-create-dhcp-server-segment-2.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-create-dhcp-server-segment-2.png)
+    [![Setup segment subnet]({{ relative_url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-create-dhcp-server-segment-2.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-create-dhcp-server-segment-2.png)
 
-    [![Setup segment subnet]({{ site.url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-create-dhcp-server-segment-3.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-create-dhcp-server-segment-3.png)
+    [![Setup segment subnet]({{ relative_url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-create-dhcp-server-segment-3.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-create-dhcp-server-segment-3.png)
 
 #### Creating our _DHCP Relay service_ using Advanced Network&Security UI
 
@@ -99,18 +99,18 @@ Since we will need to leverage the _NSX-T Management API_ instead of the new _NS
 First step creating a _DHCP Relay Profile_
 
 * Advanced Network&Security -> DHCP -> Relay Profiles
-  [![Create DHCP Relay Profile]({{ site.url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-create-dhcp-relay-1.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-create-dhcp-relay-1.png)
+  [![Create DHCP Relay Profile]({{ relative_url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-create-dhcp-relay-1.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-create-dhcp-relay-1.png)
 
 * Create the DHCP Relay Profile to use our DHCP Server (Advanced Network&Security -> DHCP -> Relay Profiles -> Add)
-  [![Create DHCP Relay Profile]({{ site.url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-create-dhcp-relay-2.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-create-dhcp-relay-2.png)
+  [![Create DHCP Relay Profile]({{ relative_url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-create-dhcp-relay-2.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-create-dhcp-relay-2.png)
 
 Create the _DHCP Relay service_
 
 * Advanced Network&Security -> DHCP -> Relay Services
-  [![Create DHCP Relay Profile]({{ site.url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-create-dhcp-relay-services-1.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-create-dhcp-relay-services-1.png)
+  [![Create DHCP Relay Profile]({{ relative_url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-create-dhcp-relay-services-1.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-create-dhcp-relay-services-1.png)
 
 * Create the DHCP Relay Service to use our DHCP Server Profile that we created previously (Advanced Network&Security -> DHCP -> Relay Services -> Add)
-  [![Create DHCP Relay Profile]({{ site.url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-create-dhcp-relay-services-2.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-create-dhcp-relay-services-2.png)
+  [![Create DHCP Relay Profile]({{ relative_url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-create-dhcp-relay-services-2.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-create-dhcp-relay-services-2.png)
 
 ## Gather the information needed using NSX-T Management API
 
@@ -350,7 +350,7 @@ Some information from previous calls will be needed to be able to put together t
 
     In our case we have a **REQUIRE_OVERRIDE** value, which means that we will need to provide the extra request header - _X-Allow-Overwrite=true_ - in our _PUT_ call to be able to modify the current configuration
 
-    [![X-Allow-Overwrite Header]({{ site.url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-x-allow-overwrite.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-x-allow-overwrite.png)
+    [![X-Allow-Overwrite Header]({{ relative_url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-x-allow-overwrite.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-x-allow-overwrite.png)
 
     If we do not add this extra request header, _NSX-T API_ will reply with
 
@@ -371,11 +371,11 @@ Some information from previous calls will be needed to be able to put together t
 
   And the body/payload of the request will be our prepared _JSON payload_ with the _DHCP Relay service_ configuration added.
 
-  [![PUT Request]({{ site.url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-put-1.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-put-1.png)
+  [![PUT Request]({{ relative_url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-put-1.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-put-1.png)
 
   If all goes well, you will have a _HTTP 200_ result
 
-  [![PUT HTTP 200 Result]({{ site.url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-put-2.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-put-2.png)
+  [![PUT HTTP 200 Result]({{ relative_url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-put-2.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-put-2.png)
 
   And the new _Service Interface_ configuration in the response body, with the service binding added
 
@@ -411,7 +411,7 @@ Some information from previous calls will be needed to be able to put together t
 
   Advanced Network&Security -> Routers -> Select targeted Router -> Configuration -> Router Ports
 
-  [![Router Port UI view]({{ site.url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-put-3.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-put-3.png
+  [![Router Port UI view]({{ relative_url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-put-3.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-put-3.png
 
 # The Result
 
@@ -423,31 +423,31 @@ We have multiple points in the path between the _DHCP Client_ and _DHCP Server_ 
 
 * Client and Server virtual machines
 
-  | [![DHCP Client]({{ site.url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-dhcp-client-vm.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-dhcp-client-vm.png) |[![DHCP Server]({{ site.url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-dhcp-server-vm.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-dhcp-server-vm.png) |
+  | [![DHCP Client]({{ relative_url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-dhcp-client-vm.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-dhcp-client-vm.png) |[![DHCP Server]({{ relative_url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-dhcp-server-vm.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-dhcp-server-vm.png) |
 
 ## Check _DHCP Server_
 
 Lets do a packet capture in the listening interface and limit the ports to _port 67/UDP_ and _port 68/UDP_, since they are the ports involved in the DHCP flow from the server side.
 
 * Basic capture
-  [![DHCP Server Capture]({{ site.url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-dhcp-server-vm-capture-simple.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-dhcp-server-vm-capture-simple.png)
+  [![DHCP Server Capture]({{ relative_url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-dhcp-server-vm-capture-simple.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-dhcp-server-vm-capture-simple.png)
 
   Seems that we have some communication between our _DHCP Client GW_ (_Service Interface_ - 10.10.102.1) interface where the _DHCP Relay service_ is attached and our _DHCP Server_ (IP - 10.10.103.2).
 
 * Checking in more detail the capture to check if the [_DHCP Operation flow_](https://en.wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol) is complete
 
-  [![DHCP Server Capture - 1]({{ site.url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-dhcp-server-vm-capture-1.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-dhcp-server-vm-capture-1.png)
-  [![DHCP Server Capture - 2]({{ site.url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-dhcp-server-vm-capture-2.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-dhcp-server-vm-capture-2.png)
+  [![DHCP Server Capture - 1]({{ relative_url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-dhcp-server-vm-capture-1.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-dhcp-server-vm-capture-1.png)
+  [![DHCP Server Capture - 2]({{ relative_url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-dhcp-server-vm-capture-2.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-dhcp-server-vm-capture-2.png)
 
   Yeap, we seem to see the all process - Discovery -> Offer -> Request -> ACK
 
-  [![DHCP Flow]({{ site.url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-dhcp-flow.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-dhcp-flow.png)
+  [![DHCP Flow]({{ relative_url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-dhcp-flow.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-dhcp-flow.png)
 
 ## Check _DHCP Client_
 
 In the _DHCP Client_ side, lets just check if the virtual machine got the desired configuration after the DHCP exchange
 
-[![DHCP Client End State]({{ site.url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-dhcp-client-vm-ifconfig.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-dhcp-client-vm-ifconfig.png)
+[![DHCP Client End State]({{ relative_url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-dhcp-client-vm-ifconfig.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-dhcp-client-vm-ifconfig.png)
 
 # FAQ
 
@@ -457,13 +457,13 @@ There are multiple factors that could be affecting this, however if the _Use Cas
 
 By default, any segment created using _NSX-T UI_ will get a set of _default Segment Profiles_.
 
-[![Default Segment Profiles]({{ site.url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-segment-profiles-1.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-segment-profiles-1.png)
+[![Default Segment Profiles]({{ relative_url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-segment-profiles-1.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-segment-profiles-1.png)
 
-[![DHCP Client Segment]({{ site.url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-segment-profiles-2.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-segment-profiles-2.png)
+[![DHCP Client Segment]({{ relative_url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-segment-profiles-2.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-segment-profiles-2.png)
 
 The solution is to create a new _Segment Profile_ of the type _Segment Security Profile_ with the _DHCP Server Block_ disabled.
 
-[![New Segment Profile]({{ site.url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-segment-profiles-3.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-segment-profiles-3.png)
+[![New Segment Profile]({{ relative_url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-segment-profiles-3.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2020/06/nsxt-attach-dhcp-relay-segment-profiles-3.png)
 
 {% capture notice-note-troubleshoot %}
 **Note**
@@ -487,4 +487,4 @@ Yes, it is a question of choosing your preferred programming language and you ca
 
 Since there is a part of the process that can be done easily using the _NSX-T UI_, I just script using Powershell (PShell 6 or above) the part where we need to leverage the _Management API_. It is not the prettiest powershell coding that you will ever see, but will do the job and show the process.
 
-* Download: [NSX-T Service Interface Attach DHCP Relay script]({{ site.url }}/assets/downloads/scripts/powershell/nsx-t/nsxt-service-port-dhcp-relay.ps1)
+* Download: [NSX-T Service Interface Attach DHCP Relay script]({{ relative_url }}/assets/downloads/scripts/powershell/nsx-t/nsxt-service-port-dhcp-relay.ps1)

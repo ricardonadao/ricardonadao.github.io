@@ -20,7 +20,7 @@ As in the [_previous post_]({% post_url 2020-02-26-nsxt-using-nsxt-policy-api-to
 
 The list of NSX-T Policy API CMDlets is not massive.
 
-[![NSX-T Policy API CMDlets]({{ site.url }}/assets/images/posts/2020/02/powercli-nsxt-cmdlets-list.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2020/02/powercli-nsxt-cmdlets-list.png)
+[![NSX-T Policy API CMDlets]({{ relative_url }}/assets/images/posts/2020/02/powercli-nsxt-cmdlets-list.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2020/02/powercli-nsxt-cmdlets-list.png)
 
 Based in the number of cmdlets available could give the impression that you will not be able to do a lot of things with them, however these four cmdlets are powerful enough to create, remove or modify any object in the _NSX-T Manager_.
 
@@ -36,7 +36,7 @@ The cmdlet _Get-NsxtPolicyService_ is the main key to all of it.
 
 To be able to create the segment in the right transport zone, we will need to collect the _Transport Zone ID_ and the easiest way to retrieve it is through the _simplified UI_.
 
-[![NSX-T Transport Zone ID]({{ site.url }}/assets/images/posts/2020/03/powercli-nsxt-overlay-transport-zone.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2020/03/powercli-nsxt-overlay-transport-zone.png)
+[![NSX-T Transport Zone ID]({{ relative_url }}/assets/images/posts/2020/03/powercli-nsxt-overlay-transport-zone.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2020/03/powercli-nsxt-overlay-transport-zone.png)
 
 Now that we have the _Transport Zone ID_ we can build the variable that will give us the _path_ for the transport zone object.
 
@@ -95,6 +95,6 @@ Foreach ($segmentID in $segmentIDs) {
 
 ## Result
 
-[![Code Snippet run]({{ site.url }}/assets/images/posts/2020/03/powercli-nsxt-new-overlay-segments-code-snippet-run.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2020/03/powercli-nsxt-new-overlay-segments-code-snippet-run.png)
+[![Code Snippet run]({{ relative_url }}/assets/images/posts/2020/03/powercli-nsxt-new-overlay-segments-code-snippet-run.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2020/03/powercli-nsxt-new-overlay-segments-code-snippet-run.png)
 
-[![New Overlay Segments List - Simplified UI]({{ site.url }}/assets/images/posts/2020/03/powercli-nsxt-overlay-new-overlay-segments.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2020/03/powercli-nsxt-overlay-new-overlay-segments.png)
+[![New Overlay Segments List - Simplified UI]({{ relative_url }}/assets/images/posts/2020/03/powercli-nsxt-overlay-new-overlay-segments.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2020/03/powercli-nsxt-overlay-new-overlay-segments.png)

@@ -37,17 +37,17 @@ We will go through the analysis of some key points of this post to justify some 
 
 The _Virtual Extensible LAN (VXLAN)_ is an encapsulation protocol that provides a way to extend _L2 network_ over a _L3 infrastructure_ by using _MAC-in-UDP_ encapsulation and tunneling.
 
-[![VXLAN frame]({{ site.url }}/assets/images/posts/2018/11/vxlan-frame.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2018/11/vxlan-frame.png)
+[![VXLAN frame]({{ relative_url }}/assets/images/posts/2018/11/vxlan-frame.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2018/11/vxlan-frame.png)
 
 At this point we have the ability to present _L2 networks_ to the _Nested Hypervisors cluster_ as if it was a normal _VLAN_ or _L2 network_.
 
-![Green Check Mark]({{ site.url }}/assets/images/common/green-check-mark-25x25.png){:class="img-responsive"} So for now, there is no _show stopper_ to what we are doing, since from the _Nested Hypervisors cluster_ view there is no difference.
+![Green Check Mark]({{ relative_url }}/assets/images/common/green-check-mark-25x25.png){:class="img-responsive"} So for now, there is no _show stopper_ to what we are doing, since from the _Nested Hypervisors cluster_ view there is no difference.
 
 We kept digging and checking what are the _vSAN_ and _vMotion_ requirements from the networking point of view.
 
 ## _vSAN_ network requirements
 
-[![Network Requirements for vSAN]({{ site.url }}/assets/images/posts/2018/11/vsan-network-requirements.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2018/11/vsan-network-requirements.png)
+[![Network Requirements for vSAN]({{ relative_url }}/assets/images/posts/2018/11/vsan-network-requirements.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2018/11/vsan-network-requirements.png)
 
 [_link: VMware Docs - Networking Requirements for vSAN_](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.vsan-planning.doc/GUID-AFF133BC-F4B6-4753-815F-20D3D752D898.html)
 
@@ -61,11 +61,11 @@ We kept digging and checking what are the _vSAN_ and _vMotion_ requirements from
 * IPv4 and IPv6 support
   * _vSAN_ network supports both IPV4 or IPV6
 
-![Green Check Mark]({{ site.url }}/assets/images/common/green-check-mark-25x25.png){:class="img-responsive"} Going through the requirements seems that a _Logical Switch_ still fullfill all the basic requirements, so we should be ok, potentially we will have some performance hit, but it should work.
+![Green Check Mark]({{ relative_url }}/assets/images/common/green-check-mark-25x25.png){:class="img-responsive"} Going through the requirements seems that a _Logical Switch_ still fullfill all the basic requirements, so we should be ok, potentially we will have some performance hit, but it should work.
 
 ## vMotion network requirements
 
-[![Networking Best Practices for vSphere vMotion]({{ site.url }}/assets/images/posts/2018/11/vmotion-network-best-practices.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2018/11/vmotion-network-best-practices.png)
+[![Networking Best Practices for vSphere vMotion]({{ relative_url }}/assets/images/posts/2018/11/vmotion-network-best-practices.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2018/11/vmotion-network-best-practices.png)
 
 [_link: VMware Docs - vSphere vMotion Networking Requirements_](https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.vcenterhost.doc/GUID-3B41119A-1276-404B-8BFB-A32409052449.html)
 
@@ -73,7 +73,7 @@ We kept digging and checking what are the _vSAN_ and _vMotion_ requirements from
 
 * Bandwidth
   * _vMotion_ network limits
-  [![Network Limits for Migration with vMotion]({{ site.url }}/assets/images/posts/2018/11/vmotion-network-limits.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2018/11/vmotion-network-limits.png)
+  [![Network Limits for Migration with vMotion]({{ relative_url }}/assets/images/posts/2018/11/vmotion-network-limits.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2018/11/vmotion-network-limits.png)
 * Connection between hosts
   * Each host in the cluster needs a _VMKernel vMotion_ portgroup configured
 * Host Network
@@ -81,7 +81,7 @@ We kept digging and checking what are the _vSAN_ and _vMotion_ requirements from
 * IPv4 and IPv6 support
   * _vMotion_ supports both IPv4 and IPv6
 
-![Green Check Mark]({{ site.url }}/assets/images/common/green-check-mark-25x25.png){:class="img-responsive"} Seems that we are still ok from _vMotion_ point of view.
+![Green Check Mark]({{ relative_url }}/assets/images/common/green-check-mark-25x25.png){:class="img-responsive"} Seems that we are still ok from _vMotion_ point of view.
 
 # Conclusion
 

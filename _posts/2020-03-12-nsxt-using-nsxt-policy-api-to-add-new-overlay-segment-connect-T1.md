@@ -21,7 +21,7 @@ In previous posts:
 
 To be able to create the segment in the right transport zone, we will need to collect the _Transport Zone ID_ and the easiest way to retrieve it is through the _simplified UI_.
 
-[![NSX-T Transport Zone ID]({{ site.url }}/assets/images/posts/2020/03/powercli-nsxt-overlay-transport-zone.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2020/03/powercli-nsxt-overlay-transport-zone.png)
+[![NSX-T Transport Zone ID]({{ relative_url }}/assets/images/posts/2020/03/powercli-nsxt-overlay-transport-zone.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2020/03/powercli-nsxt-overlay-transport-zone.png)
 
 Now that we have the _Transport Zone ID_ we can build the variable that will give us the _path_ for the transport zone object.
 
@@ -41,7 +41,7 @@ To check the _T1 router ID_, and the information of the _T1 router path_ object,
 ```
 
 * Result
-  [![NSX-T Router T1s list]({{ site.url }}/assets/images/posts/2020/03/powercli-nsxt-list-t1s-routers.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2020/03/powercli-nsxt-list-t1s-routers.png)
+  [![NSX-T Router T1s list]({{ relative_url }}/assets/images/posts/2020/03/powercli-nsxt-list-t1s-routers.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2020/03/powercli-nsxt-list-t1s-routers.png)
 
 ```powershell
 # path - /infra/tier-1s/<router ID>
@@ -106,8 +106,8 @@ $segmentList.patch($segmentID, $newSegmentSpec)
 
 ## Result
 
-[![Code Snippet run]({{ site.url }}/assets/images/posts/2020/03/powercli-nsxt-new-overlay-segment-t1-router-connected-code-snippet-run.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2020/03/powercli-nsxt-new-overlay-segment-t1-router-connected-code-snippet-run.png)
+[![Code Snippet run]({{ relative_url }}/assets/images/posts/2020/03/powercli-nsxt-new-overlay-segment-t1-router-connected-code-snippet-run.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2020/03/powercli-nsxt-new-overlay-segment-t1-router-connected-code-snippet-run.png)
 
-[![New Overlay Segments T1 connected - Simplified UI]({{ site.url }}/assets/images/posts/2020/03/powercli-nsxt-new-overlay-segment-t1-router-connected-result-01.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2020/03/powercli-nsxt-new-overlay-segment-t1-router-connected-result-01.png)
+[![New Overlay Segments T1 connected - Simplified UI]({{ relative_url }}/assets/images/posts/2020/03/powercli-nsxt-new-overlay-segment-t1-router-connected-result-01.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2020/03/powercli-nsxt-new-overlay-segment-t1-router-connected-result-01.png)
 
-[![New Overlay Segments T1 connected - Subnet - Simplified UI]({{ site.url }}/assets/images/posts/2020/03/powercli-nsxt-new-overlay-segment-t1-router-connected-result-02.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2020/03/powercli-nsxt-new-overlay-segment-t1-router-connected-result-02.png)
+[![New Overlay Segments T1 connected - Subnet - Simplified UI]({{ relative_url }}/assets/images/posts/2020/03/powercli-nsxt-new-overlay-segment-t1-router-connected-result-02.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2020/03/powercli-nsxt-new-overlay-segment-t1-router-connected-result-02.png)

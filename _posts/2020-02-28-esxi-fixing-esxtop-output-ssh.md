@@ -22,31 +22,31 @@ And some of the SSH sessions that were playing up were the ones for my Homelab _
 
 Everytime I opened an SSH session to one of my Homelab _ESXis_ servers and run _**esxtop**_ the result was something similar to running it in _batch mode_ with output to the _stdout_ (screen).
 
-[![SSH esxtop broken output]({{ site.url }}/assets/images/posts/2020/02/esxi-esxtop-broken-output.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2020/02/esxi-esxtop-broken-output.png)
+[![SSH esxtop broken output]({{ relative_url }}/assets/images/posts/2020/02/esxi-esxtop-broken-output.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2020/02/esxi-esxtop-broken-output.png)
 
 # Troubleshooting
 
 When checking the output for clues I noticed the first bit of the output.
 
-[![SSH esxtop broken output clue]({{ site.url }}/assets/images/posts/2020/02/esxi-esxtop-broken-output-clue.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2020/02/esxi-esxtop-broken-output-clue.png)
+[![SSH esxtop broken output clue]({{ relative_url }}/assets/images/posts/2020/02/esxi-esxtop-broken-output-clue.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2020/02/esxi-esxtop-broken-output-clue.png)
 
 It seems that potentially the problem is related to the _**TERM**_ variable that normally helps defining some of the terminal parameters.
 
 In this case, seems that our _ESXi shell_ do not know _xterm256-color_ terminal.
 And we easily can verify that looking at _/usr/share/terminfo/x/_ that it makes sense, since no _xterm256-color_ is listed.
 
-[![ESXi SSH terminfo db]({{ site.url }}/assets/images/posts/2020/02/esxi-esxtop-esxi-ssh-terminfo-db.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2020/02/esxi-esxtop-esxi-ssh-terminfo-db.png)
+[![ESXi SSH terminfo db]({{ relative_url }}/assets/images/posts/2020/02/esxi-esxtop-esxi-ssh-terminfo-db.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2020/02/esxi-esxtop-esxi-ssh-terminfo-db.png)
 
 
 The _$TERM_ shell variable is inherited from our _terminal emulator_.
 
 * Terminal Emulator
 
-  [![Terminal Emulator $TERM]({{ site.url }}/assets/images/posts/2020/02/esxi-esxtop-terminal-emulator-term.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2020/02/esxi-terminal-emulator-term.png)
+  [![Terminal Emulator $TERM]({{ relative_url }}/assets/images/posts/2020/02/esxi-esxtop-terminal-emulator-term.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2020/02/esxi-terminal-emulator-term.png)
 
 * ESXi SSH
 
-  [![ESXi SSH term]({{ site.url }}/assets/images/posts/2020/02/esxi-esxtop-esxi-ssh-term.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2020/02/esxi-esxtop-esxi-ssh-term.png)
+  [![ESXi SSH term]({{ relative_url }}/assets/images/posts/2020/02/esxi-esxtop-esxi-ssh-term.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2020/02/esxi-esxtop-esxi-ssh-term.png)
 
 # Solution
 
@@ -66,7 +66,7 @@ One of the options to override the _$TERM_ value with something that we know tha
 vi /etc/profile.local
 ```
 
-[![ESXi profile.local]({{ site.url }}/assets/images/posts/2020/02/esxi-esxtop-edit-profilelocal.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2020/02/esxi-esxtop-edit-profilelocal.png)
+[![ESXi profile.local]({{ relative_url }}/assets/images/posts/2020/02/esxi-esxtop-edit-profilelocal.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2020/02/esxi-esxtop-edit-profilelocal.png)
 
 The file _profile.local_ is processed every time you login via SSH as part of the shell setup, hence to take effect we will need to reload it, easiest way is to do a logoff/logon.
 
@@ -74,8 +74,8 @@ The file _profile.local_ is processed every time you login via SSH as part of th
 
 Once we get this done and we logoff/logon, we can check if _$TERM_ was overridden by our changes.
 
-[![ESXi $TERM after change]({{ site.url }}/assets/images/posts/2020/02/esxi-esxtop-esxi-ssh-term-after-change.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2020/02/esxi-esxtop-esxi-ssh-term-after-change.png)
+[![ESXi $TERM after change]({{ relative_url }}/assets/images/posts/2020/02/esxi-esxtop-esxi-ssh-term-after-change.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2020/02/esxi-esxtop-esxi-ssh-term-after-change.png)
 
 And lets check if _**esxtop**_ behaves as expected.
 
-[![ESXi esxtop output fixed]({{ site.url }}/assets/images/posts/2020/02/esxi-esxtop-fixed-output.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2020/02/esxi-esxtop-fixed-output.png)
+[![ESXi esxtop output fixed]({{ relative_url }}/assets/images/posts/2020/02/esxi-esxtop-fixed-output.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2020/02/esxi-esxtop-fixed-output.png)

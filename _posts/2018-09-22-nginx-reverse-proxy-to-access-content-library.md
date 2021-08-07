@@ -12,7 +12,7 @@ toc: true
 ---
 We want to setup a _Content Library_ in our _central vCenter_ and then allow the other _vCenters_ in our _Nested Labs_ to subscribe it without adding a lot of complexity to the configuration.
 
-[![NGINX Nested Lab Scenario]({{ site.url }}/assets/images/posts/2018/09/nginx-reverse-proxy-to-access-content-library-01-visio.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2018/09/nginx-reverse-proxy-to-access-content-library-01-visio.png)
+[![NGINX Nested Lab Scenario]({{ relative_url }}/assets/images/posts/2018/09/nginx-reverse-proxy-to-access-content-library-01-visio.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2018/09/nginx-reverse-proxy-to-access-content-library-01-visio.png)
 
 ## Requirements ##
 
@@ -25,11 +25,11 @@ We want to setup a _Content Library_ in our _central vCenter_ and then allow the
 
 1. First step will be setting up a **DNAT** and a **FW Rule** in each _Nested Lab Edge_ to allow the _nested vCenters_ to subscribe the _Content Library_ using  _192.168.0.1 (Nested Edge Internal Interface)_ instead of connecting directly to the _central vCenter_.
 
-[![Nested Lab Edge DNAT]({{ site.url }}/assets/images/posts/2018/09/nginx-reverse-proxy-to-access-content-library-02-dnat.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2018/09/nginx-reverse-proxy-to-access-content-library-02-dnat.png)
+[![Nested Lab Edge DNAT]({{ relative_url }}/assets/images/posts/2018/09/nginx-reverse-proxy-to-access-content-library-02-dnat.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2018/09/nginx-reverse-proxy-to-access-content-library-02-dnat.png)
 
-[![Nested Lab Edge DNAT Config]({{ site.url }}/assets/images/posts/2018/09/nginx-reverse-proxy-to-access-content-library-02-01-dnat-config.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2018/09/nginx-reverse-proxy-to-access-content-library-02-01-dnat-config.png)
+[![Nested Lab Edge DNAT Config]({{ relative_url }}/assets/images/posts/2018/09/nginx-reverse-proxy-to-access-content-library-02-01-dnat-config.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2018/09/nginx-reverse-proxy-to-access-content-library-02-01-dnat-config.png)
 
-[![Nested Lab Edge FW Rule]({{ site.url }}/assets/images/posts/2018/09/nginx-reverse-proxy-to-access-content-library-03-fwrule.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2018/09/nginx-reverse-proxy-to-access-content-library-03-fwrule.png)
+[![Nested Lab Edge FW Rule]({{ relative_url }}/assets/images/posts/2018/09/nginx-reverse-proxy-to-access-content-library-03-fwrule.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2018/09/nginx-reverse-proxy-to-access-content-library-03-fwrule.png)
 
 {:start="2"}
 
@@ -136,20 +136,20 @@ http {
 
 * Getting the _Content Library_ link to subscribe
 
-[![Content Library Subscription link]({{ site.url }}/assets/images/posts/2018/09/nginx-reverse-proxy-to-access-content-library-04-content-library-settings.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2018/09/nginx-reverse-proxy-to-access-content-library-04-content-library-settings.png)
+[![Content Library Subscription link]({{ relative_url }}/assets/images/posts/2018/09/nginx-reverse-proxy-to-access-content-library-04-content-library-settings.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2018/09/nginx-reverse-proxy-to-access-content-library-04-content-library-settings.png)
 
 * Create new content library in _vcenter01.nested_ via subscription of the one published by _vcenter00.local_
 
-[![Create new Content Library]({{ site.url }}/assets/images/posts/2018/09/nginx-reverse-proxy-to-access-content-library-05-subscribe-content-library-settings.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2018/09/nginx-reverse-proxy-to-access-content-library-05-subscribe-content-library-settings.png)
+[![Create new Content Library]({{ relative_url }}/assets/images/posts/2018/09/nginx-reverse-proxy-to-access-content-library-05-subscribe-content-library-settings.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2018/09/nginx-reverse-proxy-to-access-content-library-05-subscribe-content-library-settings.png)
 
 * Will prompt to accept the _nginx-vm.local_ certificate
 
-[![New Content Library Certificate]({{ site.url }}/assets/images/posts/2018/09/nginx-reverse-proxy-to-access-content-library-06-subscribe-content-library-cert.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2018/09/nginx-reverse-proxy-to-access-content-library-06-subscribe-content-library-cert.png)
+[![New Content Library Certificate]({{ relative_url }}/assets/images/posts/2018/09/nginx-reverse-proxy-to-access-content-library-06-subscribe-content-library-cert.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2018/09/nginx-reverse-proxy-to-access-content-library-06-subscribe-content-library-cert.png)
 
 * Confirm all the details before click _Finish_
 
-[![New Content Library Creation Finish step]({{ site.url }}/assets/images/posts/2018/09/nginx-reverse-proxy-to-access-content-library-07-subscribe-content-library-readytocomplete.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2018/09/nginx-reverse-proxy-to-access-content-library-07-subscribe-content-library-readytocomplete.png)
+[![New Content Library Creation Finish step]({{ relative_url }}/assets/images/posts/2018/09/nginx-reverse-proxy-to-access-content-library-07-subscribe-content-library-readytocomplete.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2018/09/nginx-reverse-proxy-to-access-content-library-07-subscribe-content-library-readytocomplete.png)
 
 * **And all done**, since we configure the new _Content Library_ to download content only when needed the initial footprint is quiet small
 
-[![New Content Library Status]({{ site.url }}/assets/images/posts/2018/09/nginx-reverse-proxy-to-access-content-library-08-subscribe-content-library-setupdone.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2018/09/nginx-reverse-proxy-to-access-content-library-08-subscribe-content-library-setupdone.png)
+[![New Content Library Status]({{ relative_url }}/assets/images/posts/2018/09/nginx-reverse-proxy-to-access-content-library-08-subscribe-content-library-setupdone.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2018/09/nginx-reverse-proxy-to-access-content-library-08-subscribe-content-library-setupdone.png)

@@ -25,7 +25,7 @@ Remember your mileage may vary in some of the parts, but the process should work
 
 1. **Will not describing the download process and upload, since there are different ways to achieve this**
 
-[![ESXi Upgrade - Offline patch]({{ site.url }}/assets/images/posts/2018/06/esxi-upgrade-offlinePatch.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2018/06/esxi-upgrade-offlinePatch.png)
+[![ESXi Upgrade - Offline patch]({{ relative_url }}/assets/images/posts/2018/06/esxi-upgrade-offlinePatch.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2018/06/esxi-upgrade-offlinePatch.png)
 
 {:start="3"}
 
@@ -39,7 +39,7 @@ esxcli software profile update
    -p ESXi-6.7.0-8169922-standard --dry-run
 ```
 
-[![ESXi Upgrade - dryrun]({{ site.url }}/assets/images/posts/2018/06/esxi-upgrade-dryrun.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2018/06/esxi-upgrade-dryrun.png)
+[![ESXi Upgrade - dryrun]({{ relative_url }}/assets/images/posts/2018/06/esxi-upgrade-dryrun.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2018/06/esxi-upgrade-dryrun.png)
 
 {:start="5"}
 
@@ -53,7 +53,7 @@ esxcli system maintenanceMode set --enable=true
 esxcli system maintenanceMode get
 ```
 
-[![ESXi Upgrade - Enter Maintenance Mode]({{ site.url }}/assets/images/posts/2018/06/esxi-upgrade-enterMaintenanceMode.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2018/06/esxi-upgrade-enterMaintenanceMode.png)
+[![ESXi Upgrade - Enter Maintenance Mode]({{ relative_url }}/assets/images/posts/2018/06/esxi-upgrade-enterMaintenanceMode.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2018/06/esxi-upgrade-enterMaintenanceMode.png)
 
 {:start="7"}
 
@@ -67,19 +67,19 @@ esxcli software profile update
   -p ESXi-6.7.0-8169922-standard --dry-run
 ```
 
-[![ESXi Upgrade - Start]({{ site.url }}/assets/images/posts/2018/06/esxi-upgrade-start.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2018/06/esxi-upgrade-start.png)
+[![ESXi Upgrade - Start]({{ relative_url }}/assets/images/posts/2018/06/esxi-upgrade-start.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2018/06/esxi-upgrade-start.png)
 
 {:start="2"}
 
    1. The command is not too verbose, but we can open a 2nd SSH session and tail the _esxupdate.log_ file
 
-[![ESXi Upgrade tail esxupdate]({{ site.url }}/assets/images/posts/2018/06/esxi-upgrade-tail-esxupdate.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2018/06/esxi-upgrade-tail-esxupdate.png)
+[![ESXi Upgrade tail esxupdate]({{ relative_url }}/assets/images/posts/2018/06/esxi-upgrade-tail-esxupdate.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2018/06/esxi-upgrade-tail-esxupdate.png)
 
 {:start="3"}
 
    1. Will give you a quick report, similar to the _dry-run_, but now with the actual changes
 
-[![ESXi Upgrade - Finished]({{ site.url }}/assets/images/posts/2018/06/esxi-upgrade-finished.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2018/06/esxi-upgrade-finished.png)
+[![ESXi Upgrade - Finished]({{ relative_url }}/assets/images/posts/2018/06/esxi-upgrade-finished.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2018/06/esxi-upgrade-finished.png)
 
 {:start="8"}
 
@@ -87,7 +87,7 @@ esxcli software profile update
 
    * Now, we need to reboot the host to get the upgrade finished
 
-   [![ESXi Upgrade - Reboot]({{ site.url }}/assets/images/posts/2018/06/esxi-upgrade-reboot.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2018/06/esxi-upgrade-reboot.png)
+   [![ESXi Upgrade - Reboot]({{ relative_url }}/assets/images/posts/2018/06/esxi-upgrade-reboot.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2018/06/esxi-upgrade-reboot.png)
 
 {:start="9"}
 
@@ -95,7 +95,7 @@ esxcli software profile update
 
    * Let's remove it from _Maintenance Mode_
 
-[![ESXi Upgrade - ESXi FirstBoot]({{ site.url }}/assets/images/posts/2018/06/esxi-upgrade-firstBoot.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2018/06/esxi-upgrade-firstBoot.png)
+[![ESXi Upgrade - ESXi FirstBoot]({{ relative_url }}/assets/images/posts/2018/06/esxi-upgrade-firstBoot.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2018/06/esxi-upgrade-firstBoot.png)
 
 ```shellscript
 esxcli system maintenanceMode get
@@ -103,10 +103,10 @@ esxcli system maintenanceMode set --enable=false
 esxcli system maintenanceMode get
 ```
 
-[![ESXi Upgrade - Exit Maintenance Mode]({{ site.url }}/assets/images/posts/2018/06/esxi-upgrade-exitMaintenanceMode.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2018/06/esxi-upgrade-exitMaintenanceMode.png)
+[![ESXi Upgrade - Exit Maintenance Mode]({{ relative_url }}/assets/images/posts/2018/06/esxi-upgrade-exitMaintenanceMode.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2018/06/esxi-upgrade-exitMaintenanceMode.png)
 
 {:start="10"}
 
 1. **All done** and a final picture with our Upgraded/Updated ESXi
 
-[![ESXi Upgrade - ESXi Upgraded screenshot]({{ site.url }}/assets/images/posts/2018/06/esxi-upgrade-UpdatedESXi.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2018/06/esxi-upgrade-UpdatedESXi.png)
+[![ESXi Upgrade - ESXi Upgraded screenshot]({{ relative_url }}/assets/images/posts/2018/06/esxi-upgrade-UpdatedESXi.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2018/06/esxi-upgrade-UpdatedESXi.png)

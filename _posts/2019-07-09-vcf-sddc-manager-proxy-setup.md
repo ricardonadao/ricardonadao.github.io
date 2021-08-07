@@ -32,7 +32,7 @@ Login to _SDDC Manager_ using _vcf_ user credentials. Then we will need to eleva
 su -
 ```
 
-[![SDDC Manager login]({{ site.url }}/assets/images/posts/2019/07/vcf-sddc-manager-proxy-setup-login.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2019/07/vcf-sddc-manager-proxy-setup-login.png)
+[![SDDC Manager login]({{ relative_url }}/assets/images/posts/2019/07/vcf-sddc-manager-proxy-setup-login.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2019/07/vcf-sddc-manager-proxy-setup-login.png)
 
 # Change the right configuration file
 
@@ -48,7 +48,7 @@ Before _VCF 2.3_ the configuration was:
 /home/vrack/lcm/lcm-app/conf/application-evo.properties
 ```
 
-[![SDDC Manager Config Files]({{ site.url }}/assets/images/posts/2019/07/vcf-sddc-manager-proxy-setup-config-files.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2019/07/vcf-sddc-manager-proxy-setup-config-files.png)
+[![SDDC Manager Config Files]({{ relative_url }}/assets/images/posts/2019/07/vcf-sddc-manager-proxy-setup-config-files.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2019/07/vcf-sddc-manager-proxy-setup-config-files.png)
 
 # Configuration changes
 
@@ -60,11 +60,11 @@ Before _VCF 2.3_ the configuration was:
   lcm.depot.adapter.proxyPort
 ```
 
-[![SDDC Manager Config Properties]({{ site.url }}/assets/images/posts/2019/07/vcf-sddc-manager-proxy-setup-config-properties.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2019/07/vcf-sddc-manager-proxy-setup-config-properties.png)
+[![SDDC Manager Config Properties]({{ relative_url }}/assets/images/posts/2019/07/vcf-sddc-manager-proxy-setup-config-properties.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2019/07/vcf-sddc-manager-proxy-setup-config-properties.png)
 
 ## Edit them accordingly
 
-[![SDDC Manager Configuration changes]({{ site.url }}/assets/images/posts/2019/07/vcf-sddc-manager-proxy-setup-config-properties-changed.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2019/07/vcf-sddc-manager-proxy-setup-config-properties-changed.png)
+[![SDDC Manager Configuration changes]({{ relative_url }}/assets/images/posts/2019/07/vcf-sddc-manager-proxy-setup-config-properties-changed.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2019/07/vcf-sddc-manager-proxy-setup-config-properties-changed.png)
 
 # Restart the service
 
@@ -74,4 +74,4 @@ To get the settings activated we need to restart the _lcm service_.
 system restart lcm
 ```
 
-[![SDDC Manager Restart LCM service]({{ site.url }}/assets/images/posts/2019/07/vcf-sddc-manager-proxy-setup-restart-service.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2019/07/vcf-sddc-manager-proxy-setup-restart-service.png)
+[![SDDC Manager Restart LCM service]({{ relative_url }}/assets/images/posts/2019/07/vcf-sddc-manager-proxy-setup-restart-service.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2019/07/vcf-sddc-manager-proxy-setup-restart-service.png)

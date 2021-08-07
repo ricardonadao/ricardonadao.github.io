@@ -11,4 +11,4 @@ tags: [ blog, social ]
 ---
 And we got in the _vExpert NSX_ sub-program.
 
-[![vExpert NSX]({{ site.url }}/assets/images/cert_badges/vExpert.nsx-221x150.png){:class="img-responsive"}](https://vexpert.vmware.com/directory/2766)
+[![vExpert NSX]({{ relative_url }}/assets/images/cert_badges/vExpert.nsx-221x150.png){:class="img-responsive"}](https://vexpert.vmware.com/directory/2766)

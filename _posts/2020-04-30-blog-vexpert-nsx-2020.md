@@ -11,4 +11,4 @@ tags: [ blog, social ]
 ---
 This was already a couple of weeks ago, but I was able to keep the _vExpert NSX_ sub-program honour for one more year.
 
-[![vExpert NSX]({{ site.url }}/assets/images/cert_badges/vExpert.nsx-221x150.png){:class="img-responsive"}](https://vexpert.vmware.com/directory/2766)
+[![vExpert NSX]({{ relative_url }}/assets/images/cert_badges/vExpert.nsx-221x150.png){:class="img-responsive"}](https://vexpert.vmware.com/directory/2766)

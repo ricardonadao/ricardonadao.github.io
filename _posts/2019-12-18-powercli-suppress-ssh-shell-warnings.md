@@ -14,7 +14,7 @@ When we deploy a set of ESXi's most of the times we endup enabling SSH and ESXi 
 
 But that simple tweak leaves a _warning_ in each of the ESXi's.
 
-[![SSH/Shell Warning Example]({{ site.url }}/assets/images/posts/2019/12/esxi-ssh-shell-warning.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2019/12/esxi-ssh-shell-warning.png)
+[![SSH/Shell Warning Example]({{ relative_url }}/assets/images/posts/2019/12/esxi-ssh-shell-warning.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2019/12/esxi-ssh-shell-warning.png)
 
 This is a pretty simple manual task since it will be just a question of going through each of the ESXi's in vCenter and _click_ suppress.
 
@@ -59,7 +59,7 @@ foreach($hyp in $hosts) {
 
 A quick check to validate the current setting status:
 
-[![Check setting current status Example]({{ site.url }}/assets/images/posts/2019/12/esxi-ssh-shell-script-current-status.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2019/12/esxi-ssh-shell-script-current-status.png)
+[![Check setting current status Example]({{ relative_url }}/assets/images/posts/2019/12/esxi-ssh-shell-script-current-status.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2019/12/esxi-ssh-shell-script-current-status.png)
 
 ## Changing the setting
 
@@ -90,11 +90,11 @@ We can use _Set-AdvancedSetting_ cmdlet to change the advanced setting to suppre
 
 Let us change the setting and check the result after:
 
-[![Change Setting Example]({{ site.url }}/assets/images/posts/2019/12/esxi-ssh-shell-script-status-change.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2019/12/esxi-ssh-shell-script-status-change.png)
+[![Change Setting Example]({{ relative_url }}/assets/images/posts/2019/12/esxi-ssh-shell-script-status-change.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2019/12/esxi-ssh-shell-script-status-change.png)
 
 ESXi suppressed warnings/alerts:
 
-[![ESXi Warnings/Errors Example]({{ site.url }}/assets/images/posts/2019/12/esxi-ssh-shell-warning-suppressed.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2019/12/esxi-ssh-shell-warning-suppressed.png)
+[![ESXi Warnings/Errors Example]({{ relative_url }}/assets/images/posts/2019/12/esxi-ssh-shell-warning-suppressed.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2019/12/esxi-ssh-shell-warning-suppressed.png)
 
 ## Getting a quick script together
 

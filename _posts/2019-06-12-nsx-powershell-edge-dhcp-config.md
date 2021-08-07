@@ -16,9 +16,9 @@ This is a quick snippet explaining how to use _Powershell_ to configure the _DHC
 
 Setting up a simple _DHCP_ server with a single _IP pool_ - _192.168.0.100/24 - 192.168.0.200/24_ - in an _ESG_ using _Powershell_.
 
-[![ESG Example]({{ site.url }}/assets/images/posts/2019/06/nsx-powershell-powernsx-esg-dhcp.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2019/06/nsx-powershell-powernsx-esg-dhcp.png)
+[![ESG Example]({{ relative_url }}/assets/images/posts/2019/06/nsx-powershell-powernsx-esg-dhcp.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2019/06/nsx-powershell-powernsx-esg-dhcp.png)
 
-We will use an existing _ESG_ instead of creating a new one, similar to what we did in [NSX - Configure a Load Balancer in an Edge Security Gateway using Powershell/PowerNSX]({{ site.url }}{% link _posts/2019-06-10-nsx-powershell-powernsx-edge-lb-config.md %})
+We will use an existing _ESG_ instead of creating a new one, similar to what we did in [NSX - Configure a Load Balancer in an Edge Security Gateway using Powershell/PowerNSX]({{ relative_url }}{% link _posts/2019-06-10-nsx-powershell-powernsx-edge-lb-config.md %})
 {: .notice--info}
 
 The _DHCP service_ will be listening in the _ESG internal interface (Transit - VXLAN X)_.

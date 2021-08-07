@@ -46,7 +46,7 @@ xcode-select –install
   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
   ```
 
-  [![Install _Homebrew_]({{ site.url }}/assets/images/posts/2019/12/powercli-install-powercli-macos-install-homebrew.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2019/12/powercli-install-powercli-macos-install-homebrew.png)
+  [![Install _Homebrew_]({{ relative_url }}/assets/images/posts/2019/12/powercli-install-powercli-macos-install-homebrew.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2019/12/powercli-install-powercli-macos-install-homebrew.png)
 
 * Then you need to install _Homebrew-Cask_ to extend _Homebrew_.
 
@@ -60,7 +60,7 @@ xcode-select –install
 brew cask install powershell
 ```
 
-[![Install _Powershell_ using _Homebrew]({{ site.url }}/assets/images/posts/2019/12/powercli-install-powercli-macos-brew_install_powershell.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2019/12/powercli-install-powercli-macos-brew_install_powershell.png)
+[![Install _Powershell_ using _Homebrew]({{ relative_url }}/assets/images/posts/2019/12/powercli-install-powercli-macos-brew_install_powershell.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2019/12/powercli-install-powercli-macos-brew_install_powershell.png)
 
 ## **Method 2**: Using _Powershell_ install package
 
@@ -70,7 +70,7 @@ You can download the installation package from the [_Powershell Github_](https:/
 
 You can download the stable or preview versions depending how brave you are.
 
-[![Download Install Package]({{ site.url }}/assets/images/posts/2019/12/powercli-install-powercli-macos-download-install-packages.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2019/12/powercli-install-powercli-macos-download-install-packages.png)
+[![Download Install Package]({{ relative_url }}/assets/images/posts/2019/12/powercli-install-powercli-macos-download-install-packages.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2019/12/powercli-install-powercli-macos-download-install-packages.png)
 
 ### Installing _Powershell_ package
 
@@ -78,37 +78,37 @@ You can download the stable or preview versions depending how brave you are.
 
   The installation package will need to be allowed through the security framework before it allows you to install.
 
-  [![Run Install Package]({{ site.url }}/assets/images/posts/2019/12/powercli-install-powercli-macos-run-install-packages.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2019/12/powercli-install-powercli-macos-run-install-packages.png)
+  [![Run Install Package]({{ relative_url }}/assets/images/posts/2019/12/powercli-install-powercli-macos-run-install-packages.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2019/12/powercli-install-powercli-macos-run-install-packages.png)
 
 * Allowing the installation package through system security policies
 
-  [![Security & Privacy - Open Anyway]({{ site.url }}/assets/images/posts/2019/12/powercli-install-powercli-macos-security_privacy_step1-install-packages.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2019/12/powercli-install-powercli-macos-security_privacy_step1-install-packages.png)
+  [![Security & Privacy - Open Anyway]({{ relative_url }}/assets/images/posts/2019/12/powercli-install-powercli-macos-security_privacy_step1-install-packages.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2019/12/powercli-install-powercli-macos-security_privacy_step1-install-packages.png)
 
-  [![Security & Privacy - Enter password or use TouchID]({{ site.url }}/assets/images/posts/2019/12/powercli-install-powercli-macos-security_privacy_step2-install-packages.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2019/12/powercli-install-powercli-macos-security_privacy_step2-install-packages.png)
+  [![Security & Privacy - Enter password or use TouchID]({{ relative_url }}/assets/images/posts/2019/12/powercli-install-powercli-macos-security_privacy_step2-install-packages.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2019/12/powercli-install-powercli-macos-security_privacy_step2-install-packages.png)
 
 * Re-Open installation package
 
-  [![Re-Open the installation package]({{ site.url }}/assets/images/posts/2019/12/powercli-install-powercli-macos-reopen-install-packages.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2019/12/powercli-install-powercli-macos-reopen-install-packages.png)
+  [![Re-Open the installation package]({{ relative_url }}/assets/images/posts/2019/12/powercli-install-powercli-macos-reopen-install-packages.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2019/12/powercli-install-powercli-macos-reopen-install-packages.png)
 
 * Install _Powershell_ using installation package
   * Step 1
-  [![Install Wizard - Step 1]({{ site.url }}/assets/images/posts/2019/12/powercli-install-powercli-macos-run-install-package-step1.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2019/12/powercli-install-powercli-macos-run-install-package-step1.png)
+  [![Install Wizard - Step 1]({{ relative_url }}/assets/images/posts/2019/12/powercli-install-powercli-macos-run-install-package-step1.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2019/12/powercli-install-powercli-macos-run-install-package-step1.png)
 
   * Step 2
-  [![Install Wizard - Step 2]({{ site.url }}/assets/images/posts/2019/12/powercli-install-powercli-macos-run-install-package-step2.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2019/12/powercli-install-powercli-macos-run-install-package-step2.png)
+  [![Install Wizard - Step 2]({{ relative_url }}/assets/images/posts/2019/12/powercli-install-powercli-macos-run-install-package-step2.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2019/12/powercli-install-powercli-macos-run-install-package-step2.png)
 
   * Step 3
-  [![Install Wizard - Step 3]({{ site.url }}/assets/images/posts/2019/12/powercli-install-powercli-macos-run-install-package-step3.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2019/12/powercli-install-powercli-macos-run-install-package-step3.png)
+  [![Install Wizard - Step 3]({{ relative_url }}/assets/images/posts/2019/12/powercli-install-powercli-macos-run-install-package-step3.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2019/12/powercli-install-powercli-macos-run-install-package-step3.png)
 
   * Step 4
-  [![Install Wizard - Step 4]({{ site.url }}/assets/images/posts/2019/12/powercli-install-powercli-macos-run-install-package-step4.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2019/12/powercli-install-powercli-macos-run-install-package-step4.png)
+  [![Install Wizard - Step 4]({{ relative_url }}/assets/images/posts/2019/12/powercli-install-powercli-macos-run-install-package-step4.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2019/12/powercli-install-powercli-macos-run-install-package-step4.png)
 
 ## Run _Powershell_
 {: #run_powershell_ref}
 
 * Find _Powershell_ app icon in the _Application folder_ or run from a _shell_
 
-  * [![Find _Powershell_ app icon]({{ site.url }}/assets/images/posts/2019/12/powercli-install-powercli-macos-run-powershell-step1.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2019/12/powercli-install-powercli-macos-run-powershell-step1.png)
+  * [![Find _Powershell_ app icon]({{ relative_url }}/assets/images/posts/2019/12/powercli-install-powercli-macos-run-powershell-step1.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2019/12/powercli-install-powercli-macos-run-powershell-step1.png)
 
   * Or run from a _shell_
 
@@ -116,10 +116,10 @@ You can download the stable or preview versions depending how brave you are.
     pwsh
     ```
 
-    [![Run from _shell_]({{ site.url }}/assets/images/posts/2019/12/powercli-install-powercli-macos-run-powershell-from-shell.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2019/12/powercli-install-powercli-macos-run-powershell-from-shell.png)
+    [![Run from _shell_]({{ relative_url }}/assets/images/posts/2019/12/powercli-install-powercli-macos-run-powershell-from-shell.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2019/12/powercli-install-powercli-macos-run-powershell-from-shell.png)
 
 * _Powershell_ window
-[![_Powershell_ application window]({{ site.url }}/assets/images/posts/2019/12/powercli-install-powercli-macos-run-powershell-step2.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2019/12/powercli-install-powercli-macos-run-powershell-step2.png)
+[![_Powershell_ application window]({{ relative_url }}/assets/images/posts/2019/12/powercli-install-powercli-macos-run-powershell-step2.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2019/12/powercli-install-powercli-macos-run-powershell-step2.png)
 
 # Install _VMware PowerCLI_ _Powershell_ modules
 
@@ -131,7 +131,7 @@ Since _VMware PowerCLI_ modules are now available from _PSGallery repository_ we
 
    We can use any of the methods described before in [_Run Powershell section_](#run_powershell_ref)
 
-   [![_Powershell_ application window]({{ site.url }}/assets/images/posts/2019/12/powercli-install-powercli-macos-run-powershell-step2.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2019/12/powercli-install-powercli-macos-run-powershell-step2.png)
+   [![_Powershell_ application window]({{ relative_url }}/assets/images/posts/2019/12/powercli-install-powercli-macos-run-powershell-step2.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2019/12/powercli-install-powercli-macos-run-powershell-step2.png)
 
 2. Let us check what _VMware Powershell_ modules are available to be installed through _PSGallery_
 
@@ -139,7 +139,7 @@ Since _VMware PowerCLI_ modules are now available from _PSGallery repository_ we
    Find-Module VMware.*
    ```
 
-   [![Check _VMware Powershell_ modules available]({{ site.url }}/assets/images/posts/2019/12/powercli-install-powercli-macos-find-vmware-modules.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2019/12/powercli-install-powercli-macos-find-vmware-modules.png)
+   [![Check _VMware Powershell_ modules available]({{ relative_url }}/assets/images/posts/2019/12/powercli-install-powercli-macos-find-vmware-modules.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2019/12/powercli-install-powercli-macos-find-vmware-modules.png)
 
 3. We will install _**VMware.PowerCLI**_
 
@@ -150,7 +150,7 @@ Since _VMware PowerCLI_ modules are now available from _PSGallery repository_ we
    We are installing _VMware PowerCLI_ modules only for the current user, hence _-Scope "CurrentUser"_ parameter
    {: .notice--info}
 
-   [![Install _VMware PowerCLI_ modules]({{ site.url }}/assets/images/posts/2019/12/powercli-install-powercli-macos-install-powercli-modules.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2019/12/powercli-install-powercli-macos-install-powercli-modules.png)
+   [![Install _VMware PowerCLI_ modules]({{ relative_url }}/assets/images/posts/2019/12/powercli-install-powercli-macos-install-powercli-modules.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2019/12/powercli-install-powercli-macos-install-powercli-modules.png)
 
    We could set _PSGallery repository_ to be _Trusted_ using _Set-PSRepository -Name "PSGallery" -InstallationPolicy "Trusted"_, however I personally prefer to keep it _Untrusted_ and answer the question when needed
    {: .notice--info}
@@ -161,6 +161,6 @@ Since _VMware PowerCLI_ modules are now available from _PSGallery repository_ we
    Get-Module "VMware.PowerCLI" -ListAvailable | FT -AutoSize
    ```
 
-   [![Check _VMware PowerCLI_ modules]({{ site.url }}/assets/images/posts/2019/12/powercli-install-powercli-macos-check-powercli-modules.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2019/12/powercli-install-powercli-macos-check-powercli-modules.png)
+   [![Check _VMware PowerCLI_ modules]({{ relative_url }}/assets/images/posts/2019/12/powercli-install-powercli-macos-check-powercli-modules.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2019/12/powercli-install-powercli-macos-check-powercli-modules.png)
 
 We seem to have all the _VMware.PowerCLI_ modules that we need installed, so we should be ready to go.

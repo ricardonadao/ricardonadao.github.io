@@ -26,7 +26,7 @@ The configuration will be done through the _vCenter Appliance Shell_.
 
 To get to the shell you will need to SSH to the _vCenter Appliance_, to be able to run a couple of _shell commands_.
 
-[![Connect to vCenter via SSH]({{ site.url }}/assets/images/posts/2020/03/vcenter-snmp-setup-connect-ssh.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2020/03/vcenter-snmp-setup-connect-ssh.png)
+[![Connect to vCenter via SSH]({{ relative_url }}/assets/images/posts/2020/03/vcenter-snmp-setup-connect-ssh.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2020/03/vcenter-snmp-setup-connect-ssh.png)
 
 > In case you login directly to _BASH_ shell you can re-activate the _Appliance shell_ again with the following
 > ```shellscript
@@ -39,7 +39,7 @@ chsh -s /bin/appliancesh root
 
 You can check the vCenter SNMP initial configuration using `snmp.get` command on the _Appliance Shell_
 
-[![Check vCenter SNMP initial config]({{ site.url }}/assets/images/posts/2020/03/vcenter-snmp-setup-snmp-get.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2020/03/vcenter-snmp-setup-snmp-get.png)
+[![Check vCenter SNMP initial config]({{ relative_url }}/assets/images/posts/2020/03/vcenter-snmp-setup-snmp-get.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2020/03/vcenter-snmp-setup-snmp-get.png)
 
 ## Setting it up
 
@@ -64,24 +64,24 @@ The shell commands to use will be:
   snmp.set --syslocation <location name/id>
   ```
 
-  [![Setup vCenter SNMP]({{ site.url }}/assets/images/posts/2020/03/vcenter-snmp-setup-snmp-setup.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2020/03/vcenter-snmp-setup-snmp-setup.png)
+  [![Setup vCenter SNMP]({{ relative_url }}/assets/images/posts/2020/03/vcenter-snmp-setup-snmp-setup.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2020/03/vcenter-snmp-setup-snmp-setup.png)
 
 ## Last step - Enabling it
 
 To enable it we need to run `snmp.enable` in the _Appliance shell_.
 
-[![Enable vCenter SNMP service]({{ site.url }}/assets/images/posts/2020/03/vcenter-snmp-setup-snmp-enable.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2020/03/vcenter-snmp-setup-snmp-enable.png)
+[![Enable vCenter SNMP service]({{ relative_url }}/assets/images/posts/2020/03/vcenter-snmp-setup-snmp-enable.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2020/03/vcenter-snmp-setup-snmp-enable.png)
 
 ## Checking if our setup works
 
 Testing with a _snmpwalk_ command line utility.
 
-[![SNMP walk test]({{ site.url }}/assets/images/posts/2020/03/vcenter-snmp-setup-snmpwalk-check.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2020/03/vcenter-snmp-setup-snmpwalk-check.png)
+[![SNMP walk test]({{ relative_url }}/assets/images/posts/2020/03/vcenter-snmp-setup-snmpwalk-check.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2020/03/vcenter-snmp-setup-snmpwalk-check.png)
 
 Checking our _[Cacti](https://www.cacti.net/) server_ 
 
-[![Cacti Check - CPU]({{ site.url }}/assets/images/posts/2020/03/vcenter-snmp-setup-cacti-cpu.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2020/03/vcenter-snmp-setup-cacti-cpu.png)
+[![Cacti Check - CPU]({{ relative_url }}/assets/images/posts/2020/03/vcenter-snmp-setup-cacti-cpu.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2020/03/vcenter-snmp-setup-cacti-cpu.png)
 
-[![Cacti Check - Ethernet and Used Space]({{ site.url }}/assets/images/posts/2020/03/vcenter-snmp-setup-cacti-ethernet-used-space.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2020/03/vcenter-snmp-setup-cacti-ethernet-used-space.png)
+[![Cacti Check - Ethernet and Used Space]({{ relative_url }}/assets/images/posts/2020/03/vcenter-snmp-setup-cacti-ethernet-used-space.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2020/03/vcenter-snmp-setup-cacti-ethernet-used-space.png)
 
 It seems that all is **good to go** and my _[Cacti](https://www.cacti.net/) server_ is now showing some pretty graphs.

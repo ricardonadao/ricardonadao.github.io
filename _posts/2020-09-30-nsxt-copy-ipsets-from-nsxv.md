@@ -34,7 +34,7 @@ As we mentioned we will leverage [_PowerNSX module_](https://powernsx.github.io/
 Get-NSXIpSet
 ```
 
-[![Get-NSXIpSet]({{ site.url }}/assets/images/posts/2020/09/nsxt-migrating-ipsets-from-nsxv-getnsxipset.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2020/09/nsxt-migrating-ipsets-from-nsxv-getnsxipset.png)
+[![Get-NSXIpSet]({{ relative_url }}/assets/images/posts/2020/09/nsxt-migrating-ipsets-from-nsxv-getnsxipset.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2020/09/nsxt-migrating-ipsets-from-nsxv-getnsxipset.png)
 
 At this point we can export the result to a csv file or just use the result to proceed with the creation of the _NSX-T Groups_.
 
@@ -58,19 +58,19 @@ Some _NSX-T Groups_ examples created:
 
 **NSXT-IPGROUP-01** |
 |-------------------|-------------------|
-[![NSXT-IPGROUP-01 - NSX-T]({{ site.url }}/assets/images/posts/2020/09/nsxt-migrating-ipsets-from-nsxv-nsxt-ipgroup01-nsxt-example.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2020/09/nsxt-migrating-ipsets-from-nsxv-nsxt-ipgroup01-nsxt-example.png) | [![NSXT-IPGROUP-01 - JSON]({{ site.url }}/assets/images/posts/2020/09/nsxt-migrating-ipsets-from-nsxv-nsxt-ipgroup01-json-example.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2020/09/nsxt-migrating-ipsets-from-nsxv-nsxt-ipgroup01-json-example.png)
+[![NSXT-IPGROUP-01 - NSX-T]({{ relative_url }}/assets/images/posts/2020/09/nsxt-migrating-ipsets-from-nsxv-nsxt-ipgroup01-nsxt-example.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2020/09/nsxt-migrating-ipsets-from-nsxv-nsxt-ipgroup01-nsxt-example.png) | [![NSXT-IPGROUP-01 - JSON]({{ relative_url }}/assets/images/posts/2020/09/nsxt-migrating-ipsets-from-nsxv-nsxt-ipgroup01-json-example.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2020/09/nsxt-migrating-ipsets-from-nsxv-nsxt-ipgroup01-json-example.png)
 
 **NSXT-IPGROUP-02** |
 |-------------------|-------------------|
-[![NSXT-IPGROUP-02 - NSX-T]({{ site.url }}/assets/images/posts/2020/09/nsxt-migrating-ipsets-from-nsxv-nsxt-ipgroup02-nsxt-example.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2020/09/nsxt-migrating-ipsets-from-nsxv-nsxt-ipgroup02-nsxt-example.png) | [![NSXT-IPGROUP-02 - JSON]({{ site.url }}/assets/images/posts/2020/09/nsxt-migrating-ipsets-from-nsxv-nsxt-ipgroup02-json-example.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2020/09/nsxt-migrating-ipsets-from-nsxv-nsxt-ipgroup02-json-example.png)
+[![NSXT-IPGROUP-02 - NSX-T]({{ relative_url }}/assets/images/posts/2020/09/nsxt-migrating-ipsets-from-nsxv-nsxt-ipgroup02-nsxt-example.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2020/09/nsxt-migrating-ipsets-from-nsxv-nsxt-ipgroup02-nsxt-example.png) | [![NSXT-IPGROUP-02 - JSON]({{ relative_url }}/assets/images/posts/2020/09/nsxt-migrating-ipsets-from-nsxv-nsxt-ipgroup02-json-example.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2020/09/nsxt-migrating-ipsets-from-nsxv-nsxt-ipgroup02-json-example.png)
 
 **NSXT-IPGROUP-03** |
 |-------------------|-------------------|
-[![NSXT-IPGROUP-03 - NSX-T]({{ site.url }}/assets/images/posts/2020/09/nsxt-migrating-ipsets-from-nsxv-nsxt-ipgroup03-nsxt-example.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2020/09/nsxt-migrating-ipsets-from-nsxv-nsxt-ipgroup03-nsxt-example.png) | [![NSXT-IPGROUP-03 - JSON]({{ site.url }}/assets/images/posts/2020/09/nsxt-migrating-ipsets-from-nsxv-nsxt-ipgroup03-json-example.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2020/09/nsxt-migrating-ipsets-from-nsxv-nsxt-ipgroup03-json-example.png)
+[![NSXT-IPGROUP-03 - NSX-T]({{ relative_url }}/assets/images/posts/2020/09/nsxt-migrating-ipsets-from-nsxv-nsxt-ipgroup03-nsxt-example.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2020/09/nsxt-migrating-ipsets-from-nsxv-nsxt-ipgroup03-nsxt-example.png) | [![NSXT-IPGROUP-03 - JSON]({{ relative_url }}/assets/images/posts/2020/09/nsxt-migrating-ipsets-from-nsxv-nsxt-ipgroup03-json-example.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2020/09/nsxt-migrating-ipsets-from-nsxv-nsxt-ipgroup03-json-example.png)
 
 **NSXT-IPGROUP-04** |
 |-------------------|-------------------|
-[![NSXT-IPGROUP-04 - NSX-T]({{ site.url }}/assets/images/posts/2020/09/nsxt-migrating-ipsets-from-nsxv-nsxt-ipgroup04-nsxt-example.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2020/09/nsxt-migrating-ipsets-from-nsxv-nsxt-ipgroup04-nsxt-example.png) | [![NSXT-IPGROUP-04 - JSON]({{ site.url }}/assets/images/posts/2020/09/nsxt-migrating-ipsets-from-nsxv-nsxt-ipgroup04-json-example.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2020/09/nsxt-migrating-ipsets-from-nsxv-nsxt-ipgroup04-json-example.png)
+[![NSXT-IPGROUP-04 - NSX-T]({{ relative_url }}/assets/images/posts/2020/09/nsxt-migrating-ipsets-from-nsxv-nsxt-ipgroup04-nsxt-example.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2020/09/nsxt-migrating-ipsets-from-nsxv-nsxt-ipgroup04-nsxt-example.png) | [![NSXT-IPGROUP-04 - JSON]({{ relative_url }}/assets/images/posts/2020/09/nsxt-migrating-ipsets-from-nsxv-nsxt-ipgroup04-json-example.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2020/09/nsxt-migrating-ipsets-from-nsxv-nsxt-ipgroup04-json-example.png)
 
 From the _JSON_ output it seems that for our object the important fields would be:
 
@@ -80,7 +80,7 @@ From the _JSON_ output it seems that for our object the important fields would b
 
 **NSXT-IPGROUP-03**        | **NSXT-IPGROUP-04**
 |-------------------|-------------------|
-[![NSXT-IPGROUP-03 - Relevant Fields]({{ site.url }}/assets/images/posts/2020/09/nsxt-migrating-ipsets-from-nsxv-nsxt-ipgroup03-fields.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2020/09/nsxt-migrating-ipsets-from-nsxv-nsxt-ipgroup03-fields.png)  |  [![NSXT-IPGROUP-04 - Relevant Fields]({{ site.url }}/assets/images/posts/2020/09/nsxt-migrating-ipsets-from-nsxv-nsxt-ipgroup04-fields.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2020/09/nsxt-migrating-ipsets-from-nsxv-nsxt-ipgroup04-fields.png)
+[![NSXT-IPGROUP-03 - Relevant Fields]({{ relative_url }}/assets/images/posts/2020/09/nsxt-migrating-ipsets-from-nsxv-nsxt-ipgroup03-fields.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2020/09/nsxt-migrating-ipsets-from-nsxv-nsxt-ipgroup03-fields.png)  |  [![NSXT-IPGROUP-04 - Relevant Fields]({{ relative_url }}/assets/images/posts/2020/09/nsxt-migrating-ipsets-from-nsxv-nsxt-ipgroup04-fields.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2020/09/nsxt-migrating-ipsets-from-nsxv-nsxt-ipgroup04-fields.png)
 
 ## Building our foundation for our script
 
@@ -121,10 +121,10 @@ A quick example:
 
 NSX-T Manager UI ID | NSX-T Object ID
 |-------------------|------------------|
-[![NSX-T Manager Duplicate ID]({{ site.url }}/assets/images/posts/2020/09/nsxt-migrating-ipsets-from-nsxv-nsxt-ip-group-nsxt-manager-duplicate-id-example.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2020/09/nsxt-migrating-ipsets-from-nsxv-nsxt-ip-group-nsxt-manager-duplicate-id-example.png) | [![NSX-T API Unique ID]({{ site.url }}/assets/images/posts/2020/09/nsxt-migrating-ipsets-from-nsxv-nsxt-ip-group-nsxt-manager-api-id-example.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2020/09/nsxt-migrating-ipsets-from-nsxv-nsxt-ip-group-nsxt-manager-api-id-example.png)
+[![NSX-T Manager Duplicate ID]({{ relative_url }}/assets/images/posts/2020/09/nsxt-migrating-ipsets-from-nsxv-nsxt-ip-group-nsxt-manager-duplicate-id-example.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2020/09/nsxt-migrating-ipsets-from-nsxv-nsxt-ip-group-nsxt-manager-duplicate-id-example.png) | [![NSX-T API Unique ID]({{ relative_url }}/assets/images/posts/2020/09/nsxt-migrating-ipsets-from-nsxv-nsxt-ip-group-nsxt-manager-api-id-example.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2020/09/nsxt-migrating-ipsets-from-nsxv-nsxt-ip-group-nsxt-manager-api-id-example.png)
 
 **Quick tip**: if you need to get the _API_ url for the object you can get it from _NSX-T Manager UI_ by right clicking in the _Group Object_ elipses:
- [![Getting API Object URL]({{ site.url }}/assets/images/posts/2020/09/nsxt-migrating-ipsets-from-nsxv-nsxt-ip-group-nsxt-manager-right-click.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2020/09/nsxt-migrating-ipsets-from-nsxv-nsxt-ip-group-nsxt-manager-right-click.png)
+ [![Getting API Object URL]({{ relative_url }}/assets/images/posts/2020/09/nsxt-migrating-ipsets-from-nsxv-nsxt-ip-group-nsxt-manager-right-click.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2020/09/nsxt-migrating-ipsets-from-nsxv-nsxt-ip-group-nsxt-manager-right-click.png)
 {:.notice--info}
 
 Let us check the result:
@@ -215,7 +215,7 @@ When we use the _NSX-T Policy API_ we can either use `PUT` or `PATCH` depending 
 [`PATCH /policy/api/v1/infra/domains/<domain-id>/groups/<group-id>`](https://vdc-download.vmware.com/vmwb-repository/dcr-public/ec5a04ad-00be-4362-9092-7e934609879b/0c127b7e-6d1f-4730-a6db-5f52cba4daf5/api_includes/method_PatchGroupForDomain.html)
 
 A quick reference to a _VMware blog_ post with a nice table explaining the available HTTP "Verbs"/Methods in )_NSX-T Policy API_:
-[![HTTP Verbs]({{ site.url }}/assets/images/posts/2020/09/nsxt-migrating-ipsets-from-nsxv-nsxt-http-verbs.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2020/09/nsxt-migrating-ipsets-from-nsxv-nsxt-http-verbs.png)
+[![HTTP Verbs]({{ relative_url }}/assets/images/posts/2020/09/nsxt-migrating-ipsets-from-nsxv-nsxt-http-verbs.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2020/09/nsxt-migrating-ipsets-from-nsxv-nsxt-http-verbs.png)
 _from [How to Navigate NSX-T Policy APIs for Network Automation](https://blogs.vmware.com/networkvirtualization/2020/06/navigating-nsxt-policy-apis.html/)_
 {:.notice}
 
@@ -369,21 +369,21 @@ We are not covering the _NSX-V Server_ connection in the post, so we assume that
 
 Running it
 
-[![Snippet run]({{ site.url }}/assets/images/posts/2020/09/nsxt-migrating-ipsets-from-nsxv-nsxt-snippet-run.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2020/09/nsxt-migrating-ipsets-from-nsxv-nsxt-snippet-run.png)
+[![Snippet run]({{ relative_url }}/assets/images/posts/2020/09/nsxt-migrating-ipsets-from-nsxv-nsxt-snippet-run.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2020/09/nsxt-migrating-ipsets-from-nsxv-nsxt-snippet-run.png)
 
 And the result from _NSX-V_ and _NSX-T Manager_
 
 Our _NSX-V IPSets_ | Our brand new _NSX-T Groups_
 |------------------|-----------------------------|
-[![NSX-V IPsets]({{ site.url }}/assets/images/posts/2020/09/nsxt-migrating-ipsets-from-nsxv-nsxt-nsxv-source-ipsets.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2020/09/nsxt-migrating-ipsets-from-nsxv-nsxt-nsxv-source-ipsets.png) | [![New NSX-T Groups]({{ site.url }}/assets/images/posts/2020/09/nsxt-migrating-ipsets-from-nsxv-nsxt-new-nsxt-groups.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2020/09/nsxt-migrating-ipsets-from-nsxv-nsxt-new-nsxt-groups.png)
+[![NSX-V IPsets]({{ relative_url }}/assets/images/posts/2020/09/nsxt-migrating-ipsets-from-nsxv-nsxt-nsxv-source-ipsets.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2020/09/nsxt-migrating-ipsets-from-nsxv-nsxt-nsxv-source-ipsets.png) | [![New NSX-T Groups]({{ relative_url }}/assets/images/posts/2020/09/nsxt-migrating-ipsets-from-nsxv-nsxt-new-nsxt-groups.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2020/09/nsxt-migrating-ipsets-from-nsxv-nsxt-new-nsxt-groups.png)
 
 Detail of some of them
 
 NSX-V IPSets Details | NSX-T New Groups Details
 |------------------|-----------------------------|
-[![NSX-V IPSet01 Source]({{ site.url }}/assets/images/posts/2020/09/nsxt-migrating-ipsets-from-nsxv-nsxt-nsxv-source-group-nsxv-ipset01.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2020/09/nsxt-migrating-ipsets-from-nsxv-nsxt-nsxv-source-group-nsxv-ipset01.png) | [![New NSX-T Groups NSXV-IPSET01]({{ site.url }}/assets/images/posts/2020/09/nsxt-migrating-ipsets-from-nsxv-nsxt-new-nsxt-group-nsxv-ipset01.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2020/09/nsxt-migrating-ipsets-from-nsxv-nsxt-new-nsxt-group-nsxv-ipset01.png)
+[![NSX-V IPSet01 Source]({{ relative_url }}/assets/images/posts/2020/09/nsxt-migrating-ipsets-from-nsxv-nsxt-nsxv-source-group-nsxv-ipset01.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2020/09/nsxt-migrating-ipsets-from-nsxv-nsxt-nsxv-source-group-nsxv-ipset01.png) | [![New NSX-T Groups NSXV-IPSET01]({{ relative_url }}/assets/images/posts/2020/09/nsxt-migrating-ipsets-from-nsxv-nsxt-new-nsxt-group-nsxv-ipset01.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2020/09/nsxt-migrating-ipsets-from-nsxv-nsxt-new-nsxt-group-nsxv-ipset01.png)
 |------------------|-----------------------------|
-[![NSX-V IPSet05 Source]({{ site.url }}/assets/images/posts/2020/09/nsxt-migrating-ipsets-from-nsxv-nsxt-nsxv-source-group-nsxv-ipset05.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2020/09/nsxt-migrating-ipsets-from-nsxv-nsxt-nsxv-source-group-nsxv-ipset05.png) | [![New NSX-T Groups NSXV-IPSET01]({{ site.url }}/assets/images/posts/2020/09/nsxt-migrating-ipsets-from-nsxv-nsxt-new-nsxt-group-nsxv-ipset05.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2020/09/nsxt-migrating-ipsets-from-nsxv-nsxt-new-nsxt-group-nsxv-ipset05.png)
+[![NSX-V IPSet05 Source]({{ relative_url }}/assets/images/posts/2020/09/nsxt-migrating-ipsets-from-nsxv-nsxt-nsxv-source-group-nsxv-ipset05.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2020/09/nsxt-migrating-ipsets-from-nsxv-nsxt-nsxv-source-group-nsxv-ipset05.png) | [![New NSX-T Groups NSXV-IPSET01]({{ relative_url }}/assets/images/posts/2020/09/nsxt-migrating-ipsets-from-nsxv-nsxt-new-nsxt-group-nsxv-ipset05.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2020/09/nsxt-migrating-ipsets-from-nsxv-nsxt-new-nsxt-group-nsxv-ipset05.png)
 
 {% capture end-considerations %}
 **Considerations:**

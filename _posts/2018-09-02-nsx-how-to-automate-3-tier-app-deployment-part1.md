@@ -36,7 +36,7 @@ We want to be able to deploy and destroy multiple copies of the _standardized so
 
 Let us kick this off with a simple network diagram of our _vPOD_ that we will automate in the next few posts:
 
-[![vPOD Visio]({{ site.url }}/assets/images/posts/2018/09/nsx-create-edge_visio.png){:class="img-responsive"}]({{ site.url }}/assets/images/posts/2018/09/nsx-create-edge_visio.png)
+[![vPOD Visio]({{ relative_url }}/assets/images/posts/2018/09/nsx-create-edge_visio.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2018/09/nsx-create-edge_visio.png)
 
 ### Requirements ###
 
