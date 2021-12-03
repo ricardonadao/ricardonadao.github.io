@@ -304,8 +304,8 @@ defaults:
       author_profile: true
       read_time: true
       show_date: true
-      show_comments_count: true
-      comments: true
+      show_comments_count: false
+      comments: false
       comments_locked: false
       share: true
       related: true
