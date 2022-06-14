@@ -32,3 +32,4 @@ _site
 .frontmatter/*
 frontmatter.json
 .vscode
+.vscode/settings.json
