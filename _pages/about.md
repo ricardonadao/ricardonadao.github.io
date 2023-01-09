@@ -5,7 +5,7 @@ permalink: /about/
 author: Ricardo Adao
 published: true
 post_date: 2018-09-05 14:07:00
-last_modified_at: 2019-07-20 08:00:00
+last_modified_at: 2023-01-09 13:32:00
 categories: [ blog ]
 tags: [ blog, about, profile, certifications, social ]
 ---
@@ -26,28 +26,22 @@ Which turns me a  _VMware_ employee since May 2019, I joined the _NEMEA PSO team
 The thoughts expressed here do not reflect my current employer in any way.
 {: .notice--success}
 
-## Some certs and accomplishements ##
+## Some certs and accomplishments ##
 
 ### VMware ###
 
 * VCP3/4/5/6, VCAP6-DCV Deployment
-* VCP-NV ,VCIX-NV, VCIX6-NV
+* VCP-NV6/2019/2020/2021 ,VCIX-NV, VCIX6-NV, VCAP-NV2022
 
-[![VCP-DCV6]({{ site.url }}/assets/images/cert_badges/vmware_Cert_P_DCV6-150x150.png){:class="img-responsive"}](https://www.youracclaim.com/badges/7a6a816b-3e3d-42e2-9747-8f51a845c291/public_url)
-[![VCP-NV6]({{ site.url }}/assets/images/cert_badges/vmware_Cert_P_NV6-150x150.png){:class="img-responsive"}](https://www.youracclaim.com/badges/77ecc4af-28df-499e-b649-e626adba2274/public_url)
-[![2xVCP-Milestone]({{ site.url }}/assets/images/cert_badges/vmware_Milestone_2xVCP_DCVNV-150x150.png){:class="img-responsive"}](https://www.youracclaim.com/badges/c9a45462-1944-49c3-b87f-365317d004f1/public_url)
-[![VCAP-DCV6]({{ site.url }}/assets/images/cert_badges/vmware_Cert_AP_DCV6-150x150.png){:class="img-responsive"}](https://www.youracclaim.com/badges/bff5ee00-8f7f-48e3-85a6-c875b52236a7/public_url)
-[![VCIX-NV6]({{ site.url }}/assets/images/cert_badges/vmware_Milestone_IE_NV6-150x150.png){:class="img-responsive"}](https://www.youracclaim.com/badges/11c9ef80-de27-4caa-9279-ee7b8143a27d/public_url)
+  [Certification Badges](https://www.credly.com/users/ricardo.adao)
 
 * vExpert
 
-[![vExpert 2018]({{ site.url }}/assets/images/cert_badges/vExpert.2018-221x150.png){:class="img-responsive"}](https://vexpert.vmware.com/directory/2766)
-[![vExpert 2019]({{ site.url }}/assets/images/cert_badges/vExpert.2019-221x150.png){:class="img-responsive"}](https://vexpert.vmware.com/directory/2766)
-[![vExpert 2020]({{ site.url }}/assets/images/cert_badges/vExpert.2020-221x150.png){:class="img-responsive"}](https://vexpert.vmware.com/directory/2766)
+[![vExpert2022]({{ relative_url }}/assets/images/cert_badges/vexpert-badge-stars-2022-221x150.png){:class="img-responsive"}](https://vexpert.vmware.com/directory/2766)   [![vExpert Years]({{ relative_url }}/assets/images/cert_badges/vexpert-badge-year-2022-221x150.png){:class="img-responsive"}](https://vexpert.vmware.com/directory/2766)
 
-[![vExpert NSX 2109]({{ site.url }}/assets/images/cert_badges/vExpert.nsx-221x150.png){:class="img-responsive"}](https://vexpert.vmware.com/directory/2766)
+* vExpert SubPrograms
 
-[![vExpert Years]({{ site.url }}/assets/images/cert_badges/vExpert.3years-221x150.png){:class="img-responsive"}](https://vexpert.vmware.com/directory/2766)
+[![vExpert NSX]({{ relative_url }}/assets/images/cert_badges/vexpert-nsx-2022-badge-221x150.png){:class="img-responsive"}](https://vexpert.vmware.com/directory/2766)   [![vExpert AVI]({{ relative_url }}/assets/images/cert_badges/vexpert-avi-2022-badge-221x150.png){:class="img-responsive"}](https://vexpert.vmware.com/directory/2766)
 
 ### Cisco ###
 
