@@ -100,10 +100,12 @@ social:
 
 # Analytics
 analytics:
-  provider               : "google-gtag" # false (default), "google", "google-universal", "custom"
+  provider               : "google-g4" # false (default), "google", "google-universal", "custom"
+  #2023-01-11->added google-g4 as an option but added g4 properties to google-gtag
   google:
     tracking_id          : "UA-117546593-1"
     anonymize_ip         : # true, false (default)
+    g4_measurement_id    : "G-MTPJT8M7JK"
 
 # Google Adsense
 google_adsense: "ca-pub-7122794554902389"
