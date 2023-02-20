@@ -17,7 +17,7 @@ tags:
   - vmware
   - homelab
 toc: true
-draft: true
+draft: false
 ---
 Setting up a _Virtual Service_ in a _Load Balancer_ is normally a simple task:
 
