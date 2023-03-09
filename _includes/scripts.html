@@ -22,8 +22,12 @@
 {% include analytics.html %}
 {% include /comments-providers/scripts.html %}
 
+{% if page.mathjax %}
+  {% include mathjax.html %}
+{% endif %}
+
 {% if site.after_footer_scripts %}
   {% for script in site.after_footer_scripts %}
-    <script src="{{ script | relative_url }}"></script>
+    <script src="{{ script | relative_url }}"></script>  
   {% endfor %}
 {% endif %}
