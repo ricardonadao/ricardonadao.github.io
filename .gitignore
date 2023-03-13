@@ -33,3 +33,8 @@ _site
 frontmatter.json
 .vscode
 .vscode/settings.json
+
+# Staging
+_drafts
+*.drawio.bkp
+*.drawio.dtmp
