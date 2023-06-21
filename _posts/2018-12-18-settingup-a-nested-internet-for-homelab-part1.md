@@ -6,9 +6,19 @@ last_modified_at: 2018-12-18 19:00:00
 header:
   teaser: /assets/images/featured/homelab-150x150.png
 title: Setting up a _Nested Internet_ for our Homelab - Part 1
-categories: [ homelab ]
-tags: [ homelab, nested, linux, networking, cumulus, frr, pfsense ]
+categories:
+  - homelab
+tags:
+  - homelab
+  - nested
+  - linux
+  - networking
+  - cumulus
+  - frr
+  - pfsense
 toc: true
+slug: setting-nested-internet-homelab-part-1
+lastmod: 2023-06-21T08:14:37.322Z
 ---
 Title seems a bit strange and even a bit overly optimistic.
 

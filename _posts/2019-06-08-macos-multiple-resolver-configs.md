@@ -2,13 +2,19 @@
 author: Ricardo Adao
 published: true
 post_date: 2019-06-08 22:30:00
-last_modified_at:
+last_modified_at: null
 header:
   teaser: /assets/images/featured/macos-mojave-150x150.png
 title: MAC OS - Configuring multiple DNS resolvers
-categories: [ macos ]
-tags: [ macos, dns, vpn ]
+categories:
+  - macos
+tags:
+  - macos
+  - dns
+  - vpn
 toc: true
+slug: mac-os-configuring-multiple-dns-resolvers
+lastmod: 2023-06-21T08:14:34.681Z
 ---
 New company, new gear and the plain/fun of going through the hassle of setting up your laptop and all tweaks and preferences that you love.
 

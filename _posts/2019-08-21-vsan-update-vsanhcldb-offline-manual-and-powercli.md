@@ -6,9 +6,20 @@ last_modified_at: 2019-08-30
 header:
   teaser: /assets/images/featured/vsan-150x150.png
 title: vSAN - Update vSAN HCL DB Offline using manual process and PowerCLI
-categories: [ vsan ]
-tags: [ vsan, powercli, vmware, coding, automation, powershell, sddc, vcf ]
+categories:
+  - vsan
+tags:
+  - vsan
+  - powercli
+  - vmware
+  - coding
+  - automation
+  - powershell
+  - sddc
+  - vcf
 toc: true
+slug: vsan-update-vsan-hcl-db-offline-manual-process-powercli
+lastmod: 2023-06-21T08:14:25.640Z
 ---
 # **_Internet Access_ is overrated**
 

@@ -1,14 +1,22 @@
 ---
 author: Ricardo Adao
 published: true
-post_date: 2020-06-14 08:00:00  
+post_date: 2020-06-14 08:00:00
 last_modified_at: 2020-09-30 23:00:00
 header:
   teaser: /assets/images/featured/nsx-150x150.png
 title: NSX-T Data Center - Attaching a DHCP Relay service to a NSX-T Logical Router Service Interface or Centralized Service Port (CSP)
-categories: [ nsx ]
-tags: [ nsx-t, nsx, powercli, powershell, vmware ]
+categories:
+  - nsx
+tags:
+  - nsx-t
+  - nsx
+  - powercli
+  - powershell
+  - vmware
 toc: true
+slug: nsx-data-center-attaching-dhcp-relay-service-nsx-logical-router-service-interface-centralized-service-port-csp
+lastmod: 2023-06-21T08:14:01.474Z
 ---
 You can use _DHCP_ (_Dynamic Host Configuration Protocol_) to dynamically assign IP addresses and other network configuration to our devices.
 

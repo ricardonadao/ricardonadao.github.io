@@ -6,9 +6,15 @@ last_modified_at: 2019-07-09 09:45:00
 header:
   teaser: /assets/images/featured/vcf-150x150.png
 title: VCF - SDDC Manager proxy configuration
-categories: [ vcf ]
-tags: [ vcf, vmware, sddc ]
+categories:
+  - vcf
+tags:
+  - vcf
+  - vmware
+  - sddc
 toc: true
+slug: vcf-sddc-manager-proxy-configuration
+lastmod: 2023-06-21T08:14:30.832Z
 ---
 [_VMware Cloud Foundation (VCF)_](https://docs.vmware.com/en/VMware-Cloud-Foundation/index.html) is an integrated software stack that uses [_SDDC Manager_](https://docs.vmware.com/en/VMware-Cloud-Foundation/3.7/com.vmware.vcf.admin.doc_37/GUID-D143F07A-B3FA-4A14-8D03-BFD2C1810D2E.html) as a tool to automate the deployment and lifecycle management.
 

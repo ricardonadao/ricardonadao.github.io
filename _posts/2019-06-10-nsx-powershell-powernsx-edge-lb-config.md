@@ -6,9 +6,22 @@ last_modified_at: 2019-06-10 08:20:00
 header:
   teaser: /assets/images/featured/nsx-150x150.png
 title: NSX - Configure a _Load Balancer_ in an _Edge Security Gateway_ using _Powershell/PowerNSX_
-categories: [ nsx ]
-tags: [ nsx, nsx-v, networking, vmware, coding, automation, powercli, powershell, powernsx, sddc ]
+categories:
+  - nsx
+tags:
+  - nsx
+  - nsx-v
+  - networking
+  - vmware
+  - coding
+  - automation
+  - powercli
+  - powershell
+  - powernsx
+  - sddc
 toc: true
+slug: nsx-configure-load-balancer-edge-security-gateway-powershell-powernsx
+lastmod: 2023-06-21T08:14:33.439Z
 ---
 This is a quick snippet explaining how to use _Powershell_ and _[PowerNSX](https://powernsx.github.io/)_ to configure a _Load Balancer (LB)_ in an _Edge Security Gateway (ESG)_.
 

@@ -18,6 +18,8 @@ tags:
   - homelab
 toc: true
 draft: false
+slug: avi-nsx-alb-setting-virtual-service-backup-pools
+lastmod: 2023-06-21T08:13:44.381Z
 ---
 Setting up a _Virtual Service_ in a _Load Balancer_ is normally a simple task:
 

@@ -1,7 +1,7 @@
 ---
 author: Ricardo Adao
 published: true
-lastmod: 2023-03-09T17:32:39.602Z
+lastmod: 2023-06-21T08:13:41.808Z
 date: 2023-03-09T17:21:51.156Z
 header:
   teaser: /assets/images/featured/avi-150x150.png
@@ -19,6 +19,7 @@ tags:
 toc: true
 draft: false
 mathjax: true
+slug: avi-nsx-alb-virtual-service-placement-elastic-ha-modes
 ---
 One of the main challenges when we are designing and implementing _**Avi/NSX Advanced Load Balancer**_ configurations will be the decision between which of the _**Elastic HA Mode**_ to use and what are the differences between the two.
 

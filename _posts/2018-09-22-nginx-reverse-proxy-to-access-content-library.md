@@ -2,13 +2,21 @@
 author: Ricardo Adao
 published: true
 post_date: 2018-09-22 09:00:00
-last_modified_at:
+last_modified_at: null
 header:
   teaser: /assets/images/featured/linux-150x150.png
 title: Setting up NGINX as reverse proxy to allow vCenter Content Library subscription
-categories: [ linux ]
-tags: [ linux, vcenter, vmware, nginx, nested ]
+categories:
+  - linux
+tags:
+  - linux
+  - vcenter
+  - vmware
+  - nginx
+  - nested
 toc: true
+slug: setting-nginx-reverse-proxy-vcenter-content-library-subscription
+lastmod: 2023-06-21T08:14:44.035Z
 ---
 We want to setup a _Content Library_ in our _central vCenter_ and then allow the other _vCenters_ in our _Nested Labs_ to subscribe it without adding a lot of complexity to the configuration.
 
