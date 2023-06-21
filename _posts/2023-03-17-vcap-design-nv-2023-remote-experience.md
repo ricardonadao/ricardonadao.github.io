@@ -1,7 +1,7 @@
 ---
 author: Ricardo Adao
 published: true
-lastmod: 2023-06-21T09:52:52.686Z
+lastmod: 2023-06-21T10:00:13.891Z
 date: 2023-03-17T00:00:00.0Z
 header:
   teaser: /assets/images/featured/blog-150x150.png
@@ -12,7 +12,7 @@ tags:
   - blog
   - social
 toc: true
-draft: true
+draft: false
 mathjax: false
 slug: advanced-design-vmware-nsx-data-center-3-0-3v0-42-20-remote-proctored-exam-experience-preparation
 ---
