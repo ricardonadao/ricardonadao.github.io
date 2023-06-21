@@ -11,9 +11,10 @@ categories:
 tags:
   - blog
   - social
+  - vmworld
 toc: true
 slug: vmworld-2018-barcelona
-lastmod: 2023-06-21T08:14:38.575Z
+lastmod: 2023-06-21T10:14:01.392Z
 ---
 Every year in October/November it is becoming usual a quick trip to _Barcelona (Spain)_ to attend _VMWorld - Europe_ for all _VMware_ enthusiasts or anyone interested in the virtualization world.
 

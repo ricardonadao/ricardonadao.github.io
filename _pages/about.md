@@ -14,7 +14,7 @@ tags:
   - profile
   - certifications
   - social
-lastmod: 2023-06-21T08:17:07.393Z
+lastmod: 2023-06-21T12:16:18.010Z
 ---
 # Welcome to vRandomBites blog #
 
@@ -38,7 +38,8 @@ The thoughts expressed here do not reflect my current employer in any way.
 ### VMware ###
 
 * VCP3/4/5/6, VCAP6-DCV Deployment
-* VCP-NV6/2019/2020/2021 ,VCIX-NV, VCIX6-NV, VCAP-NV2022
+* VCP-NV6/2019/2020/2021/2023, VCAP-NV2022, VCAP-NV Deploy 2023, VCAP-NV Design 2023
+* VCIX-NV, VCIX6-NV, VCIX-NV 2023
 
   [Certification Badges](https://www.credly.com/users/ricardo.adao)
 

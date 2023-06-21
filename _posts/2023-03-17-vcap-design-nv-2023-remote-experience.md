@@ -1,7 +1,7 @@
 ---
 author: Ricardo Adao
 published: true
-lastmod: 2023-06-21T10:00:13.891Z
+lastmod: 2023-06-21T12:12:00.646Z
 date: 2023-03-17T00:00:00.0Z
 header:
   teaser: /assets/images/featured/blog-150x150.png
@@ -11,6 +11,7 @@ categories:
 tags:
   - blog
   - social
+  - certifications
 toc: true
 draft: false
 mathjax: false
