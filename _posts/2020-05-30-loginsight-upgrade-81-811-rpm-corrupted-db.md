@@ -14,9 +14,10 @@ tags:
   - homelab
   - upgrade
   - issue
+  - vrli
 toc: true
 slug: vmware-log-insight-upgrade-8-1-0-8-1-1-corrupted-rpm-db
-lastmod: 2023-06-21T08:14:09.520Z
+lastmod: 2023-07-04T15:22:37.801Z
 ---
 The initial idea of this post was to do a quick walkthrough of the upgrade of _VMware Log Insight_ from 8.1.0 to 8.1.1, however the upgrade gone sideways and I ended up troubleshooting and fixing an issue with the _RPM db_ of the appliance.
 

@@ -11,7 +11,7 @@ categories:
 tags:
   - avi
   - nsxalb
-  - load balance
+  - load balancer
   - networking
   - nsx
   - vmware
@@ -19,7 +19,7 @@ tags:
 toc: true
 draft: false
 slug: avi-nsx-alb-setting-virtual-service-backup-pools
-lastmod: 2023-06-21T08:13:44.381Z
+lastmod: 2023-07-04T15:24:16.390Z
 ---
 Setting up a _Virtual Service_ in a _Load Balancer_ is normally a simple task:
 

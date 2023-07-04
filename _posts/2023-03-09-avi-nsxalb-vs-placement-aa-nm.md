@@ -1,7 +1,7 @@
 ---
 author: Ricardo Adao
 published: true
-lastmod: 2023-06-21T08:13:41.808Z
+lastmod: 2023-07-04T15:24:06.721Z
 date: 2023-03-09T17:21:51.156Z
 header:
   teaser: /assets/images/featured/avi-150x150.png
@@ -11,7 +11,7 @@ categories:
 tags:
   - avi
   - nsxalb
-  - load balance
+  - load balancer
   - networking
   - nsx
   - vmware
