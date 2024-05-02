@@ -3,7 +3,6 @@
     <script src="{{ script | relative_url }}"></script>
   {% endfor %}
 {% else %}
-  <script src="{{ '/assets/js/lazysizes.min.js' | relative_url }}"></script>
   <script src="{{ '/assets/js/main.min.js' | relative_url }}"></script>
 {% endif %}
 
@@ -28,6 +27,6 @@
 
 {% if site.after_footer_scripts %}
   {% for script in site.after_footer_scripts %}
-    <script src="{{ script | relative_url }}"></script>  
+    <script src="{{ script | relative_url }}"></script>
   {% endfor %}
 {% endif %}
