@@ -12,7 +12,7 @@
 
 #theme                  : "minimal-mistakes-jekyll"
 #remote_theme             : "mmistakes/minimal-mistakes@4.19.2"
-remote_theme             : "mmistakes/minimal-mistakes@4.25.1"
+remote_theme             : "mmistakes/minimal-mistakes@4.26.1"
 
 minimal_mistakes_skin    : "dirt" #"default" "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
@@ -38,7 +38,7 @@ comments:
   provider               : "staticman_v2" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2" "custom"
   staticman:
     branch               : "master"
-    endpoint             : "https://vrandombites-staticman.herokuapp.com/v2/entry/" # URL of your own deployment with trailing slash, will fallback to the public instance
+    endpoint             : "https://vrandombites-staticman.herokuapp.com/v2/entry/" # URL of your own deployment with trailing slash, will fallback to the public instance "https://{your Staticman v3 API}/v3/entry/github/"
     notifications        : false
   disqus:
     shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
@@ -64,9 +64,6 @@ comments:
     emit_metadata        : # 1 for enabled, 0 for disabled (default) # https://github.com/giscus/giscus/blob/main/ADVANCED-USAGE.md#imetadatamessage
     lang                 : # "en" (default)
     lazy                 : # true, false # Loading of the comments will be deferred until the user scrolls near the comments container.
-  staticman:
-    branch               : # "master"
-    endpoint             : # "https://{your Staticman v3 API}/v3/entry/github/"
 reCaptcha:
   enabled: true
   siteKey: "6LdskygaAAAAAMAvxfQBfYV1TuYD5HwL1AH7nhLU"
@@ -251,6 +248,28 @@ permalink: /:categories/:title/
 paginate: 12 # amount of posts to show
 paginate_path: /page:num/
 timezone: "Europe/London" # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+# Pagination with jekyll-paginate-v2
+# See https://github.com/sverrirs/jekyll-paginate-v2/blob/master/README-GENERATOR.md#site-configuration
+#   for configuration details
+pagination:
+  # Set enabled to true to use paginate v2
+  enabled: true
+  debug: false
+  collection: 'posts'
+  per_page: 12
+  permalink: '/page/:num/' #Old config -> /:categories/:title/
+  title: ':title - page :num'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
+  category: 'posts'
+  tag: ''
+  locale: ''
+  trail:
+    before: 2
+    after: 2
+
 
 # Plugins (previously gems:)
 plugins:
