@@ -2,7 +2,7 @@
 author: Ricardo Adao
 published: true
 post_date: 2018-10-10 00:51:00
-last_modified_at: null
+
 header:
   teaser: /assets/images/featured/powershell-150x150.png
 title: Powershell - Wrapping GET and POST Rest API calls
@@ -16,7 +16,7 @@ tags:
   - vvd
 toc: true
 slug: powershell-wrapping-post-rest-api-calls
-lastmod: 2023-06-21T08:14:42.689Z
+last_modified_at: 2023-06-21T08:14:42.689Z
 ---
 # Code Bits&Pieces and Context
 

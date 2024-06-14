@@ -2,7 +2,7 @@
 author: Ricardo Adao
 published: true
 post_date: 2018-11-11 20:00:00
-last_modified_at: null
+
 header:
   teaser: /assets/images/featured/nsx-150x150.png
 title: NSX - Using VXLAN logical switches to transport vSAN and vMotion traffic
@@ -17,7 +17,7 @@ tags:
   - sddc
 toc: true
 slug: nsx-vxlan-logical-switches-transport-vsan-vmotion-traffic
-lastmod: 2023-06-21T08:14:39.808Z
+last_modified_at: 2023-06-21T08:14:39.808Z
 ---
 The title seems weird and at first glance we will think... **NO WAY**
 

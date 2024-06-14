@@ -2,7 +2,6 @@
 author: Ricardo Adao
 published: true
 post_date: 2020-04-30 07:00:00
-last_modified_at: null
 title: Blog - vExpert NSX 2020
 header:
   teaser: /assets/images/featured/blog-150x150.png
@@ -12,7 +11,7 @@ tags:
   - blog
   - social
 slug: blog-vexpert-nsx-2020
-lastmod: 2023-06-21T08:14:11.711Z
+last_modified_at: 2023-06-21T08:14:11.711Z
 ---
 This was already a couple of weeks ago, but I was able to keep the _vExpert NSX_ sub-program honour for one more year.
 

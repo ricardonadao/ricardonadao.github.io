@@ -5,7 +5,6 @@ permalink: /about/
 author: Ricardo Adao
 published: true
 post_date: 2018-09-05 14:07:00
-last_modified_at: 2023-01-09 13:32:00
 categories:
   - blog
 tags:
@@ -14,7 +13,7 @@ tags:
   - profile
   - certifications
   - social
-lastmod: 2023-06-21T12:16:18.010Z
+last_modified_at: 2023-06-21T12:16:18.010Z
 ---
 # Welcome to vRandomBites blog #
 

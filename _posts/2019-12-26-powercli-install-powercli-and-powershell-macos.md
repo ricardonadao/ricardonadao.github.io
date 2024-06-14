@@ -2,7 +2,7 @@
 author: Ricardo Adao
 published: true
 post_date: 2019-12-26 08:00:00
-last_modified_at: null
+
 header:
   teaser: /assets/images/featured/powercli-150x150.png
 title: PowerCLI - Install Powershell and PowerCLI in MacOS
@@ -15,7 +15,7 @@ tags:
   - vmware
 toc: true
 slug: powercli-install-powershell-powercli-macos
-lastmod: 2023-06-21T08:14:22.466Z
+last_modified_at: 2023-06-21T08:14:22.466Z
 ---
 This post is not a _new method_ or even new information, it is more a consolidated run through on how to get _VMware PowerCLI_ modules installed in _MAC OS_.
 

@@ -2,7 +2,7 @@
 author: Ricardo Adao
 published: true
 post_date: 2018-06-14 02:33:26
-last_modified_at: null
+
 header:
   teaser: /assets/images/featured/powercli-150x150.png
 title: PowerCLI - Add vSAN Storage Policies and Set Virtual Machine Storage Policy
@@ -19,7 +19,7 @@ tags:
   - vsan
 toc: true
 slug: powercli-add-vsan-storage-policies-set-virtual-machine-storage-policy
-lastmod: 2023-06-21T08:14:51.358Z
+last_modified_at: 2023-06-21T08:14:51.358Z
 ---
 There are multiple ways of adding extra storage policies and apply them to multiple _virtual machines_ and plenty of _VMware_ documentation and others to show how to do it.
 

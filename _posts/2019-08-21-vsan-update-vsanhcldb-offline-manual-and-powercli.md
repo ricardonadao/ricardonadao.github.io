@@ -2,7 +2,6 @@
 author: Ricardo Adao
 published: true
 post_date: 2019-08-21 08:00:00
-last_modified_at: 2019-08-30
 header:
   teaser: /assets/images/featured/vsan-150x150.png
 title: vSAN - Update vSAN HCL DB Offline using manual process and PowerCLI
@@ -19,7 +18,7 @@ tags:
   - vcf
 toc: true
 slug: vsan-update-vsan-hcl-db-offline-manual-process-powercli
-lastmod: 2023-06-21T08:14:25.640Z
+last_modified_at: 2023-06-21T08:14:25.640Z
 ---
 # **_Internet Access_ is overrated**
 

@@ -2,7 +2,7 @@
 author: Ricardo Adao
 published: true
 post_date: 2018-10-15 08:00:00
-last_modified_at: null
+
 header:
   teaser: /assets/images/featured/vcf-150x150.png
 title: VCF - Automate VMware Cloud Foundation - Service Provider - bringup process using PowerShell
@@ -16,7 +16,7 @@ tags:
   - automation
 toc: true
 slug: vcf-automate-vmware-cloud-foundation-service-provider-bringup-process-powershell
-lastmod: 2023-06-21T08:14:41.024Z
+last_modified_at: 2023-06-21T08:14:41.024Z
 ---
 [_VMware Cloud Foundation (VCF)_](https://docs.vmware.com/en/VMware-Cloud-Foundation/index.html) is an integrated software stack that uses [_SDDC Manager_](https://docs.vmware.com/en/VMware-Cloud-Foundation/2.2/com.vmware.vcf.ovdeploy.doc_22/GUID-F16F5CA4-ABF1-4282-974D-7CBB96028964.html) as a tool to automate the deployment and lifecycle management.
 

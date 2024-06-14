@@ -2,7 +2,6 @@
 author: Ricardo Adao
 published: true
 post_date: 2022-12-31 23:00:00
-last_modified_at: 2023-01-08 23:00:00
 header:
   teaser: /assets/images/featured/avi-150x150.png
 title: Avi/NSX ALB - Setting up a Virtual Service with Backup Pools
@@ -19,7 +18,7 @@ tags:
 toc: true
 draft: false
 slug: avi-nsx-alb-setting-virtual-service-backup-pools
-lastmod: 2023-07-04T15:24:16.390Z
+last_modified_at: 2023-07-04T15:24:16.390Z
 ---
 Setting up a _Virtual Service_ in a _Load Balancer_ is normally a simple task:
 

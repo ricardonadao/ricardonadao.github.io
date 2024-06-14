@@ -2,7 +2,6 @@
 author: Ricardo Adao
 published: true
 post_date: 2020-03-11 08:00:00
-last_modified_at: null
 header:
   teaser: /assets/images/featured/nsx-150x150.png
 title: NSX-T Data Center - Using NSX-T Policy API to add new overlay segments
@@ -16,7 +15,7 @@ tags:
   - vmware
 toc: true
 slug: nsx-data-center-nsx-policy-api-add-overlay-segments
-lastmod: 2023-06-21T08:14:16.970Z
+last_modified_at: 2023-06-21T08:14:16.970Z
 ---
 One of the fundamental tasks of an _NSX-T_ deployment is creating new segments.
 

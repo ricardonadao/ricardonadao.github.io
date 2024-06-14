@@ -5,7 +5,7 @@ permalink: /friends/
 author: Ricardo Adao
 published: true
 post_date: 2018-11-07 10:10:00
-last_modified_at: null
+
 categories:
   - blog
 tags:
@@ -13,7 +13,7 @@ tags:
   - social
 author_profile: true
 slug: friends
-lastmod: 2023-06-21T08:17:19.547Z
+last_modified_at: 2023-06-21T08:17:19.547Z
 ---
 ## A list of blogs from some friends
 

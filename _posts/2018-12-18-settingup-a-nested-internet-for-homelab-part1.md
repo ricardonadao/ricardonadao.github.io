@@ -2,7 +2,6 @@
 author: Ricardo Adao
 published: true
 post_date: 2018-12-18 10:00:00
-last_modified_at: 2018-12-18 19:00:00
 header:
   teaser: /assets/images/featured/homelab-150x150.png
 title: Setting up a _Nested Internet_ for our Homelab - Part 1
@@ -18,7 +17,7 @@ tags:
   - pfsense
 toc: true
 slug: setting-nested-internet-homelab-part-1
-lastmod: 2023-06-21T08:14:37.322Z
+last_modified_at: 2023-06-21T08:14:37.322Z
 ---
 Title seems a bit strange and even a bit overly optimistic.
 

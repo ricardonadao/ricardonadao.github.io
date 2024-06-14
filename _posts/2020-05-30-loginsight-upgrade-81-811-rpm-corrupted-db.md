@@ -2,7 +2,6 @@
 author: Ricardo Adao
 published: true
 post_date: 2020-05-30 08:00:00
-last_modified_at: null
 header:
   teaser: /assets/images/featured/vmware-log-insight-150x150.png
 title: VMware Log Insight - Upgrade from 8.1.0 to 8.1.1 and corrupted RPM db
@@ -17,7 +16,7 @@ tags:
   - vrli
 toc: true
 slug: vmware-log-insight-upgrade-8-1-0-8-1-1-corrupted-rpm-db
-lastmod: 2023-07-04T15:22:37.801Z
+last_modified_at: 2023-07-04T15:22:37.801Z
 ---
 The initial idea of this post was to do a quick walkthrough of the upgrade of _VMware Log Insight_ from 8.1.0 to 8.1.1, however the upgrade gone sideways and I ended up troubleshooting and fixing an issue with the _RPM db_ of the appliance.
 
