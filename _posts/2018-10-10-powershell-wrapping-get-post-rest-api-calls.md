@@ -1,7 +1,7 @@
 ---
 author: Ricardo Adao
 published: true
-post_date: 2018-10-10 00:51:00
+date: 2018-10-10 00:51:00
 
 header:
   teaser: /assets/images/featured/powershell-150x150.png

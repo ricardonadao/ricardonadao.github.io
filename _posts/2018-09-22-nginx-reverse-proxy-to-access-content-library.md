@@ -1,7 +1,7 @@
 ---
 author: Ricardo Adao
 published: true
-post_date: 2018-09-22 09:00:00
+date: 2018-09-22 09:00:00
 
 header:
   teaser: /assets/images/featured/linux-150x150.png

@@ -1,7 +1,7 @@
 ---
 author: Ricardo Adao
 published: true
-post_date: 2020-05-30 08:00:00
+date: 2020-05-30 08:00:00
 header:
   teaser: /assets/images/featured/vmware-log-insight-150x150.png
 title: VMware Log Insight - Upgrade from 8.1.0 to 8.1.1 and corrupted RPM db

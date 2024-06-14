@@ -1,7 +1,7 @@
 ---
 author: Ricardo Adao
 published: true
-post_date: 2019-06-08 22:30:00
+date: 2019-06-08 22:30:00
 
 header:
   teaser: /assets/images/featured/macos-mojave-150x150.png

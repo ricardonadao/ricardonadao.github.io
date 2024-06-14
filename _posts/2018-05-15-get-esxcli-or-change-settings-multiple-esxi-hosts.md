@@ -1,7 +1,7 @@
 ---
 author: Ricardo Adao
 published: true
-post_date: 2018-05-15 08:11:14
+date: 2018-05-15 08:11:14
 
 header:
   teaser: /assets/images/featured/powercli-150x150.png

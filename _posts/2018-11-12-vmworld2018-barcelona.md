@@ -1,7 +1,7 @@
 ---
 author: Ricardo Adao
 published: true
-post_date: 2018-11-12 09:00:00
+date: 2018-11-12 09:00:00
 
 header:
   teaser: /assets/images/featured/blog-150x150.png

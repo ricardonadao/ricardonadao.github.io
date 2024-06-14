@@ -1,7 +1,7 @@
 ---
 author: Ricardo Adao
 published: true
-post_date: 2018-07-19 18:20:14
+date: 2018-07-19 18:20:14
 
 header:
   teaser: /assets/images/featured/vsan-150x150.png

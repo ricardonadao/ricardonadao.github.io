@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 author: Ricardo Adao
 published: true
-post_date: 2018-09-05 14:07:00
+date: 2018-09-05 14:07:00
 categories:
   - blog
 tags:

@@ -1,7 +1,7 @@
 ---
 author: Ricardo Adao
 published: true
-post_date: 2019-07-20 07:00:00
+date: 2019-07-20 07:00:00
 
 title: Blog - vExpert NSX 2019
 header:

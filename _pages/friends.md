@@ -4,7 +4,7 @@ title: Friends
 permalink: /friends/
 author: Ricardo Adao
 published: true
-post_date: 2018-11-07 10:10:00
+date: 2018-11-07 10:10:00
 
 categories:
   - blog

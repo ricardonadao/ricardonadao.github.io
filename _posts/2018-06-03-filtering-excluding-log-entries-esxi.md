@@ -1,7 +1,7 @@
 ---
 author: Ricardo Adao
 published: true
-post_date: 2018-06-03 10:42:02
+date: 2018-06-03 10:42:02
 
 header:
   teaser: /assets/images/featured/esxi-150x150.png

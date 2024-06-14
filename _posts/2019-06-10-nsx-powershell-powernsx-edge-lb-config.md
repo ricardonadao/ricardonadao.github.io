@@ -1,7 +1,7 @@
 ---
 author: Ricardo Adao
 published: true
-post_date: 2019-06-10 08:00:00
+date: 2019-06-10 08:00:00
 header:
   teaser: /assets/images/featured/nsx-150x150.png
 title: NSX - Configure a _Load Balancer_ in an _Edge Security Gateway_ using _Powershell/PowerNSX_

@@ -1,7 +1,7 @@
 ---
 author: Ricardo Adao
 published: true
-post_date: 2020-04-30 07:00:00
+date: 2020-04-30 07:00:00
 title: Blog - vExpert NSX 2020
 header:
   teaser: /assets/images/featured/blog-150x150.png

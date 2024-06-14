@@ -1,7 +1,7 @@
 ---
 author: Ricardo Adao
 published: true
-post_date: 2019-08-21 08:00:00
+date: 2019-08-21 08:00:00
 header:
   teaser: /assets/images/featured/vsan-150x150.png
 title: vSAN - Update vSAN HCL DB Offline using manual process and PowerCLI

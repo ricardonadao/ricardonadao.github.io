@@ -1,7 +1,7 @@
 ---
 author: Ricardo Adao
 published: true
-post_date: 2020-02-28 08:00:00
+date: 2020-02-28 08:00:00
 header:
   teaser: /assets/images/featured/esxi-150x150.png
 title: ESXi - Fixing _esxtop_ output in a SSH session

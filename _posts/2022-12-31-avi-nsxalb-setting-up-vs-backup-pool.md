@@ -1,7 +1,7 @@
 ---
 author: Ricardo Adao
 published: true
-post_date: 2022-12-31 23:00:00
+date: 2022-12-31 23:00:00
 header:
   teaser: /assets/images/featured/avi-150x150.png
 title: Avi/NSX ALB - Setting up a Virtual Service with Backup Pools

@@ -1,7 +1,7 @@
 ---
 author: Ricardo Adao
 published: true
-post_date: 2020-03-18 20:00:00
+date: 2020-03-18 20:00:00
 header:
   teaser: /assets/images/featured/vcenter-150x150.png
 title: VMware vCenter - Setting up vCenter Appliance SNMP monitoring
