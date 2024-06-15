@@ -16,7 +16,7 @@ tags:
   - powershell
   - vmware
 slug: powercli-line-series-01
-last_modified_at: null
+last_modified_at: 2024-06-15T22:52:26.589Z
 date: 2024-06-14T14:48:39.671Z
 toc: true
 draft: false
@@ -48,7 +48,7 @@ Get-Cluster -Name <cluster name> | Get-VM `
 
 [![Get a list of Virtual Machines processes running in all the hosts in a cluster]({{ relative_url }}/assets/images/posts/2024/06/powercli-line-series-01-pic02.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2024/06/powercli-line-series-01-pic02.png)
 
-## NSX-T Bridge - Reverse Path Forward Check Promiscuous - Get the current value
+## NSX-T Bridge - Reverse Path Forward Check Promiscuous - Get the value of _ReversePathFwdCheckPromisc_ of all the hosts in a cluster
 
 ```powershell
 Get-Cluster -Name <cluster name> | Get-VMHost `
@@ -61,7 +61,7 @@ Get-Cluster -Name <cluster name> | Get-VMHost `
 
 [![Get current value of ReversePathFwdCheckPromisc in all hosts in a vSphere cluster]({{ relative_url }}/assets/images/posts/2024/06/powercli-line-series-01-pic03.png){:class="img-responsive"}]({{ relative_url }}/assets/images/posts/2024/06/powercli-line-series-01-pic03.png)
 
-## NSX-T Bridge - Reverse Path Forward Check Promiscuous - Set the value
+## NSX-T Bridge - Reverse Path Forward Check Promiscuous - Set the value of _ReversePathFwdCheckPromisc_ of all the hosts in a cluster
 
 ```powershell
 Get-Cluster -Name <cluster name> | Get-VMHost `
