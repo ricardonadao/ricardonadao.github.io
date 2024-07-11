@@ -12,12 +12,13 @@
 
 #theme                  : "minimal-mistakes-jekyll"
 #remote_theme             : "mmistakes/minimal-mistakes@4.19.2"
-remote_theme             : "mmistakes/minimal-mistakes@4.26.1"
+remote_theme             : "mmistakes/minimal-mistakes@4.26.2"
 
 minimal_mistakes_skin    : "dirt" #"default" "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-GB"
+rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
 title                    : "vRandomBites"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
@@ -31,6 +32,7 @@ logo                     : # path of logo image to display in the masthead, e.g.
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              : true # true, false (default)
 words_per_minute         : 150
+enable_copy_code_button  : # true, false (default)
 copyright                : # "copyright" name, defaults to site.title
 copyright_url            : # "copyright" URL, defaults to site.url
 comments:
@@ -64,6 +66,9 @@ comments:
     emit_metadata        : # 1 for enabled, 0 for disabled (default) # https://github.com/giscus/giscus/blob/main/ADVANCED-USAGE.md#imetadatamessage
     lang                 : # "en" (default)
     lazy                 : # true, false # Loading of the comments will be deferred until the user scrolls near the comments container.
+  staticman:
+    branch               : # "master"
+    endpoint             : # "https://{your Staticman v3 API}/v3/entry/github/"
 reCaptcha:
   enabled: true
   siteKey: "6LdskygaAAAAAMAvxfQBfYV1TuYD5HwL1AH7nhLU"
@@ -87,6 +92,7 @@ google:
 # SEO Related
 google_site_verification : "ZbHQ1ErXGLxJ68-pSIGslwc1Dq3afLqgeFIGvKl2K9o"
 bing_site_verification   : "066D47264798DF0304F169C02A7882D8"
+naver_site_verification  :
 yandex_site_verification :
 baidu_site_verification  :
 
@@ -130,7 +136,7 @@ author:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: mailto:your.name@email.com
+      # url: "mailto:your.name@email.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://vrandombites.co.uk"
@@ -245,9 +251,11 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
+timezone: "Europe/London" # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+# Pagination with jekyll-paginate
 paginate: 12 # amount of posts to show
 paginate_path: /page:num/
-timezone: "Europe/London" # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 # Pagination with jekyll-paginate-v2
 # See https://github.com/sverrirs/jekyll-paginate-v2/blob/master/README-GENERATOR.md#site-configuration
