@@ -15,7 +15,7 @@ tags:
   - vmware
   - pci
 slug: powercli-collect-pci-ids-vendor-ids-ids-esxi-hardware-compare-hcl
-last_modified_at: null
+last_modified_at: 2024-10-10
 date: 2024-10-05T15:53:10.650Z
 toc: true
 draft: false
@@ -146,10 +146,10 @@ foreach($object in $esxiToCollectInfo) {
                 ModuleName          = $nicInfo.ModuleName
                 NUMANode            = $nicInfo.NUMANode
                 VendorName          = $nicInfo.VendorName
-                VendorID            = $nicInfo.VendorID
-                DeviceID            = $nicInfo.DeviceID
-                SubVendorID         = $nicInfo.SubVendorID
-                SubDeviceID         = $nicInfo.SubDeviceID
+                VendorID            = [System.Convert]::ToString($nicInfo.VendorID,16)
+                DeviceID            = [System.Convert]::ToString($nicInfo.DeviceID,16)
+                SubVendorID         = [System.Convert]::ToString($nicInfo.SubVendorID,16)
+                SubDeviceID         = [System.Convert]::ToString($nicInfo.SubDeviceID,16)
             }
             # Add the object to the report array
             $dataReport += $reportObj
