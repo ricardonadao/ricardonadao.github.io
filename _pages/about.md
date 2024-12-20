@@ -37,14 +37,15 @@ The thoughts expressed here do not reflect my current employer in any way.
 ### VMware ###
 
 * VCP3/4/5/6, VCAP6-DCV Deployment
-* VCP-NV6/2019/2020/2021/2023, VCAP-NV2022, VCAP-NV Deploy 2023, VCAP-NV Design 2023
-* VCIX-NV, VCIX6-NV, VCIX-NV 2023
+* VCP-NV6/2019/2020/2021/2023, VCAP-NV2022, VCAP-NV Deploy 2023/2024[v2], VCAP-NV Design 2023/2024[v2]
+* VCP-VCF Administrator 2024
+* VCIX-NV, VCIX6-NV, VCIX-NV 2023/2024
 
   [Certification Badges](https://www.credly.com/users/ricardo.adao)
 
 * vExpert
 
-[![vExpert2022]({{ relative_url }}/assets/images/cert_badges/vexpert-badge-stars-2022-221x150.png){:class="img-responsive"}](https://vexpert.vmware.com/directory/2766)   [![vExpert Years]({{ relative_url }}/assets/images/cert_badges/vexpert-badge-year-2022-221x150.png){:class="img-responsive"}](https://vexpert.vmware.com/directory/2766)
+[![vExpert2022]({{ relative_url }}/assets/images/cert_badges/vexpert-badge-stars-2024-221x149.png){:class="img-responsive"}](https://vexpert.vmware.com/directory/2766)   [![vExpert Years]({{ relative_url }}/assets/images/cert_badges/vexpert-badge-year-2024-221x149.png){:class="img-responsive"}](https://vexpert.vmware.com/directory/2766)
 
 * vExpert SubPrograms
 
