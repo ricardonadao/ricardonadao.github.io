@@ -2,7 +2,7 @@
 author: Ricardo Adao
 published: true
 last_modified_at: null
-date: 2024-12-20T16:00:00.0Z
+date: 2024-12-20T16:10:00.0Z
 header:
   teaser: /assets/images/featured/blog-150x150.png
 title: VMware Cloud Foundation 5.2 Administrator (2V0-11.24) - Remote Proctored Exam Experience and Preparation
