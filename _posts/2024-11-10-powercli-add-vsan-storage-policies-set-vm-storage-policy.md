@@ -1,25 +1,24 @@
 ---
 author: Ricardo Adao
 published: true
-date: 2018-06-14 02:33:26
-
+date: 2024-11-10 14:00:00
 header:
-  teaser: /assets/images/featured/powercli-150x150.png
+    teaser: /assets/images/featured/powercli-150x150.png
 title: PowerCLI - Add vSAN Storage Policies and Set Virtual Machine Storage Policy
 categories:
-  - powercli
+    - powercli
 tags:
-  - coding
-  - powercli
-  - powershell
-  - spbm
-  - vcenter
-  - vcf
-  - vmware
-  - vsan
+    - coding
+    - powercli
+    - powershell
+    - spbm
+    - vcenter
+    - vcf
+    - vmware
+    - vsan
 toc: true
 slug: powercli-add-vsan-storage-policies-set-virtual-machine-storage-policy
-last_modified_at: 2023-06-21T08:14:51.358Z
+last_modified_at: 
 ---
 There are multiple ways of adding extra storage policies and apply them to multiple _virtual machines_ and plenty of _VMware_ documentation and others to show how to do it.
 
@@ -209,10 +208,9 @@ Foreach($cluster in $clusters) {
 * Will be easy to adapt the script to allow the use of any type of _Location_ besides _Resource Pools_ (something that could be covered later in another post)
 * Code should have enough comments to be easy to read, however feel free to reach out if needed
 * Post do not cover detailed explanation of _VMware PowerCLI cmdlets_, since _VMware_ documentation is really good, some of the links
-  * [_Set-SpbmStoragePolicy_](https://pubs.vmware.com/vsphere-6-5/index.jsp?topic=%2Fcom.vmware.powercli.cmdletref.doc%2FSet-SpbmStoragePolicy.html)
-  * [_Get-SpbmStoragePolicy_](https://pubs.vmware.com/vsphere-6-5/topic/com.vmware.powercli.cmdletref.doc/Get-SpbmStoragePolicy.html)
-  * [_Set-SpbmStoragePolicy_](https://pubs.vmware.com/vsphere-6-5/index.jsp?topic=%2Fcom.vmware.powercli.cmdletref.doc%2FSet-SpbmStoragePolicy.html)
-  * [_Get-SpbmEntityConfiguration_](https://pubs.vmware.com/vsphere-6-5/topic/com.vmware.powercli.cmdletref.doc/Get-SpbmEntityConfiguration.html)
-  * [_Set-SpbmStoragePolicy_](https://pubs.vmware.com/vsphere-6-5/index.jsp?topic=%2Fcom.vmware.powercli.cmdletref.doc%2FSet-SpbmStoragePolicy.html)
-
-## _Github_ Link for the entire script **>>** [setup.vsan.storage.policies.ps1](https://github.com/ricardonadao/vrandombites.co.uk/blob/master/vSAN/setup.vsan.storage.policies.ps1) ##
+  * [_Set-SpbmStoragePolicy_](https://developer.broadcom.com/powercli/latest/vmware.vimautomation.storage/commands/set-spbmstoragepolicy)
+  * [_Get-SpbmStoragePolicy_](https://developer.broadcom.com/powercli/latest/vmware.vimautomation.storage/commands/get-spbmstoragepolicy)
+  * [_Set-SpbmEntityConfiguration_](https://developer.broadcom.com/powercli/latest/vmware.vimautomation.storage/commands/set-spbmentityconfiguration)
+  * [_Get-SpbmEntityConfiguration_](https://developer.broadcom.com/powercli/latest/vmware.vimautomation.storage/commands/get-spbmentityconfiguration)
+  
+## _Github_ Link for the entire script **>>** [setup.vsan.storage.policies.ps1]({{ relative_url }}/assets/downloads/scripts/powershell/vsan/setup.vsan.storage.policies.ps1) ##
