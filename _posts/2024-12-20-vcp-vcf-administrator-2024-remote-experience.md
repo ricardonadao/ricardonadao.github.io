@@ -12,6 +12,7 @@ tags:
   - blog
   - social
   - certifications
+  - vcf
 toc: true
 draft: false
 mathjax: false
