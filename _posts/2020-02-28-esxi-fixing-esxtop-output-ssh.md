@@ -4,7 +4,7 @@ published: true
 date: 2020-02-28 08:00:00
 header:
   teaser: /assets/images/featured/vsphere-150x150.png
-title: ESXi - Fixing _esxtop_ output in a SSH session
+title: ESXi - Fixing esxtop output in a SSH session
 categories:
   - esxi
 tags:
