@@ -3,7 +3,7 @@ author: Ricardo Adao
 published: true
 date: 2020-02-28 08:00:00
 header:
-  teaser: /assets/images/featured/esxi-150x150.png
+  teaser: /assets/images/featured/vsphere-150x150.png
 title: ESXi - Fixing _esxtop_ output in a SSH session
 categories:
   - esxi
@@ -16,7 +16,7 @@ tags:
   - vmware
 toc: true
 slug: esxi-fixing-esxtop-output-ssh-session
-last_modified_at: 2023-06-21T08:14:18.351Z
+last_modified_at: 2025-01-07 12:23:00
 ---
 When you use for ages a _SSH client_ that magically just works and it is pretty simple to setup as [_PuTTY_](https://www.chiark.greenend.org.uk/~sgtatham/putty/).
 

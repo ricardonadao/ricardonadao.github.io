@@ -3,7 +3,7 @@ author: Ricardo Adao
 published: true
 date: 2020-03-18 20:00:00
 header:
-  teaser: /assets/images/featured/vcenter-150x150.png
+  teaser: /assets/images/featured/vsphere-150x150.png
 title: VMware vCenter - Setting up vCenter Appliance SNMP monitoring
 categories:
   - vcenter
@@ -16,7 +16,7 @@ tags:
   - vmware
 toc: true
 slug: vmware-vcenter-setting-vcenter-appliance-snmp-monitoring
-last_modified_at: 2023-06-21T08:14:13.685Z
+last_modified_at: 2025-01-07 12:23:00
 ---
 I started to run a _[Cacti](https://www.cacti.net/) server_ in my _Homelab_ just for fun and to have an overview of some key metrics of the virtual machines, servers, switches, storage and any other _SNMP capable_ piece of kit at home.
 

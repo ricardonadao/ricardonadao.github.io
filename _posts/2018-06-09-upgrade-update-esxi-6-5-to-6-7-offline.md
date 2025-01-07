@@ -4,7 +4,7 @@ published: true
 date: 2018-06-09 11:59:58
 
 header:
-  teaser: /assets/images/featured/esxi-150x150.png
+  teaser: /assets/images/featured/vsphere-150x150.png
 title: Upgrade/Update ESXi 6.5 to 6.7 Offline
 categories:
   - esxi
@@ -17,7 +17,7 @@ tags:
   - upgrade
 toc: true
 slug: upgrade-update-esxi-6-5-6-7-offline
-last_modified_at: 2023-06-21T08:13:39.052Z
+last_modified_at: 2025-01-07 12:23:00
 ---
 In our _Homelabs_, we normally make some "architecture compromises" that add some extra complexity when we need to upgrade it.
 
