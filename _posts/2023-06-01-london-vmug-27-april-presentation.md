@@ -22,20 +22,20 @@ Sometimes you just need to push yourself a bit out of your comfort zone and publ
 But sometimes you just need to push yourself a bit and take a challenge, and that is what I've done when the opportunity to present in the **London VMUG 27th April 2023**.
 
 ## How it happen
-Some time ago I was having a chat with one of my team mates - [Katherine Skilling](https://twitter.com/skillk01) - about presenting in VMUGs, VMWorld/VMware Explore or _public speaking_ in general.
+Some time ago I was having a chat with one of my team mates - [Katherine Skilling](https://x.com/skillk01) - about presenting in VMUGs, VMWorld/VMware Explore or _public speaking_ in general.
 
-A couple of months later, [Katherine Skilling](https://twitter.com/skillk01) pinged me and asked: "Are you up for presenting in a VMUG?", of course the answer was **YES**.
+A couple of months later, [Katherine Skilling](https://x.com/skillk01) pinged me and asked: "Are you up for presenting in a VMUG?", of course the answer was **YES**.
 
-Then the process started with the help of [Katherine Skilling](https://twitter.com/skillk01) and then worked with [Linda Smith](https://twitter.com/VirtualGirlLS) - one of the VMUG leaders - to add an item to the agenda for the _London VMUG - 27th April_.
+Then the process started with the help of [Katherine Skilling](https://x.com/skillk01) and then worked with [Linda Smith](https://x.com/VirtualGirlLS) - one of the VMUG leaders - to add an item to the agenda for the _London VMUG - 27th April_.
 
 And that was it, there was no turning back.
 
 ## Presentation
-All the presentations were recorded by the _VMUG team_, special thanks to [Gareth Edwards](https://twitter.com/GarethEdwards86) that took care of recording and post-processing.
+All the presentations were recorded by the _VMUG team_, special thanks to [Gareth Edwards](https://x.com/GarethEdwards86) that took care of recording and post-processing.
 
 Link to the playlist with all the recorded presentations at _London VMUG - 27th April_: [_link_](https://youtube.com/playlist?list=PLH3DGouMuuU9Dp_dtYinYqje61lrx7nQD)
 
-My presentation was the 2nd of the day (taking away the Intro presentation) right after the brilliant presentation from [Matthew Steiner](https://twitter.com/Steiner_Matthew) & [Ed Hoppitt](https://twitter.com/edhoppitt) that added some extra stress on myself since there brilliant presentation was a really though act to follow.
+My presentation was the 2nd of the day (taking away the Intro presentation) right after the brilliant presentation from [Matthew Steiner](https://x.com/Steiner_Matthew) & [Ed Hoppitt](https://x.com/edhoppitt) that added some extra stress on myself since there brilliant presentation was a really though act to follow.
 
 But I was determined.
 
@@ -46,7 +46,7 @@ But I was determined.
 ### Before Presenting
 I have been in VMUGs in the past, but it was the first one with my name in the speaker list, so it had a special taste.
 
-At arrival was greated by [Linda Smith](https://twitter.com/VirtualGirlLS), one of the VMUG leaders that quickly made me feel confortable and quickly gave me a quick overview of where the things where and what was the plan.
+At arrival was greated by [Linda Smith](https://x.com/VirtualGirlLS), one of the VMUG leaders that quickly made me feel confortable and quickly gave me a quick overview of where the things where and what was the plan.
 
 Then immediatelly saw some familiar faces from the past, colleagues, ex-colleagues and people that I worked with in some projects, then there was the opportinity also to put the faces to the names to some other colleagues that we met only remotely and now there was the opportunity to have a chat in person.
 

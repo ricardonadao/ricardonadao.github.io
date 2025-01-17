@@ -25,6 +25,10 @@
   {%- assign author_twitter = author.twitter | replace: "@", "" -%}
 {%- endif -%}
 
+{%- if author.x -%}
+  {%- assign author_x = author.x | replace: "@", "" -%}
+{%- endif -%}
+
 {%- assign page_large_image = page.header.og_image | default: page.header.overlay_image | default: page.header.image | absolute_url | escape -%}
 {%- assign page_teaser_image = page.header.teaser | default: site.og_image | absolute_url | escape -%}
 {%- assign site_og_image = site.og_image | absolute_url | escape -%}
@@ -79,6 +83,27 @@
 
   {% if author_twitter %}
     <meta name="twitter:creator" content="@{{ author_twitter }}">
+  {% endif %}
+{% endif %}
+
+{% if site.x.username %}
+  <meta name="x:site" content="@{{ site.x.username | replace: "@", "" }}">
+  <meta name="x:title" content="{{ page_title }}">
+  <meta name="x:description" content="{{ seo_description }}">
+  <meta name="x:url" content="{{ canonical_url }}">
+
+  {% if page_large_image %}
+    <meta name="x:card" content="summary_large_image">
+    <meta name="x:image" content="{{ page_large_image }}">
+  {% else %}
+    <meta name="x:card" content="summary">
+    {% if page_teaser_image %}
+      <meta name="x:image" content="{{ page_teaser_image }}">
+    {% endif %}
+  {% endif %}
+
+  {% if author_x %}
+    <meta name="x:creator" content="@{{ author_x }}">
   {% endif %}
 {% endif %}
 

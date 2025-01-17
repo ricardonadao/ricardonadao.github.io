@@ -28,21 +28,21 @@ However, this year was a bit different since me and some team mates had addition
 
 **Speaker**
 
-* [Ather Beg](https://twitter.com/AtherBeg), Solutions Architect, Rackspace
+* [Ather Beg](https://x.com/AtherBeg), Solutions Architect, Rackspace
 
 ## Automating lab deployments using VMware Cloud Foundation and Nested Virtualization _(Rackspace booth)_
 
 **Speaker**
 
-* [Ricardo Adao](https://twitter.com/ricardonadao), Product Engineer, Rackspace
+* [Ricardo Adao](https://x.com/ricardonadao), Product Engineer, Rackspace
 
-# NSX Roving Reporter with [Ather Beg](https://twitter.com/AtherBeg)
+# NSX Roving Reporter with [Ather Beg](https://x.com/AtherBeg)
 
-## [Alex Galbraith](https://twitter.com/alexgalbraith)
+## [Alex Galbraith](https://x.com/alexgalbraith)
 
 {% include video id="WSeagfVuFBE" provider="youtube" %}
 
-## [Ricardo Adao](https://twitter.com/ricardonadao)
+## [Ricardo Adao](https://x.com/ricardonadao)
 
 {% include video id="bDXZxVQ0C0A" provider="youtube" %}
 
@@ -54,8 +54,8 @@ _vSAN enables low cost, high performing, policy-based storage for vSphere enviro
 
 **Speakers**
 
-* [Amine El Badaoui](https://twitter.com/Amino_ElBadaoui), Product Engineer, Rackspace
-* [Per Thorn](https://twitter.com/per_thorn), Principal Architect, Rackspace
+* [Amine El Badaoui](https://x.com/Amino_ElBadaoui), Product Engineer, Rackspace
+* [Per Thorn](https://x.com/per_thorn), Principal Architect, Rackspace
 
 [**Watch Recording**](https://videos.vmworld.com/global/2018/videoplayer/26585)
 
@@ -66,6 +66,6 @@ _A software-defined private cloud based on VMware technologies provide the agili
 **Speakers**
 
 * Paul Wilson, Product Engineer, Rackspace
-* [Per Thorn](https://twitter.com/per_thorn), Principal Architect, Rackspace
+* [Per Thorn](https://x.com/per_thorn), Principal Architect, Rackspace
 
 [**Watch Recording**](https://videos.vmworld.com/global/2018/videoplayer/26241)

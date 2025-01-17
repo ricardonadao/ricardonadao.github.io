@@ -32,7 +32,7 @@ logo                     : # path of logo image to display in the masthead, e.g.
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              : true # true, false (default)
 words_per_minute         : 150
-enable_copy_code_button  : # true, false (default)
+enable_copy_code_button  : true # true, false (default)
 copyright                : # "copyright" name, defaults to site.title
 copyright_url            : # "copyright" URL, defaults to site.url
 comments:
@@ -99,6 +99,8 @@ baidu_site_verification  :
 # Social Sharing
 twitter:
   username               : "ricardonadao"
+x:
+  username               : "ricardonadao"
 facebook:
   username               :
   app_id                 :
@@ -111,6 +113,7 @@ social:
   name                   : "ricardonadao" # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
     - https://twitter.com/ricardonadao
+    - https://x.com/ricardonadao
     - https://www.linkedin.com/in/ricardonadao/
     - https://github.com/ricardonadao
 
@@ -140,9 +143,12 @@ author:
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://vrandombites.co.uk"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/ricardonadao"
+#    - label: "Twitter"
+#      icon: "fab fa-fw fa-twitter-square"
+#      url: "https://twitter.com/ricardonadao"
+    - label: "X"
+      icon: "fab fa-fw fa-x-twitter-square"
+      url: "https://x.com/ricardonadao"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url: "https://facebook.com/"
@@ -162,9 +168,12 @@ author:
 # Site Footer
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/ricardonadao"
+#    - label: "Twitter"
+#      icon: "fab fa-fw fa-twitter-square"
+#      url: "https://twitter.com/ricardonadao"
+    - label: "X"
+      icon: "fab fa-fw fa-x-twitter-square"
+      url: "https://x.com/ricardonadao"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url:
