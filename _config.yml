@@ -190,7 +190,7 @@ footer:
       icon: "fab fa-fw fa-square-instagram"
       # url:
     - label: "LinkedIn"
-      icon: "fab fa-fw fa-square-linkedin"
+      icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/ricardonadao/"
     - label: "Bluesky"
       icon: "fab fa-fw fa-square-bluesky"
