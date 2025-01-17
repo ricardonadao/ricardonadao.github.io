@@ -8,7 +8,7 @@
   gtag('config',
        '{{ site.analytics.google.g4_measurement_id }}',
        {
-        'anonymize_ip': {{ site.analytics.google.anonymize_ip | default: false }},
+        'anonymize_ip': '{{ site.analytics.google.anonymize_ip | default: false }}',
         'page_title' : '{{ page.title }}',
         'page_location' : '{{ site.url }}/{{ page.url }}',
         'page_path' : '{{ page.path }}',
