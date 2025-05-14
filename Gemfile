@@ -9,5 +9,11 @@ gem 'faraday-retry'
 gem "jemoji"
 gem "jekyll-seo-tag"
 
+# Windows
+gem "tzinfo-data"
+
+# TODO: Remove when this gets fixed in Jekyll
+gem "csv"
+gem "base64"
 
 gemspec
