@@ -20,7 +20,7 @@ rtl                      : # true, false (default) # turns direction of the page
 title                    : "vRandomBites"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Ricardo Adao"
+name                     : "Ricardo Adão"
 description              : "It is not enough to have a good mind; the main thing is to use it well."
 url                      : "https://vrandombites.co.uk" 
 baseurl                  : ""
