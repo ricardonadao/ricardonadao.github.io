@@ -12,7 +12,9 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+remote_theme             : "mmistakes/minimal-mistakes@4.27.3"
+
+minimal_mistakes_skin    : "dirt" #"default" "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-GB"
@@ -141,9 +143,9 @@ author:
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://vrandombites.co.uk"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/ricardonadao"
+#    - label: "Twitter"
+#      icon: "fab fa-fw fa-twitter-square"
+#      # url: "https://twitter.com/"
     - label: "X"
       icon: "fab fa-fw fa-x-twitter"
       url: "https://x.com/ricardonadao"
@@ -168,7 +170,7 @@ footer:
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/ricardonadao"
+      # url:
     - label: "X"
       icon: "fab fa-fw fa-x-twitter"
       url: "https://x.com/ricardonadao"
@@ -177,7 +179,7 @@ footer:
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
+      url: "https://github.com/ricardonadao"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
@@ -193,7 +195,7 @@ footer:
     - label: "Bluesky"
       icon: "fab fa-fw fa-square-bluesky"
       url: "https://bsky.app/profile/ricardonadao.bsky.social"
-  since: "2013"
+  since: "2018"
 
 
 # Reading Files
