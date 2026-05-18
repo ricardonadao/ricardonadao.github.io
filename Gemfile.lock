@@ -73,6 +73,7 @@ GEM
       faraday (~> 2.0)
     ffi (1.17.4)
     ffi (1.17.4-x64-mingw-ucrt)
+    fiddle (1.1.6)
     forwardable-extended (2.6.0)
     gemoji (4.1.0)
     google-protobuf (4.34.1)
@@ -118,7 +119,6 @@ GEM
       rb-inotify (~> 0.9, >= 0.9.10)
     logger (1.7.0)
     mercenary (0.4.0)
-    mini_portile2 (2.8.9)
     minitest (6.0.2)
       drb (~> 2.0)
       prism (~> 1.5)
@@ -162,7 +162,6 @@ GEM
     webrick (1.9.2)
 
 PLATFORMS
-  ruby
   x64-mingw-ucrt
 
 DEPENDENCIES
@@ -170,6 +169,7 @@ DEPENDENCIES
   bundler
   csv
   faraday-retry
+  fiddle
   jekyll!
   jekyll-feed (~> 0.17.0)
   jekyll-include-cache
