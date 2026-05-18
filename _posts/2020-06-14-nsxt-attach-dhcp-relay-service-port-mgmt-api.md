@@ -15,7 +15,7 @@ tags:
   - vmware
 toc: true
 slug: nsx-data-center-attaching-dhcp-relay-service-nsx-logical-router-service-interface-centralized-service-port-csp
-last_modified_at: 2023-06-21T08:14:01.474Z
+last_modified_at: 2026-05-18T12:20:01.474Z
 ---
 You can use _DHCP_ (_Dynamic Host Configuration Protocol_) to dynamically assign IP addresses and other network configuration to our devices.
 
@@ -494,4 +494,4 @@ Yes, it is a question of choosing your preferred programming language and you ca
 
 Since there is a part of the process that can be done easily using the _NSX-T UI_, I just script using Powershell (PShell 6 or above) the part where we need to leverage the _Management API_. It is not the prettiest powershell coding that you will ever see, but will do the job and show the process.
 
-* Download: [NSX-T Service Interface Attach DHCP Relay script]({{ relative_url }}/assets/downloads/scripts/powershell/nsx-t/nsxt-service-port-dhcp-relay.ps1)
+* Download: [NSX-T Service Interface Attach DHCP Relay script]({{ relative_url }}/assets/downloads/scripts/powershell/nsx/nsxt-service-port-dhcp-relay.ps1)
