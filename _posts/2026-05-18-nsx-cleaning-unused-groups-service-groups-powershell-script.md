@@ -16,9 +16,6 @@ toc: true
 slug: nsx-cleaning-up-unused-groups-service-groups-powershell-script
 last_modified_at: 2026-05-18T14:58:02.227Z
 ---
-
-# Introduction
-
 You can use _PowerShell_ to automate cleanup tasks in your _NSX_ environment, helping maintain optimal performance and organization.
 
 In _NSX_, as you create and modify security policies, groups, and service groups over time, unused objects can accumulate. These unused objects consume resources and can clutter your environment, making management more difficult.
