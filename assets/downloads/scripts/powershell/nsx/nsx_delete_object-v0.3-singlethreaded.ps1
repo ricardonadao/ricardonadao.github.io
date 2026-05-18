@@ -163,33 +163,22 @@ function Write-Log {
     $timestamp = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
     $logEntry = "[$timestamp] [$Level] $Message"
 
+    # Write to logfile if enabled
+    if ($script:LogFilePath) {
+        try {
+            Add-Content -Path $script:LogFilePath -Value $logEntry -ErrorAction SilentlyContinue
+        } catch {
+            # If we can't write to logfile, we don't want to break the script, so we just ignore.
+        }
+    }
+
+    # Write to console with color
     switch ($Level) {
         "ERROR"   { Write-Host $logEntry -ForegroundColor Red }
         "WARNING" { Write-Host $logEntry -ForegroundColor Yellow }
         "SUCCESS" { Write-Host $logEntry -ForegroundColor Green }
         "DEBUG"   { if ($DebugMode) { Write-Host $logEntry -ForegroundColor Magenta } }
         default   { Write-Host $logEntry }
-    }
-
-    if ($script:LogFilePath) {
-        [void]$script:LogBuffer.AppendLine($logEntry)
-        if ($script:LogBuffer.Length -ge $script:LogBufferFlushThreshold) {
-            try {
-                Add-Content -Path $script:LogFilePath -Value $script:LogBuffer.ToString() -ErrorAction SilentlyContinue
-                [void]$script:LogBuffer.Clear()
-            } catch { }
-        }
-    }
-}
-
-function Flush-LogBuffer {
-    if ($script:LogFilePath -and $script:LogBuffer.Length -gt 0) {
-        try {
-            Add-Content -Path $script:LogFilePath -Value $script:LogBuffer.ToString() -ErrorAction SilentlyContinue
-        } catch { }
-        finally {
-            [void]$script:LogBuffer.Clear()
-        }
     }
 }
 
@@ -312,10 +301,10 @@ function Get-GroupReferences {
 # MAIN SCRIPT LOGIC
 # ============================================
 
-Write-Host "============================================" -ForegroundColor Yellow
-Write-Host "NSX Unused Groups and Services Cleanup Tool" -ForegroundColor Yellow
-Write-Host "============================================" -ForegroundColor Yellow
-Write-Host ""
+Write-Log "============================================" -Level "INFO"
+Write-Log "NSX Unused Groups and Services Cleanup Tool" -Level "INFO"
+Write-Log "============================================" -Level "INFO"
+Write-Log "" -Level "INFO"
 
 # Get credentials if not provided
 if (-not $NsxManager) {
@@ -342,7 +331,7 @@ $script:Headers = @{
 $script:BaseUrl = "https://${NsxManager}/policy/api/v1"
 $script:SkipCert = ($PSVersionTable.PSVersion.Major -ge 7 -or $PSVersionTable.PSEdition -eq "Core" -or $SkipCertificateCheck)
 
-Write-Host ""
+Write-Log "" -Level "INFO"
 Write-Log "Connecting to NSX Manager: $NsxManager" -Level "SUCCESS"
 Write-Log "API Base URL: $script:BaseUrl" -Level "INFO"
 
@@ -357,17 +346,17 @@ try {
     Write-Log "[ERROR] Connection failed: $_" -Level "ERROR"
     exit 1
 }
-Write-Host ""
+Write-Log "" -Level "INFO"
 
 # ============================================
 # FETCH ALL DATA (Sequential)
 # ============================================
 
-Write-Host "[1/4] Fetching domains..." -ForegroundColor Cyan
+Write-Log "[1/4] Fetching domains..." -Level "INFO"
 $domains = Get-NSXAllPages -Endpoint "/infra/domains"
 Write-Log "Found $($domains.Count) domains" -Level "SUCCESS"
 
-Write-Host "[2/4] Fetching groups from all domains..." -ForegroundColor Cyan
+Write-Log "[2/4] Fetching groups from all domains..." -Level "INFO"
 $allGroups = [System.Collections.Generic.List[object]]::new()
 foreach ($domain in $domains) {
     Write-Log "Fetching groups from domain: $($domain.id)" -Level "DEBUG"
@@ -377,11 +366,11 @@ foreach ($domain in $domains) {
 $script:AllGroups = $allGroups
 Write-Log "Total groups fetched: $($allGroups.Count)" -Level "SUCCESS"
 
-Write-Host "[3/4] Fetching service groups..." -ForegroundColor Cyan
+Write-Log "[3/4] Fetching service groups..." -Level "INFO"
 $script:AllServiceGroups = Get-NSXAllPages -Endpoint "/infra/services"
 Write-Log "Total service groups fetched: $($script:AllServiceGroups.Count)" -Level "SUCCESS"
 
-Write-Host "[4/4] Fetching security policies and rules..." -ForegroundColor Cyan
+Write-Log "[4/4] Fetching security policies and rules..." -Level "INFO"
 $script:AllPolicies = [System.Collections.Generic.List[object]]::new()
 $script:AllRules = [System.Collections.Generic.List[object]]::new()
 
@@ -404,10 +393,15 @@ Write-Log "Total DFW rules fetched: $($script:AllRules.Count)" -Level "SUCCESS"
 # ANALYZE OBJECT USAGE
 # ============================================
 
-Write-Host ""
-Write-Host "============================================" -ForegroundColor Yellow
-Write-Host "Analyzing Group Usage..." -ForegroundColor Yellow
-Write-Host "============================================" -ForegroundColor Yellow
+# ============================================
+# ANALYZE OBJECT USAGE
+# ============================================
+
+Write-Log "" -Level "INFO"
+Write-Log "============================================" -Level "INFO"
+Write-Log "Analyzing Group Usage..." -Level "INFO"
+Write-Log "============================================" -Level "INFO"
+Write-Log "" -Level "INFO"
 
 $groupInfoMap = @{}
 $systemOwnedGroups = [System.Collections.Generic.HashSet[string]]::new()
@@ -466,7 +460,7 @@ foreach ($groupId in $groupInfoMap.Keys) {
 
 Write-Progress -Activity "Analyzing Groups" -Completed
 
-Write-Host ""
+Write-Log "" -Level "INFO"
 Write-Log "GROUPS IN USE: $($usedGroups.Count)" -Level "SUCCESS"
 Write-Log "  - Used Non-System-Owned: $($usedNonSystem.Count)" -Level "INFO"
 Write-Log "GROUPS NOT IN USE: $($unusedGroups.Count)" -Level "WARNING"
@@ -476,10 +470,14 @@ Write-Log "  - Unused Non-System-Owned: $($unusedNonSystem.Count)" -Level "INFO"
 # ANALYZE SERVICE GROUP USAGE
 # ============================================
 
-Write-Host ""
-Write-Host "============================================" -ForegroundColor Yellow
-Write-Host "Analyzing Service Group Usage..." -ForegroundColor Yellow
-Write-Host "============================================" -ForegroundColor Yellow
+# ============================================
+# ANALYZE SERVICE GROUP USAGE
+# ============================================
+
+Write-Log "" -Level "INFO"
+Write-Log "============================================" -Level "INFO"
+Write-Log "Analyzing Service Group Usage..." -Level "INFO"
+Write-Log "============================================" -Level "INFO"
 
 $serviceGroupInfoMap = @{}
 $usedServiceGroups = @()
@@ -521,7 +519,7 @@ foreach ($sg in $script:AllServiceGroups) {
     }
 }
 
-Write-Host ""
+Write-Log "" -Level "INFO"
 Write-Log "SERVICE GROUPS IN USE: $($usedServiceGroups.Count)" -Level "SUCCESS"
 Write-Log "  - Used Non-System-Owned: $($usedNonSystemSG.Count)" -Level "INFO"
 Write-Log "SERVICE GROUPS NOT IN USE: $($unusedServiceGroups.Count)" -Level "WARNING"
@@ -568,8 +566,8 @@ function Remove-NSXObject {
 if ($Groups) {
     $groupsToDelete = $unusedNonSystem | Where-Object { -not $_.is_system_owned -and -not $_.in_use }
 
-    Write-Host ""
-    Write-Host "Group deletion candidates: $($groupsToDelete.Count)" -ForegroundColor Cyan
+    Write-Log "" -Level "INFO"
+    Write-Log "Group deletion candidates: $($groupsToDelete.Count)" -Level "INFO"
 
     if (-not $Apply) {
         Write-Log "WHATIF MODE - No groups will be deleted" -Level "WARNING"
@@ -602,9 +600,9 @@ if ($Groups) {
             }
         }
         Write-Progress -Activity "Deleting Groups" -Completed
-        Write-Host ""
-        Write-Host "Groups Deleted: $deleted" -ForegroundColor Green
-        if ($failed -gt 0) { Write-Host "Groups Failed: $failed" -ForegroundColor Red }
+        Write-Log "" -Level "INFO"
+        Write-Log "Groups Deleted: $deleted" -Level "SUCCESS"
+        if ($failed -gt 0) { Write-Log "Groups Failed: $failed" -Level "ERROR" }
     }
 }
 
@@ -612,8 +610,8 @@ if ($Groups) {
 if ($ServiceGroups) {
     $sgToDelete = $unusedNonSystemSG
 
-    Write-Host ""
-    Write-Host "Service group deletion candidates: $($sgToDelete.Count)" -ForegroundColor Cyan
+    Write-Log "" -Level "INFO"
+    Write-Log "Service group deletion candidates: $($sgToDelete.Count)" -Level "INFO"
 
     if (-not $Apply) {
         Write-Log "WHATIF MODE - No service groups will be deleted" -Level "WARNING"
@@ -644,9 +642,9 @@ if ($ServiceGroups) {
                 Start-Sleep -Milliseconds $BatchDelayMs
             }
         }
-        Write-Host ""
-        Write-Host "Service Groups Deleted: $deleted" -ForegroundColor Green
-        if ($failed -gt 0) { Write-Host "Service Groups Failed: $failed" -ForegroundColor Red }
+        Write-Log "" -Level "INFO"
+        Write-Log "Service Groups Deleted: $deleted" -Level "SUCCESS"
+        if ($failed -gt 0) { Write-Log "Service Groups Failed: $failed" -Level "ERROR" }
     }
 }
 
@@ -654,26 +652,25 @@ if ($ServiceGroups) {
 # FINAL SUMMARY
 # ============================================
 
-Flush-LogBuffer
 Export-DeletedObjects
 
 $endTime = Get-Date
 $duration = $endTime - $script:StartTime
 
-Write-Host ""
-Write-Host "============================================" -ForegroundColor Yellow
-Write-Host "OPERATION COMPLETE" -ForegroundColor Yellow
-Write-Host "============================================" -ForegroundColor Yellow
-Write-Host ""
+Write-Log "" -Level "INFO"
+Write-Log "============================================" -Level "INFO"
+Write-Log "OPERATION COMPLETE" -Level "INFO"
+Write-Log "============================================" -Level "INFO"
+Write-Log "" -Level "INFO"
 
-Write-Host "SUMMARY:" -ForegroundColor Cyan
-Write-Host "  Groups processed:            $($script:AllGroups.Count)"
-Write-Host "  Service groups processed:    $($script:AllServiceGroups.Count)"
-Write-Host "  Security policies processed: $($script:AllPolicies.Count)"
-Write-Host "  DFW rules processed:         $($script:AllRules.Count)"
-Write-Host "  Total execution time:        $([math]::Round($duration.TotalSeconds, 2)) seconds"
-Write-Host ""
+Write-Log "SUMMARY:" -Level "INFO"
+Write-Log "  Groups processed:            $($script:AllGroups.Count)" -Level "INFO"
+Write-Log "  Service groups processed:    $($script:AllServiceGroups.Count)" -Level "INFO"
+Write-Log "  Security policies processed: $($script:AllPolicies.Count)" -Level "INFO"
+Write-Log "  DFW rules processed:         $($script:AllRules.Count)" -Level "INFO"
+Write-Log "  Total execution time:        $([math]::Round($duration.TotalSeconds, 2)) seconds" -Level "INFO"
+Write-Log "" -Level "INFO"
 
-Write-Host "============================================" -ForegroundColor Yellow
-Write-Host "TASK COMPLETED SUCCESSFULLY" -ForegroundColor Green
-Write-Host "============================================" -ForegroundColor Yellow
+Write-Log "============================================" -Level "INFO"
+Write-Log "TASK COMPLETED SUCCESSFULLY" -Level "SUCCESS"
+Write-Log "============================================" -Level "INFO"
