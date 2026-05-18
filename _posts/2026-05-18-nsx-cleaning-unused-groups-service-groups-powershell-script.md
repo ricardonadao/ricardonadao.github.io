@@ -9,7 +9,6 @@ categories:
   - nsx
 tags:
   - nsx
-  - nsx
   - powercli
   - powershell
   - vmware
