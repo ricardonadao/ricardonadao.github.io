@@ -1,7 +1,8 @@
 ---
 author: Ricardo Adao
 published: true
-date: 2018-07-19 18:20:14
+last_modified_at: 2023-06-21T08:14:47.590Z
+date: 2018-07-19T18:20:14.000Z
 
 header:
   teaser: /assets/images/featured/vsan-150x150.png
@@ -21,7 +22,9 @@ tags:
   - oneliner
   - scsi
 slug: run-nested-esxi-top-vsan-datastore
-last_modified_at: 2023-06-21T08:14:47.590Z
+toc: true
+draft: false
+mathjax: false
 ---
 Nested ESXi's are part of the gear that we all have around for labs/study purposes.
 

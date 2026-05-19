@@ -1,7 +1,8 @@
 ---
 author: Ricardo Adao
 published: true
-date: 2018-09-02 08:00:00
+last_modified_at: 2023-06-21T08:14:46.373Z
+date: 2018-09-02T08:00:00.000Z
 
 header:
   teaser: /assets/images/featured/nsx-150x150.png
@@ -18,9 +19,10 @@ tags:
   - powershell
   - powernsx
   - sddc
-toc: true
 slug: nsx-automate-3-tier-app-deployment-part-1
-last_modified_at: 2023-06-21T08:14:46.373Z
+toc: true
+draft: false
+mathjax: false
 ---
 One of the big advantages of the NSX is to a Software Defined Network (SDN) solution given us the ability to code once and execute as many times.
 

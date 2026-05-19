@@ -1,7 +1,8 @@
 ---
 author: Ricardo Adao
 published: true
-date: 2018-06-09 11:59:58
+last_modified_at: 2025-01-07T12:23:00.000Z
+date: 2018-06-09T11:59:58.000Z
 
 header:
   teaser: /assets/images/featured/vsphere-150x150.png
@@ -15,9 +16,10 @@ tags:
   - vsphere
   - update
   - upgrade
-toc: true
 slug: upgrade-update-esxi-6-5-6-7-offline
-last_modified_at: 2025-01-07 12:23:00
+toc: true
+draft: false
+mathjax: false
 ---
 In our _Homelabs_, we normally make some "architecture compromises" that add some extra complexity when we need to upgrade it.
 

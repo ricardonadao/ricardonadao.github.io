@@ -1,7 +1,8 @@
 ---
 author: Ricardo Adao
 published: true
-date: 2018-05-15 08:11:14
+last_modified_at: 2023-06-21T08:11:53.882Z
+date: 2018-05-15T08:11:14.000Z
 
 header:
   teaser: /assets/images/featured/powercli-150x150.png
@@ -17,7 +18,9 @@ tags:
   - powershell
   - vmware
 slug: powercli-esxcli-settings-change-settings-multiple-esxi-hosts-time
-last_modified_at: 2023-06-21T08:11:53.882Z
+toc: true
+draft: false
+mathjax: false
 ---
 
 Following the earlier post [_PowerCLI - Check MTU size configured in all hosts physical nics of a cluster_]({% post_url 2018-05-13-powercli-check-mtu-size-configured-all-hosts-physical-nics-cluster %}) lets see what more can we do with _Get-EsxCli_ cmdlet.

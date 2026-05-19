@@ -1,7 +1,8 @@
 ---
 author: Ricardo Adao
 published: true
-date: 2018-07-02 09:23:49
+last_modified_at: 2023-06-21T08:14:49.979Z
+date: 2018-07-02T09:23:49.000Z
 
 header:
   teaser: /assets/images/featured/powercli-150x150.png
@@ -16,9 +17,10 @@ tags:
   - vcenter
   - vmware
   - powersaving
-toc: true
 slug: powercli-configure-multiple-esxi-power-policy
-last_modified_at: 2023-06-21T08:14:49.979Z
+toc: true
+draft: false
+mathjax: false
 ---
 
 This is a quick powershell script that setups up ESXi _Power Policies_ in all the hosts in a cluster or vCenter.

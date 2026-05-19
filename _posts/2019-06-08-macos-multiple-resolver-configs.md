@@ -1,7 +1,8 @@
 ---
 author: Ricardo Adao
 published: true
-date: 2019-06-08 22:30:00
+last_modified_at: 2023-06-21T08:14:34.681Z
+date: 2019-06-08T22:30:00.000Z
 
 header:
   teaser: /assets/images/featured/macos-mojave-150x150.png
@@ -12,9 +13,10 @@ tags:
   - macos
   - dns
   - vpn
-toc: true
 slug: mac-os-configuring-multiple-dns-resolvers
-last_modified_at: 2023-06-21T08:14:34.681Z
+toc: true
+draft: false
+mathjax: false
 ---
 New company, new gear and the plain/fun of going through the hassle of setting up your laptop and all tweaks and preferences that you love.
 

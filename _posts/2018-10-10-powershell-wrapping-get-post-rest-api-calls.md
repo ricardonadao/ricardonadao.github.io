@@ -1,7 +1,8 @@
 ---
 author: Ricardo Adao
 published: true
-date: 2018-10-10 00:51:00
+last_modified_at: 2023-06-21T08:14:42.689Z
+date: 2018-10-10T00:51:00.000Z
 
 header:
   teaser: /assets/images/featured/powershell-150x150.png
@@ -14,9 +15,10 @@ tags:
   - automation
   - vcf
   - vvd
-toc: true
 slug: powershell-wrapping-post-rest-api-calls
-last_modified_at: 2023-06-21T08:14:42.689Z
+toc: true
+draft: false
+mathjax: false
 ---
 # Code Bits&Pieces and Context
 

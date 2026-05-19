@@ -1,7 +1,8 @@
 ---
 author: Ricardo Adao
 published: true
-date: 2018-05-13 10:16:54
+last_modified_at: 2023-06-21T08:15:28.835Z
+date: 2018-05-13T10:16:54.000Z
 
 header:
   teaser: /assets/images/featured/powercli-150x150.png
@@ -20,7 +21,9 @@ tags:
   - vsan
   - networking
 slug: powercli-check-mtu-size-configured-hosts-physical-nics-cluster
-last_modified_at: 2023-06-21T08:15:28.835Z
+toc: true
+draft: false
+mathjax: false
 ---
 Nowadays with the quick vSAN and NSX adoption, pushing the MTU configuration out of the 1500 bytes standard is becoming more and more common.
 

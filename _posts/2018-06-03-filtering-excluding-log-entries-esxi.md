@@ -1,7 +1,9 @@
 ---
 author: Ricardo Adao
 published: true
-date: 2018-06-03 10:42:02
+last_modified_at: 2025-01-07T12:23:00.000Z
+date: 2018-06-03T10:42:02.000Z
+
 header:
   teaser: /assets/images/featured/vsphere-150x150.png
 title: Filtering/Excluding log entries in VMware vSphere ESXi
@@ -13,9 +15,10 @@ tags:
   - vmware
   - vsphere
   - syslog
-toc: true
 slug: filtering-excluding-log-entries-vmware-vsphere-esxi
-last_modified_at: 2025-01-07 12:23:00
+toc: true
+draft: false
+mathjax: false
 ---
 In our Homelabs, or even in production environments, we always have some harmless log entries that we would be happy to stop them from filling up our logs.
 

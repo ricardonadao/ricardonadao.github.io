@@ -1,7 +1,9 @@
 ---
 author: Ricardo Adao
 published: true
-date: 2018-12-18 10:00:00
+last_modified_at: 2023-06-21T08:14:37.322Z
+date: 2018-12-18T10:00:00.000Z
+
 header:
   teaser: /assets/images/featured/homelab-150x150.png
 title: Setting up a _Nested Internet_ for our Homelab - Part 1
@@ -15,9 +17,10 @@ tags:
   - cumulus
   - frr
   - pfsense
-toc: true
 slug: setting-nested-internet-homelab-part-1
-last_modified_at: 2023-06-21T08:14:37.322Z
+toc: true
+draft: false
+mathjax: false
 ---
 Title seems a bit strange and even a bit overly optimistic.
 

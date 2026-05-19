@@ -1,7 +1,8 @@
 ---
 author: Ricardo Adao
 published: true
-date: 2018-11-11 20:00:00
+last_modified_at: 2023-06-21T08:14:39.808Z
+date: 2018-11-11T20:00:00.000Z
 
 header:
   teaser: /assets/images/featured/nsx-150x150.png
@@ -15,9 +16,10 @@ tags:
   - nested
   - vsan
   - sddc
-toc: true
 slug: nsx-vxlan-logical-switches-transport-vsan-vmotion-traffic
-last_modified_at: 2023-06-21T08:14:39.808Z
+toc: true
+draft: false
+mathjax: false
 ---
 The title seems weird and at first glance we will think... **NO WAY**
 
