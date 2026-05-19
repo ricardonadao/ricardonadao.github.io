@@ -1,7 +1,7 @@
 ---
 author: Ricardo Adao
 published: true
-date: 2024-07-08 16:00:00
+date: 2024-07-08T00:00:00.000Z 16:00:00Z
 last_modified_at: null
 header:
     teaser: /assets/images/featured/vcf-150x150.png

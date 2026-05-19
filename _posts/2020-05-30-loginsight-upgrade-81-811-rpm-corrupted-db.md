@@ -1,7 +1,7 @@
 ---
 author: Ricardo Adao
 published: true
-date: 2020-05-30 08:00:00
+date: 2020-05-30T00:00:00.000Z 08:00:00Z
 header:
   teaser: /assets/images/featured/vmware-aria-operations-logs-150x150.png
 title: VMware Log Insight - Upgrade from 8.1.0 to 8.1.1 and corrupted RPM db
@@ -15,6 +15,8 @@ tags:
   - issue
   - vrli
 toc: true
+draft: false
+mathjax: false
 slug: vmware-log-insight-upgrade-8-1-0-8-1-1-corrupted-rpm-db
 last_modified_at: 2025-01-07 12:23:00
 ---

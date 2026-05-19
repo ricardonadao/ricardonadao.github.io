@@ -1,7 +1,7 @@
 ---
 author: Ricardo Adao
 published: true
-date: 2019-07-09 08:00:00
+date: 2019-07-09T00:00:00.000Z 08:00:00Z
 header:
   teaser: /assets/images/featured/vcf-150x150.png
 title: VCF - SDDC Manager proxy configuration
@@ -12,6 +12,8 @@ tags:
   - vmware
   - sddc
 toc: true
+draft: false
+mathjax: false
 slug: vcf-sddc-manager-proxy-configuration
 last_modified_at: 2023-06-21T08:14:30.832Z
 ---

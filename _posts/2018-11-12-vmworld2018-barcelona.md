@@ -1,7 +1,7 @@
 ---
 author: Ricardo Adao
 published: true
-date: 2018-11-12 09:00:00
+date: 2018-11-12T00:00:00.000Z 09:00:00Z
 
 header:
   teaser: /assets/images/featured/blog-150x150.png
@@ -13,6 +13,8 @@ tags:
   - social
   - vmworld
 toc: true
+draft: false
+mathjax: false
 slug: vmworld-2018-barcelona
 last_modified_at: 2023-06-21T10:14:01.392Z
 ---

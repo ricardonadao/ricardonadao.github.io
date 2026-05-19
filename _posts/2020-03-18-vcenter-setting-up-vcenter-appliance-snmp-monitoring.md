@@ -1,7 +1,7 @@
 ---
 author: Ricardo Adao
 published: true
-date: 2020-03-18 20:00:00
+date: 2020-03-18T00:00:00.000Z 20:00:00Z
 header:
   teaser: /assets/images/featured/vsphere-150x150.png
 title: VMware vCenter - Setting up vCenter Appliance SNMP monitoring
@@ -15,6 +15,8 @@ tags:
   - homelab
   - vmware
 toc: true
+draft: false
+mathjax: false
 slug: vmware-vcenter-setting-vcenter-appliance-snmp-monitoring
 last_modified_at: 2025-01-07 12:23:00
 ---

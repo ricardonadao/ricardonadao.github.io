@@ -1,7 +1,7 @@
 ---
 author: Ricardo Adao
 published: true
-date: 2020-03-11 08:00:00
+date: 2020-03-11T00:00:00.000Z 08:00:00Z
 header:
   teaser: /assets/images/featured/nsx-150x150.png
 title: NSX-T Data Center - Using NSX-T Policy API to add new overlay segments
@@ -14,6 +14,8 @@ tags:
   - powershell
   - vmware
 toc: true
+draft: false
+mathjax: false
 slug: nsx-data-center-nsx-policy-api-add-overlay-segments
 last_modified_at: 2023-06-21T08:14:16.970Z
 ---

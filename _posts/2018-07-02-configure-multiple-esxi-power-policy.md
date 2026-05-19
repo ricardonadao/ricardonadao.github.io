@@ -22,7 +22,6 @@ toc: true
 draft: false
 mathjax: false
 ---
-
 This is a quick powershell script that setups up ESXi _Power Policies_ in all the hosts in a cluster or vCenter.
 
 # Script Parameters #

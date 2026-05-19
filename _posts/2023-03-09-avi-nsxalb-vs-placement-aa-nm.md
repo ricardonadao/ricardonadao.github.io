@@ -20,6 +20,7 @@ toc: true
 draft: false
 mathjax: true
 slug: avi-nsx-alb-virtual-service-placement-elastic-ha-modes
+
 ---
 One of the main challenges when we are designing and implementing _**Avi/NSX Advanced Load Balancer**_ configurations will be the decision between which of the _**Elastic HA Mode**_ to use and what are the differences between the two.
 
@@ -119,7 +120,8 @@ There are two (2) different placement mechanism that will affect how the _VS_ wi
     1. Place the _VS_ on the least-loaded _SE_ from the ones that are valid candidates for the _VS_
     1. If the _VS_ is still not placed and if _Write-Access cloud_ and the _number of deployed SEs_ $ \lt $ _Maximum SEs in SE group_, create a new _SE_ and re-run the placement algorithm again
     1. If the _VS_ is still not placed, consider _SEs_ that would normally be ineligible due anti-affinity
-* **Compact with Buffer $ \neq $ 0**
+* **Compact with Buffer $ 
+eq $ 0**
   * Compact aims to squeeze as much _VSs_ as possible onto existing _SEs_ where possible without impacting the configured _buffer_ threshold
   * Placement algorithm
     1. Calculates how many _SEs_ in the _SE group_ are needed to support the existing _VSs_ plus the new extra capacity for the new _VSs_ to be placed (_n_)

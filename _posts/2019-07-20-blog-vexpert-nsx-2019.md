@@ -1,7 +1,10 @@
 ---
+toc: true
+draft: false
+mathjax: false
 author: Ricardo Adao
 published: true
-date: 2019-07-20 07:00:00
+date: 2019-07-20T00:00:00.000Z 07:00:00Z
 
 title: Blog - vExpert NSX 2019
 header:

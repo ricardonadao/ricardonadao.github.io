@@ -1,7 +1,7 @@
 ---
 author: Ricardo Adao
 published: true
-date: 2024-11-10 14:00:00
+date: 2024-11-10T00:00:00.000Z 14:00:00Z
 header:
     teaser: /assets/images/featured/powercli-150x150.png
 title: PowerCLI - Add vSAN Storage Policies and Set Virtual Machine Storage Policy
@@ -17,6 +17,8 @@ tags:
     - vmware
     - vsan
 toc: true
+draft: false
+mathjax: false
 slug: powercli-add-vsan-storage-policies-set-virtual-machine-storage-policy
 last_modified_at: 
 ---

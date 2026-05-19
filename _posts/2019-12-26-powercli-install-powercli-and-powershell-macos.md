@@ -1,7 +1,7 @@
 ---
 author: Ricardo Adao
 published: true
-date: 2019-12-26 08:00:00
+date: 2019-12-26T00:00:00.000Z 08:00:00Z
 
 header:
   teaser: /assets/images/featured/powercli-150x150.png
@@ -14,6 +14,8 @@ tags:
   - macos
   - vmware
 toc: true
+draft: false
+mathjax: false
 slug: powercli-install-powershell-powercli-macos
 last_modified_at: 2023-06-21T08:14:22.466Z
 ---

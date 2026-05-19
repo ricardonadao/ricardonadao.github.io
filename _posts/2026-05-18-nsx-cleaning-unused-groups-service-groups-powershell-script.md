@@ -13,6 +13,8 @@ tags:
   - powershell
   - vmware
 toc: true
+draft: false
+mathjax: false
 slug: nsx-cleaning-up-unused-groups-service-groups-powershell-script
 last_modified_at: 2026-05-18T14:58:02.227Z
 ---
@@ -78,25 +80,29 @@ The solution is a PowerShell script that connects to the NSX Policy API, identif
 ### 1. Analyze what would be deleted (Recommended First Step)
 
 ```powershell
-.\nsx_delete_object-v0.3-singlethreaded.ps1 -NsxManager "nsx01.example.com"
+.
+sx_delete_object-v0.3-singlethreaded.ps1 -NsxManager "nsx01.example.com"
 ```
 
 ### 2. Delete unused groups with logging
 
 ```powershell
-.\nsx_delete_object-v0.3-singlethreaded.ps1 -NsxManager "nsx01.example.com" -Groups -Apply -LogFile "cleanup.log"
+.
+sx_delete_object-v0.3-singlethreaded.ps1 -NsxManager "nsx01.example.com" -Groups -Apply -LogFile "cleanup.log"
 ```
 
 ### 3. Delete unused service groups with backup for recovery
 
 ```powershell
-.\nsx_delete_object-v0.3-singlethreaded.ps1 -NsxManager "nsx01.example.com" -ServiceGroups -Apply -BackupDeleteObjectsFile "backup.json"
+.
+sx_delete_object-v0.3-singlethreaded.ps1 -NsxManager "nsx01.example.com" -ServiceGroups -Apply -BackupDeleteObjectsFile "backup.json"
 ```
 
 ### 4. Full cleanup with all options
 
 ```powershell
-.\nsx_delete_object-v0.3-singlethreaded.ps1 -NsxManager "nsx01.example.com" -Groups -ServiceGroups -Apply -LogFile "full-cleanup.log" -BackupDeleteObjectsFile "full-backup.json"
+.
+sx_delete_object-v0.3-singlethreaded.ps1 -NsxManager "nsx01.example.com" -Groups -ServiceGroups -Apply -LogFile "full-cleanup.log" -BackupDeleteObjectsFile "full-backup.json"
 ```
 
 ## How It Works

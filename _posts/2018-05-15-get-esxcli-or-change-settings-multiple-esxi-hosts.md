@@ -22,7 +22,6 @@ toc: true
 draft: false
 mathjax: false
 ---
-
 Following the earlier post [_PowerCLI - Check MTU size configured in all hosts physical nics of a cluster_]({% post_url 2018-05-13-powercli-check-mtu-size-configured-all-hosts-physical-nics-cluster %}) lets see what more can we do with _Get-EsxCli_ cmdlet.
 
 _Get-EsxCli_ is a cmdlet to run the _esxcli_ command present in any ESXi shell, but from a _Powershell_ shell.  

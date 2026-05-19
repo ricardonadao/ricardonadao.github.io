@@ -1,7 +1,7 @@
 ---
 author: Ricardo Adao
 published: true
-date: 2020-02-26 08:00:00
+date: 2020-02-26T00:00:00.000Z 08:00:00Z
 header:
   teaser: /assets/images/featured/nsx-150x150.png
 title: NSX-T Data Center - Using NSX-T Policy API to add new segments (VLAN Backed)
@@ -14,6 +14,8 @@ tags:
   - powershell
   - vmware
 toc: true
+draft: false
+mathjax: false
 slug: nsx-data-center-nsx-policy-api-add-segments-vlan-backed
 last_modified_at: 2023-06-21T08:14:19.786Z
 ---

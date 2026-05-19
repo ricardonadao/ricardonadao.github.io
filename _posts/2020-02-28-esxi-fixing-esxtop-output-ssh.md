@@ -1,7 +1,7 @@
 ---
 author: Ricardo Adao
 published: true
-date: 2020-02-28 08:00:00
+date: 2020-02-28T00:00:00.000Z 08:00:00Z
 header:
   teaser: /assets/images/featured/vsphere-150x150.png
 title: ESXi - Fixing esxtop output in a SSH session
@@ -15,6 +15,8 @@ tags:
   - macos
   - vmware
 toc: true
+draft: false
+mathjax: false
 slug: esxi-fixing-esxtop-output-ssh-session
 last_modified_at: 2025-01-07 12:23:00
 ---

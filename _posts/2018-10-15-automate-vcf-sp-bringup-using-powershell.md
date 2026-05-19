@@ -1,7 +1,7 @@
 ---
 author: Ricardo Adao
 published: true
-date: 2018-10-15 08:00:00
+date: 2018-10-15T00:00:00.000Z 08:00:00Z
 
 header:
   teaser: /assets/images/featured/vcf-150x150.png
@@ -15,6 +15,8 @@ tags:
   - coding
   - automation
 toc: true
+draft: false
+mathjax: false
 slug: vcf-automate-vmware-cloud-foundation-service-provider-bringup-process-powershell
 last_modified_at: 2023-06-21T08:14:41.024Z
 ---

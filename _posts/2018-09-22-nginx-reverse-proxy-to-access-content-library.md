@@ -1,7 +1,7 @@
 ---
 author: Ricardo Adao
 published: true
-date: 2018-09-22 09:00:00
+date: 2018-09-22T09:00:00.000Z
 
 header:
   teaser: /assets/images/featured/linux-150x150.png
@@ -15,6 +15,8 @@ tags:
   - nginx
   - nested
 toc: true
+draft: false
+mathjax: false
 slug: setting-nginx-reverse-proxy-vcenter-content-library-subscription
 last_modified_at: 2023-06-21T08:14:44.035Z
 ---

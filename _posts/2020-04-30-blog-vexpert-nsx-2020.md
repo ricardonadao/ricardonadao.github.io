@@ -1,7 +1,10 @@
 ---
+toc: true
+draft: false
+mathjax: false
 author: Ricardo Adao
 published: true
-date: 2020-04-30 07:00:00
+date: 2020-04-30T00:00:00.000Z 07:00:00Z
 title: Blog - vExpert NSX 2020
 header:
   teaser: /assets/images/featured/blog-150x150.png
