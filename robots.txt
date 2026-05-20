@@ -1,7 +1,3 @@
----
----
 User-agent: *
 Disallow: /cdn-cgi/
-Disallow: /assets/css/
-Disallow: /assets/js/
-Sitemap: {{ site.url }}/sitemap.xml
+Sitemap: https://vrandombites.co.uk/sitemap.xml
