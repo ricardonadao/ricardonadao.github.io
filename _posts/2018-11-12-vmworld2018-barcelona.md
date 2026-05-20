@@ -1,22 +1,21 @@
 ---
 author: Ricardo Adao
 published: true
+last_modified_at: 2023-06-21 10:14:01.392000+00:00
 date: 2018-11-12T00:00:00.000Z 09:00:00Z
-
 header:
   teaser: /assets/images/featured/blog-150x150.png
 title: VMWorld 2018 - Barcelona
 categories:
-  - blog
+- blog
 tags:
-  - blog
-  - social
-  - vmworld
+- blog
+- social
+- vmworld
+slug: vmworld-2018-barcelona
 toc: true
 draft: false
 mathjax: false
-slug: vmworld-2018-barcelona
-last_modified_at: 2023-06-21T10:14:01.392Z
 ---
 Every year in October/November it is becoming usual a quick trip to _Barcelona (Spain)_ to attend _VMWorld - Europe_ for all _VMware_ enthusiasts or anyone interested in the virtualization world.
 

@@ -1,22 +1,21 @@
 ---
 author: Ricardo Adao
 published: true
-last_modified_at: 2023-06-21T08:14:49.979Z
-date: 2018-07-02T09:23:49.000Z
-
+last_modified_at: 2023-06-21 08:14:49.979000+00:00
+date: 2018-07-02 09:23:49+00:00
 header:
   teaser: /assets/images/featured/powercli-150x150.png
 title: PowerCLI - Configure multiple ESXi Power Policy
 categories:
-  - powercli
+- powercli
 tags:
-  - coding
-  - powercli
-  - esxi
-  - powershell
-  - vcenter
-  - vmware
-  - powersaving
+- coding
+- powercli
+- esxi
+- powershell
+- vcenter
+- vmware
+- powersaving
 slug: powercli-configure-multiple-esxi-power-policy
 toc: true
 draft: false

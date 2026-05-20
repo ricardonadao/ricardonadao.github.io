@@ -1,20 +1,19 @@
 ---
 author: Ricardo Adao
 published: true
-last_modified_at: 2025-01-07T12:23:00.000Z
-date: 2018-06-03T10:42:02.000Z
-
+last_modified_at: 2025-01-07 12:23:00+00:00
+date: 2018-06-03 10:42:02+00:00
 header:
   teaser: /assets/images/featured/vsphere-150x150.png
 title: Filtering/Excluding log entries in VMware vSphere ESXi
 categories:
-  - esxi
+- esxi
 tags:
-  - esxi
-  - hypervisor
-  - vmware
-  - vsphere
-  - syslog
+- esxi
+- hypervisor
+- vmware
+- vsphere
+- syslog
 slug: filtering-excluding-log-entries-vmware-vsphere-esxi
 toc: true
 draft: false

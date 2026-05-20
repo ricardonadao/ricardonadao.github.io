@@ -1,22 +1,22 @@
 ---
 author: Ricardo Adao
 published: true
-last_modified_at: 2023-06-21T08:11:53.882Z
-date: 2018-05-15T08:11:14.000Z
-
+last_modified_at: 2023-06-21 08:11:53.882000+00:00
+date: 2018-05-15 08:11:14+00:00
 header:
   teaser: /assets/images/featured/powercli-150x150.png
-title: PowerCLI - Using Get-EsxCli to get settings or change settings in multiple ESXi hosts at a time
+title: PowerCLI - Using Get-EsxCli to get settings or change settings in multiple
+  ESXi hosts at a time
 categories:
-  - powercli
+- powercli
 tags:
-  - coding
-  - esxi
-  - hypervisor
-  - oneliner
-  - powercli
-  - powershell
-  - vmware
+- coding
+- esxi
+- hypervisor
+- oneliner
+- powercli
+- powershell
+- vmware
 slug: powercli-esxcli-settings-change-settings-multiple-esxi-hosts-time
 toc: true
 draft: false

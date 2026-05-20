@@ -2,21 +2,22 @@
 author: Ricardo Adao
 published: true
 last_modified_at: null
-date: 2024-12-20T16:10:00.0Z
+date: 2024-12-20 16:10:00+00:00
 header:
   teaser: /assets/images/featured/blog-150x150.png
-title: VMware Cloud Foundation 5.2 Administrator (2V0-11.24) - Remote Proctored Exam Experience and Preparation
+title: VMware Cloud Foundation 5.2 Administrator (2V0-11.24) - Remote Proctored Exam
+  Experience and Preparation
 categories:
-  - blog
+- blog
 tags:
-  - blog
-  - social
-  - certifications
-  - vcf
+- blog
+- social
+- certifications
+- vcf
+slug: vmware-cloud-foundation-5-2-administrator-2v0-11-24-remote-proctored-exam-experience-preparation
 toc: true
 draft: false
 mathjax: false
-slug: vmware-cloud-foundation-5-2-administrator-2v0-11-24-remote-proctored-exam-experience-preparation
 ---
 It seems that I got another **Badge**.
 

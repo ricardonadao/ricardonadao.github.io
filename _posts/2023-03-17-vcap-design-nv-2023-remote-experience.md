@@ -1,21 +1,22 @@
 ---
 author: Ricardo Adao
 published: true
-last_modified_at: 2023-06-21T12:12:00.646Z
-date: 2023-03-17T00:00:00.0Z
+last_modified_at: 2023-06-21 12:12:00.646000+00:00
+date: 2023-03-17 00:00:00+00:00
 header:
   teaser: /assets/images/featured/blog-150x150.png
-title: Advanced Design VMware NSX-T Data Center 3.0 (3V0-42.20) - Remote Proctored Exam Experience and Preparation
+title: Advanced Design VMware NSX-T Data Center 3.0 (3V0-42.20) - Remote Proctored
+  Exam Experience and Preparation
 categories:
-  - blog
+- blog
 tags:
-  - blog
-  - social
-  - certifications
+- blog
+- social
+- certifications
+slug: advanced-design-vmware-nsx-data-center-3-0-3v0-42-20-remote-proctored-exam-experience-preparation
 toc: true
 draft: false
 mathjax: false
-slug: advanced-design-vmware-nsx-data-center-3-0-3v0-42-20-remote-proctored-exam-experience-preparation
 ---
 It seems that I got another **Badge**.
 

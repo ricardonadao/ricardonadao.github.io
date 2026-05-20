@@ -1,20 +1,19 @@
 ---
 author: Ricardo Adao
 published: true
-last_modified_at: 2023-06-21T08:14:42.689Z
-date: 2018-10-10T00:51:00.000Z
-
+last_modified_at: 2023-06-21 08:14:42.689000+00:00
+date: 2018-10-10 00:51:00+00:00
 header:
   teaser: /assets/images/featured/powershell-150x150.png
 title: Powershell - Wrapping GET and POST Rest API calls
 categories:
-  - powershell
+- powershell
 tags:
-  - powershell
-  - coding
-  - automation
-  - vcf
-  - vvd
+- powershell
+- coding
+- automation
+- vcf
+- vvd
 slug: powershell-wrapping-post-rest-api-calls
 toc: true
 draft: false

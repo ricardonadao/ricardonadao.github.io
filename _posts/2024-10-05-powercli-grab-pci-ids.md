@@ -1,22 +1,23 @@
 ---
 author: Ricardo Adao
 published: true
+last_modified_at: 2024-10-10
+date: 2024-10-05 15:53:10.650000+00:00
 header:
   teaser: /assets/images/featured/powercli-150x150.png
-title: PowerCLI - Collect PCI IDs, Vendor IDs and other IDs from ESXi Hardware to compare with HCL
+title: PowerCLI - Collect PCI IDs, Vendor IDs and other IDs from ESXi Hardware to
+  compare with HCL
 categories:
-  - powercli
+- powercli
 tags:
-  - coding
-  - esxi
-  - hypervisor
-  - powercli
-  - powershell
-  - vmware
-  - pci
+- coding
+- esxi
+- hypervisor
+- powercli
+- powershell
+- vmware
+- pci
 slug: powercli-collect-pci-ids-vendor-ids-ids-esxi-hardware-compare-hcl
-last_modified_at: 2024-10-10
-date: 2024-10-05T15:53:10.650Z
 toc: true
 draft: false
 mathjax: false

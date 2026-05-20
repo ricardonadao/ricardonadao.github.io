@@ -1,25 +1,24 @@
 ---
 author: Ricardo Adao
 published: true
-last_modified_at: 2023-06-21T08:15:28.835Z
-date: 2018-05-13T10:16:54.000Z
-
+last_modified_at: 2023-06-21 08:15:28.835000+00:00
+date: 2018-05-13 10:16:54+00:00
 header:
   teaser: /assets/images/featured/powercli-150x150.png
 title: PowerCLI - Check MTU size configured in all hosts physical nics of a cluster
 categories:
-  - powercli
+- powercli
 tags:
-  - coding
-  - esxi
-  - hypervisor
-  - nsx
-  - oneliner
-  - powercli
-  - powershell
-  - vmware
-  - vsan
-  - networking
+- coding
+- esxi
+- hypervisor
+- nsx
+- oneliner
+- powercli
+- powershell
+- vmware
+- vsan
+- networking
 slug: powercli-check-mtu-size-configured-hosts-physical-nics-cluster
 toc: true
 draft: false

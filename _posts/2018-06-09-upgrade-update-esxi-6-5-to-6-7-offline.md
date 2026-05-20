@@ -1,21 +1,20 @@
 ---
 author: Ricardo Adao
 published: true
-last_modified_at: 2025-01-07T12:23:00.000Z
-date: 2018-06-09T11:59:58.000Z
-
+last_modified_at: 2025-01-07 12:23:00+00:00
+date: 2018-06-09 11:59:58+00:00
 header:
   teaser: /assets/images/featured/vsphere-150x150.png
 title: Upgrade/Update ESXi 6.5 to 6.7 Offline
 categories:
-  - esxi
+- esxi
 tags:
-  - esxi
-  - hypervisor
-  - vmware
-  - vsphere
-  - update
-  - upgrade
+- esxi
+- hypervisor
+- vmware
+- vsphere
+- update
+- upgrade
 slug: upgrade-update-esxi-6-5-6-7-offline
 toc: true
 draft: false
