@@ -1,27 +1,28 @@
 ---
 author: Ricardo Adao
 published: true
+last_modified_at: 2023-06-21 08:13:57.816000+00:00
 date: 2020-09-30T00:00:00.000Z 23:30:00Z
 header:
   teaser: /assets/images/featured/nsx-150x150.png
-title: NSX-T Data Center - Using Powershell/PowerCLI to copy/migrate NSX-V IPSets to NSX-T Groups
+title: NSX-T Data Center - Using Powershell/PowerCLI to copy/migrate NSX-V IPSets
+  to NSX-T Groups
 categories:
-  - nsx
+- nsx
 tags:
-  - nsx-t
-  - nsx
-  - nsx-v
-  - powercli
-  - powershell
-  - powernsx
-  - VtoT
-  - vmware
-  - migration
+- nsx-t
+- nsx
+- nsx-v
+- powercli
+- powershell
+- powernsx
+- VtoT
+- vmware
+- migration
+slug: nsx-data-center-powershell-powercli-copy-migrate-nsx-ipsets-nsx-groups
 toc: true
 draft: false
 mathjax: false
-slug: nsx-data-center-powershell-powercli-copy-migrate-nsx-ipsets-nsx-groups
-last_modified_at: 2023-06-21T08:13:57.816Z
 ---
 When moving from _NSX-V_ to _NSX-T_ there is the option of using the _NSX-T Migration Coordinator_, however sometimes our _NSX-V_ configuration cannot fit the ones supported by the migration coordinator.
 With this in mind there are a couple of options to migrate/copy our customized _NSX-V_ objects to _NSX-T_:

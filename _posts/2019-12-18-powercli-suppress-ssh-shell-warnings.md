@@ -1,24 +1,23 @@
 ---
 author: Ricardo Adao
 published: true
+last_modified_at: 2023-06-21 08:14:23.733000+00:00
 date: 2019-12-18T00:00:00.000Z 21:00:00Z
-
 header:
   teaser: /assets/images/featured/powercli-150x150.png
 title: PowerCLI - Suppress SSH and ESXi shell warnings
 categories:
-  - powercli
+- powercli
 tags:
-  - powercli
-  - powershell
-  - vmware
-  - coding
-  - automation
+- powercli
+- powershell
+- vmware
+- coding
+- automation
+slug: powercli-suppress-ssh-esxi-shell-warnings
 toc: true
 draft: false
 mathjax: false
-slug: powercli-suppress-ssh-esxi-shell-warnings
-last_modified_at: 2023-06-21T08:14:23.733Z
 ---
 When we deploy a set of ESXi's most of the times we endup enabling SSH and ESXi shell to help troubleshooting.
 

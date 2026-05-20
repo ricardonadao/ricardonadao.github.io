@@ -1,22 +1,21 @@
 ---
 author: Ricardo Adao
 published: true
-last_modified_at: 2023-06-21T08:14:37.322Z
-date: 2018-12-18T10:00:00.000Z
-
+last_modified_at: 2023-06-21 08:14:37.322000+00:00
+date: 2018-12-18 10:00:00+00:00
 header:
   teaser: /assets/images/featured/homelab-150x150.png
 title: Setting up a _Nested Internet_ for our Homelab - Part 1
 categories:
-  - homelab
+- homelab
 tags:
-  - homelab
-  - nested
-  - linux
-  - networking
-  - cumulus
-  - frr
-  - pfsense
+- homelab
+- nested
+- linux
+- networking
+- cumulus
+- frr
+- pfsense
 slug: setting-nested-internet-homelab-part-1
 toc: true
 draft: false

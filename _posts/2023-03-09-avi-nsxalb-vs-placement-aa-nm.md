@@ -1,26 +1,25 @@
 ---
 author: Ricardo Adao
 published: true
-last_modified_at: 2023-07-04T15:24:06.721Z
-date: 2023-03-09T17:21:51.156Z
+last_modified_at: 2023-07-04 15:24:06.721000+00:00
+date: 2023-03-09 17:21:51.156000+00:00
 header:
   teaser: /assets/images/featured/avi-150x150.png
 title: Avi/NSX ALB - Virtual Service placement in A/A and N+M Elastic HA modes
 categories:
-  - avi
+- avi
 tags:
-  - avi
-  - nsxalb
-  - load balancer
-  - networking
-  - nsx
-  - vmware
-  - homelab
+- avi
+- nsxalb
+- load balancer
+- networking
+- nsx
+- vmware
+- homelab
+slug: avi-nsx-alb-virtual-service-placement-elastic-ha-modes
 toc: true
 draft: false
 mathjax: true
-slug: avi-nsx-alb-virtual-service-placement-elastic-ha-modes
-
 ---
 One of the main challenges when we are designing and implementing _**Avi/NSX Advanced Load Balancer**_ configurations will be the decision between which of the _**Elastic HA Mode**_ to use and what are the differences between the two.
 

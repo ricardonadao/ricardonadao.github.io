@@ -1,22 +1,22 @@
 ---
 author: Ricardo Adao
 published: true
-date: 2026-05-18T14:58:02.227Z
+last_modified_at: 2026-05-18 14:58:02.227000+00:00
+date: 2026-05-18 14:58:02.227000+00:00
 header:
   teaser: /assets/images/featured/nsx-150x150.png
 title: NSX - Cleaning Up Unused Groups and Service Groups with PowerShell Script
 categories:
-  - nsx
+- nsx
 tags:
-  - nsx
-  - powercli
-  - powershell
-  - vmware
+- nsx
+- powercli
+- powershell
+- vmware
+slug: nsx-cleaning-up-unused-groups-service-groups-powershell-script
 toc: true
 draft: false
 mathjax: false
-slug: nsx-cleaning-up-unused-groups-service-groups-powershell-script
-last_modified_at: 2026-05-18T14:58:02.227Z
 ---
 You can use _PowerShell_ to automate cleanup tasks in your _NSX_ environment, helping maintain optimal performance and organization.
 

@@ -1,21 +1,20 @@
 ---
 author: Ricardo Adao
 published: true
-last_modified_at: 2023-06-21T08:14:39.808Z
-date: 2018-11-11T20:00:00.000Z
-
+last_modified_at: 2023-06-21 08:14:39.808000+00:00
+date: 2018-11-11 20:00:00+00:00
 header:
   teaser: /assets/images/featured/nsx-150x150.png
 title: NSX - Using VXLAN logical switches to transport vSAN and vMotion traffic
 categories:
-  - nsx
+- nsx
 tags:
-  - nsx
-  - networking
-  - vmware
-  - nested
-  - vsan
-  - sddc
+- nsx
+- networking
+- vmware
+- nested
+- vsan
+- sddc
 slug: nsx-vxlan-logical-switches-transport-vsan-vmotion-traffic
 toc: true
 draft: false

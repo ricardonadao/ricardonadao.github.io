@@ -1,24 +1,23 @@
 ---
 author: Ricardo Adao
 published: true
-last_modified_at: 2023-06-21T08:14:32.082Z
-date: 2019-06-12T08:00:00.000Z
-
+last_modified_at: 2023-06-21 08:14:32.082000+00:00
+date: 2019-06-12 08:00:00+00:00
 header:
   teaser: /assets/images/featured/nsx-150x150.png
 title: NSX - Configure a _DHCP_ service in an _Edge Security Gateway_ using _Powershell_
 categories:
-  - nsx
+- nsx
 tags:
-  - nsx
-  - nsx-v
-  - networking
-  - vmware
-  - coding
-  - automation
-  - powercli
-  - powershell
-  - sddc
+- nsx
+- nsx-v
+- networking
+- vmware
+- coding
+- automation
+- powercli
+- powershell
+- sddc
 slug: nsx-configure-dhcp-service-edge-security-gateway-powershell
 toc: true
 draft: false

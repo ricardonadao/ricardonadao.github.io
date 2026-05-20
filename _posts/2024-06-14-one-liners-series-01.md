@@ -1,23 +1,23 @@
 ---
 author: Ricardo Adao
 published: true
+last_modified_at: 2024-06-21 21:22:11.677000+00:00
+date: 2024-06-14 14:48:39.671000+00:00
 header:
   teaser: /assets/images/featured/powercli-150x150.png
-title: "PowerCLI - One Line Series #01"
+title: 'PowerCLI - One Line Series #01'
 categories:
-  - powercli
+- powercli
 tags:
-  - coding
-  - esxi
-  - hypervisor
-  - vcenter
-  - oneliner
-  - powercli
-  - powershell
-  - vmware
+- coding
+- esxi
+- hypervisor
+- vcenter
+- oneliner
+- powercli
+- powershell
+- vmware
 slug: powercli-line-series-01
-last_modified_at: 2024-06-21T21:22:11.677Z
-date: 2024-06-14T14:48:39.671Z
 toc: true
 draft: false
 mathjax: false

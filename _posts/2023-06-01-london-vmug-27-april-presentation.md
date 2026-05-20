@@ -1,21 +1,22 @@
 ---
 author: Ricardo Adao
 published: true
-last_modified_at: 2023-06-21T13:53:52.433Z
+last_modified_at: 2023-06-21 13:53:52.433000+00:00
 date: 2023-06-01
 header:
   teaser: /assets/images/featured/blog-150x150.png
-title: VMUG - London VMUG - 27th April - What’s the big deal about Avi/NSX Advanced Load Balancer?
+title: VMUG - London VMUG - 27th April - What’s the big deal about Avi/NSX Advanced
+  Load Balancer?
 categories:
-  - blog
+- blog
 tags:
-  - blog
-  - social
-  - vmug
+- blog
+- social
+- vmug
+slug: vmug-london-vmug-27th-april-what’s-big-deal-avi-nsx-advanced-load-balancer
 toc: true
 draft: false
 mathjax: false
-slug: vmug-london-vmug-27th-april-what’s-big-deal-avi-nsx-advanced-load-balancer
 ---
 Sometimes you just need to push yourself a bit out of your comfort zone and public speaking for me lands in that category, since while part of my job is talking and presenting to customers, it has a lot of time a smaller audience and you typically expose yourself to a smaller limited number of persons.
 

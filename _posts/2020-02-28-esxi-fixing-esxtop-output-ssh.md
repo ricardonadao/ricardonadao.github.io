@@ -1,24 +1,24 @@
 ---
 author: Ricardo Adao
 published: true
+last_modified_at: 2025-01-07 12:23:00
 date: 2020-02-28T00:00:00.000Z 08:00:00Z
 header:
   teaser: /assets/images/featured/vsphere-150x150.png
 title: ESXi - Fixing esxtop output in a SSH session
 categories:
-  - esxi
+- esxi
 tags:
-  - esxi
-  - vsphere
-  - hypervisor
-  - homelab
-  - macos
-  - vmware
+- esxi
+- vsphere
+- hypervisor
+- homelab
+- macos
+- vmware
+slug: esxi-fixing-esxtop-output-ssh-session
 toc: true
 draft: false
 mathjax: false
-slug: esxi-fixing-esxtop-output-ssh-session
-last_modified_at: 2025-01-07 12:23:00
 ---
 When you use for ages a _SSH client_ that magically just works and it is pretty simple to setup as [_PuTTY_](https://www.chiark.greenend.org.uk/~sgtatham/putty/).
 

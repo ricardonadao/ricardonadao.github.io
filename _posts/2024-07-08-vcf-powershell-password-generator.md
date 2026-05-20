@@ -1,24 +1,24 @@
 ---
 author: Ricardo Adao
 published: true
-date: 2024-07-08T00:00:00.000Z 16:00:00Z
 last_modified_at: null
+date: 2024-07-08T00:00:00.000Z 16:00:00Z
 header:
-    teaser: /assets/images/featured/vcf-150x150.png
+  teaser: /assets/images/featured/vcf-150x150.png
 title: VCF - Powershell password generator function for VMware Cloud Foundation
 categories:
-    - vcf
+- vcf
 tags:
-    - vcf
-    - vmware
-    - coding
-    - automation
-    - powershell
-    - sddc
+- vcf
+- vmware
+- coding
+- automation
+- powershell
+- sddc
+slug: vcf-powershell-password-generator-function-vmware-cloud-foundation
 toc: true
 draft: false
 mathjax: false
-slug: vcf-powershell-password-generator-function-vmware-cloud-foundation
 ---
 Anyone that worked with _VMware Cloud Foundation (VCF)_ knows that passwords and _valid special characters_ can be a tricky business.
 

@@ -1,23 +1,24 @@
 ---
 author: Ricardo Adao
 published: true
+last_modified_at: 2023-06-21 08:14:15.483000+00:00
 date: 2020-03-12T00:00:00.000Z 08:00:00Z
 header:
   teaser: /assets/images/featured/nsx-150x150.png
-title: NSX-T Data Center - Using NSX-T Policy API to add a new overlay segment connected to a T1 router
+title: NSX-T Data Center - Using NSX-T Policy API to add a new overlay segment connected
+  to a T1 router
 categories:
-  - nsx
+- nsx
 tags:
-  - nsx-t
-  - nsx
-  - powercli
-  - powershell
-  - vmware
+- nsx-t
+- nsx
+- powercli
+- powershell
+- vmware
+slug: nsx-data-center-nsx-policy-api-add-overlay-segment-connected-t1-router
 toc: true
 draft: false
 mathjax: false
-slug: nsx-data-center-nsx-policy-api-add-overlay-segment-connected-t1-router
-last_modified_at: 2023-06-21T08:14:15.483Z
 ---
 In previous posts:
 
