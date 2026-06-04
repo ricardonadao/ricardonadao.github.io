@@ -7,11 +7,11 @@ header:
   teaser: /assets/images/featured/vcf-150x150.png
 title: VCF - SDDC Manager proxy configuration
 categories:
-- vcf
+  - vcf
 tags:
-- vcf
-- vmware
-- sddc
+  - vcf
+  - vmware
+  - sddc
 slug: vcf-sddc-manager-proxy-configuration
 toc: true
 draft: false

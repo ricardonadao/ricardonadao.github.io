@@ -7,15 +7,15 @@ header:
   teaser: /assets/images/featured/powercli-150x150.png
 title: PowerCLI - Configure multiple ESXi Power Policy
 categories:
-- powercli
+  - powercli
 tags:
-- coding
-- powercli
-- esxi
-- powershell
-- vcenter
-- vmware
-- powersaving
+  - coding
+  - powercli
+  - esxi
+  - powershell
+  - vcenter
+  - vmware
+  - powersaving
 slug: powercli-configure-multiple-esxi-power-policy
 toc: true
 draft: false

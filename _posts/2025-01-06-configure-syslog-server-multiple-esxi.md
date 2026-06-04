@@ -7,15 +7,15 @@ header:
   teaser: /assets/images/featured/powercli-150x150.png
 title: PowerCLI - Configure syslog server in multiple ESXi
 categories:
-- powercli
+  - powercli
 tags:
-- coding
-- esxi
-- powercli
-- powershell
-- vcenter
-- vmware
-- syslog
+  - coding
+  - esxi
+  - powercli
+  - powershell
+  - vcenter
+  - vmware
+  - syslog
 slug: powercli-configure-syslog-server-multiple-esxi
 toc: true
 draft: false

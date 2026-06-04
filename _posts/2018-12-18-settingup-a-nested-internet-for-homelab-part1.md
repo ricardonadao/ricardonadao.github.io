@@ -7,15 +7,15 @@ header:
   teaser: /assets/images/featured/homelab-150x150.png
 title: Setting up a _Nested Internet_ for our Homelab - Part 1
 categories:
-- homelab
+  - homelab
 tags:
-- homelab
-- nested
-- linux
-- networking
-- cumulus
-- frr
-- pfsense
+  - homelab
+  - nested
+  - linux
+  - networking
+  - cumulus
+  - frr
+  - pfsense
 slug: setting-nested-internet-homelab-part-1
 toc: true
 draft: false

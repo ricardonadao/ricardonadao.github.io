@@ -7,19 +7,19 @@ header:
   teaser: /assets/images/featured/vsan-150x150.png
 title: Run Nested ESXi on top of a vSAN datastore
 categories:
-- vsan
+  - vsan
 tags:
-- coding
-- hypervisor
-- esxi
-- powercli
-- powershell
-- vcenter
-- vmware
-- vsan
-- nested
-- oneliner
-- scsi
+  - coding
+  - hypervisor
+  - esxi
+  - powercli
+  - powershell
+  - vcenter
+  - vmware
+  - vsan
+  - nested
+  - oneliner
+  - scsi
 slug: run-nested-esxi-top-vsan-datastore
 toc: true
 draft: false

@@ -7,13 +7,13 @@ header:
   teaser: /assets/images/featured/powershell-150x150.png
 title: Powershell - Wrapping GET and POST Rest API calls
 categories:
-- powershell
+  - powershell
 tags:
-- powershell
-- coding
-- automation
-- vcf
-- vvd
+  - powershell
+  - coding
+  - automation
+  - vcf
+  - vvd
 slug: powershell-wrapping-post-rest-api-calls
 toc: true
 draft: false

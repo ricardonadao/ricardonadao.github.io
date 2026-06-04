@@ -8,13 +8,13 @@ header:
 title: NSX-T Data Center - Using NSX-T Policy API to add a new overlay segment connected
   to a T1 router
 categories:
-- nsx
+  - nsx
 tags:
-- nsx-t
-- nsx
-- powercli
-- powershell
-- vmware
+  - nsx-t
+  - nsx
+  - powercli
+  - powershell
+  - vmware
 slug: nsx-data-center-nsx-policy-api-add-overlay-segment-connected-t1-router
 toc: true
 draft: false

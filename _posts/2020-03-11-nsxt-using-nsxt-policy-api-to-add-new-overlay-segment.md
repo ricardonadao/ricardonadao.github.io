@@ -7,13 +7,13 @@ header:
   teaser: /assets/images/featured/nsx-150x150.png
 title: NSX-T Data Center - Using NSX-T Policy API to add new overlay segments
 categories:
-- nsx
+  - nsx
 tags:
-- nsx-t
-- nsx
-- powercli
-- powershell
-- vmware
+  - nsx-t
+  - nsx
+  - powercli
+  - powershell
+  - vmware
 slug: nsx-data-center-nsx-policy-api-add-overlay-segments
 toc: true
 draft: false

@@ -7,13 +7,13 @@ header:
   teaser: /assets/images/featured/vsphere-150x150.png
 title: Filtering/Excluding log entries in VMware vSphere ESXi
 categories:
-- esxi
+  - esxi
 tags:
-- esxi
-- hypervisor
-- vmware
-- vsphere
-- syslog
+  - esxi
+  - hypervisor
+  - vmware
+  - vsphere
+  - syslog
 slug: filtering-excluding-log-entries-vmware-vsphere-esxi
 toc: true
 draft: false

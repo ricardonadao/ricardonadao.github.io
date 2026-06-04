@@ -7,14 +7,14 @@ header:
   teaser: /assets/images/featured/vsphere-150x150.png
 title: ESXi - Fixing esxtop output in a SSH session
 categories:
-- esxi
+  - esxi
 tags:
-- esxi
-- vsphere
-- hypervisor
-- homelab
-- macos
-- vmware
+  - esxi
+  - vsphere
+  - hypervisor
+  - homelab
+  - macos
+  - vmware
 slug: esxi-fixing-esxtop-output-ssh-session
 toc: true
 draft: false

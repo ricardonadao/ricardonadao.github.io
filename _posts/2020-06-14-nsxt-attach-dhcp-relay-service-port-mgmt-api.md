@@ -8,13 +8,13 @@ header:
 title: NSX-T Data Center - Attaching a DHCP Relay service to a NSX-T Logical Router
   Service Interface or Centralized Service Port (CSP)
 categories:
-- nsx
+  - nsx
 tags:
-- nsx-t
-- nsx
-- powercli
-- powershell
-- vmware
+  - nsx-t
+  - nsx
+  - powercli
+  - powershell
+  - vmware
 slug: nsx-data-center-attaching-dhcp-relay-service-nsx-logical-router-service-interface-centralized-service-port-csp
 toc: true
 draft: false

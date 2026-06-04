@@ -7,16 +7,16 @@ header:
   teaser: /assets/images/featured/powercli-150x150.png
 title: 'PowerCLI - One Line Series #01'
 categories:
-- powercli
+  - powercli
 tags:
-- coding
-- esxi
-- hypervisor
-- vcenter
-- oneliner
-- powercli
-- powershell
-- vmware
+  - coding
+  - esxi
+  - hypervisor
+  - vcenter
+  - oneliner
+  - powercli
+  - powershell
+  - vmware
 slug: powercli-line-series-01
 toc: true
 draft: false

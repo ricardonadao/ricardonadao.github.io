@@ -7,14 +7,14 @@ header:
   teaser: /assets/images/featured/vsphere-150x150.png
 title: Upgrade/Update ESXi 6.5 to 6.7 Offline
 categories:
-- esxi
+  - esxi
 tags:
-- esxi
-- hypervisor
-- vmware
-- vsphere
-- update
-- upgrade
+  - esxi
+  - hypervisor
+  - vmware
+  - vsphere
+  - update
+  - upgrade
 slug: upgrade-update-esxi-6-5-6-7-offline
 toc: true
 draft: false

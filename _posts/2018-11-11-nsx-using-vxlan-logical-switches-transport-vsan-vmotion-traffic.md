@@ -7,14 +7,14 @@ header:
   teaser: /assets/images/featured/nsx-150x150.png
 title: NSX - Using VXLAN logical switches to transport vSAN and vMotion traffic
 categories:
-- nsx
+  - nsx
 tags:
-- nsx
-- networking
-- vmware
-- nested
-- vsan
-- sddc
+  - nsx
+  - networking
+  - vmware
+  - nested
+  - vsan
+  - sddc
 slug: nsx-vxlan-logical-switches-transport-vsan-vmotion-traffic
 toc: true
 draft: false

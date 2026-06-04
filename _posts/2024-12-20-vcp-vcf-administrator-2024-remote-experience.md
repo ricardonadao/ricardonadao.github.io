@@ -8,12 +8,12 @@ header:
 title: VMware Cloud Foundation 5.2 Administrator (2V0-11.24) - Remote Proctored Exam
   Experience and Preparation
 categories:
-- blog
+  - blog
 tags:
-- blog
-- social
-- certifications
-- vcf
+  - blog
+  - social
+  - certifications
+  - vcf
 slug: vmware-cloud-foundation-5-2-administrator-2v0-11-24-remote-proctored-exam-experience-preparation
 toc: true
 draft: false

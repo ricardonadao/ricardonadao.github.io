@@ -7,17 +7,17 @@ header:
   teaser: /assets/images/featured/nsx-150x150.png
 title: NSX - Configure a _DHCP_ service in an _Edge Security Gateway_ using _Powershell_
 categories:
-- nsx
+  - nsx
 tags:
-- nsx
-- nsx-v
-- networking
-- vmware
-- coding
-- automation
-- powercli
-- powershell
-- sddc
+  - nsx
+  - nsx-v
+  - networking
+  - vmware
+  - coding
+  - automation
+  - powercli
+  - powershell
+  - sddc
 slug: nsx-configure-dhcp-service-edge-security-gateway-powershell
 toc: true
 draft: false

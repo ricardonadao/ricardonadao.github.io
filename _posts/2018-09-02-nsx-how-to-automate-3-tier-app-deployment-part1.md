@@ -7,17 +7,17 @@ header:
   teaser: /assets/images/featured/nsx-150x150.png
 title: NSX - How to automate a 3 Tier App deployment - Part 1
 categories:
-- nsx
+  - nsx
 tags:
-- nsx
-- networking
-- vmware
-- coding
-- automation
-- powercli
-- powershell
-- powernsx
-- sddc
+  - nsx
+  - networking
+  - vmware
+  - coding
+  - automation
+  - powercli
+  - powershell
+  - powernsx
+  - sddc
 slug: nsx-automate-3-tier-app-deployment-part-1
 toc: true
 draft: false

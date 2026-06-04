@@ -5,15 +5,15 @@ last_modified_at: 2026-05-18 14:58:02.227000+00:00
 date: 2026-05-18 14:58:02.227000+00:00
 header:
   teaser: /assets/images/featured/nsx-150x150.png
-title: NSX - Cleaning Up Unused Groups and Service Groups with PowerShell Script
+title: NSX - Removing Unused Groups and Service Groups with PowerShell Script
 categories:
-- nsx
+  - nsx
 tags:
-- nsx
-- powercli
-- powershell
-- vmware
-slug: nsx-cleaning-up-unused-groups-service-groups-powershell-script
+  - nsx
+  - powercli
+  - powershell
+  - vmware
+slug: nsx-removing-unused-groups-service-groups-powershell-script
 toc: true
 draft: false
 mathjax: false

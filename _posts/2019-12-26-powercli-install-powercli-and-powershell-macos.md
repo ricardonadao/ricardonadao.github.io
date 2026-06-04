@@ -7,12 +7,12 @@ header:
   teaser: /assets/images/featured/powercli-150x150.png
 title: PowerCLI - Install Powershell and PowerCLI in MacOS
 categories:
-- powercli
+  - powercli
 tags:
-- powercli
-- powershell
-- macos
-- vmware
+  - powercli
+  - powershell
+  - macos
+  - vmware
 slug: powercli-install-powershell-powercli-macos
 toc: true
 draft: false

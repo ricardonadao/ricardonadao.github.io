@@ -7,14 +7,14 @@ header:
   teaser: /assets/images/featured/vsphere-150x150.png
 title: VMware vCenter - Setting up vCenter Appliance SNMP monitoring
 categories:
-- vcenter
+  - vcenter
 tags:
-- vcenter
-- appliance
-- vsphere
-- monitoring
-- homelab
-- vmware
+  - vcenter
+  - appliance
+  - vsphere
+  - monitoring
+  - homelab
+  - vmware
 slug: vmware-vcenter-setting-vcenter-appliance-snmp-monitoring
 toc: true
 draft: false

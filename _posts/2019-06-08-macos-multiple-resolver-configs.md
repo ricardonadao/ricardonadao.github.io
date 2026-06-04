@@ -7,11 +7,11 @@ header:
   teaser: /assets/images/featured/macos-mojave-150x150.png
 title: MAC OS - Configuring multiple DNS resolvers
 categories:
-- macos
+  - macos
 tags:
-- macos
-- dns
-- vpn
+  - macos
+  - dns
+  - vpn
 slug: mac-os-configuring-multiple-dns-resolvers
 toc: true
 draft: false

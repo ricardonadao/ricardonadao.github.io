@@ -7,16 +7,16 @@ header:
   teaser: /assets/images/featured/powercli-150x150.png
 title: PowerCLI - Add vSAN Storage Policies and Set Virtual Machine Storage Policy
 categories:
-- powercli
+  - powercli
 tags:
-- coding
-- powercli
-- powershell
-- spbm
-- vcenter
-- vcf
-- vmware
-- vsan
+  - coding
+  - powercli
+  - powershell
+  - spbm
+  - vcenter
+  - vcf
+  - vmware
+  - vsan
 slug: powercli-add-vsan-storage-policies-set-virtual-machine-storage-policy
 toc: true
 draft: false

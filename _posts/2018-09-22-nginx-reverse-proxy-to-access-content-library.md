@@ -7,13 +7,13 @@ header:
   teaser: /assets/images/featured/linux-150x150.png
 title: Setting up NGINX as reverse proxy to allow vCenter Content Library subscription
 categories:
-- linux
+  - linux
 tags:
-- linux
-- vcenter
-- vmware
-- nginx
-- nested
+  - linux
+  - vcenter
+  - vmware
+  - nginx
+  - nested
 slug: setting-nginx-reverse-proxy-vcenter-content-library-subscription
 toc: true
 draft: false

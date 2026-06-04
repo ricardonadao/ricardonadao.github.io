@@ -8,11 +8,11 @@ header:
 title: VMUG - London VMUG - 27th April - What’s the big deal about Avi/NSX Advanced
   Load Balancer?
 categories:
-- blog
+  - blog
 tags:
-- blog
-- social
-- vmug
+  - blog
+  - social
+  - vmug
 slug: vmug-london-vmug-27th-april-what’s-big-deal-avi-nsx-advanced-load-balancer
 toc: true
 draft: false

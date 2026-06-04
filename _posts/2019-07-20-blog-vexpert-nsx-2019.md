@@ -7,10 +7,10 @@ header:
   teaser: /assets/images/featured/blog-150x150.png
 title: Blog - vExpert NSX 2019
 categories:
-- blog
+  - blog
 tags:
-- blog
-- social
+  - blog
+  - social
 slug: blog-vexpert-nsx-2019
 toc: true
 draft: false

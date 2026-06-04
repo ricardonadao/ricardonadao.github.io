@@ -7,14 +7,14 @@ header:
   teaser: /assets/images/featured/vmware-aria-operations-logs-150x150.png
 title: VMware Log Insight - Upgrade from 8.1.0 to 8.1.1 and corrupted RPM db
 categories:
-- loginsight
+  - loginsight
 tags:
-- loginsight
-- vmware
-- homelab
-- upgrade
-- issue
-- vrli
+  - loginsight
+  - vmware
+  - homelab
+  - upgrade
+  - issue
+  - vrli
 slug: vmware-log-insight-upgrade-8-1-0-8-1-1-corrupted-rpm-db
 toc: true
 draft: false

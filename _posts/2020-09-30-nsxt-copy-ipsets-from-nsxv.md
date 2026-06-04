@@ -8,17 +8,17 @@ header:
 title: NSX-T Data Center - Using Powershell/PowerCLI to copy/migrate NSX-V IPSets
   to NSX-T Groups
 categories:
-- nsx
+  - nsx
 tags:
-- nsx-t
-- nsx
-- nsx-v
-- powercli
-- powershell
-- powernsx
-- VtoT
-- vmware
-- migration
+  - nsx-t
+  - nsx
+  - nsx-v
+  - powercli
+  - powershell
+  - powernsx
+  - VtoT
+  - vmware
+  - migration
 slug: nsx-data-center-powershell-powercli-copy-migrate-nsx-ipsets-nsx-groups
 toc: true
 draft: false

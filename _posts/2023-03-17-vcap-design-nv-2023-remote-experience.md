@@ -8,11 +8,11 @@ header:
 title: Advanced Design VMware NSX-T Data Center 3.0 (3V0-42.20) - Remote Proctored
   Exam Experience and Preparation
 categories:
-- blog
+  - blog
 tags:
-- blog
-- social
-- certifications
+  - blog
+  - social
+  - certifications
 slug: advanced-design-vmware-nsx-data-center-3-0-3v0-42-20-remote-proctored-exam-experience-preparation
 toc: true
 draft: false

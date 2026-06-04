@@ -7,14 +7,14 @@ header:
   teaser: /assets/images/featured/vcf-150x150.png
 title: VCF - Powershell password generator function for VMware Cloud Foundation
 categories:
-- vcf
+  - vcf
 tags:
-- vcf
-- vmware
-- coding
-- automation
-- powershell
-- sddc
+  - vcf
+  - vmware
+  - coding
+  - automation
+  - powershell
+  - sddc
 slug: vcf-powershell-password-generator-function-vmware-cloud-foundation
 toc: true
 draft: false

@@ -7,15 +7,15 @@ header:
   teaser: /assets/images/featured/avi-150x150.png
 title: Avi/NSX ALB - Setting up a Virtual Service with Backup Pools
 categories:
-- avi
+  - avi
 tags:
-- avi
-- nsxalb
-- load balancer
-- networking
-- nsx
-- vmware
-- homelab
+  - avi
+  - nsxalb
+  - load balancer
+  - networking
+  - nsx
+  - vmware
+  - homelab
 slug: avi-nsx-alb-setting-virtual-service-backup-pools
 toc: true
 draft: false

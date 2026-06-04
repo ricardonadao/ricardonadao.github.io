@@ -7,11 +7,11 @@ header:
   teaser: /assets/images/featured/blog-150x150.png
 title: VMWorld 2018 - Barcelona
 categories:
-- blog
+  - blog
 tags:
-- blog
-- social
-- vmworld
+  - blog
+  - social
+  - vmworld
 slug: vmworld-2018-barcelona
 toc: true
 draft: false

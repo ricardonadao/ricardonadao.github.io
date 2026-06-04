@@ -8,13 +8,13 @@ header:
 title: VCF - Automate VMware Cloud Foundation - Service Provider - bringup process
   using PowerShell
 categories:
-- vcf
+  - vcf
 tags:
-- vcf
-- powershell
-- vmware
-- coding
-- automation
+  - vcf
+  - powershell
+  - vmware
+  - coding
+  - automation
 slug: vcf-automate-vmware-cloud-foundation-service-provider-bringup-process-powershell
 toc: true
 draft: false

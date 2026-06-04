@@ -7,15 +7,15 @@ header:
   teaser: /assets/images/featured/avi-150x150.png
 title: Avi/NSX ALB - Virtual Service placement in A/A and N+M Elastic HA modes
 categories:
-- avi
+  - avi
 tags:
-- avi
-- nsxalb
-- load balancer
-- networking
-- nsx
-- vmware
-- homelab
+  - avi
+  - nsxalb
+  - load balancer
+  - networking
+  - nsx
+  - vmware
+  - homelab
 slug: avi-nsx-alb-virtual-service-placement-elastic-ha-modes
 toc: true
 draft: false

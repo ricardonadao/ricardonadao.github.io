@@ -7,16 +7,16 @@ header:
   teaser: /assets/images/featured/vsan-150x150.png
 title: vSAN - Update vSAN HCL DB Offline using manual process and PowerCLI
 categories:
-- vsan
+  - vsan
 tags:
-- vsan
-- powercli
-- vmware
-- coding
-- automation
-- powershell
-- sddc
-- vcf
+  - vsan
+  - powercli
+  - vmware
+  - coding
+  - automation
+  - powershell
+  - sddc
+  - vcf
 slug: vsan-update-vsan-hcl-db-offline-manual-process-powercli
 toc: true
 draft: false

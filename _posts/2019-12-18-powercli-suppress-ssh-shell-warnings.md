@@ -7,13 +7,13 @@ header:
   teaser: /assets/images/featured/powercli-150x150.png
 title: PowerCLI - Suppress SSH and ESXi shell warnings
 categories:
-- powercli
+  - powercli
 tags:
-- powercli
-- powershell
-- vmware
-- coding
-- automation
+  - powercli
+  - powershell
+  - vmware
+  - coding
+  - automation
 slug: powercli-suppress-ssh-esxi-shell-warnings
 toc: true
 draft: false

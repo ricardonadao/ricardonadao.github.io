@@ -8,15 +8,15 @@ header:
 title: PowerCLI - Collect PCI IDs, Vendor IDs and other IDs from ESXi Hardware to
   compare with HCL
 categories:
-- powercli
+  - powercli
 tags:
-- coding
-- esxi
-- hypervisor
-- powercli
-- powershell
-- vmware
-- pci
+  - coding
+  - esxi
+  - hypervisor
+  - powercli
+  - powershell
+  - vmware
+  - pci
 slug: powercli-collect-pci-ids-vendor-ids-ids-esxi-hardware-compare-hcl
 toc: true
 draft: false
