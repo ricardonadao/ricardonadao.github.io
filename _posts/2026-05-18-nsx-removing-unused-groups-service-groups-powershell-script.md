@@ -1,7 +1,7 @@
 ---
 author: Ricardo Adao
 published: true
-last_modified_at: 2026-05-18 14:58:02.227000+00:00
+last_modified_at: 2026-06-04 15:00:00
 date: 2026-05-18 14:58:02.227000+00:00
 header:
   teaser: /assets/images/featured/nsx-150x150.png
