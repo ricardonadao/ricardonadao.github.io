@@ -8,15 +8,15 @@ header:
 title: PowerCLI - Using Get-EsxCli to get settings or change settings in multiple
   ESXi hosts at a time
 categories:
-  -powercli
+  - powercli
 tags:
-  -coding
-  -esxi
-  -hypervisor
-  -oneliner
-  -powercli
-  -powershell
-  -vmware
+  - coding
+  - esxi
+  - hypervisor
+  - oneliner
+  - powercli
+  - powershell
+  - vmware
 slug: powercli-esxcli-settings-change-settings-multiple-esxi-hosts-time
 toc: true
 draft: false
